@@ -4,46 +4,49 @@ import { Reveal } from "./Reveal";
 
 const Services = () => {
   const services = [
-    {
-      number: "01",
-      title: "Custom Software Development",
-      description:
-        "Scalable and secure software solutions tailored to your business requirements.",
-      features: [
-        "Enterprise Applications",
-        "CRM & ERP Systems",
-        "SaaS Platforms",
-        "Workflow Automation",
-        "API Integrations",
-      ],
-    },
-    {
-      number: "02",
-      title: "Web & Mobile Applications",
-      description:
-        "Modern web and mobile experiences built with performance, scalability, and usability in mind.",
-      features: [
-        "React & Next.js Apps",
-        "Android Development",
-        "iOS Development",
-        "Progressive Web Apps",
-        "Responsive Design",
-      ],
-    },
-    {
-      number: "03",
-      title: "AI & Automation Solutions",
-      description:
-        "Leverage AI technologies and automation to streamline operations and accelerate growth.",
-      features: [
-        "AI Chatbots",
-        "Generative AI",
-        "Business Automation",
-        "Data Analytics",
-        "Machine Learning",
-      ],
-    },
-  ];
+  {
+    image:
+      "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80",
+    title: "Custom Software Development",
+    description:
+      "Scalable and secure software solutions tailored to your business requirements.",
+    features: [
+      "Enterprise Applications",
+      "CRM & ERP Systems",
+      "SaaS Platforms",
+      "Workflow Automation",
+      "API Integrations",
+    ],
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80",
+    title: "Web & Mobile Applications",
+    description:
+      "Modern web and mobile experiences built with performance, scalability, and usability in mind.",
+    features: [
+      "React & Next.js Apps",
+      "Android Development",
+      "iOS Development",
+      "Progressive Web Apps",
+      "Responsive Design",
+    ],
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+    title: "AI & Automation Solutions",
+    description:
+      "Leverage AI technologies and automation to streamline operations and accelerate growth.",
+    features: [
+      "AI Chatbots",
+      "Generative AI",
+      "Business Automation",
+      "Data Analytics",
+      "Machine Learning",
+    ],
+  },
+];
 
   return (
     <section
@@ -63,14 +66,14 @@ const Services = () => {
               Our Expertise
             </span>
 
-            <h2 className="mt-6 text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] text-slate-900">
+            <h2 className="mt-2 text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.05] text-blue-800">
               Expertise That Drives
-              <span className="block bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-400 bg-clip-text text-transparent">
                 Business Success
               </span>
             </h2>
 
-            <p className="mt-8 text-lg text-slate-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="mt-2 text-lg text-slate-600 max-w-4xl mx-auto leading-relaxed">
               We combine modern technologies, innovative thinking,
               and customer-focused development to deliver reliable
               digital solutions that help businesses grow faster.
@@ -79,7 +82,7 @@ const Services = () => {
         </Reveal>
 
         {/* Service Cards */}
-        <div className="grid lg:grid-cols-3 gap-8 mt-20">
+        <div className="grid lg:grid-cols-3 gap-8 mt-5">
           {services.map((service, index) => (
             <Reveal key={index} delay={index * 150}>
               <div
@@ -115,9 +118,13 @@ const Services = () => {
                   "
                 >
                   <div>
-                    <span className="text-8xl font-bold text-slate-100">
-                      {service.number}
-                    </span>
+                    <div className="w-full h-40 overflow-hidden rounded-2xl">
+  <img
+    src={service.image}
+    alt={service.title}
+    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+  />
+</div>
 
                     <h3 className="mt-8 text-3xl font-bold text-slate-900 leading-tight">
                       {service.title}

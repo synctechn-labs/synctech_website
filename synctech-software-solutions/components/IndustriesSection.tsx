@@ -46,16 +46,21 @@ export default function IndustriesSection() {
     <section className="relative py-16 bg-white overflow-hidden font-sans">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
+        
         <div className="text-center mb-10">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight"
-          >
-            Industries We Work With
-          </motion.h2>
-          <div className="w-12 h-1 bg-indigo-600 rounded-full mx-auto mt-6" />
+          <span className="text-blue-600 text-center font-semibold uppercase tracking-[0.25em] text-sm">
+  Industries We Serve
+</span>
+          <h2 className="block bg-gradient-to-r from-blue-800 via-blue-600 to-cyan-400 bg-clip-text text-transparent mt-6 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-blue-400">
+  Software Solutions Tailored for Diverse Industries
+</h2>
+<p className="mt-6 text-lg text-slate-600 max-w-4xl mx-auto leading-relaxed">
+  SyncTech delivers custom software development, web applications, mobile solutions,
+  AI-powered automation, and digital transformation services for startups, small businesses,
+  enterprises, educational institutions, healthcare providers, and e-commerce brands. Our
+  industry-focused technology solutions help organizations improve efficiency, enhance customer
+  experiences, and accelerate sustainable business growth.
+</p>
         </div>
 
         {/* Tabs - Scene 1 Look */}
@@ -89,8 +94,8 @@ export default function IndustriesSection() {
                 <div
                   className={`w-12 h-12 rounded-full flex items-center justify-center mb-3 transition-colors duration-500 ${
                     isActive
-                      ? "bg-indigo-600 text-white shadow-md shadow-indigo-200"
-                      : "bg-indigo-50 text-indigo-600"
+                      ? "bg-blue-800 text-white shadow-md shadow-indigo-200"
+                      : "bg-blue-50 text-indigo-600"
                   }`}
                 >
                   <Icon className="w-6 h-6" />

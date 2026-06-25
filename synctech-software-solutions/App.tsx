@@ -38,10 +38,10 @@ function HomePage() {
       <IndustriesSection/>
       <Operations />
       <EnterpriseTechStack/>
-      <Portfolio />
-      <SocialProof />
+      {/*<Portfolio />*/}
+      {/*<SocialProof />*/}
       <Support />
-      <Contact />
+      {/*<Contact />*/}
     </>
   );
 }

@@ -9,44 +9,54 @@ import { Reveal } from "./Reveal";
 
 const WhyUs: React.FC = () => {
   const features = [
-    {
-      icon: Code2,
-      title: "Custom Software Development",
-      subtitle: "Scalable solutions built around your business",
-      description:
-        "We develop secure, high-performance software applications tailored to your unique business requirements and future growth.",
-      highlights:
-        "Custom Workflows • API Integrations • Cloud Deployment • Enterprise Security",
-    },
-    {
-      icon: Globe,
-      title: "Web Application Development",
-      subtitle: "Fast, responsive & SEO-focused platforms",
-      description:
-        "Build modern web applications with exceptional user experiences and optimized performance across all devices.",
-      highlights:
-        "React • Next.js • SEO Optimization • Responsive Design",
-    },
-    {
-      icon: Smartphone,
-      title: "Mobile App Development",
-      subtitle: "Native & cross-platform experiences",
-      description:
-        "Create engaging mobile applications that help businesses connect with customers anytime and anywhere.",
-      highlights:
-        "Android • iOS • Flutter • React Native",
-    },
-    {
-      icon: BrainCircuit,
-      title: "AI & Automation Solutions",
-      subtitle: "Smarter operations through innovation",
-      description:
-        "Leverage AI-powered technologies to automate processes, improve decision-making, and increase productivity.",
-      highlights:
-        "AI Agents • Chatbots • Automation • Data Intelligence",
-    },
-  ];
+  {
+    icon: Code2,
+    image:
+      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    title: "Proven Technical Excellence",
+    subtitle: "Experienced engineers delivering quality solutions",
+    description:
+      "Our expert development team builds secure, scalable, and high-performance software solutions using modern technologies and industry best practices.",
+    highlights:
+      "Expert Developers • Agile Delivery • Quality Assurance • Modern Tech Stack",
+  },
 
+  {
+    icon: Globe,
+    image:
+      "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    title: "Customer-First Development",
+    subtitle: "Focused on your business success",
+    description:
+      "We collaborate closely with clients at every stage of development to ensure transparency, faster delivery, and measurable business outcomes.",
+    highlights:
+      "Dedicated Support • Transparent Communication • Strategic Partnership • Client Success",
+  },
+
+  {
+    icon: Smartphone,
+    image:
+      "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    title: "Scalable Growth Solutions",
+    subtitle: "Built for today and ready for tomorrow",
+    description:
+      "Every solution is designed with scalability, security, and performance in mind, helping businesses grow confidently without technology limitations.",
+    highlights:
+      "Cloud Ready • Secure Architecture • High Performance • Future Scalability",
+  },
+
+  {
+    icon: BrainCircuit,
+    image:
+      "https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    title: "Innovation & AI Expertise",
+    subtitle: "Leveraging technology for competitive advantage",
+    description:
+      "We utilize AI, automation, and emerging technologies to streamline operations, improve efficiency, and accelerate digital transformation.",
+    highlights:
+      "Artificial Intelligence • Automation • Data Intelligence • Digital Innovation",
+  },
+];
   return (
     <section
       id="why-us"
@@ -89,15 +99,15 @@ const WhyUs: React.FC = () => {
             <h2
               className="
                 text-4xl
-                md:text-6xl
-                lg:text-7xl
+                md:text-5xl
+                lg:text-6xl
                 font-bold
                 leading-tight
-                text-slate-900
+                text-blue-800
               "
             >
               Your Trusted Partner For
-              <span className="block bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-blue-500 via-blue-400 to-cyan-500 bg-clip-text text-transparent">
                 Digital Innovation
               </span>
             </h2>
@@ -142,23 +152,9 @@ const WhyUs: React.FC = () => {
                     px-8
                   "
                 >
-                  <span className="text-blue-600 text-sm font-bold uppercase tracking-[0.3em]">
-                    SyncTech
-                  </span>
-
-                  <h3 className="text-5xl font-bold text-slate-900 mt-4">
-                    Build
-                  </h3>
-
-                  <h3 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-                    Better
-                  </h3>
-
-                  <p className="mt-5 text-slate-500 leading-relaxed">
-                    Delivering innovative technology solutions
-                    designed for performance, scalability,
-                    and business success.
-                  </p>
+                  <p className="text-2xl font-extrabold bg-gradient-to-r from-slate-800 via-blue-500 to-slate-500 bg-clip-text text-transparent leading-tight">
+  Leading Software Development Company for Web, Mobile and AI Solutions
+</p>
                 </div>
 
               </div>
@@ -174,119 +170,114 @@ const WhyUs: React.FC = () => {
               const Icon = item.icon;
 
               return (
-                <Reveal key={index} delay={index * 150}>
-                  <div
-                    className={`
-                      group
-                      relative
-                      h-[340px]
-                      overflow-hidden
-                      rounded-3xl
-                      bg-white/80
-                      backdrop-blur-xl
-                      border
-                      border-white
-                      shadow-xl
-                      transition-all
-                      duration-500
-                      hover:-translate-y-3
-                      hover:shadow-blue-500/20
+               <Reveal key={index} delay={index * 150}>
+  <div
+    className={`
+      group
+      relative
+      h-[360px]
+      overflow-hidden
+      rounded-3xl
+      bg-white/80
+      backdrop-blur-xl
+      border
+      border-white
+      shadow-xl
+      transition-all
+      duration-500
+      hover:-translate-y-3
+      hover:shadow-blue-500/20
 
-                      ${index === 0 ? "mr-52" : ""}
-                      ${index === 1 ? "ml-52" : ""}
-                      ${index === 2 ? "mr-52 mt-32" : ""}
-                      ${index === 3 ? "ml-52 mt-32" : ""}
-                    `}
-                  >
-                    {/* Number */}
-                    <span
-                      className="
-                        absolute
-                        top-4
-                        right-6
-                        text-8xl
-                        font-extrabold
-                        text-slate-100
-                        group-hover:text-blue-100
-                        transition-colors
-                        duration-500
-                      "
-                    >
-                      0{index + 1}
-                    </span>
+      ${index === 0 ? "mr-52" : ""}
+      ${index === 1 ? "ml-52" : ""}
+      ${index === 2 ? "mr-52 mt-32" : ""}
+      ${index === 3 ? "ml-52 mt-32" : ""}
+    `}
+  >
+    {/* Background Image */}
+  <div className="absolute inset-0 overflow-hidden">
+  <img
+    src={item.image}
+    alt={item.title}
+    className="
+      w-full
+      h-full
+      transition-all
+      duration-700
+    "
+  />
 
-                    {/* Front Side */}
-                    <div
-                      className="
-                        absolute
-                        inset-0
-                        flex
-                        flex-col
-                        items-center
-                        justify-center
-                        text-center
-                        p-8
-                        transition-all
-                        duration-500
-                        group-hover:-translate-y-full
-                        group-hover:opacity-0
-                      "
-                    >
-                      <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center shadow-xl mb-6">
-                        <Icon className="w-10 h-10 text-white" />
-                      </div>
+  <div className="absolute inset-0 bg-white/40" />
+</div>
 
-                      <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                        {item.title}
-                      </h3>
+    {/* Front Side */}
+    <div
+      className="
+        absolute
+        inset-0
+        z-10
+        flex
+        flex-col
+        items-center
+        justify-center
+        text-center
+        p-8
+        transition-all
+        duration-500
+        group-hover:-translate-y-full
+        group-hover:opacity-0
+      "
+    >
+      
+      <h3 className="text-3xl font-bold text-slate-900 mb-3">
+        {item.title}
+      </h3>
 
-                      <p className="text-slate-500 text-sm">
-                        {item.subtitle}
-                      </p>
-                    </div>
+    </div>
 
-                    {/* Hover Side */}
-                    <div
-                      className="
-                        absolute
-                        inset-0
-                        bg-gradient-to-br
-                        from-blue-600
-                        via-blue-500
-                        to-cyan-500
-                        p-8
-                        text-white
-                        translate-y-full
-                        group-hover:translate-y-0
-                        transition-all
-                        duration-500
-                        flex
-                        flex-col
-                        justify-center
-                      "
-                    >
-                      <Icon className="w-10 h-10 mb-5 text-white" />
+    {/* Hover Side */}
+    <div
+      className="
+        absolute
+        inset-0
+        z-20
+        bg-gradient-to-br
+        from-blue-600
+        via-blue-500
+        to-cyan-500
+        p-8
+        text-white
+        translate-y-full
+        group-hover:translate-y-0
+        transition-all
+        duration-500
+        flex
+        flex-col
+        justify-center
+      "
+    >
+      <Icon className="w-10 h-10 mb-5 text-white" />
 
-                      <h3 className="text-2xl font-bold mb-3">
-                        {item.title}
-                      </h3>
+      <h3 className="text-2xl font-bold mb-3">
+        {item.title}
+      </h3>
 
-                      <p className="text-white/90 text-sm leading-relaxed mb-5">
-                        {item.description}
-                      </p>
+      <p className="text-white/90 text-sm leading-relaxed mb-5">
+        {item.description}
+      </p>
 
-                      <div className="border-t border-white/20 pt-4">
-                        <p className="text-xs uppercase tracking-widest mb-2 text-white/70">
-                          Key Highlights
-                        </p>
+      <div className="border-t border-white/20 pt-4">
+        <p className="text-xs uppercase tracking-widest mb-2 text-white/70">
+          Key Highlights
+        </p>
 
-                        <p className="text-sm text-white/90 leading-relaxed">
-                          {item.highlights}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </Reveal>
+        <p className="text-sm text-white/90 leading-relaxed">
+          {item.highlights}
+        </p>
+      </div>
+    </div>
+  </div>
+</Reveal>
               );
             })}
           </div>

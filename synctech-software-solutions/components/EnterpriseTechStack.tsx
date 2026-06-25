@@ -121,7 +121,7 @@ export default function EnterpriseTechStack() {
           onClick={() => setIsSkipped(true)}
           className="absolute top-6 right-6 md:top-8 md:right-8 z-50 bg-white/80 backdrop-blur-md px-4 py-2 rounded-full border border-slate-200 text-sm font-semibold text-slate-500 hover:text-slate-800 transition-colors shadow-sm"
         >
-          Skip Animation ⏭
+          Skip ⏭
         </button>
       )}
       {/* Background Layer */}
@@ -174,7 +174,7 @@ export default function EnterpriseTechStack() {
           transition={{ duration: 1, ease: "easeOut" }}
           className="absolute inset-0 flex flex-col items-center justify-center"
         >
-          <h2 className="text-5xl md:text-6xl font-extrabold text-[#0F172A] mb-4 tracking-tight">Technology Stack</h2>
+          <h2 className="text-5xl md:text-6xl font-extrabold text-blue-800 mb-4 tracking-tight">Technology Stack</h2>
           <p className="text-xl text-slate-500 font-medium max-w-2xl mx-auto">Building Intelligent Digital Experiences</p>
         </motion.div>
       </div>
