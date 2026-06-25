@@ -75,13 +75,14 @@ function App() {
           <Route path="/TermsOfService" element={<TermsOfService />} />
           <Route path="/CookiesPolicy" element={<CookiesPolicy />} />
           <Route path="/services">
+            <Route index element={<Services />} />
             <Route path="MobileDevelopment" element={<MobileDevelopment />} />
             <Route path="WebDevelopment" element={<WebDevelopment />} />
             <Route path="DigitalMarketing" element={<DigitalMarketing />} />
             <Route path="crm" element={<CRMSolutions />} />
           </Route>
           <Route path="/Careers" element={<Careers />} />
-          <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/Contact" element={<ContactUs />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>

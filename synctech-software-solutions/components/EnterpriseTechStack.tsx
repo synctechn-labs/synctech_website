@@ -130,35 +130,36 @@ export default function EnterpriseTechStack() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[1200px] bg-white/50 rounded-full blur-[100px]" />
 
         <motion.div
-          animate={{ x: [-80, 80, -80], y: [-50, 50, -50] }}
-          transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-1/4 left-1/4 w-[700px] h-[700px] bg-indigo-500/10 rounded-full blur-[140px]"
+          animate={{ x: [-40, 40, -40], y: [-20, 20, -20] }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          style={{ willChange: "transform" }}
+          className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none"
         />
         <motion.div
-          animate={{ x: [80, -80, 80], y: [50, -50, 50] }}
-          transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-[120px]"
+          animate={{ x: [40, -40, 40], y: [20, -20, 20] }}
+          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+          style={{ willChange: "transform" }}
+          className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-[100px] pointer-events-none"
         />
 
-        {/* Slow Floating Particles */}
-        {(activeCategoryIndex > -1 || isFinalScene) && [...Array(20)].map((_, i) => (
+        {/* Slow Floating Particles - Optimized */}
+        {(activeCategoryIndex > -1 || isFinalScene) && [...Array(10)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute bg-indigo-400 rounded-full"
+            className="absolute bg-indigo-400 rounded-full pointer-events-none"
             style={{
-              width: Math.random() * 4 + 2 + "px",
-              height: Math.random() * 4 + 2 + "px",
-              top: Math.random() * 100 + "%",
-              left: Math.random() * 100 + "%",
-              opacity: 0.2
+              width: "4px",
+              height: "4px",
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              willChange: "transform, opacity"
             }}
             animate={{
-              y: [0, -150, 0],
-              x: [0, Math.random() * 100 - 50, 0],
-              opacity: [0.1, 0.5, 0.1]
+              y: [0, -100, 0],
+              opacity: [0.1, 0.4, 0.1]
             }}
             transition={{
-              duration: Math.random() * 15 + 15,
+              duration: Math.random() * 10 + 10,
               repeat: Infinity,
               ease: "linear"
             }}
@@ -222,12 +223,12 @@ export default function EnterpriseTechStack() {
                           scale: isActive ? 1.3 : 0.85,
                           rotateY: offset * -15,
                           zIndex: isActive ? 50 : 30 - Math.abs(offset),
-                          filter: isActive ? 'blur(0px)' : 'blur(4px)',
                         }}
                         exit={{ opacity: 0, x: -400, scale: 0.8, rotateY: -40 }}
                         transition={{ type: "spring", stiffness: 120, damping: 20 }}
+                        style={{ willChange: "transform, opacity" }}
                         className={`absolute w-[240px] h-[280px] bg-white rounded-[24px] p-8 flex flex-col items-center justify-center text-center border transition-shadow duration-500
-                            ${isActive ? 'shadow-[0_40px_80px_rgba(79,70,229,0.15)] border-indigo-100 ring-4 ring-white' : 'shadow-xl border-slate-100'}
+                            ${isActive ? 'shadow-[0_20px_40px_rgba(79,70,229,0.15)] border-indigo-100 ring-4 ring-white' : 'shadow-lg border-slate-100'}
                           `}
                       >
                         {isActive && <div className="absolute inset-0 bg-gradient-to-b from-indigo-50/50 to-transparent rounded-[24px]" />}

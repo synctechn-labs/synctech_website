@@ -1,9 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const NAV_ITEMS = [
-  { label: "Services", href: "#services" },
+  { 
+    label: "Services", 
+    href: "services",
+    subItems: [
+      { label: "Mobile Development", href: "services/mobiledevelopment" },
+      { label: "Web Development", href: "services/webdevelopment" },
+      { label: "Digital Marketing", href: "services/digitalmarketing" },
+      { label: "CRM Solutions", href: "services/crm" },
+    ]
+  },
   { label: "Process", href: "#process" },
   { label: "Why Us", href: "#why-us" },
   { label: "About", href: "#about" },
@@ -55,6 +64,37 @@ const Navbar: React.FC = () => {
 
             <div className="hidden lg:flex items-center h-full">
               {NAV_ITEMS.map((item) => {
+                if (item.subItems) {
+                  return (
+                    <div key={item.label} className="relative h-full flex items-center group cursor-pointer">
+                      <Link 
+                        to={isHomePage ? item.href : `/${item.href}`}
+                        className="relative px-5 h-full flex items-center text-slate-700 font-semibold transition-all duration-300 hover:text-blue-600"
+                      >
+                        {item.label}
+                        <ChevronDown size={16} className="ml-1 transition-transform group-hover:rotate-180" />
+                        <span className="absolute bottom-0 left-1/2 h-[3px] w-0 bg-blue-600 transition-all duration-300 group-hover:w-full group-hover:left-0" />
+                      </Link>
+                      
+                      <div className="absolute top-[64px] left-0 mt-0 w-64 bg-white/95 backdrop-blur-xl border border-slate-100 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 overflow-hidden">
+                        <div className="py-2">
+                          {item.subItems.map((subItem) => (
+                            <Link
+                              key={subItem.label}
+                              to={`/${subItem.href}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="block px-5 py-3 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50/50 transition-colors"
+                            >
+                              {subItem.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+
                 const targetPath = isHomePage ? item.href : `/${item.href}`;
                 return (
                   <Link
@@ -88,6 +128,32 @@ const Navbar: React.FC = () => {
           <div className="lg:hidden border-t border-slate-200 bg-white/95 backdrop-blur-xl rounded-b-2xl">
             <div className="flex flex-col py-4">
               {NAV_ITEMS.map((item) => {
+                if (item.subItems) {
+                  return (
+                    <div key={item.label} className="flex flex-col border-b border-slate-100">
+                      <div className="px-6 py-4 flex items-center justify-between text-slate-700 font-medium hover:bg-blue-50 hover:text-blue-600 transition-all">
+                        <Link to={isHomePage ? item.href : `/${item.href}`} onClick={() => setIsOpen(false)}>
+                          {item.label}
+                        </Link>
+                      </div>
+                      <div className="flex flex-col bg-slate-50/50 pb-2">
+                        {item.subItems.map((subItem) => (
+                          <Link
+                            key={subItem.label}
+                            to={`/${subItem.href}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => setIsOpen(false)}
+                            className="px-10 py-3 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 transition-colors"
+                          >
+                            {subItem.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                }
+
                 const targetPath = isHomePage ? item.href : `/${item.href}`;
                 return (
                   <Link

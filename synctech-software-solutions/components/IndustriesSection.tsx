@@ -87,15 +87,15 @@ export default function IndustriesSection() {
                 className={`relative group flex flex-col items-center justify-center w-28 h-32 lg:w-32 lg:h-36 rounded-[24px] border transition-all duration-500
                 ${
                   isActive
-                    ? "bg-white shadow-[0_20px_40px_rgba(0,0,0,0.08)] border-indigo-100 scale-105 z-10"
-                    : "bg-white border-slate-100 hover:shadow-lg hover:border-indigo-50 hover:-translate-y-1"
+                    ? "bg-white shadow-[0_20px_40px_rgba(0,0,0,0.08)] border-cyan-100 scale-105 z-10"
+                    : "bg-white border-slate-100 hover:shadow-lg hover:border-blue-50 hover:-translate-y-1"
                 }`}
               >
                 <div
                   className={`w-12 h-12 rounded-full flex items-center justify-center mb-3 transition-colors duration-500 ${
                     isActive
-                      ? "bg-blue-800 text-white shadow-md shadow-indigo-200"
-                      : "bg-blue-50 text-indigo-600"
+                      ? "bg-blue-800 text-white shadow-md shadow-blue-300"
+                      : "bg-blue-50 text-blue-600"
                   }`}
                 >
                   <Icon className="w-6 h-6" />
@@ -160,7 +160,7 @@ function CenterCard({
   return (
     <div className="w-[340px] md:w-[400px] h-[360px] bg-white rounded-[32px] shadow-[0_20px_80px_rgba(0,0,0,0.06)] border border-slate-100 p-8 flex flex-col relative z-10 mx-auto overflow-hidden">
       <div className="flex items-center gap-3 mb-4">
-        <Icon className="w-5 h-5 text-indigo-600" />
+        <Icon className="w-5 h-5 text-blue-600" />
         <span className="font-bold text-slate-800 text-sm">{industry}</span>
       </div>
       <h2 className="text-3xl font-bold text-slate-900 leading-tight mb-8 z-20">
@@ -215,8 +215,8 @@ function StartupScene() {
     <div className="relative w-full h-[400px] flex items-center justify-center">
       {/* Floating Widgets */}
       <FloatingWidget className="top-20 left-4 md:left-12 lg:left-24" delay={0.1}>
-        <div className="w-12 h-12 rounded-xl bg-yellow-50 flex items-center justify-center">
-          <Lightbulb className="w-6 h-6 text-yellow-500" />
+        <div className="w-12 h-12 rounded-xl bg-cyan-50 flex items-center justify-center">
+          <Lightbulb className="w-6 h-6 text-cyan-500" />
         </div>
       </FloatingWidget>
 
@@ -236,7 +236,7 @@ function StartupScene() {
           <path
             d="M0,30 L20,20 L40,25 L60,10 L80,15 L100,5"
             fill="none"
-            stroke="#6366f1"
+            stroke="#0084E7"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -250,7 +250,7 @@ function StartupScene() {
       >
         <div className="text-[10px] font-semibold text-slate-400 mb-1">Users</div>
         <div className="flex items-center gap-1 mb-3">
-          <TrendingUp className="w-4 h-4 text-emerald-500" />
+          <TrendingUp className="w-4 h-4 text-cyan-500" />
           <span className="text-lg font-bold text-slate-800">125%</span>
         </div>
         <div className="flex -space-x-2">
@@ -269,8 +269,8 @@ function StartupScene() {
         className="bottom-16 right-0 md:right-8 lg:right-20"
         delay={0.4}
       >
-        <div className="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center">
-          <BarChart3 className="w-6 h-6 text-indigo-500" />
+        <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center">
+          <BarChart3 className="w-6 h-6 text-cyan-500" />
         </div>
       </FloatingWidget>
 
@@ -286,10 +286,10 @@ function StartupScene() {
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             className="relative z-10"
           >
-            <Rocket className="w-32 h-32 text-indigo-600 drop-shadow-[0_20px_30px_rgba(79,70,229,0.3)]" />
+            <Rocket className="w-32 h-32 text-blue-600 drop-shadow-[0_20px_30px_rgba(79,70,229,0.3)]" />
           </motion.div>
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-36 h-36 bg-gradient-to-t from-indigo-100 to-transparent rounded-full blur-2xl opacity-80" />
-          <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-32 h-32 bg-indigo-300 blur-3xl opacity-50 rounded-full" />
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-36 h-36 bg-gradient-to-t from-cyan-100 to-transparent rounded-full blur-2xl opacity-80" />
+          <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-32 h-32 bg-cyan-400 blur-3xl opacity-50 rounded-full" />
         </div>
       </CenterCard>
     </div>
@@ -346,7 +346,7 @@ function SMBScene() {
               initial={{ strokeDasharray: "0, 100" }}
               animate={{ strokeDasharray: "42, 100" }}
               transition={{ duration: 1.5, delay: 0.5 }}
-              className="text-indigo-500"
+              className="text-cyan-500"
               strokeWidth="4"
               stroke="currentColor"
               fill="none"
@@ -389,16 +389,16 @@ function SMBScene() {
                 <path
                   d="M 10 90 Q 40 70 50 50 T 90 10"
                   fill="none"
-                  stroke="#4f46e5"
+                  stroke="#0082F2"
                   strokeWidth="8"
                   strokeLinecap="round"
                 />
-                <polygon points="90,10 75,5 85,25" fill="#4f46e5" />
+                <polygon points="90,10 75,5 85,25" fill="#0082F2" />
               </svg>
             </motion.div>
-            <div className="absolute bottom-0 left-4 w-8 h-16 bg-indigo-100 rounded-t-md z-10" />
-            <div className="absolute bottom-0 left-20 w-8 h-28 bg-indigo-200 rounded-t-md z-10" />
-            <div className="absolute bottom-0 left-36 w-8 h-40 bg-indigo-300 rounded-t-md z-10" />
+            <div className="absolute bottom-0 left-4 w-8 h-16 bg-cyan-100 rounded-t-md z-10" />
+            <div className="absolute bottom-0 left-20 w-8 h-28 bg-blue-300 rounded-t-md z-10" />
+            <div className="absolute bottom-0 left-36 w-8 h-40 bg-cyan-400 rounded-t-md z-10" />
           </div>
         </div>
       </CenterCard>
@@ -414,7 +414,7 @@ function EnterpriseScene() {
         delay={0.1}
       >
         <div className="w-12 h-12 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center">
-          <Database className="w-5 h-5 text-indigo-500" />
+          <Database className="w-5 h-5 text-cyan-500" />
         </div>
       </FloatingWidget>
 
@@ -423,7 +423,7 @@ function EnterpriseScene() {
         delay={0.2}
       >
         <div className="w-12 h-12 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center">
-          <User className="w-5 h-5 text-indigo-500" />
+          <User className="w-5 h-5 text-cyan-500" />
         </div>
       </FloatingWidget>
 
@@ -455,14 +455,14 @@ function EnterpriseScene() {
             className="absolute inset-0 w-full h-full opacity-30"
             viewBox="0 0 400 500"
           >
-            <circle cx="100" cy="200" r="4" fill="#6366f1" />
+            <circle cx="100" cy="200" r="4" fill="#0084E7" />
             <circle cx="300" cy="150" r="6" fill="#3b82f6" />
-            <circle cx="350" cy="300" r="4" fill="#6366f1" />
-            <circle cx="80" cy="350" r="5" fill="#8b5cf6" />
+            <circle cx="350" cy="300" r="4" fill="#0084E7" />
+            <circle cx="80" cy="350" r="5" fill="#00B2D4" />
             <path
               d="M 100 200 L 200 350 L 300 150 L 350 300 M 80 350 L 200 350"
               fill="none"
-              stroke="#6366f1"
+              stroke="#0084E7"
               strokeWidth="1"
               strokeDasharray="4 4"
             />
@@ -471,7 +471,7 @@ function EnterpriseScene() {
           <div className="relative z-10 flex items-end justify-center gap-1.5">
             <motion.div
               animate={{ height: [100, 100] }}
-              className="w-14 h-[100px] bg-indigo-600 rounded-t-lg shadow-xl relative overflow-hidden"
+              className="w-14 h-[100px] bg-blue-600 rounded-t-lg shadow-xl relative overflow-hidden"
             >
               <div className="absolute inset-x-0 top-0 h-1/2 bg-white/20" />
             </motion.div>
@@ -483,7 +483,7 @@ function EnterpriseScene() {
             </motion.div>
             <motion.div
               animate={{ height: [130, 130] }}
-              className="w-14 h-[130px] bg-indigo-400 rounded-t-lg shadow-xl relative overflow-hidden"
+              className="w-14 h-[130px] bg-blue-400 rounded-t-lg shadow-xl relative overflow-hidden"
             >
               <div className="absolute inset-x-0 top-0 h-1/2 bg-white/20" />
             </motion.div>
@@ -501,8 +501,8 @@ function EducationScene() {
         className="top-12 left-8 md:left-16 lg:left-28"
         delay={0.1}
       >
-        <div className="w-12 h-12 rounded-2xl bg-indigo-50 flex items-center justify-center shadow-inner">
-          <GraduationCap className="w-6 h-6 text-indigo-600" />
+        <div className="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center shadow-inner">
+          <GraduationCap className="w-6 h-6 text-blue-600" />
         </div>
       </FloatingWidget>
 
@@ -521,11 +521,11 @@ function EducationScene() {
         delay={0.3}
       >
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center pl-1">
-            <Play className="w-3 h-3 text-indigo-600" />
+          <div className="w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center pl-1">
+            <Play className="w-3 h-3 text-blue-600" />
           </div>
           <div className="flex-1 h-1.5 bg-slate-100 rounded-full overflow-hidden">
-            <div className="w-1/3 h-full bg-indigo-500" />
+            <div className="w-1/3 h-full bg-cyan-500" />
           </div>
         </div>
       </FloatingWidget>
@@ -553,7 +553,7 @@ function EducationScene() {
               initial={{ strokeDasharray: "0, 100" }}
               animate={{ strokeDasharray: "85, 100" }}
               transition={{ duration: 1.5, delay: 0.5 }}
-              className="text-indigo-500"
+              className="text-cyan-500"
               strokeWidth="4"
               stroke="currentColor"
               fill="none"
@@ -575,9 +575,9 @@ function EducationScene() {
           {[1, 2, 3].map((i) => (
             <div
               key={i}
-              className="w-8 h-8 rounded-full bg-indigo-50 border-2 border-white flex items-center justify-center"
+              className="w-8 h-8 rounded-full bg-blue-50 border-2 border-white flex items-center justify-center"
             >
-              <User className="w-4 h-4 text-indigo-400" />
+              <User className="w-4 h-4 text-blue-400" />
             </div>
           ))}
         </div>
@@ -594,12 +594,12 @@ function EducationScene() {
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             className="relative z-10"
           >
-            <BookOpen className="w-32 h-32 text-indigo-600 drop-shadow-[0_20px_30px_rgba(79,70,229,0.2)]" />
+            <BookOpen className="w-32 h-32 text-blue-600 drop-shadow-[0_20px_30px_rgba(79,70,229,0.2)]" />
           </motion.div>
           <motion.div
             animate={{ y: [-10, 10, -10], rotate: [0, 10, 0] }}
             transition={{ duration: 5, repeat: Infinity }}
-            className="absolute top-1/3 left-1/4 w-4 h-4 bg-yellow-300 rounded-sm rotate-12"
+            className="absolute top-1/3 left-1/4 w-4 h-4 bg-cyan-300 rounded-sm rotate-12"
           />
           <motion.div
             animate={{ y: [10, -10, 10], rotate: [0, -10, 0] }}
@@ -609,7 +609,7 @@ function EducationScene() {
           <motion.div
             animate={{ y: [-5, 5, -5] }}
             transition={{ duration: 3, repeat: Infinity }}
-            className="absolute bottom-1/3 right-1/3 w-3 h-3 bg-pink-300 rounded-full"
+            className="absolute bottom-1/3 right-1/3 w-3 h-3 bg-cyan-300 rounded-full"
           />
         </div>
       </CenterCard>
@@ -628,8 +628,8 @@ function HealthcareScene() {
           Patient Overview
         </div>
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center">
-            <User className="w-4 h-4 text-rose-500" />
+          <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+            <User className="w-4 h-4 text-blue-500" />
           </div>
           <div className="flex-1 space-y-1.5">
             <div className="w-full h-1.5 bg-slate-100 rounded-full" />
@@ -661,7 +661,7 @@ function HealthcareScene() {
           <span className="text-xl font-bold text-slate-800">120/80</span>
         </div>
         <div className="flex items-center gap-1 mt-1">
-          <HeartPulse className="w-3 h-3 text-rose-500" />
+          <HeartPulse className="w-3 h-3 text-blue-500" />
           <span className="text-[10px] text-slate-400">BP</span>
         </div>
       </FloatingWidget>
@@ -674,7 +674,7 @@ function HealthcareScene() {
           AI Analysis
         </div>
         <div className="text-xs font-bold text-slate-700 mb-2">
-          Risk: <span className="text-emerald-500">Low</span>
+          Risk: <span className="text-cyan-500">Low</span>
         </div>
         <svg
           className="w-full h-8"
@@ -684,7 +684,7 @@ function HealthcareScene() {
           <path
             d="M0,25 L20,20 L40,25 L60,15 L80,20 L100,10"
             fill="none"
-            stroke="#10b981"
+            stroke="#00C2F3"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -749,7 +749,7 @@ function EcommerceScene() {
         </div>
         <div className="flex gap-1 mt-2">
           {[1, 2, 3, 4, 5].map((i) => (
-            <div key={i} className="w-1.5 h-1.5 bg-yellow-400 rounded-full" />
+            <div key={i} className="w-1.5 h-1.5 bg-cyan-400 rounded-full" />
           ))}
         </div>
       </FloatingWidget>
@@ -760,8 +760,8 @@ function EcommerceScene() {
       >
         <div className="flex items-center gap-3">
           <div className="relative">
-            <ShoppingCart className="w-6 h-6 text-indigo-500" />
-            <div className="absolute -top-2 -right-2 w-4 h-4 bg-rose-500 rounded-full flex items-center justify-center text-[8px] text-white font-bold">
+            <ShoppingCart className="w-6 h-6 text-cyan-500" />
+            <div className="absolute -top-2 -right-2 w-4 h-4 bg-blue-500 rounded-full flex items-center justify-center text-[8px] text-white font-bold">
               3
             </div>
           </div>
@@ -787,7 +787,7 @@ function EcommerceScene() {
         </div>
         <div className="flex gap-1 mt-2">
           {[1, 2, 3, 4, 5].map((i) => (
-            <div key={i} className="w-1.5 h-1.5 bg-yellow-400 rounded-full" />
+            <div key={i} className="w-1.5 h-1.5 bg-cyan-400 rounded-full" />
           ))}
         </div>
       </FloatingWidget>
@@ -800,8 +800,8 @@ function EcommerceScene() {
           Checkout
         </div>
         <div className="flex items-center gap-2">
-          <CheckCircle2 className="w-4 h-4 text-emerald-500" />
-          <span className="text-[10px] font-bold text-emerald-600">
+          <CheckCircle2 className="w-4 h-4 text-cyan-500" />
+          <span className="text-[10px] font-bold text-cyan-600">
             Payment Successful
           </span>
         </div>
@@ -818,9 +818,9 @@ function EcommerceScene() {
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             className="relative z-10"
           >
-            <ShoppingCart className="w-32 h-32 text-indigo-500 drop-shadow-[0_20px_30px_rgba(99,102,241,0.3)]" />
+            <ShoppingCart className="w-32 h-32 text-cyan-500 drop-shadow-[0_20px_30px_rgba(99,102,241,0.3)]" />
           </motion.div>
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-40 h-4 bg-indigo-900/10 blur-md rounded-full" />
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-40 h-4 bg-blue-900/10 blur-md rounded-full" />
         </div>
       </CenterCard>
     </div>
