@@ -78,7 +78,7 @@ function App() {
             <Route path="MobileDevelopment" element={<MobileDevelopment />} />
             <Route path="WebDevelopment" element={<WebDevelopment />} />
             <Route path="DigitalMarketing" element={<DigitalMarketing />} />
-            <Route path="CRMSolutions" element={<CRMSolutions />} />
+            <Route path="crm" element={<CRMSolutions />} />
           </Route>
           <Route path="/Careers" element={<Careers />} />
           <Route path="/ContactUs" element={<ContactUs />} />
