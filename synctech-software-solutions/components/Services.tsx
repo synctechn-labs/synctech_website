@@ -5,7 +5,7 @@ import { Reveal } from './Reveal';
 
 const Services: React.FC = () => {
   return (
-    <section id="services" className="py-20 bg-slate-50 relative overflow-hidden">
+    <section id="services" className="py-16 bg-slate-50 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-200/20 rounded-full blur-[120px] -z-0 pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-indigo-200/20 rounded-full blur-[100px] -z-0 pointer-events-none"></div>
@@ -15,18 +15,18 @@ const Services: React.FC = () => {
         {/* Header */}
         <Reveal>
           <div className="mb-20 max-w-5xl mx-auto text-center">
-  <h4 className="text-blue-600 font-bold uppercase tracking-[0.3em] text-sm mb-5">
+  <h4 className="text-blue-600 font-bold uppercase tracking-[0.3em] text-sm mb-2">
     Software Development Services
   </h4>
 
-  <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 leading-[1.05] mb-8">
+  <h2 className="text-5xl md:text-6xl font-extrabold tracking-tight text-blue-800 leading-[1.05] mb-5">
     Custom Software Development &
-    <span className="block bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 bg-clip-text text-transparent">
+    <span className="block bg-gradient-to-r from-blue-600 via-cyan-500 to-cyan-400 bg-clip-text text-transparent">
       Digital Transformation Solutions
     </span>
   </h2>
 
-  <p className="text-slate-600 text-lg md:text-xl max-w-4xl mx-auto leading-relaxed">
+  <p className="text-slate-600 text-lg md:text-xl max-w-4xl leading-relaxed">
     SyncTech Software Solutions provides custom software
     development, web applications, mobile app development,
     AI-powered solutions, cloud services, and digital

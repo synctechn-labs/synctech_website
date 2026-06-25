@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 const NAV_ITEMS = [
   { label: "Services", href: "#services" },
   { label: "Process", href: "#process" },
-  { label: "Why Us", href: "#features" },
+  { label: "Why Us", href: "#why-us" },
   { label: "About", href: "#about" },
   { label: "FAQ", href: "#faq" },
 ];
@@ -37,16 +37,16 @@ const Navbar: React.FC = () => {
         )}
 
         <div className="relative container mx-auto px-6 lg:px-10">
-          <div className="flex items-center justify-between h-[80px]">
+          <div className="flex items-center justify-between h-[64px]">
 
             <a href="/" className="flex items-center gap-3 group">
               <img
-                src="https://res.cloudinary.com/dij2x0ixo/image/upload/v1782032673/SyncTechWhiteLogo_bt3s0u.jpg"
+                src="https://res.cloudinary.com/dij2x0ixo/image/upload/e_background_removal/f_png/v1782032673/SyncTechWhiteLogo_bt3s0u.jpg"
                 alt="SyncTechn Logo"
                 className="w-15 h-15"
               />
-              <span className="text-2xl font-bold tracking-tight text-slate-900">
-                Sync<span className="text-blue-600">Techn</span>
+              <span className="text-2xl font-bold tracking-tight text-blue-800">
+                Sync<span className="text-cyan-400">Techn</span>
               </span>
             </a>
 

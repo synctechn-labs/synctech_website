@@ -40,7 +40,7 @@ const About: React.FC = () => {
         {/* Main Globe */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100vw] h-[100vw] md:w-[48vw] md:h-[48vw] rounded-full animate-globe">
 
-          <div className="relative w-full h-full rounded-full overflow-hidden bg-[radial-gradient(circle_at_30%_30%,_var(--tw-gradient-stops))] from-blue-200 via-blue-300 to-blue-500 shadow-[0_30px_120px_rgba(37,99,235,0.25)]">
+          <div className="border-t-[3px] border-blue-400 shadow-[0_-5px_30px_rgba(59,130,246,0.4)] relative w-full h-full rounded-full overflow-hidden bg-[radial-gradient(circle_at_30%_30%,_var(--tw-gradient-stops))] from-blue-500 via-blue-300 to-blue-500 shadow-[0_30px_120px_rgba(37,99,235,0.25)]">
 
             <div className="absolute top-[-10%] left-[-10%] w-[60%] h-[60%] bg-white/50 blur-[80px] rounded-full" />
 
@@ -67,7 +67,7 @@ const About: React.FC = () => {
             </Reveal>
 
             <Reveal delay={200}>
-              <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-slate-900">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-tight text-blue-800">
 
                 Building
                 <br />
@@ -77,7 +77,6 @@ const About: React.FC = () => {
                 </span>
 
                 <br />
-
                 Digital Solutions
 
               </h2>
@@ -204,24 +203,16 @@ const About: React.FC = () => {
             <div className="flex items-start gap-4">
 
               <div
-                className="
-                  w-14
-                  h-14
-                  rounded-2xl
-                  bg-gradient-to-br
-                  from-blue-600
-                  to-cyan-500
-                  flex
-                  items-center
-                  justify-center
-                  shadow-lg
-                  group-hover:scale-110
-                  transition-transform
-                  duration-300
-                "
-              >
-                <Icon className="w-7 h-7 text-white" />
-              </div>
+  className="
+    bg-white/80
+    backdrop-blur-xl
+    flex
+    items-center
+    justify-center
+  "
+>
+  <Icon className="w-7 h-7 text-blue-600" />
+</div>
 
               <div>
                 <h3 className="text-lg font-bold text-slate-900">

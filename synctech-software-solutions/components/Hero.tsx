@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[500px] bg-blue-100/70 blur-[120px] rounded-full" />
 
         {/* Floating Glow */}
-        <div className="absolute top-40 left-10 w-48 h-48 bg-blue-500/20 blur-3xl rounded-full animate-float" />
+        <div className="absolute top-40 left-10 w-48 h-40 bg-blue-500/20 blur-3xl rounded-full animate-float" />
 
         <div className="absolute bottom-32 right-10 w-64 h-64 bg-cyan-400/20 blur-3xl rounded-full animate-float-delay" />
 

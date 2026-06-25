@@ -65,7 +65,7 @@ const Operations: React.FC = () => {
             font-semibold
             uppercase
             tracking-[0.25em]
-            mb-6
+            mb-2
           "
         >
           Development Process
@@ -74,10 +74,10 @@ const Operations: React.FC = () => {
         <h2
           className="
             text-4xl
-            md:text-6xl
-            lg:text-7xl
+            md:text-4xl
+            lg:text-6xl
             font-bold
-            text-slate-900
+            text-blue-900
             leading-tight
           "
         >
@@ -87,7 +87,7 @@ const Operations: React.FC = () => {
           </span>
         </h2>
 
-        <p className="mt-8 text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto">
+        <p className="mt-3 text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto">
           At SyncTech Software Solutions, we follow a structured
           software development lifecycle that ensures transparency,
           faster delivery, scalable architecture, and exceptional
@@ -97,7 +97,7 @@ const Operations: React.FC = () => {
       </div>
     </Reveal>
 {/* PROCESS FLOW */}
-<div className="relative max-w-7xl mx-auto">
+<div className="relative max-w-7xl">
 
   {/* Background Glow */}
   <div className="absolute inset-0 pointer-events-none">
