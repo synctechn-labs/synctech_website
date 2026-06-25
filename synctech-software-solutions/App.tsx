@@ -71,17 +71,17 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
-          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
-          <Route path="/termsofservice" element={<TermsOfService />} />
-          <Route path="/cookiespolicy" element={<CookiesPolicy />} />
+          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+          <Route path="/TermsOfService" element={<TermsOfService />} />
+          <Route path="/CookiesPolicy" element={<CookiesPolicy />} />
           <Route path="/services">
-            <Route path="mobiledevelopment" element={<MobileDevelopment />} />
-            <Route path="webdevelopment" element={<WebDevelopment />} />
-            <Route path="digitalmarketing" element={<DigitalMarketing />} />
-            <Route path="crm" element={<CRMSolutions />} />
+            <Route path="MobileDevelopment" element={<MobileDevelopment />} />
+            <Route path="WebDevelopment" element={<WebDevelopment />} />
+            <Route path="DigitalMarketing" element={<DigitalMarketing />} />
+            <Route path="CRMSolutions" element={<CRMSolutions />} />
           </Route>
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/Careers" element={<Careers />} />
+          <Route path="/ContactUs" element={<ContactUs />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
