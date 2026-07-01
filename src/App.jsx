@@ -33,7 +33,7 @@ function App() {
         return () => clearTimeout(timer);
       }
     } else {
-      // Scroll to top on page change
+      // Scroll to top on page changes
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [hash, pathname]);
@@ -51,8 +51,8 @@ function App() {
             <Route path="MobileDevelopment" element={<MobileDevelopment />} />
             <Route path="WebDevelopment" element={<WebDevelopment />} />
             <Route path="DigitalMarketing" element={<DigitalMarketing />} />
-            <Route path="SoftwareDevelopment" element={<SoftwareDevelopment/>}/>
-            <Route path="AISolutions" element={<AISolutions/>}/>
+            <Route path="SoftwareDevelopment" element={<SoftwareDevelopment />} />
+            <Route path="AISolutions" element={<AISolutions />} />
             <Route path="crm" element={<CRMSolutions />} />
           </Route>
           <Route path="/Careers" element={<Careers />} />
