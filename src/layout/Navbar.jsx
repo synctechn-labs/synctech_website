@@ -16,6 +16,7 @@ const NAV_ITEMS = [
   { label: "Process", href: "#process" },
   { label: "Why Us", href: "#why-us" },
   { label: "About", href: "#about" },
+  { label: "Blog", href: "blog" },
   { label: "FAQ", href: "#faq" },
 ];
 

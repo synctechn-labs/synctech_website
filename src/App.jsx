@@ -14,6 +14,8 @@ import CRMSolutions from "./pages/services/CRMSolutions";
 import Careers from "./pages/Careers";
 import ContactUs from "./pages/ContactUs";
 import NotFound from "./pages/NotFound";
+import BlogList from "./pages/blog/BlogList";
+import BlogDetails from "./pages/blog/BlogDetails";
 
 function App() {
   const { hash, pathname } = useLocation();
@@ -51,6 +53,8 @@ function App() {
           </Route>
           <Route path="/Careers" element={<Careers />} />
           <Route path="/Contact" element={<ContactUs />} />
+          <Route path="/blog" element={<BlogList />} />
+          <Route path="/blog/:id" element={<BlogDetails />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
