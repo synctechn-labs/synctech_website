@@ -63,6 +63,22 @@ const Footer = () => {
                     CRM Solutions
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="/services/AISolutions"
+                    className="transition-colors duration-300 hover:text-blue-400"
+                  >
+                    AI Solutions
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/services/SoftwareDevelopment"
+                    className="transition-colors duration-300 hover:text-blue-400"
+                  >
+                    Software Development
+                  </a>
+                </li>
               </ul>
             </div>
 

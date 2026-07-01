@@ -198,7 +198,7 @@ const faqs = [
 
 
 
-export default function SoftwareDevelopment() {
+export default function AISolutions() {
   // Tab states for CRM interactive section
   const [activeTab, setActiveTab] = useState("cost");
 
