@@ -54,7 +54,7 @@ export const SERVICES = [
     comparison:
       "Custom mobile app development is more secure and scalable than ready-made app templates.",
     image:
-      "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1974&auto=format&fit=crop",
+      "https://res.cloudinary.com/fpgx4yvx/image/upload/v1783100469/mobile_rhgmpz.png",
   },
   {
     id: "web",
@@ -79,7 +79,7 @@ export const SERVICES = [
     comparison:
       "Custom website development delivers better performance and SEO results than template-based websites.",
     image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
+      "https://res.cloudinary.com/fpgx4yvx/image/upload/v1783100664/web_dxko4o.png",
   },
   {
     id: "marketing",
