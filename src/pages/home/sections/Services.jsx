@@ -254,13 +254,7 @@ const Services = () => {
                     <div className="absolute bottom-6 left-6 right-6 z-30">
                       <div className="backdrop-blur-md bg-white/90 p-5 rounded-xl border border-white/40 shadow-lg transform translate-y-4 group-hover/section:translate-y-0 transition-transform duration-500">
                         <div className="flex items-start gap-4">
-                          <div className="p-2 bg-primary-50 rounded-lg text-primary-600 shrink-0">
-                            <Zap
-                              size={20}
-                              fill="currentColor"
-                              className="opacity-75"
-                            />
-                          </div>
+                          
                           <div>
                             <h5 className="text-xs font-bold text-primary-600 uppercase tracking-wider mb-1">
                               Why Choose Custom?

@@ -39,18 +39,27 @@ const Navbar = () => {
 
   return (
     <>
+      {/* Blur effect for the top gap when scrolled */}
+      <div 
+        className={`fixed top-0 left-0 right-0 h-4 z-40 transition-all duration-500 ease-in-out pointer-events-none
+          ${isScrolled ? "bg-white/60 backdrop-blur-md opacity-100" : "bg-transparent opacity-0"}
+        `}
+      />
+
       <nav
-        className={`fixed z-50 transition-all duration-500 ease-out
+        className={`fixed z-50 transition-all duration-500 ease-in-out left-0 right-0 mx-auto border transform-gpu
           ${
             isScrolled
-              ? "top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl bg-white/75 backdrop-blur-xl border border-white/30 rounded-2xl shadow-[0_8px_32px_rgba(31,38,135,0.15)]"
-              : "top-0 left-0 w-full bg-transparent"
+              ? "top-4 w-[95%] max-w-7xl bg-white/75 backdrop-blur-xl border-white/30 rounded-2xl shadow-[0_8px_32px_rgba(31,38,135,0.15)]"
+              : "top-0 w-full max-w-full bg-transparent border-transparent rounded-none"
           }
         `}
       >
-        {isScrolled && (
-          <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500/5 via-cyan-500/10 to-blue-500/5 pointer-events-none" />
-        )}
+        <div 
+          className={`absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500/5 via-cyan-500/10 to-blue-500/5 pointer-events-none transition-opacity duration-500
+            ${isScrolled ? "opacity-100" : "opacity-0"}
+          `} 
+        />
 
         <div className="relative container mx-auto px-6 lg:px-10">
           <div className="flex items-center justify-between h-[64px]">
@@ -76,14 +85,14 @@ const Navbar = () => {
                     >
                       <Link
                         to={isHomePage ? item.href : `/${item.href}`}
-                        className="relative px-5 h-full flex items-center text-slate-700 font-semibold transition-all duration-300 hover:text-blue-600"
+                        className="relative px-5 h-full flex items-center font-semibold transition-all duration-300 text-slate-700 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-600"
                       >
                         {item.label}
                         <ChevronDown
                           size={16}
-                          className="ml-1 transition-transform group-hover:rotate-180"
+                          className="ml-1 text-slate-400 group-hover:text-blue-500 transition-transform duration-300 group-hover:rotate-180"
                         />
-                        <span className="absolute bottom-0 left-1/2 h-[3px] w-0 bg-blue-600 transition-all duration-300 group-hover:w-full group-hover:left-0" />
+                        <span className="absolute bottom-0 left-1/2 h-[3px] w-0 bg-gradient-to-r from-cyan-500 to-blue-600 transition-all duration-300 group-hover:w-full group-hover:left-0" />
                       </Link>
 
                       <div className="absolute top-[64px] left-0 mt-0 w-64 bg-white/95 backdrop-blur-xl border border-slate-100 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 overflow-hidden">
@@ -110,10 +119,10 @@ const Navbar = () => {
                   <Link
                     key={item.label}
                     to={targetPath}
-                    className="relative px-5 h-full flex items-center text-slate-700 font-semibold transition-all duration-300 hover:text-blue-600 group"
+                    className="relative px-5 h-full flex items-center font-semibold transition-all duration-300 text-slate-700 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-600 group"
                   >
                     {item.label}
-                    <span className="absolute bottom-0 left-1/2 h-[3px] w-0 bg-blue-600 transition-all duration-300 group-hover:w-full group-hover:left-0" />
+                    <span className="absolute bottom-0 left-1/2 h-[3px] w-0 bg-gradient-to-r from-cyan-500 to-blue-600 transition-all duration-300 group-hover:w-full group-hover:left-0" />
                   </Link>
                 );
               })}

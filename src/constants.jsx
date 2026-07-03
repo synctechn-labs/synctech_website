@@ -104,7 +104,7 @@ export const SERVICES = [
     comparison:
       "Professional digital marketing delivers long-term growth compared to short-term boosting ads.",
     image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+      "https://res.cloudinary.com/fpgx4yvx/image/upload/v1783099194/Digital_Marketing_ctzpd4.png",
   },
   {
     id: "crm",
@@ -129,7 +129,7 @@ export const SERVICES = [
     comparison:
       "Custom CRM portals are more flexible and powerful than Excel sheets or off-the-shelf CRM tools.",
     image:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop",
+      "https://res.cloudinary.com/fpgx4yvx/image/upload/v1783099452/CRM_o9xznf.png",
   },
 ];
 
