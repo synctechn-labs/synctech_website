@@ -247,25 +247,7 @@ const Services = () => {
                       className="relative w-full h-full object-cover transform group-hover/section:scale-105 transition-transform duration-700 z-10"
                     />
 
-                    {/* Gradient Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent z-20"></div>
 
-                    {/* Comparison Box */}
-                    <div className="absolute bottom-6 left-6 right-6 z-30">
-                      <div className="backdrop-blur-md bg-white/90 p-5 rounded-xl border border-white/40 shadow-lg transform translate-y-4 group-hover/section:translate-y-0 transition-transform duration-500">
-                        <div className="flex items-start gap-4">
-                          
-                          <div>
-                            <h5 className="text-xs font-bold text-primary-600 uppercase tracking-wider mb-1">
-                              Why Choose Custom?
-                            </h5>
-                            <p className="text-slate-700 text-sm leading-relaxed">
-                              {service.comparison}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </Reveal>
               </div>

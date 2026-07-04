@@ -33,7 +33,7 @@ export const NAV_ITEMS = [
 export const SERVICES = [
   {
     id: "mobile",
-    title: "Mobile App Development",
+    title: <a href='services/MobileDevelopment' className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">Mobile App Development</a>,
     icon: Smartphone,
     shortDesc:
       "We build high-performance Android and iOS mobile applications tailored to your business goals.",
@@ -58,7 +58,7 @@ export const SERVICES = [
   },
   {
     id: "web",
-    title: "Website Development",
+    title: <a href='services/WebDevelopment' className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">Website Development</a>,
     icon: Globe,
     shortDesc:
       "Professional Website Development Services designed to convert visitors into customers.",
@@ -83,7 +83,7 @@ export const SERVICES = [
   },
   {
     id: "marketing",
-    title: "Digital Marketing",
+    title: <a href='services/DigitalMarketing' className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">Digital Marketing</a>,
     icon: Megaphone,
     shortDesc:
       "Result-Driven Digital Marketing Services focusing on traffic growth and ROI.",
@@ -108,7 +108,7 @@ export const SERVICES = [
   },
   {
     id: "crm",
-    title: "CRM Portal Development",
+    title: <a href='services/CrmDevelopment' className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">CRM Portal Development</a>,
     icon: Database,
     shortDesc:
       "Custom CRM Portal Development Company for efficient operations.",
