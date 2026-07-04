@@ -25,7 +25,7 @@ import {
 
 export const NAV_ITEMS = [
   { label: "Services", href: "#services" },
-  { label: "Process", href: "#process" },
+  { label: "Process", href: "process" },
   { label: "Portfolio", href: "#portfolio" },
   { label: "FAQ", href: "#faq" },
 ];
