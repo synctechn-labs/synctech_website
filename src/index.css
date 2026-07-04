@@ -32,6 +32,7 @@
 ========================== */
 
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0px);
@@ -53,6 +54,7 @@
 }
 
 @keyframes glow {
+
   0%,
   100% {
     opacity: 0.4;
@@ -102,12 +104,10 @@
 
   /* Gradient Text */
   .gradient-text {
-    background: linear-gradient(
-      90deg,
-      #1d4ed8,
-      #0ea5e9,
-      #38bdf8
-    );
+    background: linear-gradient(90deg,
+        #1d4ed8,
+        #0ea5e9,
+        #38bdf8);
     background-size: 200% auto;
 
     -webkit-background-clip: text;
@@ -154,7 +154,7 @@
 
     box-shadow:
       0 8px 32px rgba(59, 130, 246, 0.1),
-      inset 0 1px 0 rgba(255,255,255,0.4);
+      inset 0 1px 0 rgba(255, 255, 255, 0.4);
   }
 
   .glass-pill::before {
@@ -167,12 +167,10 @@
     width: 60%;
     height: 100%;
 
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(255,255,255,0.5),
-      transparent
-    );
+    background: linear-gradient(90deg,
+        transparent,
+        rgba(255, 255, 255, 0.5),
+        transparent);
 
     animation: shine 6s linear infinite;
   }
@@ -200,19 +198,46 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    to bottom,
-    #2563eb,
-    #0ea5e9
-  );
+  background: linear-gradient(to bottom,
+      #2563eb,
+      #0ea5e9);
 
   border-radius: 999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(
-    to bottom,
-    #1d4ed8,
-    #0284c7
-  );
+  background: linear-gradient(to bottom,
+      #1d4ed8,
+      #0284c7);
+}
+
+@keyframes phone-shake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(-15deg);
+  }
+
+  40% {
+    transform: rotate(15deg);
+  }
+
+  60% {
+    transform: rotate(-10deg);
+  }
+
+  80% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.phone-shake-hover:hover .phone-icon {
+  animation: phone-shake 0.5s ease-in-out;
+  transform-origin: center;
 }

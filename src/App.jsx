@@ -18,6 +18,9 @@ import ContactUs from "./pages/ContactUs";
 import NotFound from "./pages/NotFound";
 import BlogList from "./pages/blog/BlogList";
 import BlogDetails from "./pages/blog/BlogDetails";
+import ProcessPage from "./pages/ProcessPage";
+import AboutPage from "./pages/AboutPage";
+import WhyChooseUsPage from "./pages/WhyChooseUsPage";
 
 function App() {
   const { hash, pathname } = useLocation();
@@ -55,6 +58,9 @@ function App() {
             <Route path="AISolutions" element={<AISolutions />} />
             <Route path="crm" element={<CRMSolutions />} />
           </Route>
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/whyChooseUs" element={<WhyChooseUsPage />} />
+          <Route path="/process" element={<ProcessPage />} />
           <Route path="/Careers" element={<Careers />} />
           <Route path="/Contact" element={<ContactUs />} />
           <Route path="/blog" element={<BlogList />} />

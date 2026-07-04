@@ -1,26 +1,26 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import { Phone } from "lucide-react";
 
 const NAV_ITEMS = [
   {
     label: "Services",
     href: "services",
     subItems: [
-      {label: "Software Development", href:"services/SoftwareDevelopment"},
+      { label: "Software Development", href: "services/SoftwareDevelopment" },
       { label: "Mobile Development", href: "services/MobileDevelopment" },
       { label: "Web Development", href: "services/WebDevelopment" },
       { label: "Digital Marketing", href: "services/DigitalMarketing" },
       { label: "CRM Solutions", href: "services/crm" },
-      {label:"AISolutions" ,href:"services/AISolutions"}
-      
+      { label: "AISolutions", href: "services/AISolutions" }
+
     ],
   },
-  { label: "Process", href: "#process" },
-  { label: "Why Us", href: "#why-us" },
-  { label: "About", href: "#about" },
-  // { label: "Blog", href: "blog" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Blog", href: "blog" },
+  { label: "About", href: "about" },
+  { label: "Process", href: "process" },
+  { label: "Why Us", href: "whyChooseUs" },
 ];
 
 const Navbar = () => {
@@ -47,11 +47,10 @@ const Navbar = () => {
       />
 
       <nav
-        className={`fixed z-50 transition-all duration-500 ease-in-out left-0 right-0 mx-auto border transform-gpu
-          ${
-            isScrolled
-              ? "top-4 w-[95%] max-w-7xl bg-white/75 backdrop-blur-xl border-white/30 rounded-2xl shadow-[0_8px_32px_rgba(31,38,135,0.15)]"
-              : "top-0 w-full max-w-full bg-transparent border-transparent rounded-none"
+        className={`fixed z-50 transition-all duration-500 ease-out
+          ${isScrolled
+            ? "top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl bg-white/75 backdrop-blur-xl border border-white/30 rounded-2xl shadow-[0_8px_32px_rgba(31,38,135,0.15)]"
+            : "top-0 left-0 w-full bg-transparent"
           }
         `}
       >
@@ -131,9 +130,12 @@ const Navbar = () => {
             <div className="hidden lg:block">
               <Link
                 to="/contact"
-                className="px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+                className="phone-shake-hover group flex items-center gap-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 px-5 py-2.5 font-semibold text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
               >
-                Contact Us
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center">
+                  <Phone size={18} strokeWidth={2.2} className="phone-icon text-white" />
+                </span>
+                <span>Contact Us</span>
               </Link>
             </div>
 
@@ -194,13 +196,16 @@ const Navbar = () => {
                   </Link>
                 );
               })}
-              <div className="px-6 py-4">
+              <div className="px-6 py-5">
                 <Link
                   to="/contact"
                   onClick={() => setIsOpen(false)}
-                  className="block text-center py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold"
+                  className="phone-shake-hover group flex items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 px-5 py-3 font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-lg"
                 >
-                  Contact Us
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/15">
+                    <Phone size={18} strokeWidth={2.2} className="phone-icon text-white" />
+                  </span>
+                  <span>Contact Us</span>
                 </Link>
               </div>
             </div>
