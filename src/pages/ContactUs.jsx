@@ -218,7 +218,9 @@ const ContactUs = () => {
             <Mail size={18} />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/synctech-software-solution/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-700 transition-colors bg-blue-50 p-2 rounded-xl"
           >
             <Linkedin size={18} />
@@ -230,7 +232,9 @@ const ContactUs = () => {
             <Twitter size={18} />
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/synctech_software_solution/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-700 transition-colors bg-blue-50 p-2 rounded-xl"
           >
             <Instagram size={18} />

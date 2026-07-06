@@ -1,5 +1,5 @@
 import React from "react";
-import { Facebook, Instagram, Mail } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
 import { NAV_ITEMS } from "../constants";
 
 const Footer = () => {
@@ -155,7 +155,17 @@ const Footer = () => {
                   <Facebook size={18} />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/synctech-software-solution/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
+                >
+                  <Linkedin size={18} />
+                </a>
+                <a
+                  href="https://www.instagram.com/synctech_software_solution/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
                 >
                   <Instagram size={18} />
