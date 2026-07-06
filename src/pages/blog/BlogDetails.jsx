@@ -216,12 +216,12 @@ export default function BlogDetails() {
           </div>
 
           {/* Right cover column */}
-          <div className="lg:col-span-5 relative z-10">
-            <div className="relative aspect-video lg:aspect-[4/3] rounded-2xl overflow-hidden shadow-md border border-slate-100 group">
+          <div className="lg:col-span-5 relative z-10 flex items-center">
+            <div className="relative w-full rounded-2xl overflow-hidden shadow-md border border-slate-100 group bg-slate-50/50 flex justify-center">
               <img
                 src={blog.coverImage}
                 alt={blog.title}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-auto max-h-[400px] object-contain transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/5 to-transparent pointer-events-none" />
             </div>
@@ -479,11 +479,11 @@ export default function BlogDetails() {
                   case "image":
                     return (
                       <div key={index} className="my-8 space-y-2">
-                        <div className="rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-video max-h-[450px]">
+                        <div className="rounded-2xl overflow-hidden shadow-lg border border-slate-100 flex justify-center bg-slate-50/50">
                           <img
                             src={block.url}
                             alt={block.caption || "Blog illustration"}
-                            className="w-full h-full object-cover"
+                            className="w-full h-auto max-h-[550px] object-contain"
                             loading="lazy"
                           />
                         </div>

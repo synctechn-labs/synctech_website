@@ -19,7 +19,7 @@ const NAV_ITEMS = [
   { label: "Process", href: "process" },
   { label: "Why Us", href: "whyChooseUs" },
   { label: "About", href: "about" },
-  // { label: "Blog", href: "blog" },
+  { label: "Blog", href: "blog" },
   { label: "FAQ", href: "#faq" },
 ];
 
