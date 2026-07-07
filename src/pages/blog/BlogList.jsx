@@ -107,6 +107,8 @@ export default function BlogList() {
               return (
                 <Link
                   to={`/blog/${latestBlog.id}/`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group relative bg-white rounded-[32px] overflow-hidden border border-slate-100 hover:border-blue-200 shadow-sm hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300 flex flex-col lg:flex-row"
                 >
                   {/* Left: Image */}
@@ -154,6 +156,8 @@ export default function BlogList() {
                       <Link
                         key={blog.id}
                         to={`/blog/${blog.id}/`}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="group flex flex-col md:flex-row gap-8 bg-transparent hover:bg-white/60 p-4 -m-4 rounded-3xl transition-all duration-300 items-start md:items-center"
                       >
                         {/* Image Thumbnail */}
