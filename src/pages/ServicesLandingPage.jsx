@@ -840,7 +840,7 @@ const ServicesLandingPage = () => {
                   </ul>
                 </div>
                 <Link
-                  to="/services/WebDevelopment"
+                  to="/services/web-development"
                   className="inline-flex items-center gap-2 text-sm font-bold text-blue-600 group/link"
                 >
                   Explore Web Solutions
@@ -888,7 +888,7 @@ const ServicesLandingPage = () => {
                   </ul>
                 </div>
                 <Link
-                  to="/services/MobileDevelopment"
+                  to="/services/mobile-development"
                   className="inline-flex items-center gap-2 text-sm font-bold text-blue-600 group/link"
                 >
                   Explore Mobile Apps
@@ -984,7 +984,7 @@ const ServicesLandingPage = () => {
                   </ul>
                 </div>
                 <Link
-                  to="/services/DigitalMarketing"
+                  to="/services/digital-marketing"
                   className="inline-flex items-center gap-2 text-sm font-bold text-blue-600 group/link"
                 >
                   Explore Marketing Services

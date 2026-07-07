@@ -33,7 +33,7 @@ const Footer = () => {
               <ul className="space-y-3 text-sm font-medium text-slate-400">
                 <li>
                   <a
-                    href="/services/MobileDevelopment"
+                    href="/services/mobile-development"
                     className="transition-colors duration-300 hover:text-blue-400"
                   >
                     Mobile Development
@@ -41,7 +41,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="/services/WebDevelopment"
+                    href="/services/web-development"
                     className="transition-colors duration-300 hover:text-blue-400"
                   >
                     Web Development
@@ -49,7 +49,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="/services/DigitalMarketing"
+                    href="/services/digital-marketing"
                     className="transition-colors duration-300 hover:text-blue-400"
                   >
                     Digital Marketing
@@ -65,7 +65,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="/services/AISolutions"
+                    href="/services/ai-solutions"
                     className="transition-colors duration-300 hover:text-blue-400"
                   >
                     AI Solutions
@@ -73,7 +73,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="/services/SoftwareDevelopment"
+                    href="/services/software-development"
                     className="transition-colors duration-300 hover:text-blue-400"
                   >
                     Software Development

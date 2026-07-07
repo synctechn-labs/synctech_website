@@ -1,17 +1,17 @@
 const webDevelopmentRoadmap2026 = {
-  id: "web-development-roadmap-2026",
+  id: "modern-web-development-roadmap",
   title: "The Modern Web Development Roadmap: From Scratch to Production-Ready in 2026",
   description:
     "Explore the complete web development roadmap for 2026—from HTML, CSS, and JavaScript fundamentals to frameworks, APIs, deployment, AI-assisted development, and hiring insights for businesses.",
   date: "July 2, 2026",
   readTime: "12 min read",
   author: {
-    name: "Synctech Editorial Team",
-    role: "Web & Digital Strategy Experts",
+    name: "Sai Sabiksha B S",
+    role: "Founder",
     avatar:
-      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=200&auto=format&fit=crop"
+      "https://ui-avatars.com/api/?name=S&background=0D8ABC&color=fff&size=200"
   },
-  category: "Web Development",
+  category: "Software & Digital Transformation",
   coverImage:
     "https://res.cloudinary.com/wowukaao/image/upload/v1783357103/image_6_oex8u9.png",
   content: [

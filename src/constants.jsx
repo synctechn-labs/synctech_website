@@ -33,7 +33,7 @@ export const NAV_ITEMS = [
 export const SERVICES = [
   {
     id: "mobile",
-    title: <a href='services/MobileDevelopment' className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">Mobile App Development</a>,
+    title: <a href='services/mobile-development' className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">Mobile App Development</a>,
     icon: Smartphone,
     shortDesc:
       "We build high-performance Android and iOS mobile applications tailored to your business goals.",
@@ -58,7 +58,7 @@ export const SERVICES = [
   },
   {
     id: "web",
-    title: <a href='services/WebDevelopment' className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">Website Development</a>,
+    title: <a href='services/web-development' className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">Website Development</a>,
     icon: Globe,
     shortDesc:
       "Professional Website Development Services designed to convert visitors into customers.",
@@ -83,7 +83,7 @@ export const SERVICES = [
   },
   {
     id: "marketing",
-    title: <a href='services/DigitalMarketing' className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">Digital Marketing</a>,
+    title: <a href='services/digital-marketing' className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">Digital Marketing</a>,
     icon: Megaphone,
     shortDesc:
       "Result-Driven Digital Marketing Services focusing on traffic growth and ROI.",

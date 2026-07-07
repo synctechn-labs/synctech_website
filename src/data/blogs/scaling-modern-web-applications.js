@@ -5,9 +5,9 @@ const scalingModernWebApplications = {
   date: "June 25, 2026",
   readTime: "6 min read",
   author: {
-    name: "Sarah Jenkins",
-    role: "Principal Software Architect",
-    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop"
+    name: "Sai Sabiksha B S",
+    role: "Founder",
+    avatar: "https://ui-avatars.com/api/?name=S&background=0D8ABC&color=fff&size=200"
   },
   category: "Development",
   coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",

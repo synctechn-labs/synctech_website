@@ -1,19 +1,19 @@
 const prepareDataForMlApisGoogleCloudChallengeLab2026 = {
-  id: "prepare-data-for-ml-apis-google-cloud-challenge-lab-gsp323-solution",
+  id: "prepare-data-for-ml-apis-google-cloud-challenge-lab-solution",
   title: "Prepare Data for ML APIs on Google Cloud: Challenge Lab (GSP323) Solution Guide",
   description:
     "Solve the Prepare Data for ML APIs on Google Cloud Challenge Lab (GSP323) with a step-by-step guide covering Dataflow, Dataproc, Dataprep, Speech-to-Text, Natural Language API tasks, and the common grading errors that block progress.",
   date: "July 2, 2026",
   readTime: "13 min read",
   author: {
-    name: "Synctech Editorial Team",
-    role: "Cloud Learning & Google Cloud Lab Experts",
+    name: "Sai Sabiksha B S",
+    role: "Founder",
     avatar:
-      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=200&auto=format&fit=crop"
+      "https://ui-avatars.com/api/?name=S&background=0D8ABC&color=fff&size=200"
   },
-  category: "Google Cloud",
+  category: "Software & Digital Transformation",
   coverImage:
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop",
+    "https://res.cloudinary.com/wowukaao/image/upload/v1783355452/image1_namcax.png",
   content: [
     {
       type: "paragraph",
@@ -31,11 +31,11 @@ const prepareDataForMlApisGoogleCloudChallengeLab2026 = {
       text: "What Is the Prepare Data for ML APIs on Google Cloud Challenge Lab?",
       id: "what-is-prepare-data-ml-apis"
     },
-    {
-      type: "image",
-      url: "https://res.cloudinary.com/wowukaao/image/upload/v1783355452/image1_namcax.png",
-      caption: "Prepare Data for ML APIs on Google Cloud Challenge Lab"
-    },
+    // {
+    //   type: "image",
+    //   url: "https://res.cloudinary.com/wowukaao/image/upload/v1783355452/image1_namcax.png",
+    //   caption: "Prepare Data for ML APIs on Google Cloud Challenge Lab"
+    // },
     {
       type: "heading",
       level: 2,

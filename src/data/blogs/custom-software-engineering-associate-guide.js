@@ -1,17 +1,17 @@
 const customSoftwareEngineeringAssociateGuide2026 = {
-  id: "custom-software-engineering-associate-guide-2026",
+  id: "custom-software-engineering-associate-guide",
   title: "The Ultimate Career Guide for a Custom Software Engineering Associate (2026)",
   description:
     "Learn what a Custom Software Engineering Associate does, the technical skills required, salary expectations, interview questions, and how to prepare for entry-level enterprise software engineering roles in 2026.",
   date: "July 2, 2026",
   readTime: "12 min read",
   author: {
-    name: "Synctech Editorial Team",
-    role: "Technology Careers & Software Strategy Experts",
+    name: "Sai Sabiksha B S",
+    role: "Founder",
     avatar:
-      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=200&auto=format&fit=crop"
+      "https://ui-avatars.com/api/?name=S&background=0D8ABC&color=fff&size=200"
   },
-  category: "Software Engineering Careers",
+  category: "Software & Digital Transformation",
   coverImage:
     "https://res.cloudinary.com/wowukaao/image/upload/v1783357093/image_4_xj1pqd.png",
   content: [

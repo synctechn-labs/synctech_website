@@ -5,9 +5,9 @@ const mobileAppDesignTrends = {
   date: "June 29, 2026",
   readTime: "5 min read",
   author: {
-    name: "Elena Rostova",
-    role: "Lead UI/UX Designer",
-    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop"
+    name: "Sai Sabiksha B S",
+    role: "Founder",
+    avatar: "https://ui-avatars.com/api/?name=S&background=0D8ABC&color=fff&size=200"
   },
   category: "Design",
   coverImage: "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1200&auto=format&fit=crop",

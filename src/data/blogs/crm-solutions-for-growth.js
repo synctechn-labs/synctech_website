@@ -5,9 +5,9 @@ const crmSolutionsForGrowth = {
   date: "June 29, 2026",
   readTime: "7 min read",
   author: {
-    name: "Marcus Vance",
-    role: "Director of CRM Solutions",
-    avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop"
+    name: "Sai Sabiksha B S",
+    role: "Founder",
+    avatar: "https://ui-avatars.com/api/?name=S&background=0D8ABC&color=fff&size=200"
   },
   category: "Development",
   coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop",

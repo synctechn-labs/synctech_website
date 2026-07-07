@@ -51,11 +51,11 @@ function App() {
           <Route path="/CookiesPolicy" element={<CookiesPolicy />} />
           <Route path="/services">
             <Route index element={<ServicesLandingPage />} />
-            <Route path="MobileDevelopment" element={<MobileDevelopment />} />
-            <Route path="WebDevelopment" element={<WebDevelopment />} />
-            <Route path="DigitalMarketing" element={<DigitalMarketing />} />
-            <Route path="SoftwareDevelopment" element={<SoftwareDevelopment />} />
-            <Route path="AISolutions" element={<AISolutions />} />
+            <Route path="mobile-development" element={<MobileDevelopment />} />
+            <Route path="web-development" element={<WebDevelopment />} />
+            <Route path="digital-marketing" element={<DigitalMarketing />} />
+            <Route path="software-development" element={<SoftwareDevelopment />} />
+            <Route path="ai-solutions" element={<AISolutions />} />
             <Route path="crm" element={<CRMSolutions />} />
           </Route>
           <Route path="/about" element={<AboutPage />} />

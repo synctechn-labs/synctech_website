@@ -7,20 +7,20 @@ const NAV_ITEMS = [
     label: "Services",
     href: "services",
     subItems: [
-      {label: "Software Development", href:"services/SoftwareDevelopment"},
-      { label: "Mobile Development", href: "services/MobileDevelopment" },
-      { label: "Web Development", href: "services/WebDevelopment" },
-      { label: "Digital Marketing", href: "services/DigitalMarketing" },
+      {label: "Software Development", href:"services/software-development"},
+      { label: "Mobile Development", href: "services/mobile-development" },
+      { label: "Web Development", href: "services/web-development" },
+      { label: "Digital Marketing", href: "services/digital-marketing" },
       { label: "CRM Solutions", href: "services/crm" },
-      {label:"AISolutions" ,href:"services/AISolutions"}
+      {label:"AI Solutions" ,href:"services/ai-solutions"}
       
     ],
   },
   { label: "Process", href: "process" },
   { label: "Why Us", href: "whyChooseUs" },
-  { label: "About", href: "about" },
   { label: "Blog", href: "blog" },
-  { label: "FAQ", href: "#faq" },
+  { label: "About", href: "about" },
+  // { label: "FAQ", href: "#faq" },
 ];
 
 const Navbar = () => {
