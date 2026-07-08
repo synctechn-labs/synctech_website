@@ -334,7 +334,7 @@ export default function CookiesPolicy() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <motion.a
-                  href="/contact"
+                  href="/contact-us"
                   whileHover={{
                     scale: 1.05,
                     boxShadow: "0 20px 40px rgba(37,99,235,0.25)",

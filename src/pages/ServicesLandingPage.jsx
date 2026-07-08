@@ -503,7 +503,7 @@ const ServicesLandingPage = () => {
                     Try Project Estimator
                   </a>
                   <Link
-                    to="/contact"
+                    to="/contact-us"
                     className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white border border-slate-200 text-slate-700 font-bold hover:bg-slate-50 transition-all duration-300 hover:border-slate-300 text-center"
                   >
                     Schedule Free Audit
@@ -1283,7 +1283,7 @@ const ServicesLandingPage = () => {
           <Reveal delay={200}>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
               <Link
-                to="/contact"
+                to="/contact-us"
                 className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white text-blue-700 font-bold hover:bg-blue-50 shadow-lg hover:shadow-xl hover:scale-[1.03] transition-all duration-300 text-center"
               >
                 Schedule Free Consultation

@@ -310,7 +310,7 @@ const Services = () => {
                     </div>
 
                     <Link
-                      to="/contact"
+                      to="/contact-us"
                       className="group inline-flex items-center gap-3 text-slate-900 font-semibold border-b border-primary-500 pb-1 hover:text-primary-600 transition-colors"
                     >
                       Start Project{" "}

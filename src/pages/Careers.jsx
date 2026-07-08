@@ -115,7 +115,7 @@ const Careers = () => {
 
             <motion.div variants={fadeIn} className="flex justify-center">
               <Link
-                to="/contact"
+                to="/contact-us"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-blue-600 text-white font-semibold text-lg transition-all duration-300 hover:bg-blue-700 hover:shadow-[0_10px_20px_rgba(37,99,235,0.3)] hover:-translate-y-1"
               >
                 Contact Us
@@ -311,7 +311,7 @@ const Careers = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
-              to="/contact"
+              to="/contact-us"
               className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-all shadow-md hover:shadow-xl hover:-translate-y-1"
             >
               Contact Us

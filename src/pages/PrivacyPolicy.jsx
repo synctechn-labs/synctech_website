@@ -256,7 +256,7 @@ export default function PrivacyPolicy() {
             </div>
 
             <a
-              href="/contact"
+              href="/contact-us"
               className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-slate-950 text-white font-semibold shadow-xl hover:scale-105 transition"
             >
               Contact Us

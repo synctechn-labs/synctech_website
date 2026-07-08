@@ -558,7 +558,7 @@ export default function BlogDetails() {
                 </p>
                 <div className="pt-2">
                   <Link
-                    to="/contact"
+                    to="/contact-us"
                     className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold transition-all shadow-md shadow-blue-600/10 hover:shadow-lg hover:shadow-blue-600/20 active:scale-95"
                   >
                     Schedule a Consultation

@@ -438,7 +438,7 @@ export default function WebDevelopment() {
 
               <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">
                 <a
-                  href="/contact"
+                  href="/contact-us"
                   className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-8 py-4 text-white font-semibold shadow-lg hover:bg-blue-700 hover:scale-[1.03] transition-all duration-300"
                 >
                   Get Free Consultation
@@ -652,7 +652,7 @@ export default function WebDevelopment() {
                   Ready to optimize your business platform to a perfect 100/100 Core Web Vitals score?
                 </p>
                 <Link
-                  to={`/contact?service=Custom%20Web%20Development&source=Lighthouse%20Optimizer&optimizedScore=${lighthouseScore}`}
+                  to={`/contact-us?service=Custom%20Web%20Development&source=Lighthouse%20Optimizer&optimizedScore=${lighthouseScore}`}
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-750 px-6 py-3.5 text-white font-bold text-xs shadow-md transition-all hover:scale-[1.02] cursor-pointer"
                 >
                   Get 100/100 Speed Score
@@ -722,7 +722,7 @@ export default function WebDevelopment() {
                   Need a secure database architecture or multi-region cloud deployment?
                 </p>
                 <Link
-                  to={`/contact?service=Custom%20Web%20Development&source=Tech%20Stack%20Configurator&stack=${selectedStack}`}
+                  to={`/contact-us?service=Custom%20Web%20Development&source=Tech%20Stack%20Configurator&stack=${selectedStack}`}
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-750 px-6 py-3.5 text-white font-bold text-xs shadow-md transition-all hover:scale-[1.02] cursor-pointer"
                 >
                   Build Custom Web Stack
@@ -1137,7 +1137,7 @@ export default function WebDevelopment() {
 
           <div className="flex flex-wrap justify-center gap-4 mt-10">
             <a
-              href="/contact"
+              href="/contact-us"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-8 py-4 text-white font-semibold transition-all duration-300 hover:bg-blue-700 hover:scale-105"

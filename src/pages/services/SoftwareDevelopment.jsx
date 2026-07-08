@@ -311,7 +311,7 @@ export default function SoftwareDevelopment() {
 
         <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">
           <a
-            href="/contact"
+            href="/contact-us"
             className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-8 py-4 text-white font-semibold shadow-lg hover:bg-blue-700 hover:scale-[1.03] transition-all duration-300"
           >
             Get Free Consultation
@@ -573,7 +573,7 @@ export default function SoftwareDevelopment() {
               </div>
 
               <Link
-                to="/contact"
+                to="/contact-us"
                 className="mt-6 inline-flex items-center gap-2 rounded-xl bg-cyan-400 px-6 py-4 text-slate-900 font-bold hover:bg-cyan-300"
               >
                 Get Detailed Quote
@@ -656,7 +656,7 @@ export default function SoftwareDevelopment() {
             </p>
 
             <Link
-              to="/contact"
+              to="/contact-us"
               className="inline-flex mt-10 items-center gap-2 bg-white text-blue-700 px-6 py-4 rounded-xl font-bold hover:bg-blue-50"
             >
               Discuss My Project
@@ -1179,7 +1179,7 @@ export default function SoftwareDevelopment() {
 
     <div className="flex flex-wrap justify-center gap-4 mt-10">
       <a
-        href="/contact"
+        href="/contact-us"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-8 py-4 text-white font-semibold transition-all duration-300 hover:bg-blue-700 hover:scale-105"

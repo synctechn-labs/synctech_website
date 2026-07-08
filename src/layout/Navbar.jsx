@@ -85,6 +85,9 @@ const Navbar = () => {
                     >
                       <Link
                         to={isHomePage ? item.href : `/${item.href}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        
                         className="relative px-5 h-full flex items-center font-semibold transition-all duration-300 text-slate-700 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-600"
                       >
                         {item.label}
@@ -103,6 +106,7 @@ const Navbar = () => {
                               to={`/${subItem.href}`}
                               target="_blank"
                               rel="noopener noreferrer"
+                              
                               className="block px-5 py-3 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50/50 transition-colors"
                             >
                               {subItem.label}
@@ -119,6 +123,9 @@ const Navbar = () => {
                   <Link
                     key={item.label}
                     to={targetPath}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    
                     className="relative px-5 h-full flex items-center font-semibold transition-all duration-300 text-slate-700 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-600 group"
                   >
                     {item.label}
@@ -130,7 +137,8 @@ const Navbar = () => {
 
             <div className="hidden lg:block">
               <Link
-                to="/contact"
+                to="/contact-us"
+                
                 className="px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
               >
                 Contact Us
@@ -159,7 +167,10 @@ const Navbar = () => {
                       <div className="px-6 py-4 flex items-center justify-between text-slate-700 font-medium hover:bg-blue-50 hover:text-blue-600 transition-all">
                         <Link
                           to={isHomePage ? item.href : `/${item.href}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           onClick={() => setIsOpen(false)}
+                          
                         >
                           {item.label}
                         </Link>
@@ -172,6 +183,7 @@ const Navbar = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => setIsOpen(false)}
+                            
                             className="px-10 py-3 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 transition-colors"
                           >
                             {subItem.label}
@@ -187,7 +199,10 @@ const Navbar = () => {
                   <Link
                     key={item.label}
                     to={targetPath}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={() => setIsOpen(false)}
+                    
                     className="px-6 py-4 text-slate-700 font-medium border-b border-slate-100 hover:bg-blue-50 hover:text-blue-600 transition-all"
                   >
                     {item.label}
@@ -196,8 +211,9 @@ const Navbar = () => {
               })}
               <div className="px-6 py-4">
                 <Link
-                  to="/contact"
+                  to="/contact-us"
                   onClick={() => setIsOpen(false)}
+                  
                   className="block text-center py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold"
                 >
                   Contact Us

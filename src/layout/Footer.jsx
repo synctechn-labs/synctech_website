@@ -98,7 +98,7 @@ const Footer = () => {
                 ))}
                 <li>
                   <a
-                    href="/Careers"
+                    href="/careers"
                     className="transition-colors duration-300 hover:text-blue-400"
                   >
                     Careers
@@ -113,7 +113,7 @@ const Footer = () => {
               <ul className="space-y-3 text-sm font-medium text-slate-400">
                 <li>
                   <a
-                    href="/PrivacyPolicy"
+                    href="/privacy-policy"
                     className="transition-colors duration-300 hover:text-blue-400"
                   >
                     Privacy Policy
@@ -121,7 +121,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="/TermsOfService"
+                    href="/terms-of-Service"
                     className="transition-colors duration-300 hover:text-blue-400"
                   >
                     Terms of Service
@@ -129,7 +129,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="/CookiesPolicy"
+                    href="/cookies-policy"
                     className="transition-colors duration-300 hover:text-blue-400"
                   >
                     Cookie Policy

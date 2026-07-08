@@ -433,7 +433,7 @@ export default function CRMSolutions() {
 
               <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">
                 <a
-                  href="/contact"
+                  href="/contact-us"
                   className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-8 py-4 text-white font-semibold shadow-lg hover:bg-blue-700 hover:scale-[1.03] transition-all duration-300"
                 >
                   Get Free Consultation
@@ -658,7 +658,7 @@ export default function CRMSolutions() {
                   Need a custom sales funnel pipeline synced with your email or legacy databases?
                 </p>
                 <Link
-                  to={`/contact?service=Enterprise%20CRM%20Portal&source=Pipeline%20Sandbox&activeLeads=${leads.length}&pipelineValue=${totalPipeline}`}
+                  to={`/contact-us?service=Enterprise%20CRM%20Portal&source=Pipeline%20Sandbox&activeLeads=${leads.length}&pipelineValue=${totalPipeline}`}
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-750 px-6 py-3.5 text-white font-bold text-xs shadow-md transition-all hover:scale-[1.02] cursor-pointer"
                 >
                   Deploy Custom CRM Pipeline
@@ -752,7 +752,7 @@ export default function CRMSolutions() {
                     </div>
                     <div className="mt-6 pt-4 border-t border-white/10">
                       <Link
-                        to={`/contact?service=Enterprise%20CRM%20Portal&source=ROI%20Calculator&hoursSaved=${hoursSavedWithCRM}&savings=${savingsUSD}`}
+                        to={`/contact-us?service=Enterprise%20CRM%20Portal&source=ROI%20Calculator&hoursSaved=${hoursSavedWithCRM}&savings=${savingsUSD}`}
                         className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-cyan-400 hover:bg-cyan-300 px-6 py-3.5 text-slate-900 font-bold text-xs shadow-md transition-all hover:scale-[1.02] cursor-pointer"
                       >
                         Claim My CRM Savings
@@ -1134,7 +1134,7 @@ export default function CRMSolutions() {
 
           <div className="flex flex-wrap justify-center gap-4 mt-10">
             <a
-              href="/contact"
+              href="/contact-us"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-8 py-4 text-white font-semibold transition-all duration-300 hover:bg-blue-700 hover:scale-105"

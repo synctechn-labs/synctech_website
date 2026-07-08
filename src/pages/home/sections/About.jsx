@@ -110,7 +110,7 @@ const About = () => {
             <Reveal delay={700}>
               <div className="mt-10">
                 <Link
-                  to="/contact"
+                  to="/contact-us"
                   className="
                     group
                     inline-flex

@@ -46,9 +46,9 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
-          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
-          <Route path="/TermsOfService" element={<TermsOfService />} />
-          <Route path="/CookiesPolicy" element={<CookiesPolicy />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-Service" element={<TermsOfService />} />
+          <Route path="/cookies-policy" element={<CookiesPolicy />} />
           <Route path="/services">
             <Route index element={<ServicesLandingPage />} />
             <Route path="mobile-development" element={<MobileDevelopment />} />
@@ -61,8 +61,8 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/whyChooseUs" element={<WhyChooseUsPage />} />
           <Route path="/process" element={<ProcessPage />} />
-          <Route path="/Careers" element={<Careers />} />
-          <Route path="/Contact" element={<ContactUs />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/blog" element={<BlogList />} />
           <Route path="/blog/:id" element={<BlogDetails />} />
         </Route>

@@ -106,7 +106,7 @@ const Hero = () => {
           <Reveal delay={600}>
             <div className="flex flex-wrap justify-center gap-4 mt-12">
               <Link
-                to="/contact"
+                to="/contact-us"
                 className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-blue-700 to-cyan-500 text-white font-semibold shadow-xl hover:-translate-y-1 hover:shadow-blue-500/30 transition-all duration-300"
               >
                 Get Free Consultation

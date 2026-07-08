@@ -129,7 +129,7 @@ export default function BlogList() {
                       </span>
                     </div>
                     
-                    <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 group-hover:text-blue-600 transition-colors duration-300 mb-5 leading-tight">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-cyan-500 transition-all duration-300 mb-5 leading-tight">
                       {latestBlog.title}
                     </h2>
                     
@@ -137,8 +137,12 @@ export default function BlogList() {
                       {latestBlog.description}
                     </p>
                     
-                    <div className="flex items-center gap-4 mt-auto">
-                      <span className="text-slate-700 font-bold text-sm">{latestBlog.author.name}</span>
+                    <div className="flex items-center gap-3 mt-auto">
+                      <img src="https://ui-avatars.com/api/?name=S&background=0D8ABC&color=fff&size=200" alt="Sai Sabiksha" className="w-10 h-10 rounded-full" />
+                      <div className="flex flex-col">
+                        <span className="text-slate-900 font-bold text-sm">Sai Sabiksha</span>
+                        <span className="text-slate-500 text-xs">Founder</span>
+                      </div>
                     </div>
                   </div>
                 </Link>
@@ -178,7 +182,7 @@ export default function BlogList() {
                             </span>
                           </div>
                           
-                          <h4 className="text-2xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors duration-250 mb-3 leading-snug">
+                          <h4 className="text-2xl font-bold text-slate-900 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-cyan-500 transition-all duration-250 mb-3 leading-snug">
                             {blog.title}
                           </h4>
                           
@@ -186,9 +190,12 @@ export default function BlogList() {
                             {blog.description}
                           </p>
                           
-                          <div className="flex items-center gap-3 text-sm text-slate-500 font-medium mt-auto">
-                            <span className="text-slate-700">{blog.author.name}</span>
-                            <span className="text-slate-400">{blog.date}</span>
+                          <div className="flex items-center gap-3 mt-auto">
+                            <img src="https://ui-avatars.com/api/?name=S&background=0D8ABC&color=fff&size=200" alt="Sai Sabiksha" className="w-8 h-8 rounded-full" />
+                            <div className="flex flex-col">
+                              <span className="text-slate-900 font-bold text-sm">Sai Sabiksha</span>
+                              <span className="text-slate-500 text-xs">Founder • {blog.date}</span>
+                            </div>
                           </div>
                         </div>
                       </Link>
@@ -223,7 +230,7 @@ export default function BlogList() {
                         </div>
                         <button
                           type="submit"
-                          className="w-full bg-[#005187] hover:bg-blue-800 text-white font-bold py-3 px-4 rounded-xl transition-colors duration-300 mt-2 text-sm flex items-center justify-center gap-2 group"
+                          className="w-full bg-gradient-to-r from-blue-600 to-cyan-500 hover:opacity-90 text-white font-bold py-3 px-4 rounded-xl transition-all duration-300 mt-2 text-sm flex items-center justify-center gap-2 group"
                         >
                           Subscribe Now
                           <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />

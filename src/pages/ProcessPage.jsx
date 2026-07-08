@@ -280,7 +280,7 @@ const ProcessPage = () => {
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
-                href="/contact"
+                href="/contact-us"
                 className="inline-flex items-center justify-center rounded-xl bg-cyan-500 px-6 py-3.5 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400"
               >
                 Start Your Project
@@ -613,7 +613,7 @@ const ProcessPage = () => {
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a
-                href="/contact"
+                href="/contact-us"
                 className="inline-flex items-center justify-center rounded-xl bg-cyan-500 px-6 py-3.5 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400"
               >
                 Get a Free Consultation

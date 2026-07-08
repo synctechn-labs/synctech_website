@@ -490,7 +490,7 @@ export default function MobileDevelopment() {
 
               <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">
                 <a
-                  href="/contact"
+                  href="/contact-us"
                   className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-8 py-4 text-white font-semibold shadow-lg hover:bg-blue-700 hover:scale-[1.03] transition-all duration-300"
                 >
                   Get Free Consultation
@@ -657,7 +657,7 @@ export default function MobileDevelopment() {
                   Need a custom app developed for your brand with standard native guidelines?
                 </p>
                 <Link
-                  to={`/contact?service=Custom%20Mobile%20App&source=Smartphone%20Mockup&appType=${selectedMockupApp}`}
+                  to={`/contact-us?service=Custom%20Mobile%20App&source=Smartphone%20Mockup&appType=${selectedMockupApp}`}
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-750 px-6 py-3.5 text-white font-bold text-xs shadow-md transition-all hover:scale-[1.02] cursor-pointer"
                 >
                   Build My {APP_SCREENS[selectedMockupApp].title} App
@@ -769,7 +769,7 @@ export default function MobileDevelopment() {
                   </div>
                   <div className="mt-6 pt-4 border-t border-white/10">
                     <Link
-                      to={`/contact?service=Custom%20Mobile%20App&source=Platform%20Diagnostic&recommendation=${encodeURIComponent(recommendation.tech)}`}
+                      to={`/contact-us?service=Custom%20Mobile%20App&source=Platform%20Diagnostic&recommendation=${encodeURIComponent(recommendation.tech)}`}
                       className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-cyan-400 hover:bg-cyan-300 px-6 py-3.5 text-slate-900 font-bold text-xs shadow-md transition-all hover:scale-[1.02] cursor-pointer"
                     >
                       Request {recommendation.tech} Proposal
@@ -1179,7 +1179,7 @@ export default function MobileDevelopment() {
 
           <div className="flex flex-wrap justify-center gap-4 mt-10">
             <a
-              href="/contact"
+              href="/contact-us"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-8 py-4 text-white font-semibold transition-all duration-300 hover:bg-blue-700 hover:scale-105"

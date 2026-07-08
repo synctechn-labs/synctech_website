@@ -434,21 +434,21 @@ const ContactUs = () => {
           </p>
           <div className="flex items-center gap-3 text-[10px] font-bold text-blue-600">
             <a
-              href="/privacypolicy"
+              href="/privacy-policy"
               className="hover:text-blue-800 transition-colors"
             >
               Privacy Policy
             </a>
             <span className="text-slate-300">|</span>
             <a
-              href="/termsofservice"
+              href="/terms-of-Service"
               className="hover:text-blue-800 transition-colors"
             >
               Terms of Service
             </a>
             <span className="text-slate-300">|</span>
             <a
-              href="/cookiespolicy"
+              href="/cookies-policy"
               className="hover:text-blue-800 transition-colors"
             >
               Cookie Policy

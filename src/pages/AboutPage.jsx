@@ -183,7 +183,7 @@ const AboutPage = () => {
                             <Reveal delay={600}>
                                 <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                                     <Link
-                                        to="/contact"
+                                        to="/contact-us"
                                         className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 px-8 py-4 font-semibold text-white shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-blue-500/30"
                                     >
                                         Let&apos;s Build Together
@@ -490,7 +490,7 @@ const AboutPage = () => {
 
                             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
                                 <Link
-                                    to="/contact"
+                                    to="/contact-us"
                                     className="group inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 font-semibold text-blue-700 shadow-lg transition-all duration-300 hover:-translate-y-1"
                                 >
                                     Start Your Project

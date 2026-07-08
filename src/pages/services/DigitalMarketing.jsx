@@ -423,7 +423,7 @@ export default function DigitalMarketing() {
 
               <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">
                 <a
-                  href="/contact"
+                  href="/contact-us"
                   className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-8 py-4 text-white font-semibold shadow-lg hover:bg-blue-700 hover:scale-[1.03] transition-all duration-300"
                 >
                   Get Free Consultation
@@ -637,7 +637,7 @@ export default function DigitalMarketing() {
                     </div>
                     <div className="mt-6 pt-4 border-t border-white/10 text-center">
                       <Link
-                        to={`/contact?service=Result-Driven%20Digital%20Marketing&source=ROI%20Simulator&budget=${monthlyBudget}&channel=${channel}`}
+                        to={`/contact-us?service=Result-Driven%20Digital%20Marketing&source=ROI%20Simulator&budget=${monthlyBudget}&channel=${channel}`}
                         className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-cyan-400 hover:bg-cyan-300 px-6 py-3.5 text-slate-900 font-bold text-xs shadow-md transition-all hover:scale-[1.02] cursor-pointer"
                       >
                         Launch Simulated Campaign
@@ -730,7 +730,7 @@ export default function DigitalMarketing() {
                       Warning detected: Missing JSON-LD schema metadata reduces organic visibility. Want to optimize your code's technical SEO score?
                     </p>
                     <Link
-                      to={`/contact?service=Result-Driven%20Digital%20Marketing&source=SEO%20Scanner&auditUrl=${encodeURIComponent(auditUrl)}`}
+                      to={`/contact-us?service=Result-Driven%20Digital%20Marketing&source=SEO%20Scanner&auditUrl=${encodeURIComponent(auditUrl)}`}
                       className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-750 px-6 py-3.5 text-white font-bold text-xs shadow-md transition-all hover:scale-[1.02] cursor-pointer"
                     >
                       Fix My Technical SEO
@@ -1114,7 +1114,7 @@ export default function DigitalMarketing() {
 
           <div className="flex flex-wrap justify-center gap-4 mt-10">
             <a
-              href="/contact"
+              href="/contact-us"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-8 py-4 text-white font-semibold transition-all duration-300 hover:bg-blue-700 hover:scale-105"

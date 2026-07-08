@@ -461,7 +461,7 @@ const NotFound = () => {
             <ArrowLeft className="w-4 h-4" /> Go Back Home
           </Link>
           <Link
-            to="/contact"
+            to="/contact-us"
             className="w-full py-3.5 rounded-2xl bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 hover:text-slate-900 font-bold text-sm flex items-center justify-center gap-2 transition-colors cursor-pointer"
           >
             <MessageSquare className="w-4 h-4 text-blue-500" /> Contact Support

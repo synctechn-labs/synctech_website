@@ -12,6 +12,9 @@ import whatIsFlutterUsedFor from "./what-is-flutter-used-for.js";
 import ios2652Update from "./ios-update.js";
 import geminiAppIntegrationsAndroid from "./gemini-app-integrations-android.js";
 import reactNativeTutorialBeginners from "./react-native-tutorial-beginners.js";
+import aiVoiceCloningScamsBankingSafety from "./ai-voice-cloning-scams-banking-safety.js";
+import fordGlobalTechnologyBusinessCenter from "./ford-global-technology-business-center-chennai.js";
+import financialTechnologyTrends from "./financial-technology-trends.js";
 // Map of blogs keyed by their unique URL slug (id)
 export const blogs = {
 
@@ -25,6 +28,9 @@ export const blogs = {
   "ios-update": ios2652Update,
   "gemini-app-integrations-android": geminiAppIntegrationsAndroid,
   "react-native-tutorial-beginners": reactNativeTutorialBeginners,
+  "ai-voice-cloning-scams-banking-safety": aiVoiceCloningScamsBankingSafety,
+  "ford-global-technology-business-center-chennai": fordGlobalTechnologyBusinessCenter,
+  "financial-technology-trends": financialTechnologyTrends,
 };
 
 // Flat list of all blogs for the listing page
