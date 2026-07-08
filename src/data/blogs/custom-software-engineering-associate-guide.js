@@ -5,11 +5,11 @@ const customSoftwareEngineeringAssociateGuide2026 = {
     "Learn what a Custom Software Engineering Associate does, the technical skills required, salary expectations, interview questions, and how to prepare for entry-level enterprise software engineering roles in 2026.",
   date: "July 2, 2026",
   readTime: "12 min read",
-  author: {
-    name: "Sai Sabiksha B S",
+ author: {
+    name: "Sai Sabiksha ",
     role: "Founder",
     avatar:
-      "https://ui-avatars.com/api/?name=S&background=0D8ABC&color=fff&size=200"
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
   },
   category: "Software & Digital Transformation",
   coverImage:

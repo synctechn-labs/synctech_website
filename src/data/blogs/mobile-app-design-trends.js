@@ -5,9 +5,10 @@ const mobileAppDesignTrends = {
   date: "June 29, 2026",
   readTime: "5 min read",
   author: {
-    name: "Sai Sabiksha B S",
+    name: "Sai Sabiksha ",
     role: "Founder",
-    avatar: "https://ui-avatars.com/api/?name=S&background=0D8ABC&color=fff&size=200"
+    avatar:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
   },
   category: "Design",
   coverImage: "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1200&auto=format&fit=crop",

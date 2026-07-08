@@ -5,9 +5,10 @@ const crmSolutionsForGrowth = {
   date: "June 29, 2026",
   readTime: "7 min read",
   author: {
-    name: "Sai Sabiksha B S",
+    name: "Sai Sabiksha ",
     role: "Founder",
-    avatar: "https://ui-avatars.com/api/?name=S&background=0D8ABC&color=fff&size=200"
+    avatar:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
   },
   category: "Development",
   coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop",

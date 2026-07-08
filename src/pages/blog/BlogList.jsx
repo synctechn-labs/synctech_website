@@ -138,7 +138,7 @@ export default function BlogList() {
                     </p>
                     
                     <div className="flex items-center gap-3 mt-auto">
-                      <img src="https://ui-avatars.com/api/?name=S&background=0D8ABC&color=fff&size=200" alt="Sai Sabiksha" className="w-10 h-10 rounded-full" />
+                      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop" alt="Sai Sabiksha" className="w-10 h-10 rounded-full" />
                       <div className="flex flex-col">
                         <span className="text-slate-900 font-bold text-sm">Sai Sabiksha</span>
                         <span className="text-slate-500 text-xs">Founder</span>

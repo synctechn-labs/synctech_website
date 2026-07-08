@@ -6,10 +6,10 @@ const financialTechnologyTrends = {
   date: "July 6, 2026",
   readTime: "14 min read",
   author: {
-    name: "Synctech Editorial Team",
-    role: "Fintech Infrastructure & Digital Banking Analysts",
+    name: "Sai Sabiksha ",
+    role: "Founder",
     avatar:
-      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=200&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
   },
   category: "Software & Digital Transformation",
   coverImage: "https://res.cloudinary.com/wowukaao/image/upload/v1783529696/image_7_e6tfll.png",

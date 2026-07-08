@@ -6,10 +6,10 @@ const aiVoiceCloningScamsBankingSafety = {
   date: "July 6, 2026",
   readTime: "10 min read",
   author: {
-    name: "Synctech Editorial Team",
-    role: "Cybersecurity & Digital Banking Safety Writers",
+    name: "Sai Sabiksha ",
+    role: "Founder",
     avatar:
-      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=200&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
   },
   category: "AI development",
   coverImage:
