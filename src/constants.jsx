@@ -33,7 +33,7 @@ export const NAV_ITEMS = [
 export const SERVICES = [
   {
     id: "mobile",
-    title: <a href='services/mobile-development' className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">Mobile App Development</a>,
+    title: <a href='services/mobile-app-development' className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">Mobile App Development</a>,
     icon: Smartphone,
     shortDesc:
       "We build high-performance Android and iOS mobile applications tailored to your business goals.",

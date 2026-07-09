@@ -8,7 +8,7 @@ const NAV_ITEMS = [
     href: "services",
     subItems: [
       {label: "Software Development", href:"services/software-development"},
-      { label: "Mobile Development", href: "services/mobile-development" },
+      { label: "Mobile Development", href: "services/mobile-app-development" },
       { label: "Web Development", href: "services/web-development" },
       { label: "Digital Marketing", href: "services/digital-marketing" },
       { label: "CRM Solutions", href: "services/crm" },

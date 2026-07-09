@@ -51,7 +51,7 @@ function App() {
           <Route path="/cookies-policy" element={<CookiesPolicy />} />
           <Route path="/services">
             <Route index element={<ServicesLandingPage />} />
-            <Route path="mobile-development" element={<MobileDevelopment />} />
+            <Route path="mobile-app-development" element={<MobileDevelopment />} />
             <Route path="web-development" element={<WebDevelopment />} />
             <Route path="digital-marketing" element={<DigitalMarketing />} />
             <Route path="software-development" element={<SoftwareDevelopment />} />

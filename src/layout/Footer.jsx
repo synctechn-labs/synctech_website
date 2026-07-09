@@ -33,7 +33,7 @@ const Footer = () => {
               <ul className="space-y-3 text-sm font-medium text-slate-400">
                 <li>
                   <a
-                    href="/services/mobile-development"
+                    href="/services/mobile-app-development"
                     className="transition-colors duration-300 hover:text-blue-400"
                   >
                     Mobile Development

@@ -888,7 +888,7 @@ const ServicesLandingPage = () => {
                   </ul>
                 </div>
                 <Link
-                  to="/services/mobile-development"
+                  to="/services/mobile-app-development"
                   className="inline-flex items-center gap-2 text-sm font-bold text-blue-600 group/link"
                 >
                   Explore Mobile Apps
