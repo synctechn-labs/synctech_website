@@ -292,7 +292,7 @@ const CrmTechnologies = () => {
   }, [activeCategory, activeCategoryData]);
 
   return (
-    <section className="py-12 md:py-16 bg-[#F0F6FF] relative font-sans overflow-hidden">
+    <section className="py-12 md:py-16 bg-[#050505] relative font-sans overflow-hidden">
       {/* Ambient Radial Spotlight & Particles */}
       <div className="absolute top-[-10%] left-[20%] w-[600px] h-[600px] bg-blue-400/20 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-[-10%] right-[10%] w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none" />
@@ -304,10 +304,10 @@ const CrmTechnologies = () => {
           <span className="text-blue-600 font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-3 block">
             CRM Platforms
           </span>
-          <h2 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight mb-3">
+          <h2 className="text-3xl md:text-5xl font-black bg-gradient-to-r from-cyan-500 to-blue-600 text-transparent bg-clip-text tracking-tight mb-3 pb-2">
             Technology We Work With
           </h2>
-          <p className="text-base text-slate-500 font-medium max-w-2xl mx-auto">
+          <p className="text-base text-slate-300 font-medium max-w-2xl mx-auto">
             Powering Customer Relationships Through Intelligent Platforms
           </p>
         </div>
@@ -469,7 +469,7 @@ const CrmTechnologies = () => {
 
                         {/* Platform Description */}
                         <p
-                          className={`text-sm leading-relaxed transition-opacity duration-500 ${isCenter ? "text-slate-500 opacity-100" : "opacity-0"}`}
+                          className={`text-base font-medium leading-relaxed transition-opacity duration-500 ${isCenter ? "text-black opacity-100" : "opacity-0"}`}
                         >
                           {tech.desc}
                         </p>

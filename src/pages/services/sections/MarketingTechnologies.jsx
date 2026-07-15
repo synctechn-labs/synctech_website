@@ -291,17 +291,17 @@ const MarketingTechnologies = () => {
   }, [activeCategory, activeCategoryData]);
 
   return (
-    <section className="py-24 bg-[#F8FAFC] relative font-sans overflow-hidden">
+    <section className="py-24 bg-[#050505] relative font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-20 relative z-10">
         {/* Header */}
         <div className="text-center mb-10">
           <span className="text-blue-600 font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-3 block">
             Tools & Platforms
           </span>
-          <h2 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight mb-3">
+          <h2 className="text-3xl md:text-5xl font-black bg-gradient-to-r from-cyan-500 to-blue-600 text-transparent bg-clip-text tracking-tight mb-3 pb-2">
             Marketing Technologies We Use
           </h2>
-          <p className="text-base text-slate-500 font-medium max-w-2xl mx-auto">
+          <p className="text-base text-slate-300 font-medium max-w-2xl mx-auto">
             Powering Customer Relationships Through Intelligent Platforms
           </p>
         </div>
@@ -352,11 +352,11 @@ const MarketingTechnologies = () => {
                           key={i}
                           className="w-8 h-8 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center p-1.5 shadow-sm"
                         >
-                           <TechIcon
-                             src={t.logo}
-                             alt={t.name}
-                             className="w-full h-full object-contain"
-                           />
+                          <TechIcon
+                            src={t.logo}
+                            alt={t.name}
+                            className="w-full h-full object-contain"
+                          />
                         </div>
                       ))}
                       {category.tech.length > 3 && (
@@ -435,11 +435,11 @@ const MarketingTechnologies = () => {
                         <div
                           className={`w-20 h-20 mb-6 flex items-center justify-center transition-transform duration-700 ${isCenter ? "scale-110 drop-shadow-md" : "scale-90 grayscale opacity-70"}`}
                         >
-                           <TechIcon
-                             src={tech.logo}
-                             alt={tech.name}
-                             className="w-full h-full object-contain"
-                           />
+                          <TechIcon
+                            src={tech.logo}
+                            alt={tech.name}
+                            className="w-full h-full object-contain"
+                          />
                         </div>
 
                         {/* Platform Name */}
@@ -451,7 +451,7 @@ const MarketingTechnologies = () => {
 
                         {/* Platform Description */}
                         <p
-                          className={`text-sm leading-relaxed transition-opacity duration-500 ${isCenter ? "text-slate-500 opacity-100" : "opacity-0"}`}
+                          className={`text-base font-medium leading-relaxed transition-opacity duration-500 ${isCenter ? "text-black opacity-100" : "opacity-0"}`}
                         >
                           {tech.desc}
                         </p>

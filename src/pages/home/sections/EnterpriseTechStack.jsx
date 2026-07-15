@@ -146,14 +146,14 @@ export default function EnterpriseTechStack() {
       schedule(() => setActiveTechIndex(2), 1800);
       schedule(() => setActiveTechIndex(3), 1800);
       // Hold the last technology briefly
-      schedule(() => {}, 1800);
+      schedule(() => { }, 1800);
 
       // Fade out the category before the next one
       schedule(() => {
         setActiveCategoryIndex(-1);
       }, 0);
       // Small pause before next category appears
-      schedule(() => {}, 600);
+      schedule(() => { }, 600);
     });
 
     // Enter Final Scene
@@ -167,7 +167,7 @@ export default function EnterpriseTechStack() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-[600px] w-full bg-[#F8FAFC] overflow-hidden font-sans flex flex-col items-center py-16"
+      className="relative min-h-[600px] w-full bg-[#050505] overflow-hidden font-sans flex flex-col items-center py-16"
     >
       {/* Skip Animation Button */}
       {!isFinalScene && (
@@ -181,7 +181,7 @@ export default function EnterpriseTechStack() {
       {/* Background Layer */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#0F172A08_1px,transparent_1px),linear-gradient(to_bottom,#0F172A08_1px,transparent_1px)] bg-[size:48px_48px] opacity-60" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[1200px] bg-white/50 rounded-full blur-[100px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[1200px] bg-transparent rounded-full blur-[100px]" />
 
         <motion.div
           animate={{ x: [-40, 40, -40], y: [-20, 20, -20] }}
@@ -231,10 +231,10 @@ export default function EnterpriseTechStack() {
           transition={{ duration: 1, ease: "easeOut" }}
           className="absolute inset-0 flex flex-col items-center justify-center"
         >
-          <h2 className="text-5xl md:text-6xl font-extrabold text-blue-800 mb-4 tracking-tight">
+          <h2 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-cyan-500 to-blue-600 text-transparent bg-clip-text mb-4 tracking-tight pb-2">
             Technology Stack
           </h2>
-          <p className="text-xl text-slate-500 font-medium max-w-2xl mx-auto">
+          <p className="text-xl text-slate-300 font-medium max-w-2xl mx-auto">
             Building Intelligent Digital Experiences
           </p>
         </motion.div>
@@ -349,9 +349,11 @@ export default function EnterpriseTechStack() {
                     }}
                     className="flex flex-col gap-6"
                   >
-                    <div className="text-2xl font-extrabold text-[#0F172A] border-b-2 border-indigo-100 pb-4 inline-flex items-center gap-3">
+                    <div className="text-2xl font-extrabold border-b-2 border-indigo-100/30 pb-4 inline-flex items-center gap-3">
                       <div className="w-3 h-3 rounded-full bg-indigo-500 shadow-[0_0_10px_rgba(99,102,241,0.5)]" />
-                      {cat.id}
+                      <span className="bg-gradient-to-r from-cyan-500 to-blue-600 text-transparent bg-clip-text">
+                        {cat.id}
+                      </span>
                     </div>
 
                     <div className="flex flex-col gap-4 relative">

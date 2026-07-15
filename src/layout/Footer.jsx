@@ -4,7 +4,7 @@ import { NAV_ITEMS } from "../constants";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#111111] mt-20 pt-12 pb-0 overflow-hidden font-sans">
+    <footer className="relative bg-[#111111] pt-12 pb-0 overflow-hidden font-sans">
       <div className="container relative z-10 mx-auto px-6 max-w-7xl">
         <div className="flex flex-col md:flex-row justify-between items-start gap-12 lg:gap-16 mb-8">
           {/* Left Side: Brand and Description */}
