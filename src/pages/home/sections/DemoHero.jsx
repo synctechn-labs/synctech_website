@@ -78,19 +78,19 @@ export default function DemoHero() {
               className="w-full h-full relative"
             >
               <img
-                src="https://cdn.prod.website-files.com/673c8623b53e085c22dcde7d/673c8790c213543ea74788a0_Red%20Circle%20No%20Glow.png"
+                src="/red_circle_no_glow.png"
                 alt=""
                 style={{ ...tintBlueStyle, transform: `rotate(${circleRotation}deg)`, transformOrigin: "50% 50%", transition: "transform 0.3s ease-out" }}
                 className="w-full h-auto object-cover"
               />
               <img
-                src="https://cdn.prod.website-files.com/673c8623b53e085c22dcde7d/673c87ad03ca3526725241f9_Red%20Glow.png"
+                src="/red_glow.png"
                 alt=""
                 style={{ ...tintBlueStyle, transform: `rotate(${circleRotation}deg)`, transformOrigin: "50% 50%", transition: "transform 0.3s ease-out" }}
                 className="absolute top-0 left-0 w-full h-auto object-cover opacity-75 mix-blend-screen blur-md"
               />
               <img
-                src="https://cdn.prod.website-files.com/673c8623b53e085c22dcde7d/673c878ff9abee9c378d3e76_Glow.png"
+                src="/glow.png"
                 alt=""
                 style={{ ...tintBlueStyle, transform: `rotate(${circleRotation}deg)`, transformOrigin: "50% 50%", transition: "transform 0.3s ease-out" }}
                 className="absolute top-0 left-0 w-full h-auto object-cover opacity-55 mix-blend-screen"

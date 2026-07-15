@@ -524,7 +524,7 @@ export default function DemoPage() {
               >
                 {/* Metallic ring — rotates on scroll */}
                 <img
-                  src="https://cdn.prod.website-files.com/673c8623b53e085c22dcde7d/673c8790c213543ea74788a0_Red%20Circle%20No%20Glow.png"
+                  src="/red_circle_no_glow.png"
                   alt=""
                   style={{
                     ...tintBlueStyle,
@@ -536,7 +536,7 @@ export default function DemoPage() {
                 />
                 {/* Glow 1 — rotates with ring */}
                 <img
-                  src="https://cdn.prod.website-files.com/673c8623b53e085c22dcde7d/673c87ad03ca3526725241f9_Red%20Glow.png"
+                  src="/red_glow.png"
                   alt=""
                   style={{
                     ...tintBlueStyle,
@@ -548,7 +548,7 @@ export default function DemoPage() {
                 />
                 {/* Glow 2 — rotates with ring */}
                 <img
-                  src="https://cdn.prod.website-files.com/673c8623b53e085c22dcde7d/673c878ff9abee9c378d3e76_Glow.png"
+                  src="/glow.png"
                   alt=""
                   style={{
                     ...tintBlueStyle,
