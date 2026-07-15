@@ -167,7 +167,7 @@ export default function EnterpriseTechStack() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-[600px] w-full bg-[#050505] overflow-hidden font-sans flex flex-col items-center py-16"
+      className="relative min-h-[600px] w-full bg-[#060910] overflow-hidden font-sans flex flex-col items-center py-24 border-t border-slate-900/60"
     >
       {/* Skip Animation Button */}
       {!isFinalScene && (

@@ -43,18 +43,18 @@ export default function IndustriesSection() {
   const [active, setActive] = useState("startup");
 
   return (
-    <section className="relative py-16 bg-white overflow-hidden font-sans">
+    <section id="industries" className="relative py-24 bg-gradient-to-b from-[#060910]/40 to-[#060910] overflow-hidden font-sans border-t border-slate-900/60">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
 
-        <div className="text-center mb-10">
-          <span className="text-blue-600 text-center font-semibold uppercase tracking-[0.25em] text-sm">
+        <div className="text-center mb-16">
+          <span className="text-cyan-400 text-center font-semibold uppercase tracking-[0.25em] text-sm">
             Industries We Serve
           </span>
-          <h2 className="block bg-gradient-to-r from-blue-800 via-blue-600 to-cyan-400 bg-clip-text text-transparent mt-6 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-blue-400">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mt-6 mb-4">
             Software Solutions Tailored for Diverse Industries
           </h2>
-          <p className="mt-6 text-lg text-slate-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="mt-6 text-lg text-slate-400 max-w-4xl mx-auto leading-relaxed">
             SyncTech delivers custom software development, web applications,
             mobile solutions, AI-powered automation, and digital transformation
             services for startups, small businesses, enterprises, educational
@@ -73,7 +73,7 @@ export default function IndustriesSection() {
             hidden: {},
             visible: { transition: { staggerChildren: 0.1 } },
           }}
-          className="flex flex-wrap justify-center gap-4 lg:gap-6 mb-10"
+          className="flex flex-wrap justify-center gap-4 lg:gap-6 mb-12"
         >
           {industries.map((item) => {
             const Icon = item.icon;
@@ -89,22 +89,22 @@ export default function IndustriesSection() {
                 className={`relative group flex flex-col items-center justify-center w-28 h-32 lg:w-32 lg:h-36 rounded-[24px] border transition-all duration-500
                 ${
                   isActive
-                    ? "bg-white shadow-[0_20px_40px_rgba(0,0,0,0.08)] border-cyan-100 scale-105 z-10"
-                    : "bg-white border-slate-100 hover:shadow-lg hover:border-blue-50 hover:-translate-y-1"
+                    ? "bg-slate-900 shadow-[0_20px_40px_rgba(6,182,212,0.15)] border-cyan-500/30 scale-105 z-10 text-white"
+                    : "bg-slate-950/40 border-white/[0.06] hover:shadow-lg hover:border-cyan-500/20 hover:-translate-y-1 text-slate-400"
                 }`}
               >
                 <div
                   className={`w-12 h-12 rounded-full flex items-center justify-center mb-3 transition-colors duration-500 ${
                     isActive
-                      ? "bg-blue-800 text-white shadow-md shadow-blue-300"
-                      : "bg-blue-50 text-blue-600"
+                      ? "bg-cyan-500 text-slate-950 shadow-md shadow-cyan-300/20"
+                      : "bg-white/[0.02] border border-white/[0.04] text-slate-400 group-hover:text-slate-200"
                   }`}
                 >
                   <Icon className="w-6 h-6" />
                 </div>
                 <span
                   className={`text-xs lg:text-sm font-semibold text-center leading-snug transition-colors ${
-                    isActive ? "text-slate-900" : "text-slate-500"
+                    isActive ? "text-white" : "text-slate-400 group-hover:text-slate-200"
                   }`}
                 >
                   {item.title.split("\n").map((line, i) => (
@@ -150,12 +150,12 @@ export default function IndustriesSection() {
 
 function CenterCard({ industry, title, icon: Icon, children }) {
   return (
-    <div className="w-[340px] md:w-[400px] h-[360px] bg-white rounded-[32px] shadow-[0_20px_80px_rgba(0,0,0,0.06)] border border-slate-100 p-8 flex flex-col relative z-10 mx-auto overflow-hidden">
+    <div className="w-[340px] md:w-[400px] h-[360px] bg-slate-950/60 backdrop-blur-md rounded-[32px] shadow-[0_20px_80px_rgba(0,0,0,0.3)] border border-white/[0.08] p-8 flex flex-col relative z-10 mx-auto overflow-hidden">
       <div className="flex items-center gap-3 mb-4">
-        <Icon className="w-5 h-5 text-blue-600" />
-        <span className="font-bold text-slate-800 text-sm">{industry}</span>
+        <Icon className="w-5 h-5 text-cyan-400" />
+        <span className="font-bold text-slate-300 text-sm">{industry}</span>
       </div>
-      <h2 className="text-3xl font-bold text-slate-900 leading-tight mb-8 z-20">
+      <h2 className="text-3xl font-bold text-white leading-tight mb-8 z-20">
         {title}
       </h2>
 
@@ -181,7 +181,7 @@ function FloatingWidget({ className, children, delay = 0, yOffset = 10 }) {
           delay: delay + 0.5,
         },
       }}
-      className={`absolute bg-white rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.08)] border border-slate-100 p-4 z-20 ${className}`}
+      className={`absolute bg-slate-900/90 border border-white/[0.06] backdrop-blur-md rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.4)] p-4 z-20 ${className}`}
     >
       {children}
     </motion.div>
@@ -200,8 +200,8 @@ function StartupScene() {
         className="top-20 left-4 md:left-12 lg:left-24"
         delay={0.1}
       >
-        <div className="w-12 h-12 rounded-xl bg-cyan-50 flex items-center justify-center">
-          <Lightbulb className="w-6 h-6 text-cyan-500" />
+        <div className="w-12 h-12 rounded-xl bg-cyan-950/30 border border-cyan-500/10 flex items-center justify-center">
+          <Lightbulb className="w-6 h-6 text-cyan-400" />
         </div>
       </FloatingWidget>
 
@@ -209,10 +209,10 @@ function StartupScene() {
         className="bottom-12 left-0 md:left-8 lg:left-16 w-32"
         delay={0.2}
       >
-        <div className="text-[10px] font-semibold text-slate-400 mb-1">
+        <div className="text-[10px] font-semibold text-slate-500 mb-1">
           Revenue
         </div>
-        <div className="text-lg font-bold text-slate-800 mb-2">+ 68%</div>
+        <div className="text-lg font-bold text-white mb-2">+ 68%</div>
         <svg
           className="w-full h-8"
           viewBox="0 0 100 30"
@@ -221,7 +221,7 @@ function StartupScene() {
           <path
             d="M0,30 L20,20 L40,25 L60,10 L80,15 L100,5"
             fill="none"
-            stroke="#0084E7"
+            stroke="#06b6d4"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -233,20 +233,20 @@ function StartupScene() {
         className="top-12 right-4 md:right-12 lg:right-24 w-36"
         delay={0.3}
       >
-        <div className="text-[10px] font-semibold text-slate-400 mb-1">
+        <div className="text-[10px] font-semibold text-slate-500 mb-1">
           Users
         </div>
         <div className="flex items-center gap-1 mb-3">
-          <TrendingUp className="w-4 h-4 text-cyan-500" />
-          <span className="text-lg font-bold text-slate-800">125%</span>
+          <TrendingUp className="w-4 h-4 text-cyan-400" />
+          <span className="text-lg font-bold text-white">125%</span>
         </div>
         <div className="flex -space-x-2">
           {[1, 2, 3, 4].map((i) => (
             <div
               key={i}
-              className="w-8 h-8 rounded-full bg-slate-100 border-2 border-white flex items-center justify-center"
+              className="w-8 h-8 rounded-full bg-slate-950 border-2 border-white/[0.08] flex items-center justify-center text-slate-500"
             >
-              <User className="w-4 h-4 text-slate-400" />
+              <User className="w-4 h-4 text-slate-500" />
             </div>
           ))}
         </div>
@@ -256,8 +256,8 @@ function StartupScene() {
         className="bottom-16 right-0 md:right-8 lg:right-20"
         delay={0.4}
       >
-        <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center">
-          <BarChart3 className="w-6 h-6 text-cyan-500" />
+        <div className="w-12 h-12 rounded-xl bg-blue-950/30 border border-blue-500/10 flex items-center justify-center">
+          <BarChart3 className="w-6 h-6 text-cyan-400" />
         </div>
       </FloatingWidget>
 
@@ -273,10 +273,10 @@ function StartupScene() {
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             className="relative z-10"
           >
-            <Rocket className="w-32 h-32 text-blue-600 drop-shadow-[0_20px_30px_rgba(79,70,229,0.3)]" />
+            <Rocket className="w-32 h-32 text-cyan-400 drop-shadow-[0_20px_30px_rgba(6,182,212,0.3)]" />
           </motion.div>
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-36 h-36 bg-gradient-to-t from-cyan-100 to-transparent rounded-full blur-2xl opacity-80" />
-          <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-32 h-32 bg-cyan-400 blur-3xl opacity-50 rounded-full" />
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-36 h-36 bg-gradient-to-t from-cyan-950/20 to-transparent rounded-full blur-2xl opacity-80" />
+          <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-32 h-32 bg-cyan-500/10 blur-3xl opacity-50 rounded-full" />
         </div>
       </CenterCard>
     </div>
@@ -290,10 +290,10 @@ function SMBScene() {
         className="top-12 left-4 md:left-12 lg:left-24 w-36"
         delay={0.1}
       >
-        <div className="text-[10px] font-semibold text-slate-400 mb-1">
+        <div className="text-[10px] font-semibold text-slate-500 mb-1">
           Revenue
         </div>
-        <div className="text-lg font-bold text-slate-800 mb-2">+ 68%</div>
+        <div className="text-lg font-bold text-white mb-2">+ 68%</div>
         <svg
           className="w-full h-8"
           viewBox="0 0 100 30"
@@ -302,7 +302,7 @@ function SMBScene() {
           <path
             d="M0,30 L20,15 L40,20 L60,5 L80,10 L100,0"
             fill="none"
-            stroke="#3b82f6"
+            stroke="#06b6d4"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -314,7 +314,7 @@ function SMBScene() {
         className="top-20 right-4 md:right-12 lg:right-24 w-32 flex flex-col items-center"
         delay={0.2}
       >
-        <div className="text-[10px] font-semibold text-slate-400 mb-2 w-full text-left">
+        <div className="text-[10px] font-semibold text-slate-500 mb-2 w-full text-left">
           Growth
         </div>
         <div className="relative w-16 h-16 mb-2">
@@ -323,7 +323,7 @@ function SMBScene() {
             className="w-full h-full transform -rotate-90"
           >
             <path
-              className="text-slate-100"
+              className="text-white/[0.03]"
               strokeWidth="4"
               stroke="currentColor"
               fill="none"
@@ -334,7 +334,7 @@ function SMBScene() {
               initial={{ strokeDasharray: "0, 100" }}
               animate={{ strokeDasharray: "42, 100" }}
               transition={{ duration: 1.5, delay: 0.5 }}
-              className="text-cyan-500"
+              className="text-cyan-400"
               strokeWidth="4"
               stroke="currentColor"
               fill="none"
@@ -342,7 +342,7 @@ function SMBScene() {
               d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
             />
           </svg>
-          <div className="absolute inset-0 flex items-center justify-center text-xs font-bold text-slate-700">
+          <div className="absolute inset-0 flex items-center justify-center text-xs font-bold text-white">
             42%
           </div>
         </div>
@@ -352,8 +352,8 @@ function SMBScene() {
         className="bottom-12 right-10 md:right-16 lg:right-32"
         delay={0.3}
       >
-        <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center">
-          <BarChart3 className="w-6 h-6 text-blue-500" />
+        <div className="w-12 h-12 rounded-xl bg-blue-950/30 border border-blue-500/10 flex items-center justify-center">
+          <BarChart3 className="w-6 h-6 text-cyan-400" />
         </div>
       </FloatingWidget>
 
@@ -377,17 +377,17 @@ function SMBScene() {
                 <path
                   d="M 10 90 Q 40 70 50 50 T 90 10"
                   fill="none"
-                  stroke="#0082F2"
+                  stroke="#06b6d4"
                   strokeWidth="8"
                   strokeLinecap="round"
                 />
 
-                <polygon points="90,10 75,5 85,25" fill="#0082F2" />
+                <polygon points="90,10 75,5 85,25" fill="#06b6d4" />
               </svg>
             </motion.div>
-            <div className="absolute bottom-0 left-4 w-8 h-16 bg-cyan-100 rounded-t-md z-10" />
-            <div className="absolute bottom-0 left-20 w-8 h-28 bg-blue-300 rounded-t-md z-10" />
-            <div className="absolute bottom-0 left-36 w-8 h-40 bg-cyan-400 rounded-t-md z-10" />
+            <div className="absolute bottom-0 left-4 w-8 h-16 bg-cyan-950/40 border border-cyan-500/10 rounded-t-md z-10" />
+            <div className="absolute bottom-0 left-20 w-8 h-28 bg-blue-900/40 border border-blue-500/10 rounded-t-md z-10" />
+            <div className="absolute bottom-0 left-36 w-8 h-40 bg-cyan-500/40 border border-cyan-500/10 rounded-t-md z-10" />
           </div>
         </div>
       </CenterCard>
@@ -402,8 +402,8 @@ function EnterpriseScene() {
         className="top-12 left-8 md:left-16 lg:left-28"
         delay={0.1}
       >
-        <div className="w-12 h-12 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center">
-          <Database className="w-5 h-5 text-cyan-500" />
+        <div className="w-12 h-12 rounded-full bg-slate-950 border border-white/[0.08] flex items-center justify-center">
+          <Database className="w-5 h-5 text-cyan-400" />
         </div>
       </FloatingWidget>
 
@@ -411,8 +411,8 @@ function EnterpriseScene() {
         className="bottom-16 left-4 md:left-12 lg:left-20"
         delay={0.2}
       >
-        <div className="w-12 h-12 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center">
-          <User className="w-5 h-5 text-cyan-500" />
+        <div className="w-12 h-12 rounded-full bg-slate-950 border border-white/[0.08] flex items-center justify-center">
+          <User className="w-5 h-5 text-cyan-400" />
         </div>
       </FloatingWidget>
 
@@ -420,8 +420,8 @@ function EnterpriseScene() {
         className="top-20 right-8 md:right-16 lg:right-28"
         delay={0.3}
       >
-        <div className="w-12 h-12 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center">
-          <Cloud className="w-5 h-5 text-cyan-500" />
+        <div className="w-12 h-12 rounded-full bg-slate-950 border border-white/[0.08] flex items-center justify-center">
+          <Cloud className="w-5 h-5 text-cyan-400" />
         </div>
       </FloatingWidget>
 
@@ -429,8 +429,8 @@ function EnterpriseScene() {
         className="bottom-16 right-4 md:right-12 lg:right-20"
         delay={0.4}
       >
-        <div className="w-12 h-12 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center">
-          <BarChart3 className="w-5 h-5 text-blue-500" />
+        <div className="w-12 h-12 rounded-full bg-slate-950 border border-white/[0.08] flex items-center justify-center">
+          <BarChart3 className="w-5 h-5 text-cyan-400" />
         </div>
       </FloatingWidget>
 
@@ -441,17 +441,17 @@ function EnterpriseScene() {
       >
         <div className="relative w-full flex items-center justify-center pt-2">
           <svg
-            className="absolute inset-0 w-full h-full opacity-30"
+            className="absolute inset-0 w-full h-full opacity-20"
             viewBox="0 0 400 500"
           >
-            <circle cx="100" cy="200" r="4" fill="#0084E7" />
+            <circle cx="100" cy="200" r="4" fill="#06b6d4" />
             <circle cx="300" cy="150" r="6" fill="#3b82f6" />
-            <circle cx="350" cy="300" r="4" fill="#0084E7" />
-            <circle cx="80" cy="350" r="5" fill="#00B2D4" />
+            <circle cx="350" cy="300" r="4" fill="#06b6d4" />
+            <circle cx="80" cy="350" r="5" fill="#22d3ee" />
             <path
               d="M 100 200 L 200 350 L 300 150 L 350 300 M 80 350 L 200 350"
               fill="none"
-              stroke="#0084E7"
+              stroke="#06b6d4"
               strokeWidth="1"
               strokeDasharray="4 4"
             />
@@ -460,21 +460,21 @@ function EnterpriseScene() {
           <div className="relative z-10 flex items-end justify-center gap-1.5">
             <motion.div
               animate={{ height: [100, 100] }}
-              className="w-14 h-[100px] bg-blue-600 rounded-t-lg shadow-xl relative overflow-hidden"
+              className="w-14 h-[100px] bg-cyan-600 rounded-t-lg shadow-xl relative overflow-hidden"
             >
-              <div className="absolute inset-x-0 top-0 h-1/2 bg-white/20" />
+              <div className="absolute inset-x-0 top-0 h-1/2 bg-white/10" />
             </motion.div>
             <motion.div
               animate={{ height: [160, 160] }}
-              className="w-16 h-[160px] bg-blue-500 rounded-t-lg shadow-2xl relative overflow-hidden"
+              className="w-16 h-[160px] bg-cyan-500 rounded-t-lg shadow-2xl relative overflow-hidden"
             >
-              <div className="absolute inset-x-0 top-0 h-1/3 bg-white/20" />
+              <div className="absolute inset-x-0 top-0 h-1/3 bg-white/10" />
             </motion.div>
             <motion.div
               animate={{ height: [130, 130] }}
-              className="w-14 h-[130px] bg-blue-400 rounded-t-lg shadow-xl relative overflow-hidden"
+              className="w-14 h-[130px] bg-cyan-400 rounded-t-lg shadow-xl relative overflow-hidden"
             >
-              <div className="absolute inset-x-0 top-0 h-1/2 bg-white/20" />
+              <div className="absolute inset-x-0 top-0 h-1/2 bg-white/10" />
             </motion.div>
           </div>
         </div>
@@ -490,8 +490,8 @@ function EducationScene() {
         className="top-12 left-8 md:left-16 lg:left-28"
         delay={0.1}
       >
-        <div className="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center shadow-inner">
-          <GraduationCap className="w-6 h-6 text-blue-600" />
+        <div className="w-12 h-12 rounded-2xl bg-blue-950/30 border border-blue-500/10 flex items-center justify-center shadow-inner">
+          <GraduationCap className="w-6 h-6 text-cyan-400" />
         </div>
       </FloatingWidget>
 
@@ -499,10 +499,10 @@ function EducationScene() {
         className="top-20 left-0 md:left-8 lg:left-16 w-28"
         delay={0.2}
       >
-        <div className="text-[10px] font-semibold text-slate-400 mb-1">
+        <div className="text-[10px] font-semibold text-slate-500 mb-1">
           Courses
         </div>
-        <div className="text-xl font-bold text-slate-800">24</div>
+        <div className="text-xl font-bold text-white">24</div>
       </FloatingWidget>
 
       <FloatingWidget
@@ -510,10 +510,10 @@ function EducationScene() {
         delay={0.3}
       >
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center pl-1">
-            <Play className="w-3 h-3 text-blue-600" />
+          <div className="w-8 h-8 rounded-full bg-cyan-950/30 border border-cyan-500/10 flex items-center justify-center pl-1">
+            <Play className="w-3 h-3 text-cyan-400" />
           </div>
-          <div className="flex-1 h-1.5 bg-slate-100 rounded-full overflow-hidden">
+          <div className="flex-1 h-1.5 bg-slate-950 rounded-full overflow-hidden">
             <div className="w-1/3 h-full bg-cyan-500" />
           </div>
         </div>
@@ -523,7 +523,7 @@ function EducationScene() {
         className="top-16 right-4 md:right-12 lg:right-24 w-28 flex flex-col items-center"
         delay={0.4}
       >
-        <div className="text-[10px] font-semibold text-slate-400 mb-2 w-full text-left">
+        <div className="text-[10px] font-semibold text-slate-500 mb-2 w-full text-left">
           Progress
         </div>
         <div className="relative w-12 h-12 mb-1">
@@ -532,7 +532,7 @@ function EducationScene() {
             className="w-full h-full transform -rotate-90"
           >
             <path
-              className="text-slate-100"
+              className="text-white/[0.03]"
               strokeWidth="4"
               stroke="currentColor"
               fill="none"
@@ -543,7 +543,7 @@ function EducationScene() {
               initial={{ strokeDasharray: "0, 100" }}
               animate={{ strokeDasharray: "85, 100" }}
               transition={{ duration: 1.5, delay: 0.5 }}
-              className="text-cyan-500"
+              className="text-cyan-400"
               strokeWidth="4"
               stroke="currentColor"
               fill="none"
@@ -551,7 +551,7 @@ function EducationScene() {
               d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
             />
           </svg>
-          <div className="absolute inset-0 flex items-center justify-center text-[10px] font-bold text-slate-700">
+          <div className="absolute inset-0 flex items-center justify-center text-[10px] font-bold text-white">
             85%
           </div>
         </div>
@@ -565,9 +565,9 @@ function EducationScene() {
           {[1, 2, 3].map((i) => (
             <div
               key={i}
-              className="w-8 h-8 rounded-full bg-blue-50 border-2 border-white flex items-center justify-center"
+              className="w-8 h-8 rounded-full bg-slate-950 border-2 border-white/[0.08] flex items-center justify-center text-slate-500"
             >
-              <User className="w-4 h-4 text-blue-400" />
+              <User className="w-4 h-4 text-slate-500" />
             </div>
           ))}
         </div>
@@ -584,24 +584,24 @@ function EducationScene() {
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             className="relative z-10"
           >
-            <BookOpen className="w-32 h-32 text-blue-600 drop-shadow-[0_20px_30px_rgba(79,70,229,0.2)]" />
+            <BookOpen className="w-32 h-32 text-cyan-400 drop-shadow-[0_20px_30px_rgba(6,182,212,0.2)]" />
           </motion.div>
           <motion.div
             animate={{ y: [-10, 10, -10], rotate: [0, 10, 0] }}
             transition={{ duration: 5, repeat: Infinity }}
-            className="absolute top-1/3 left-1/4 w-4 h-4 bg-cyan-300 rounded-sm rotate-12"
+            className="absolute top-1/3 left-1/4 w-4 h-4 bg-cyan-500/35 rounded-sm rotate-12"
           />
 
           <motion.div
             animate={{ y: [10, -10, 10], rotate: [0, -10, 0] }}
             transition={{ duration: 4.5, repeat: Infinity }}
-            className="absolute top-1/4 right-1/4 w-5 h-5 bg-blue-300 rounded-full"
+            className="absolute top-1/4 right-1/4 w-5 h-5 bg-blue-500/35 rounded-full"
           />
 
           <motion.div
             animate={{ y: [-5, 5, -5] }}
             transition={{ duration: 3, repeat: Infinity }}
-            className="absolute bottom-1/3 right-1/3 w-3 h-3 bg-cyan-300 rounded-full"
+            className="absolute bottom-1/3 right-1/3 w-3 h-3 bg-cyan-500/35 rounded-full"
           />
         </div>
       </CenterCard>
@@ -616,16 +616,16 @@ function HealthcareScene() {
         className="top-20 left-0 md:left-8 lg:left-20 w-40"
         delay={0.1}
       >
-        <div className="text-[10px] font-semibold text-slate-400 mb-2">
+        <div className="text-[10px] font-semibold text-slate-500 mb-2">
           Patient Overview
         </div>
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
-            <User className="w-4 h-4 text-blue-500" />
+          <div className="w-8 h-8 rounded-full bg-blue-950/30 border border-blue-500/10 flex items-center justify-center">
+            <User className="w-4 h-4 text-cyan-400" />
           </div>
           <div className="flex-1 space-y-1.5">
-            <div className="w-full h-1.5 bg-slate-100 rounded-full" />
-            <div className="w-2/3 h-1.5 bg-slate-100 rounded-full" />
+            <div className="w-full h-1.5 bg-slate-950 rounded-full" />
+            <div className="w-2/3 h-1.5 bg-slate-950 rounded-full" />
           </div>
         </div>
         <svg
@@ -636,7 +636,7 @@ function HealthcareScene() {
           <path
             d="M0,10 L20,10 L30,0 L40,20 L50,10 L100,10"
             fill="none"
-            stroke="#cbd5e1"
+            stroke="rgba(255,255,255,0.06)"
             strokeWidth="1.5"
           />
         </svg>
@@ -646,15 +646,15 @@ function HealthcareScene() {
         className="bottom-12 left-6 md:left-12 lg:left-24 w-28"
         delay={0.2}
       >
-        <div className="text-[10px] font-semibold text-slate-400 mb-1">
+        <div className="text-[10px] font-semibold text-slate-500 mb-1">
           Vitals
         </div>
         <div className="flex items-end gap-1">
-          <span className="text-xl font-bold text-slate-800">120/80</span>
+          <span className="text-xl font-bold text-white">120/80</span>
         </div>
         <div className="flex items-center gap-1 mt-1">
-          <HeartPulse className="w-3 h-3 text-blue-500" />
-          <span className="text-[10px] text-slate-400">BP</span>
+          <HeartPulse className="w-3 h-3 text-cyan-400" />
+          <span className="text-[10px] text-slate-500">BP</span>
         </div>
       </FloatingWidget>
 
@@ -662,11 +662,11 @@ function HealthcareScene() {
         className="top-12 right-0 md:right-8 lg:right-20 w-36"
         delay={0.3}
       >
-        <div className="text-[10px] font-semibold text-slate-400 mb-1">
+        <div className="text-[10px] font-semibold text-slate-500 mb-1">
           AI Analysis
         </div>
-        <div className="text-xs font-bold text-slate-700 mb-2">
-          Risk: <span className="text-cyan-500">Low</span>
+        <div className="text-xs font-bold text-white mb-2">
+          Risk: <span className="text-cyan-400">Low</span>
         </div>
         <svg
           className="w-full h-8"
@@ -676,7 +676,7 @@ function HealthcareScene() {
           <path
             d="M0,25 L20,20 L40,25 L60,15 L80,20 L100,10"
             fill="none"
-            stroke="#00C2F3"
+            stroke="#22d3ee"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -688,12 +688,12 @@ function HealthcareScene() {
         className="bottom-20 right-6 md:right-12 lg:right-24 w-36"
         delay={0.4}
       >
-        <div className="text-[10px] font-semibold text-slate-400 mb-2">
+        <div className="text-[10px] font-semibold text-slate-500 mb-2">
           Appointments
         </div>
-        <div className="flex items-center gap-2 bg-slate-50 p-2 rounded-lg">
-          <Calendar className="w-4 h-4 text-blue-500" />
-          <span className="text-xs font-bold text-slate-700">18 Today</span>
+        <div className="flex items-center gap-2 bg-slate-950 border border-white/[0.06] p-2 rounded-lg">
+          <Calendar className="w-4 h-4 text-cyan-400" />
+          <span className="text-xs font-bold text-white">18 Today</span>
         </div>
       </FloatingWidget>
 
@@ -704,7 +704,7 @@ function HealthcareScene() {
       >
         <div className="relative w-full flex items-center justify-center pt-2">
           <div className="relative w-40 h-40 flex items-center justify-center">
-            <div className="absolute inset-0 bg-blue-100 rounded-full blur-2xl opacity-60 animate-pulse" />
+            <div className="absolute inset-0 bg-cyan-950/20 rounded-full blur-2xl opacity-60 animate-pulse" />
             <motion.div
               animate={{ scale: [1, 1.05, 1] }}
               transition={{
@@ -712,12 +712,12 @@ function HealthcareScene() {
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="w-32 h-32 bg-blue-500 rounded-full flex items-center justify-center shadow-[0_0_40px_rgba(59,130,246,0.4)] z-10"
+              className="w-32 h-32 bg-cyan-500 rounded-full flex items-center justify-center shadow-[0_0_40px_rgba(6,182,212,0.4)] z-10"
             >
-              <HeartPulse className="w-16 h-16 text-white" />
+              <HeartPulse className="w-16 h-16 text-slate-950" />
             </motion.div>
-            <div className="absolute -inset-8 border border-blue-200 rounded-full opacity-50" />
-            <div className="absolute -inset-16 border border-blue-100 rounded-full opacity-30" />
+            <div className="absolute -inset-8 border border-cyan-500/20 rounded-full opacity-50" />
+            <div className="absolute -inset-16 border border-cyan-500/10 rounded-full opacity-30" />
           </div>
         </div>
       </CenterCard>
@@ -732,12 +732,12 @@ function EcommerceScene() {
         className="top-20 left-2 md:left-8 lg:left-20 w-36"
         delay={0.1}
       >
-        <div className="w-full h-20 bg-slate-50 rounded-xl mb-3 flex items-center justify-center">
-          <Package className="w-8 h-8 text-slate-400" />
+        <div className="w-full h-20 bg-slate-950 border border-white/[0.06] rounded-xl mb-3 flex items-center justify-center">
+          <Package className="w-8 h-8 text-slate-500" />
         </div>
         <div className="flex items-center justify-between">
-          <div className="w-12 h-1.5 bg-slate-200 rounded-full" />
-          <span className="text-sm font-bold text-slate-800">$120</span>
+          <div className="w-12 h-1.5 bg-white/[0.04] rounded-full" />
+          <span className="text-sm font-bold text-white">$120</span>
         </div>
         <div className="flex gap-1 mt-2">
           {[1, 2, 3, 4, 5].map((i) => (
@@ -752,15 +752,15 @@ function EcommerceScene() {
       >
         <div className="flex items-center gap-3">
           <div className="relative">
-            <ShoppingCart className="w-6 h-6 text-cyan-500" />
-            <div className="absolute -top-2 -right-2 w-4 h-4 bg-blue-500 rounded-full flex items-center justify-center text-[8px] text-white font-bold">
+            <ShoppingCart className="w-6 h-6 text-cyan-400" />
+            <div className="absolute -top-2 -right-2 w-4 h-4 bg-cyan-500 text-slate-950 rounded-full flex items-center justify-center text-[8px] font-bold">
               3
             </div>
           </div>
-          <div className="text-xs font-bold text-slate-700">
+          <div className="text-xs font-bold text-white">
             Cart
             <br />
-            <span className="text-[10px] text-slate-400 font-normal">
+            <span className="text-[10px] text-slate-500 font-normal">
               3 items
             </span>
           </div>
@@ -771,12 +771,12 @@ function EcommerceScene() {
         className="top-16 right-2 md:right-8 lg:right-20 w-36"
         delay={0.3}
       >
-        <div className="w-full h-20 bg-slate-50 rounded-xl mb-3 flex items-center justify-center">
-          <Headphones className="w-8 h-8 text-slate-800" />
+        <div className="w-full h-20 bg-slate-950 border border-white/[0.06] rounded-xl mb-3 flex items-center justify-center">
+          <Headphones className="w-8 h-8 text-slate-400" />
         </div>
         <div className="flex items-center justify-between">
-          <div className="w-12 h-1.5 bg-slate-200 rounded-full" />
-          <span className="text-sm font-bold text-slate-800">$89</span>
+          <div className="w-12 h-1.5 bg-white/[0.04] rounded-full" />
+          <span className="text-sm font-bold text-white">$89</span>
         </div>
         <div className="flex gap-1 mt-2">
           {[1, 2, 3, 4, 5].map((i) => (
@@ -789,12 +789,12 @@ function EcommerceScene() {
         className="bottom-12 right-6 md:right-12 lg:right-24 w-40"
         delay={0.4}
       >
-        <div className="text-[10px] font-semibold text-slate-400 mb-2">
+        <div className="text-[10px] font-semibold text-slate-500 mb-2">
           Checkout
         </div>
         <div className="flex items-center gap-2">
-          <CheckCircle2 className="w-4 h-4 text-cyan-500" />
-          <span className="text-[10px] font-bold text-cyan-600">
+          <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+          <span className="text-[10px] font-bold text-emerald-400">
             Payment Successful
           </span>
         </div>
@@ -811,9 +811,9 @@ function EcommerceScene() {
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             className="relative z-10"
           >
-            <ShoppingCart className="w-32 h-32 text-cyan-500 drop-shadow-[0_20px_30px_rgba(99,102,241,0.3)]" />
+            <ShoppingCart className="w-32 h-32 text-cyan-400 drop-shadow-[0_20px_30px_rgba(6,182,212,0.3)]" />
           </motion.div>
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-40 h-4 bg-blue-900/10 blur-md rounded-full" />
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-40 h-4 bg-cyan-900/10 blur-md rounded-full" />
         </div>
       </CenterCard>
     </div>

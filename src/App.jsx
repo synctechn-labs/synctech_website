@@ -45,6 +45,7 @@ import BlogDetails from "./pages/blog/BlogDetails";
 import ProcessPage from "./pages/ProcessPage";
 import AboutPage from "./pages/AboutPage";
 import WhyChooseUsPage from "./pages/WhyChooseUsPage";
+import DemoPage from "./pages/DemoPage";
 
 function App() {
   const { hash, pathname } = useLocation();
@@ -114,6 +115,7 @@ function App() {
           <Route path="/blog" element={<BlogList />} />
           <Route path="/blog/:id" element={<BlogDetails />} />
         </Route>
+        <Route path="/demo" element={<DemoPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

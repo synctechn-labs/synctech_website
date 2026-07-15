@@ -7,6 +7,7 @@ import {
   ShieldCheck,
   Rocket,
 } from "lucide-react";
+
 export const PROCESS_STEPS = [
   {
     icon: SearchCheck,
@@ -34,12 +35,13 @@ export const PROCESS_STEPS = [
     desc: "We deploy solutions smoothly, monitor performance, provide ongoing maintenance, and ensure long-term business growth.",
   },
 ];
+
 const Operations = () => {
   return (
     <>
-      <section id="process" className="relative py-32 bg-white overflow-hidden">
+      <section id="process" className="relative py-32 bg-gradient-to-b from-[#060910] to-[#060910]/40 overflow-hidden border-t border-slate-900/60">
         {/* Background Glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-blue-100/30 blur-[140px] rounded-full" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-blue-950/10 blur-[140px] rounded-full pointer-events-none" />
 
         <div className="container mx-auto px-6 md:px-12 relative z-10">
           {/* Header */}
@@ -47,42 +49,43 @@ const Operations = () => {
             <div className="max-w-5xl mx-auto text-center mb-24">
               <span
                 className="
-            inline-flex
-            items-center
-            px-5
-            py-2
-            rounded-full
-            bg-blue-50
-            border
-            border-blue-100
-            text-blue-700
-            text-sm
-            font-semibold
-            uppercase
-            tracking-[0.25em]
-            mb-2
-          "
+                  inline-flex
+                  items-center
+                  px-5
+                  py-2
+                  rounded-full
+                  bg-blue-500/10
+                  border
+                  border-blue-500/30
+                  text-blue-400
+                  text-sm
+                  font-semibold
+                  uppercase
+                  tracking-[0.25em]
+                  mb-6
+                "
               >
                 Development Process
               </span>
 
               <h2
                 className="
-            text-4xl
-            md:text-4xl
-            lg:text-6xl
-            font-bold
-            text-blue-900
-            leading-tight
-          "
+                  text-4xl
+                  md:text-5xl
+                  lg:text-6xl
+                  font-bold
+                  text-white
+                  leading-tight
+                  mb-6
+                "
               >
-                Our Proven
-                <span className="block bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 bg-clip-text text-transparent">
+                Our Proven{" "}
+                <span className="block bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
                   Software Development Process
                 </span>
               </h2>
 
-              <p className="mt-3 text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto">
+              <p className="mt-3 text-lg md:text-xl text-slate-400 leading-relaxed max-w-3xl mx-auto">
                 At SyncTech Software Solutions, we follow a structured software
                 development lifecycle that ensures transparency, faster
                 delivery, scalable architecture, and exceptional user
@@ -90,26 +93,27 @@ const Operations = () => {
               </p>
             </div>
           </Reveal>
+
           {/* PROCESS FLOW */}
-          <div className="relative max-w-7xl">
+          <div className="relative max-w-7xl mx-auto">
             {/* Background Glow */}
             <div className="absolute inset-0 pointer-events-none">
-              <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-100/40 blur-[120px] rounded-full" />
+              <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-950/20 blur-[120px] rounded-full" />
             </div>
 
             {/* Desktop Connection Line */}
             <div className="hidden lg:block absolute top-[45%] left-0 right-0 z-0">
-              <div className="relative h-[2px] bg-slate-200">
+              <div className="relative h-[2px] bg-slate-800">
                 <div
                   className="
-          absolute
-          inset-0
-          bg-gradient-to-r
-          from-blue-600
-          via-cyan-500
-          to-blue-600
-          animate-pulse
-        "
+                    absolute
+                    inset-0
+                    bg-gradient-to-r
+                    from-blue-600
+                    via-cyan-500
+                    to-blue-600
+                    animate-pulse
+                  "
                 />
               </div>
             </div>
@@ -122,67 +126,68 @@ const Operations = () => {
                   <Reveal key={index} delay={index * 150}>
                     <div
                       className={`
-              relative
-              group
-              ${index % 2 === 1 ? "lg:translate-y-20" : ""}
-            `}
+                        relative
+                        group
+                        ${index % 2 === 1 ? "lg:translate-y-20" : ""}
+                      `}
                     >
                       {/* Card */}
                       <div
                         className="
-                relative
-                overflow-hidden
-                bg-white/80
-                backdrop-blur-xl
-                border
-                border-white
-                rounded-3xl
-                p-8
-                shadow-xl
-                hover:-translate-y-4
-                hover:shadow-blue-500/20
-                transition-all
-                duration-500
-                min-h-[300px]
-              "
+                          relative
+                          overflow-hidden
+                          bg-slate-950/40
+                          backdrop-blur-xl
+                          border
+                          border-white/[0.06]
+                          rounded-3xl
+                          p-8
+                          shadow-[0_20px_40px_rgba(0,0,0,0.3)]
+                          hover:-translate-y-4
+                          hover:border-blue-500/30
+                          hover:shadow-[0_20px_40px_rgba(59,130,246,0.15)]
+                          transition-all
+                          duration-500
+                          min-h-[300px]
+                        "
                       >
                         {/* Hover Gradient */}
                         <div
                           className="
-                  absolute
-                  inset-0
-                  bg-gradient-to-br
-                  from-blue-500/5
-                  via-transparent
-                  to-cyan-500/5
-                  opacity-0
-                  group-hover:opacity-100
-                  transition-opacity
-                  duration-500
-                "
+                            absolute
+                            inset-0
+                            bg-gradient-to-br
+                            from-blue-500/5
+                            via-transparent
+                            to-cyan-500/5
+                            opacity-0
+                            group-hover:opacity-100
+                            transition-opacity
+                            duration-500
+                          "
                         />
 
                         {/* Icon */}
                         <div
                           className="
-                  relative
-                  z-10
-                  w-16
-                  h-16
-                  rounded-2xl
-                  bg-gradient-to-br
-                  from-blue-600
-                  to-cyan-500
-                  flex
-                  items-center
-                  justify-center
-                  shadow-lg
-                  mb-6
-                  group-hover:scale-110
-                  group-hover:rotate-6
-                  transition-all
-                  duration-500
-                "
+                            relative
+                            z-10
+                            w-16
+                            h-16
+                            rounded-2xl
+                            bg-gradient-to-br
+                            from-blue-600
+                            to-cyan-500
+                            flex
+                            items-center
+                            justify-center
+                            shadow-lg
+                            mb-6
+                            group-hover:scale-110
+                            group-hover:rotate-6
+                            transition-all
+                            duration-500
+                          "
                         >
                           <Icon className="w-8 h-8 text-white" />
                         </div>
@@ -190,15 +195,15 @@ const Operations = () => {
                         {/* Title */}
                         <h3
                           className="
-                  relative
-                  z-10
-                  text-2xl
-                  font-bold
-                  text-slate-900
-                  mb-4
-                  group-hover:text-blue-600
-                  transition-colors
-                "
+                            relative
+                            z-10
+                            text-xl
+                            font-bold
+                            text-white
+                            mb-4
+                            group-hover:text-cyan-400
+                            transition-colors
+                          "
                         >
                           {step.title}
                         </h3>
@@ -206,12 +211,12 @@ const Operations = () => {
                         {/* Description */}
                         <p
                           className="
-                  relative
-                  z-10
-                  text-slate-600
-                  leading-relaxed
-                  text-sm
-                "
+                            relative
+                            z-10
+                            text-slate-400
+                            leading-relaxed
+                            text-sm
+                          "
                         >
                           {step.desc}
                         </p>
@@ -219,18 +224,18 @@ const Operations = () => {
                         {/* Bottom Line */}
                         <div
                           className="
-                  absolute
-                  bottom-0
-                  left-0
-                  h-1
-                  w-0
-                  bg-gradient-to-r
-                  from-blue-600
-                  to-cyan-500
-                  group-hover:w-full
-                  transition-all
-                  duration-500
-                "
+                            absolute
+                            bottom-0
+                            left-0
+                            h-1
+                            w-0
+                            bg-gradient-to-r
+                            from-blue-600
+                            to-cyan-500
+                            group-hover:w-full
+                            transition-all
+                            duration-500
+                          "
                         />
                       </div>
                     </div>
