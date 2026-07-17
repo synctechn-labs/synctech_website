@@ -225,7 +225,8 @@ export default function ServiceTemplate({ data, techStackComponent }) {
             <video 
               autoPlay
               loop
-              muted={true}
+              muted
+              defaultMuted
               playsInline
               className="w-full h-full object-cover"
             >
