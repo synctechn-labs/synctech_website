@@ -53,7 +53,22 @@ function HeroBackground({ bgImage, fallbackImg }) {
       video.defaultMuted = true;
       video.playsInline = true;
       video.volume = 0;
-      video.play().catch(() => {});
+      video.setAttribute('muted', '');
+      video.setAttribute('playsinline', '');
+
+      const playVideo = () => {
+        video.muted = true;
+        video.play().catch(() => {});
+      };
+
+      playVideo();
+      video.addEventListener('canplay', playVideo);
+      video.addEventListener('loadeddata', playVideo);
+
+      return () => {
+        video.removeEventListener('canplay', playVideo);
+        video.removeEventListener('loadeddata', playVideo);
+      };
     }
   }, [bgImage, isVideo]);
 
@@ -73,6 +88,7 @@ function HeroBackground({ bgImage, fallbackImg }) {
         ref={videoRef}
         key={bgImage}
         src={bgImage}
+        poster={defaultFallback}
         autoPlay
         loop
         muted

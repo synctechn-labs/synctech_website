@@ -3,7 +3,6 @@ import { defineConfig, loadEnv } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import { compression } from "vite-plugin-compression2";
-import obfuscator from "vite-plugin-javascript-obfuscator";
 
 // Plugin to rewrite /services/* requests to index.html to avoid Vite serving raw .tsx files
 const rewriteServicesPlugin = () => ({
@@ -39,18 +38,6 @@ export default defineConfig(({ mode, command }) => {
       isBuild && compression({
         algorithm: "gzip",
         exclude: [/\.(br)$/, /\.(gz)$/],
-      }),
-      isBuild && obfuscator({
-        options: {
-          compact: true,
-          controlFlowFlattening: false,
-          deadCodeInjection: false,
-          debugProtection: false,
-          disableConsoleOutput: false,
-          selfDefending: false,
-          splitStrings: false,
-          stringArray: false,
-        },
       }),
     ].filter(Boolean),
     define: {
