@@ -43,68 +43,74 @@ function HeroBackground({ bgImage, fallbackImg }) {
     bgImage.toLowerCase().includes('/video/upload/')
   );
 
+  const defaultFallback = fallbackImg || "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80";
+
+  const handleVideoMount = (el) => {
+    if (el) {
+      videoRef.current = el;
+      el.muted = true;
+      el.defaultMuted = true;
+      el.playsInline = true;
+      el.volume = 0;
+      const promise = el.play();
+      if (promise !== undefined) {
+        promise.catch(() => {});
+      }
+    }
+  };
+
   useEffect(() => {
     if (isVideo && videoRef.current) {
       const video = videoRef.current;
       video.muted = true;
       video.defaultMuted = true;
       video.playsInline = true;
-      video.setAttribute('muted', '');
-      video.setAttribute('playsinline', '');
+      video.volume = 0;
 
       const playVideo = () => {
-        const promise = video.play();
-        if (promise !== undefined) {
-          promise.catch((err) => {
-            console.warn("Video play error:", err);
-          });
-        }
+        video.muted = true;
+        video.play().catch(() => {});
       };
 
       playVideo();
+
       video.addEventListener('canplay', playVideo);
+      video.addEventListener('loadeddata', playVideo);
 
       return () => {
         video.removeEventListener('canplay', playVideo);
+        video.removeEventListener('loadeddata', playVideo);
       };
     }
   }, [bgImage, isVideo]);
 
-  if (!bgImage) {
-    return (
-      <img 
-        src={fallbackImg || "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80"} 
-        alt="Hero Background" 
-        className="w-full h-full object-cover"
-      />
-    );
-  }
-
-  if (isVideo) {
-    return (
-      <video 
-        ref={videoRef}
-        key={bgImage}
-        src={bgImage}
-        autoPlay
-        loop
-        muted
-        defaultMuted
-        playsInline
-        preload="auto"
-        className="w-full h-full object-cover"
-      >
-        <source src={bgImage} type="video/mp4" />
-      </video>
-    );
-  }
-
   return (
-    <img 
-      src={bgImage} 
-      alt="Hero Background" 
-      className="w-full h-full object-cover"
-    />
+    <div className="relative w-full h-full overflow-hidden">
+      {/* Background Image Layer (Always visible, never blank) */}
+      <img 
+        src={defaultFallback} 
+        alt="Hero Background" 
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+
+      {/* Video Overlay Layer (Plays over the background image when ready) */}
+      {isVideo && (
+        <video 
+          ref={handleVideoMount}
+          key={bgImage}
+          src={bgImage}
+          autoPlay
+          loop
+          muted
+          defaultMuted
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover z-10"
+        >
+          <source src={bgImage} type="video/mp4" />
+        </video>
+      )}
+    </div>
   );
 }
 
