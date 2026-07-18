@@ -37,7 +37,6 @@ function FadeInUpCard({ children, delay = 0 }) {
 
 function HeroBackground({ bgImage, fallbackImg }) {
   const videoRef = useRef(null);
-  const [hasError, setHasError] = useState(false);
   const isVideo = typeof bgImage === 'string' && (
     bgImage.toLowerCase().includes('.mp4') || 
     bgImage.toLowerCase().includes('.webm') || 
@@ -45,7 +44,6 @@ function HeroBackground({ bgImage, fallbackImg }) {
   );
 
   useEffect(() => {
-    setHasError(false);
     if (isVideo && videoRef.current) {
       const video = videoRef.current;
       video.muted = true;
@@ -61,18 +59,24 @@ function HeroBackground({ bgImage, fallbackImg }) {
         }
       };
 
-      video.addEventListener('canplay', playVideo);
+      if (video.readyState >= 2) {
+        playVideo();
+      } else {
+        video.addEventListener('canplay', playVideo, { once: true });
+        video.addEventListener('loadeddata', playVideo, { once: true });
+      }
       playVideo();
 
       return () => {
         video.removeEventListener('canplay', playVideo);
+        video.removeEventListener('loadeddata', playVideo);
       };
     }
   }, [bgImage, isVideo]);
 
   const defaultFallback = fallbackImg || "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80";
 
-  if (!bgImage || hasError) {
+  if (!bgImage) {
     return (
       <img 
         src={defaultFallback} 
@@ -87,7 +91,6 @@ function HeroBackground({ bgImage, fallbackImg }) {
       <video 
         ref={videoRef}
         key={bgImage}
-        src={bgImage}
         poster={defaultFallback}
         autoPlay
         loop
@@ -95,7 +98,6 @@ function HeroBackground({ bgImage, fallbackImg }) {
         defaultMuted
         playsInline
         preload="auto"
-        onError={() => setHasError(true)}
         className="w-full h-full object-cover"
       >
         <source src={bgImage} type="video/mp4" />
