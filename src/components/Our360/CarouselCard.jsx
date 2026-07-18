@@ -5,12 +5,13 @@ const CarouselCard = ({ service, isActive, onVideoEnd }) => {
 
   useEffect(() => {
     if (!videoRef.current) return;
+    videoRef.current.muted = true;
+    videoRef.current.defaultMuted = true;
+    videoRef.current.playsInline = true;
     if (isActive) {
       videoRef.current.play().catch(console.warn);
     } else {
       videoRef.current.pause();
-      // Optional: reset time to 0 if desired
-      // videoRef.current.currentTime = 0;
     }
   }, [isActive]);
 

@@ -35,6 +35,70 @@ function FadeInUpCard({ children, delay = 0 }) {
   );
 }
 
+function HeroBackground({ bgImage, fallbackImg }) {
+  const videoRef = useRef(null);
+  const isVideo = typeof bgImage === 'string' && (bgImage.includes('.mp4') || bgImage.includes('.webm'));
+
+  useEffect(() => {
+    if (isVideo && videoRef.current) {
+      videoRef.current.muted = true;
+      videoRef.current.defaultMuted = true;
+      videoRef.current.playsInline = true;
+      
+      const playPromise = videoRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise.catch((err) => {
+          console.warn("Hero video autoplay handled:", err);
+        });
+      }
+    }
+  }, [bgImage, isVideo]);
+
+  if (!bgImage) {
+    return (
+      <img 
+        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80" 
+        alt="Hero Background" 
+        className="w-full h-full object-cover"
+      />
+    );
+  }
+
+  if (isVideo) {
+    return (
+      <video 
+        ref={videoRef}
+        key={bgImage}
+        src={bgImage}
+        autoPlay
+        loop
+        muted
+        defaultMuted
+        playsInline
+        preload="auto"
+        className="w-full h-full object-cover"
+      >
+        <source src={bgImage} type="video/mp4" />
+        {fallbackImg && (
+          <img 
+            src={fallbackImg} 
+            alt="Hero Background Fallback" 
+            className="w-full h-full object-cover"
+          />
+        )}
+      </video>
+    );
+  }
+
+  return (
+    <img 
+      src={bgImage} 
+      alt="Hero Background" 
+      className="w-full h-full object-cover"
+    />
+  );
+}
+
 const serviceRoutes = {
   "Custom ERP Development": "/services/custom-erp-development",
   "SaaS Product Development": "/services/saas-product-development",
@@ -221,25 +285,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
         
         {/* Full Background Image or Video */}
         <div className="absolute inset-0 z-0 bg-slate-950">
-          {typeof data?.hero?.bgImage === 'string' && (data.hero.bgImage.includes('.mp4') || data.hero.bgImage.includes('.webm')) ? (
-            <video 
-              autoPlay
-              loop
-              muted
-              defaultMuted
-              playsInline
-              className="w-full h-full object-cover"
-            >
-              <source src={data.hero.bgImage} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          ) : (
-            <img 
-              src={data?.hero?.bgImage || "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80"} 
-              alt="Hero Background" 
-              className="w-full h-full object-cover"
-            />
-          )}
+          <HeroBackground bgImage={data?.hero?.bgImage} fallbackImg={data?.overviewImage} />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950/60 via-slate-900/40 to-slate-900/10"></div>
         </div>
 
