@@ -95,20 +95,30 @@ function HeroBackground({ bgImage, fallbackImg }) {
 
   if (isVideo) {
     return (
-      <video 
-        ref={videoRef}
-        key={bgImage}
-        src={bgImage}
-        autoPlay
-        loop
-        muted
-        defaultMuted
-        playsInline
-        preload="auto"
-        className="w-full h-full object-cover pointer-events-none"
-      >
-        <source src={bgImage} type="video/mp4" />
-      </video>
+      <div className="relative w-full h-full overflow-hidden bg-slate-950">
+        {/* Layer 1: Image Fallback - Always visible underneath so background is never blank */}
+        <img 
+          src={defaultFallback} 
+          alt="Hero Background" 
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+
+        {/* Layer 2: Video Overlay - Plays on top of image */}
+        <video 
+          ref={videoRef}
+          key={bgImage}
+          src={bgImage}
+          autoPlay
+          loop
+          muted
+          defaultMuted
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src={bgImage} type="video/mp4" />
+        </video>
+      </div>
     );
   }
 

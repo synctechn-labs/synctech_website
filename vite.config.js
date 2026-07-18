@@ -45,10 +45,10 @@ export default defineConfig(({ mode, command }) => {
       "process.env.GEMINI_API_KEY": JSON.stringify(env.GEMINI_API_KEY),
     },
     esbuild: {
-      drop: isBuild ? ["console", "debugger"] : [],
+      drop: [],
     },
     build: {
-      sourcemap: false,
+      sourcemap: true,
     },
     resolve: {
       alias: {
