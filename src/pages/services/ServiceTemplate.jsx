@@ -37,27 +37,45 @@ function FadeInUpCard({ children, delay = 0 }) {
 
 function HeroBackground({ bgImage, fallbackImg }) {
   const videoRef = useRef(null);
-  const isVideo = typeof bgImage === 'string' && (bgImage.includes('.mp4') || bgImage.includes('.webm'));
+  const [hasError, setHasError] = useState(false);
+  const isVideo = typeof bgImage === 'string' && (
+    bgImage.toLowerCase().includes('.mp4') || 
+    bgImage.toLowerCase().includes('.webm') || 
+    bgImage.toLowerCase().includes('/video/upload/')
+  );
 
   useEffect(() => {
+    setHasError(false);
     if (isVideo && videoRef.current) {
-      videoRef.current.muted = true;
-      videoRef.current.defaultMuted = true;
-      videoRef.current.playsInline = true;
+      const video = videoRef.current;
+      video.muted = true;
+      video.defaultMuted = true;
+      video.playsInline = true;
+      video.setAttribute('muted', '');
+      video.setAttribute('playsinline', '');
       
-      const playPromise = videoRef.current.play();
-      if (playPromise !== undefined) {
-        playPromise.catch((err) => {
-          console.warn("Hero video autoplay handled:", err);
-        });
-      }
+      const playVideo = () => {
+        const promise = video.play();
+        if (promise !== undefined) {
+          promise.catch(() => {});
+        }
+      };
+
+      video.addEventListener('canplay', playVideo);
+      playVideo();
+
+      return () => {
+        video.removeEventListener('canplay', playVideo);
+      };
     }
   }, [bgImage, isVideo]);
 
-  if (!bgImage) {
+  const defaultFallback = fallbackImg || "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80";
+
+  if (!bgImage || hasError) {
     return (
       <img 
-        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80" 
+        src={defaultFallback} 
         alt="Hero Background" 
         className="w-full h-full object-cover"
       />
@@ -70,22 +88,17 @@ function HeroBackground({ bgImage, fallbackImg }) {
         ref={videoRef}
         key={bgImage}
         src={bgImage}
+        poster={defaultFallback}
         autoPlay
         loop
         muted
         defaultMuted
         playsInline
         preload="auto"
+        onError={() => setHasError(true)}
         className="w-full h-full object-cover"
       >
         <source src={bgImage} type="video/mp4" />
-        {fallbackImg && (
-          <img 
-            src={fallbackImg} 
-            alt="Hero Background Fallback" 
-            className="w-full h-full object-cover"
-          />
-        )}
       </video>
     );
   }
