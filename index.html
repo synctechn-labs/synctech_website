@@ -20,19 +20,6 @@
       })(window, document, "clarity", "script", "xcm1gmjb1p");
     </script>
 
-    <!-- Disable Right Click / F12 DevTools -->
-    <script>
-      document.addEventListener('contextmenu', e => e.preventDefault());
-      document.addEventListener('keydown', e => {
-        if (
-          e.key === 'F12' ||
-          (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) ||
-          (e.ctrlKey && e.key === 'U')
-        ) {
-          e.preventDefault();
-        }
-      });
-    </script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
