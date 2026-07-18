@@ -37,6 +37,8 @@ function FadeInUpCard({ children, delay = 0 }) {
 
 function HeroBackground({ bgImage, fallbackImg }) {
   const videoRef = useRef(null);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  
   const isVideo = typeof bgImage === 'string' && (
     bgImage.toLowerCase().includes('.mp4') || 
     bgImage.toLowerCase().includes('.webm') || 
@@ -45,58 +47,68 @@ function HeroBackground({ bgImage, fallbackImg }) {
 
   const defaultFallback = fallbackImg || "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80";
 
-  const handleVideoMount = (el) => {
-    if (el) {
-      videoRef.current = el;
-      el.muted = true;
-      el.defaultMuted = true;
-      el.playsInline = true;
-      el.volume = 0;
-      const promise = el.play();
-      if (promise !== undefined) {
-        promise.catch(() => {});
-      }
-    }
-  };
-
   useEffect(() => {
-    if (isVideo && videoRef.current) {
+    setIsVideoLoaded(false);
+    if (!isVideo) return;
+    
+    let animationFrameId;
+    let attemptCount = 0;
+
+    const playVideo = () => {
       const video = videoRef.current;
+      if (!video) return;
+
       video.muted = true;
       video.defaultMuted = true;
       video.playsInline = true;
       video.volume = 0;
+      video.setAttribute('muted', '');
+      video.setAttribute('playsinline', '');
+      video.setAttribute('webkit-playsinline', '');
 
-      const playVideo = () => {
-        video.muted = true;
-        video.play().catch(() => {});
-      };
+      const promise = video.play();
+      if (promise !== undefined) {
+        promise.then(() => {
+          setIsVideoLoaded(true);
+        }).catch(() => {
+          if (attemptCount < 20) {
+            attemptCount++;
+            animationFrameId = requestAnimationFrame(playVideo);
+          }
+        });
+      }
+    };
 
-      playVideo();
+    playVideo();
 
-      video.addEventListener('canplay', playVideo);
-      video.addEventListener('loadeddata', playVideo);
-
-      return () => {
-        video.removeEventListener('canplay', playVideo);
-        video.removeEventListener('loadeddata', playVideo);
-      };
-    }
+    return () => {
+      if (animationFrameId) cancelAnimationFrame(animationFrameId);
+    };
   }, [bgImage, isVideo]);
 
-  return (
-    <div className="relative w-full h-full overflow-hidden">
-      {/* Background Image Layer (Always visible, never blank) */}
+  if (!bgImage) {
+    return (
       <img 
         src={defaultFallback} 
         alt="Hero Background" 
-        className="absolute inset-0 w-full h-full object-cover"
+        className="w-full h-full object-cover"
+      />
+    );
+  }
+
+  return (
+    <div className="relative w-full h-full overflow-hidden bg-slate-950">
+      {/* Background Fallback Image */}
+      <img 
+        src={defaultFallback} 
+        alt="Hero Background" 
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${isVideoLoaded ? 'opacity-0' : 'opacity-100'}`}
       />
 
-      {/* Video Overlay Layer (Plays over the background image when ready) */}
+      {/* Video element */}
       {isVideo && (
         <video 
-          ref={handleVideoMount}
+          ref={videoRef}
           key={bgImage}
           src={bgImage}
           autoPlay
@@ -105,7 +117,13 @@ function HeroBackground({ bgImage, fallbackImg }) {
           defaultMuted
           playsInline
           preload="auto"
-          className="absolute inset-0 w-full h-full object-cover z-10"
+          onPlaying={() => setIsVideoLoaded(true)}
+          onCanPlay={() => {
+            if (videoRef.current) {
+              videoRef.current.play().catch(() => {});
+            }
+          }}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${isVideoLoaded ? 'opacity-100' : 'opacity-0'}`}
         >
           <source src={bgImage} type="video/mp4" />
         </video>
