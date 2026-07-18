@@ -37,7 +37,6 @@ function FadeInUpCard({ children, delay = 0 }) {
 
 function HeroBackground({ bgImage, fallbackImg }) {
   const videoRef = useRef(null);
-  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   
   const isVideo = typeof bgImage === 'string' && (
     bgImage.toLowerCase().includes('.mp4') || 
@@ -48,42 +47,14 @@ function HeroBackground({ bgImage, fallbackImg }) {
   const defaultFallback = fallbackImg || "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80";
 
   useEffect(() => {
-    setIsVideoLoaded(false);
-    if (!isVideo) return;
-    
-    let animationFrameId;
-    let attemptCount = 0;
-
-    const playVideo = () => {
+    if (isVideo && videoRef.current) {
       const video = videoRef.current;
-      if (!video) return;
-
       video.muted = true;
       video.defaultMuted = true;
       video.playsInline = true;
       video.volume = 0;
-      video.setAttribute('muted', '');
-      video.setAttribute('playsinline', '');
-      video.setAttribute('webkit-playsinline', '');
-
-      const promise = video.play();
-      if (promise !== undefined) {
-        promise.then(() => {
-          setIsVideoLoaded(true);
-        }).catch(() => {
-          if (attemptCount < 20) {
-            attemptCount++;
-            animationFrameId = requestAnimationFrame(playVideo);
-          }
-        });
-      }
-    };
-
-    playVideo();
-
-    return () => {
-      if (animationFrameId) cancelAnimationFrame(animationFrameId);
-    };
+      video.play().catch(() => {});
+    }
   }, [bgImage, isVideo]);
 
   if (!bgImage) {
@@ -96,39 +67,31 @@ function HeroBackground({ bgImage, fallbackImg }) {
     );
   }
 
-  return (
-    <div className="relative w-full h-full overflow-hidden bg-slate-950">
-      {/* Background Fallback Image */}
-      <img 
-        src={defaultFallback} 
-        alt="Hero Background" 
-        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${isVideoLoaded ? 'opacity-0' : 'opacity-100'}`}
-      />
+  if (isVideo) {
+    return (
+      <video 
+        ref={videoRef}
+        key={bgImage}
+        src={bgImage}
+        autoPlay
+        loop
+        muted
+        defaultMuted
+        playsInline
+        preload="auto"
+        className="w-full h-full object-cover"
+      >
+        <source src={bgImage} type="video/mp4" />
+      </video>
+    );
+  }
 
-      {/* Video element */}
-      {isVideo && (
-        <video 
-          ref={videoRef}
-          key={bgImage}
-          src={bgImage}
-          autoPlay
-          loop
-          muted
-          defaultMuted
-          playsInline
-          preload="auto"
-          onPlaying={() => setIsVideoLoaded(true)}
-          onCanPlay={() => {
-            if (videoRef.current) {
-              videoRef.current.play().catch(() => {});
-            }
-          }}
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${isVideoLoaded ? 'opacity-100' : 'opacity-0'}`}
-        >
-          <source src={bgImage} type="video/mp4" />
-        </video>
-      )}
-    </div>
+  return (
+    <img 
+      src={bgImage} 
+      alt="Hero Background" 
+      className="w-full h-full object-cover"
+    />
   );
 }
 
