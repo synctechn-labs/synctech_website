@@ -114,7 +114,7 @@ hero: {
     "Improve operational efficiency with intelligent Operations Exception Management Systems that identify issues before they impact your business. SyncTechn develops secure, scalable platforms that monitor business operations in real time, detect workflow exceptions, automate incident management, prioritize critical events, notify responsible teams, and provide actionable insights through centralized dashboards and enterprise-grade reporting.",
 
   bgImage:
-    "https://res.cloudinary.com/wowukaao/video/upload/v1783796943/From_Klickpin.com-_Scenic_hidden_country_gems_with_soft_aesthetic_charm_designed_for_beautiful_Pinterest_saves_to_pin_f-pin-id-1137440449684635313_pv3zwp.mp4",
+    "https://res.cloudinary.com/wowukaao/video/upload/v1783796946/MOBILE_APP_360_b8hm3v.mp4",
 
   logos: [
     "React",

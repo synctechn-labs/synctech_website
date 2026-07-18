@@ -47,29 +47,40 @@ function HeroBackground({ bgImage, fallbackImg }) {
   const defaultFallback = fallbackImg || "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80";
 
   useEffect(() => {
-    if (isVideo && videoRef.current) {
-      const video = videoRef.current;
+    if (!videoRef.current || !isVideo) return;
+    const video = videoRef.current;
+    
+    video.muted = true;
+    video.defaultMuted = true;
+    video.playsInline = true;
+    video.volume = 0;
+
+    const playVideo = () => {
       video.muted = true;
-      video.defaultMuted = true;
-      video.playsInline = true;
       video.volume = 0;
-      video.setAttribute('muted', '');
-      video.setAttribute('playsinline', '');
+      const promise = video.play();
+      if (promise !== undefined) {
+        promise.catch(() => {});
+      }
+    };
 
-      const playVideo = () => {
-        video.muted = true;
-        video.play().catch(() => {});
-      };
+    playVideo();
 
-      playVideo();
-      video.addEventListener('canplay', playVideo);
-      video.addEventListener('loadeddata', playVideo);
+    const handleUserInteraction = () => {
+      if (video.paused) {
+        playVideo();
+      }
+    };
 
-      return () => {
-        video.removeEventListener('canplay', playVideo);
-        video.removeEventListener('loadeddata', playVideo);
-      };
-    }
+    window.addEventListener('click', handleUserInteraction, { passive: true });
+    window.addEventListener('touchstart', handleUserInteraction, { passive: true });
+    window.addEventListener('scroll', handleUserInteraction, { passive: true });
+
+    return () => {
+      window.removeEventListener('click', handleUserInteraction);
+      window.removeEventListener('touchstart', handleUserInteraction);
+      window.removeEventListener('scroll', handleUserInteraction);
+    };
   }, [bgImage, isVideo]);
 
   if (!bgImage) {
@@ -88,14 +99,13 @@ function HeroBackground({ bgImage, fallbackImg }) {
         ref={videoRef}
         key={bgImage}
         src={bgImage}
-        poster={defaultFallback}
         autoPlay
         loop
         muted
         defaultMuted
         playsInline
         preload="auto"
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover pointer-events-none"
       >
         <source src={bgImage} type="video/mp4" />
       </video>

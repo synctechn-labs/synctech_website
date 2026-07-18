@@ -123,7 +123,7 @@ export const mobileDevelopmentData = {
     "SyncTechn is a leading custom mobile app development company helping startups, SMBs, and enterprises build secure, scalable, and high-performance mobile applications. Our expert mobile app developers specialize in Android app development, iOS app development, Flutter app development, React Native development, enterprise mobility solutions, and AI-powered mobile applications. From product discovery and UI/UX design to cloud deployment, modernization, and ongoing support, we deliver end-to-end mobile app development services that accelerate digital transformation, improve customer engagement, and drive measurable business growth.",
 
   bgImage:
-    "https://res.cloudinary.com/wowukaao/video/upload/v1783796943/From_Klickpin.com-_Scenic_hidden_country_gems_with_soft_aesthetic_charm_designed_for_beautiful_Pinterest_saves_to_pin_f-pin-id-1137440449684635313_pv3zwp.mp4",
+    "https://res.cloudinary.com/wowukaao/video/upload/v1783796946/MOBILE_APP_360_b8hm3v.mp4",
 
   logos: [
     "AWS",

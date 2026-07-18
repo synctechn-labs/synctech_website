@@ -122,7 +122,7 @@ hero: {
     "Create secure, intelligent, and collaborative digital workspaces tailored to every department and user role within your organization. SyncTechn develops role-based business workspace platforms that centralize communication, automate workflows, manage documents, streamline approvals, provide personalized dashboards, and improve productivity through secure access control and enterprise-grade architecture.",
 
   bgImage:
-    "https://res.cloudinary.com/wowukaao/video/upload/v1783796943/From_Klickpin.com-_Scenic_hidden_country_gems_with_soft_aesthetic_charm_designed_for_beautiful_Pinterest_saves_to_pin_f-pin-id-1137440449684635313_pv3zwp.mp4",
+    "https://res.cloudinary.com/wowukaao/video/upload/v1783796946/MOBILE_APP_360_b8hm3v.mp4",
 
   logos: [
     "React",

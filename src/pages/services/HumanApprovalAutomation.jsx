@@ -122,7 +122,7 @@ hero: {
     "Accelerate business operations with intelligent Human Approval Automation Systems that eliminate manual bottlenecks while keeping people in control of critical decisions. SyncTechn develops secure approval workflow solutions that automate document approvals, purchase requests, leave management, finance approvals, contract reviews, compliance processes, HR workflows, and enterprise decision-making through configurable approval rules, notifications, dashboards, and real-time tracking.",
 
   bgImage:
-    "https://res.cloudinary.com/wowukaao/video/upload/v1783796943/From_Klickpin.com-_Scenic_hidden_country_gems_with_soft_aesthetic_charm_designed_for_beautiful_Pinterest_saves_to_pin_f-pin-id-1137440449684635313_pv3zwp.mp4",
+    "https://res.cloudinary.com/wowukaao/video/upload/v1783796946/MOBILE_APP_360_b8hm3v.mp4",
 
   logos: [
     "Microsoft 365",

@@ -121,7 +121,7 @@ hero: {
     "Transform your ideas into powerful mobile applications with SyncTechn. We design and develop secure, scalable, and high-performance mobile apps for Android, iOS, Flutter, and React Native. From startup MVPs to enterprise mobility solutions, our mobile application development services help businesses improve customer engagement, automate operations, increase productivity, and accelerate digital transformation through intuitive user experiences and modern technologies.",
 
   bgImage:
-    "https://res.cloudinary.com/wowukaao/video/upload/v1783796943/From_Klickpin.com-_Scenic_hidden_country_gems_with_soft_aesthetic_charm_designed_for_beautiful_Pinterest_saves_to_pin_f-pin-id-1137440449684635313_pv3zwp.mp4",
+    "https://res.cloudinary.com/wowukaao/video/upload/v1783796946/MOBILE_APP_360_b8hm3v.mp4",
 
   logos: [
     "Android",
