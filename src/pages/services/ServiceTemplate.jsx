@@ -52,24 +52,26 @@ function HeroBackground({ bgImage, fallbackImg }) {
       video.setAttribute('muted', '');
       video.setAttribute('playsinline', '');
       
-      const playVideo = () => {
+      // Explicitly load video resource
+      try {
+        video.load();
+      } catch (e) {}
+
+      const attemptPlay = () => {
         const promise = video.play();
         if (promise !== undefined) {
           promise.catch(() => {});
         }
       };
 
-      if (video.readyState >= 2) {
-        playVideo();
-      } else {
-        video.addEventListener('canplay', playVideo, { once: true });
-        video.addEventListener('loadeddata', playVideo, { once: true });
-      }
-      playVideo();
+      attemptPlay();
+
+      video.addEventListener('loadedmetadata', attemptPlay);
+      video.addEventListener('canplay', attemptPlay);
 
       return () => {
-        video.removeEventListener('canplay', playVideo);
-        video.removeEventListener('loadeddata', playVideo);
+        video.removeEventListener('loadedmetadata', attemptPlay);
+        video.removeEventListener('canplay', attemptPlay);
       };
     }
   }, [bgImage, isVideo]);
@@ -91,7 +93,7 @@ function HeroBackground({ bgImage, fallbackImg }) {
       <video 
         ref={videoRef}
         key={bgImage}
-        poster={defaultFallback}
+        src={bgImage}
         autoPlay
         loop
         muted
