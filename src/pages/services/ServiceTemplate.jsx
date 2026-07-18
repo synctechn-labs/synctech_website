@@ -43,38 +43,29 @@ function HeroBackground({ bgImage, fallbackImg }) {
     bgImage.toLowerCase().includes('/video/upload/')
   );
 
-  const defaultFallback = fallbackImg || "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80";
-
   useEffect(() => {
     if (isVideo && videoRef.current) {
       const video = videoRef.current;
-      
       video.muted = true;
       video.defaultMuted = true;
       video.playsInline = true;
-      video.volume = 0;
       video.setAttribute('muted', '');
       video.setAttribute('playsinline', '');
 
       const playVideo = () => {
-        video.muted = true;
-        video.volume = 0;
         const promise = video.play();
         if (promise !== undefined) {
           promise.catch((err) => {
-            console.warn("Autoplay attempt handled:", err);
+            console.warn("Video play error:", err);
           });
         }
       };
 
       playVideo();
-
       video.addEventListener('canplay', playVideo);
-      video.addEventListener('loadeddata', playVideo);
 
       return () => {
         video.removeEventListener('canplay', playVideo);
-        video.removeEventListener('loadeddata', playVideo);
       };
     }
   }, [bgImage, isVideo]);
@@ -82,7 +73,7 @@ function HeroBackground({ bgImage, fallbackImg }) {
   if (!bgImage) {
     return (
       <img 
-        src={defaultFallback} 
+        src={fallbackImg || "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80"} 
         alt="Hero Background" 
         className="w-full h-full object-cover"
       />
@@ -95,13 +86,11 @@ function HeroBackground({ bgImage, fallbackImg }) {
         ref={videoRef}
         key={bgImage}
         src={bgImage}
-        poster={defaultFallback}
         autoPlay
         loop
         muted
         defaultMuted
         playsInline
-        crossOrigin="anonymous"
         preload="auto"
         className="w-full h-full object-cover"
       >
