@@ -4,8 +4,8 @@ import React from "react";
 import DemoHero from "./sections/DemoHero";
 import MosaicVideoSection from "./sections/MosaicVideoSection";
 import TechStackMarquee from "./sections/TechStackMarquee";
-// import FeaturesGrid from "./sections/FeaturesGrid";
-// import ServicesSection from "./sections/ServicesSection";
+import FeaturesGrid from "./sections/FeaturesGrid";
+import ServicesSection from "./sections/ServicesSection";
 import ShowcaseCarouselSection from "./sections/ShowcaseCarouselSection";
 import DesignProHero from "../../components/DesignProHero";
 import ZoomParallaxSection from "./sections/ZoomParallaxSection";
@@ -120,8 +120,7 @@ function HomePage() {
       <MosaicVideoSection />
       <TechStackMarquee />
       <ZoomParallaxSection />
-      {/* <FeaturesGrid /> */}
-      {/* <ServicesSection /> */}
+      <ServicesSection />
       {/* <ShowcaseCarouselSection /> */}
       <DesignProHero />
       <Operations />

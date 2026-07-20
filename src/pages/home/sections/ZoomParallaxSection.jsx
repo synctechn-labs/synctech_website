@@ -1,33 +1,11 @@
 'use client';
 
-import React, { useEffect } from 'react';
-import Lenis from '@studio-freight/lenis';
+import React from 'react';
 import { ZoomParallax } from '@/components/ui/zoom-parallax';
 import { cn } from '@/lib/utils';
 import { Sparkles } from 'lucide-react';
 
 export default function ZoomParallaxSection() {
-	useEffect(() => {
-		const lenis = new Lenis({
-			duration: 1.2,
-			easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-			smoothWheel: true,
-		});
-
-		let rafId;
-		function raf(time) {
-			lenis.raf(time);
-			rafId = requestAnimationFrame(raf);
-		}
-
-		rafId = requestAnimationFrame(raf);
-
-		return () => {
-			if (rafId) cancelAnimationFrame(rafId);
-			if (lenis) lenis.destroy();
-		};
-	}, []);
-
 	const images = [
 		{
 			src: 'https://res.cloudinary.com/wowukaao/image/upload/v1784444631/ai_development_xdcjlu.png',
@@ -39,60 +17,51 @@ export default function ZoomParallaxSection() {
 		},
 		{
 			src: 'https://res.cloudinary.com/wowukaao/image/upload/v1784444635/mob_hez8np.png',
-			alt: 'Mobile App Development',
+			alt: 'Mobile Application Architecture',
 		},
-
 		{
 			src: 'https://res.cloudinary.com/wowukaao/image/upload/v1784444630/soft_cfpofk.png',
-			alt: 'Custom Software Development',
+			alt: 'Custom Enterprise Software',
 		},
 		{
 			src: 'https://res.cloudinary.com/wowukaao/image/upload/v1784444631/dm_gd0rqb.png',
-			alt: 'Digital Marketing',
+			alt: 'Digital Growth & Marketing',
 		},
 		{
 			src: 'https://res.cloudinary.com/wowukaao/image/upload/v1784444633/crm_solutions_mcgrvt.png',
-			alt: 'CRM Solutions',
+			alt: 'CRM & ERP Platforms',
 		},
 		{
 			src: 'https://res.cloudinary.com/wowukaao/image/upload/v1784444630/workflow_automation_q8kcje.png',
-			alt: 'Workflow Automation',
+			alt: 'Workflow Automation Engine',
 		},
 	];
 
 	return (
-		<section className="relative w-full bg-[#060910] text-white py-16">
-			<div className="relative flex min-h-[40vh] flex-col items-center justify-center text-center px-4">
-				{/* Radial spotlight */}
-				<div
-					aria-hidden="true"
-					className={cn(
-						'pointer-events-none absolute -top-1/2 left-1/2 h-[120vmin] w-[120vmin] -translate-x-1/2 rounded-full',
-						'bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.15),transparent_50%)]',
-						'blur-[40px]',
-					)}
-				/>
-
+		<section className="relative bg-[#060910] text-slate-100 py-16 overflow-x-clip">
+			{/* Section Header */}
+			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8 relative z-20">
 				<div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-4">
-					<Sparkles size={14} className="text-cyan-400" />
-					Immersive Perspective
+					<Sparkles size={14} className="text-cyan-400 animate-pulse" />
+					Interactive Showcase
 				</div>
 
-				<h2 className="text-center text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white mb-4">
-					Scroll Down for{' '}
+				<h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">
+					Explore Our Digital{" "}
 					<span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
-						Zoom Parallax
+						Ecosystem
 					</span>
 				</h2>
 
-				<p className="text-slate-400 text-base sm:text-lg max-w-xl">
-					Experience multi-dimensional depth as you navigate through our digital landscape.
+				<p className="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto">
+					Scroll down to experience our multi-dimensional platform capabilities in 3D motion.
 				</p>
 			</div>
 
-			<ZoomParallax images={images} />
-
-			<div className="h-[20vh]" />
+			{/* Zoom Parallax Container */}
+			<div className="w-full relative">
+				<ZoomParallax images={images} />
+			</div>
 		</section>
 	);
 }
