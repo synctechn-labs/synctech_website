@@ -2,12 +2,18 @@ import React from "react";
 
 // ---- Demo-style section components ----
 import DemoHero from "./sections/DemoHero";
+import MosaicVideoSection from "./sections/MosaicVideoSection";
 import TechStackMarquee from "./sections/TechStackMarquee";
-import FeaturesGrid from "./sections/FeaturesGrid";
-import ServicesSection from "./sections/ServicesSection";
-import IndustriesSection from "./sections/IndustriesSection";
+// import FeaturesGrid from "./sections/FeaturesGrid";
+// import ServicesSection from "./sections/ServicesSection";
+import ShowcaseCarouselSection from "./sections/ShowcaseCarouselSection";
+import DesignProHero from "../../components/DesignProHero";
+import ZoomParallaxSection from "./sections/ZoomParallaxSection";
+// import IndustriesSection from "./sections/IndustriesSection";
 import Operations from "./sections/Operations";
-import EnterpriseTechStack from "./sections/EnterpriseTechStack";
+// import EnterpriseTechStack from "./sections/EnterpriseTechStack";
+import TeamShowcaseSection from "./sections/TeamShowcaseSection";
+import LayeredTextSection from "./sections/LayeredTextSection";
 import FAQSection from "./sections/FAQSection";
 import BlogSection from "./sections/BlogSection";
 import CTASection from "./sections/CTASection";
@@ -101,7 +107,7 @@ const HomePageStyles = () => (
 
 function HomePage() {
   return (
-    <div className="min-h-screen bg-[#060910] text-slate-100 selection:bg-blue-600/30 selection:text-white font-sans relative overflow-hidden">
+    <div className="min-h-screen bg-[#060910] text-slate-100 selection:bg-blue-600/30 selection:text-white font-sans relative overflow-x-clip">
       <HomePageStyles />
 
       {/* Background Glowing Orbs */}
@@ -111,12 +117,18 @@ function HomePage() {
 
       {/* ---- Sections (exact DemoPage order) ---- */}
       <DemoHero />
+      <MosaicVideoSection />
       <TechStackMarquee />
-      <FeaturesGrid />
-      <ServicesSection />
+      <ZoomParallaxSection />
+      {/* <FeaturesGrid /> */}
+      {/* <ServicesSection /> */}
+      {/* <ShowcaseCarouselSection /> */}
+      <DesignProHero />
       <Operations />
-      <IndustriesSection />
-      <EnterpriseTechStack />
+      <LayeredTextSection />
+      {/* <IndustriesSection /> */}
+      {/* <EnterpriseTechStack /> */}
+      <TeamShowcaseSection />
       <FAQSection />
       {/* <BlogSection /> */}
       <CTASection />

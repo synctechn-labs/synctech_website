@@ -486,3 +486,8 @@
 //     </div>
 //   );
 // }
+
+export default function LeadFormModal() {
+  return null;
+}
+
