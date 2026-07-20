@@ -15,7 +15,7 @@ function FadeInUpCard({ children, delay = 0 }) {
         }
       });
     }, { threshold: 0.1 });
-    
+
     if (domRef.current) {
       observer.observe(domRef.current);
     }
@@ -25,9 +25,8 @@ function FadeInUpCard({ children, delay = 0 }) {
   return (
     <div
       ref={domRef}
-      className={`transition-all duration-1000 ease-out ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-24"
-      }`}
+      className={`transition-all duration-1000 ease-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-24"
+        }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {children}
@@ -37,10 +36,10 @@ function FadeInUpCard({ children, delay = 0 }) {
 
 function HeroBackground({ bgImage, fallbackImg }) {
   const videoRef = useRef(null);
-  
+
   const isVideo = typeof bgImage === 'string' && (
-    bgImage.toLowerCase().includes('.mp4') || 
-    bgImage.toLowerCase().includes('.webm') || 
+    bgImage.toLowerCase().includes('.mp4') ||
+    bgImage.toLowerCase().includes('.webm') ||
     bgImage.toLowerCase().includes('/video/upload/')
   );
 
@@ -49,7 +48,7 @@ function HeroBackground({ bgImage, fallbackImg }) {
   useEffect(() => {
     if (!videoRef.current || !isVideo) return;
     const video = videoRef.current;
-    
+
     video.muted = true;
     video.defaultMuted = true;
     video.playsInline = true;
@@ -60,7 +59,7 @@ function HeroBackground({ bgImage, fallbackImg }) {
       video.volume = 0;
       const promise = video.play();
       if (promise !== undefined) {
-        promise.catch(() => {});
+        promise.catch(() => { });
       }
     };
 
@@ -85,9 +84,9 @@ function HeroBackground({ bgImage, fallbackImg }) {
 
   if (!bgImage) {
     return (
-      <img 
-        src={defaultFallback} 
-        alt="Hero Background" 
+      <img
+        src={defaultFallback}
+        alt="Hero Background"
         className="w-full h-full object-cover"
       />
     );
@@ -97,14 +96,14 @@ function HeroBackground({ bgImage, fallbackImg }) {
     return (
       <div className="relative w-full h-full overflow-hidden bg-slate-950">
         {/* Layer 1: Image Fallback - Always visible underneath so background is never blank */}
-        <img 
-          src={defaultFallback} 
-          alt="Hero Background" 
+        <img
+          src={defaultFallback}
+          alt="Hero Background"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
         {/* Layer 2: Video Overlay - Plays on top of image */}
-        <video 
+        <video
           ref={videoRef}
           key={bgImage}
           src={bgImage}
@@ -123,9 +122,9 @@ function HeroBackground({ bgImage, fallbackImg }) {
   }
 
   return (
-    <img 
-      src={bgImage} 
-      alt="Hero Background" 
+    <img
+      src={bgImage}
+      alt="Hero Background"
       className="w-full h-full object-cover"
     />
   );
@@ -243,7 +242,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
 
   let suiteServices = data?.servicesSuite?.services ? [...data.servicesSuite.services] : [];
   const activeServiceInSuite = suiteServices.find(s => serviceRoutes[s.title] === currentPath);
-  
+
   if (activeServiceInSuite) {
     const parentName = serviceToParentMap[activeServiceInSuite.title];
     if (parentName && PARENT_SERVICES[parentName]) {
@@ -280,7 +279,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
       if (!timelineRef.current) return;
       const rect = timelineRef.current.getBoundingClientRect();
       const windowHeight = window.innerHeight;
-      const startTrigger = windowHeight / 2; 
+      const startTrigger = windowHeight / 2;
       const totalDistance = rect.height;
       const scrolled = startTrigger - rect.top;
       let progress = scrolled / totalDistance;
@@ -309,12 +308,12 @@ export default function ServiceTemplate({ data, techStackComponent }) {
 
   return (
     <div className="w-full bg-white font-sans text-slate-900">
-      
+
       {/* ========================================================= */}
       {/* 1. HERO SECTION */}
       {/* ========================================================= */}
       <section className="relative w-full min-h-screen flex flex-col lg:flex-row bg-slate-900 overflow-hidden">
-        
+
         {/* Full Background Image or Video */}
         <div className="absolute inset-0 z-0 bg-slate-950">
           <HeroBackground bgImage={data?.hero?.bgImage} fallbackImg={data?.overviewImage} />
@@ -344,8 +343,8 @@ export default function ServiceTemplate({ data, techStackComponent }) {
             <form className="space-y-4 lg:space-y-5" onSubmit={handleFormSubmit}>
               <div>
                 <label className="block text-xs font-semibold text-slate-300 mb-1">Name</label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   placeholder="Full Name"
                   className="w-full bg-transparent border-b border-slate-500 focus:border-white text-white py-1.5 outline-none transition-colors placeholder:text-slate-500"
                 />
@@ -359,9 +358,9 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                     <option value="+1" className="text-slate-900">+1</option>
                     <option value="+44" className="text-slate-900">+44</option>
                   </select>
-                  <input 
-                    type="text" 
-                    placeholder="Enter Your Number*" 
+                  <input
+                    type="text"
+                    placeholder="Enter Your Number*"
                     className="w-full bg-transparent border-b border-slate-500 focus:border-white text-white py-1.5 outline-none transition-colors placeholder:text-slate-500"
                   />
                 </div>
@@ -369,9 +368,9 @@ export default function ServiceTemplate({ data, techStackComponent }) {
 
               <div>
                 <label className="block text-xs font-semibold text-slate-300 mb-1">Work Email</label>
-                <input 
-                  type="email" 
-                  placeholder="Enter your email Address*" 
+                <input
+                  type="email"
+                  placeholder="Enter your email Address*"
                   className="w-full bg-transparent border-b border-slate-500 focus:border-white text-white py-1.5 outline-none transition-colors placeholder:text-slate-500"
                 />
               </div>
@@ -388,7 +387,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
 
               <div>
                 <label className="block text-xs font-semibold text-slate-300 mb-1">Describe your project (Help us come back better prepared)</label>
-                <textarea 
+                <textarea
                   placeholder="Describe your project"
                   rows="1"
                   className="w-full bg-transparent border-b border-slate-500 focus:border-white text-white py-1.5 outline-none transition-colors placeholder:text-slate-500 resize-none"
@@ -402,15 +401,15 @@ export default function ServiceTemplate({ data, techStackComponent }) {
 
               <div className="flex items-center justify-between gap-4 pt-1">
                 <div className="flex items-center gap-2 text-white font-semibold text-sm whitespace-nowrap">
-                  {captchaNum1} + {captchaNum2} = <input 
-                    type="text" 
+                  {captchaNum1} + {captchaNum2} = <input
+                    type="text"
                     value={captchaInput}
                     onChange={(e) => setCaptchaInput(e.target.value)}
-                    className="w-10 bg-white text-slate-900 rounded px-2 py-1.5 text-center outline-none" 
+                    className="w-10 bg-white text-slate-900 rounded px-2 py-1.5 text-center outline-none"
                   />
                 </div>
-                <button 
-                  type="submit" 
+                <button
+                  type="submit"
                   className="w-full text-center block bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-cyan-500/25 text-white font-bold py-2.5 rounded-full transition-all duration-300 shadow-lg text-sm"
                 >
                   Schedule a Call
@@ -428,22 +427,22 @@ export default function ServiceTemplate({ data, techStackComponent }) {
         {/* Left Side: Dark Background */}
         <div className="w-full lg:w-1/2 bg-[#050505] text-white py-24 px-8 lg:px-20 flex flex-col justify-center">
           <p className="text-xl leading-relaxed text-slate-200 font-medium mb-16">
-            With over a decade of industry experience and a powerhouse team of 1700+ tech experts, we operate as a full-cycle mobile app development company that engineers high-performance, scalable mobile solutions backed by ISO-27001, ISO-9001, and CMMI Level 3 certifications.
+            At SyncTechn, we build custom software solutions that help businesses automate operations, improve efficiency, and accelerate digital transformation. Our custom software development services cover enterprise applications, SaaS platforms, CRM and ERP systems, cloud-native applications, API integrations, AI-powered software, and business process automation. Every solution is designed with scalability, security, and long-term performance in mind, enabling organizations to adapt quickly and grow with confidence.
           </p>
 
-          <h3 className="text-2xl font-bold mb-8">Our Core Capabilities:</h3>
-          
+          <h2 className="text-2xl font-bold mb-8">Our Core Capabilities:</h2>
+
           <ul className="space-y-6">
             <li className="flex items-start gap-4">
               <CheckCheck className="text-[#3a86ff] mt-1 shrink-0 w-5 h-5" />
               <span className="text-lg md:text-xl font-medium text-slate-300 leading-relaxed">
-                Building secure, scalable native and cross-platform applications on AWS, Azure, and Google Cloud infrastructures
+                Developing secure, scalable custom software, web applications, and enterprise platforms using modern technologies and cloud infrastructure such as AWS, Microsoft Azure, and Google Cloud.
               </span>
             </li>
             <li className="flex items-start gap-4">
               <CheckCheck className="text-[#3a86ff] mt-1 shrink-0 w-5 h-5" />
               <span className="text-lg md:text-xl font-medium text-slate-300 leading-relaxed">
-                Designing intuitive, high-retention user experiences that captivate audiences and drive measurable ROI
+                Building custom CRM, ERP, SaaS, and workflow automation solutions that streamline business operations, improve productivity, and support long-term growth.
               </span>
             </li>
             <li className="flex items-start gap-4">
@@ -455,13 +454,13 @@ export default function ServiceTemplate({ data, techStackComponent }) {
             <li className="flex items-start gap-4">
               <CheckCheck className="text-[#3a86ff] mt-1 shrink-0 w-5 h-5" />
               <span className="text-lg md:text-xl font-medium text-slate-300 leading-relaxed">
-                Protecting sensitive user data by integrating multi-layered security frameworks and compliance standards
+                Implementing enterprise-grade security with encrypted communication, secure authentication, role-based access control, compliance best practices, and multi-layer protection for sensitive business data.
               </span>
             </li>
             <li className="flex items-start gap-4">
               <CheckCheck className="text-[#3a86ff] mt-1 shrink-0 w-5 h-5" />
               <span className="text-base md:text-lg font-medium text-slate-300 leading-relaxed">
-                Connecting mobile ecosystems with existing ERP, CRM, and legacy systems via API-first architectures
+                Integrating custom software seamlessly with third-party APIs, payment gateways, ERP systems, CRM platforms, legacy applications, and cloud services to create a connected digital ecosystem.
               </span>
             </li>
           </ul>
@@ -469,9 +468,9 @@ export default function ServiceTemplate({ data, techStackComponent }) {
 
         {/* Right Side: Service Image */}
         <div className="w-full lg:w-1/2 bg-[#050505] flex items-center justify-center p-8 lg:p-12 border-l border-white/5">
-          <img 
-            src={data?.overviewImage || data?.primaryCta?.image || "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"} 
-            alt="Service Overview" 
+          <img
+            src={data?.overviewImage || data?.primaryCta?.image || "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"}
+            alt="Service Overview"
             className="w-full h-auto rounded-[2rem] shadow-2xl"
           />
         </div>
@@ -521,7 +520,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
           <div className="w-full lg:w-[35%] bg-white p-8 lg:p-10 border-r border-slate-100 max-h-[600px] overflow-y-auto">
             <div className="space-y-2">
               {suiteServices?.map((service, idx) => (
-                <Link 
+                <Link
                   to={serviceRoutes[service.title] || "#"}
                   target="_blank" rel="noopener noreferrer"
                   key={idx}
@@ -543,14 +542,14 @@ export default function ServiceTemplate({ data, techStackComponent }) {
           <div className="w-full lg:w-[65%] flex flex-col bg-slate-50 relative">
             {/* Image Banner */}
             <div className="w-full h-64 lg:h-80 overflow-hidden relative">
-              <img 
-                src={suiteServices?.[activeService]?.image || "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80"} 
-                alt={suiteServices?.[activeService]?.title} 
+              <img
+                src={suiteServices?.[activeService]?.image || "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80"}
+                alt={suiteServices?.[activeService]?.title}
                 className="w-full h-full object-cover transition-all duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent pointer-events-none"></div>
             </div>
-            
+
             {/* Info Split */}
             <div className="flex flex-col lg:flex-row flex-1 relative -mt-6">
               {/* Blue Info Box */}
@@ -565,7 +564,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                   {suiteServices?.[activeService]?.desc}
                 </p>
                 <Link to={serviceRoutes[suiteServices?.[activeService]?.title] || "#"} target="_blank" rel="noopener noreferrer" className="mt-auto inline-flex items-center gap-2 text-white font-semibold hover:text-cyan-200 transition-colors w-max">
-                  Explore Service <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  Explore Service <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                 </Link>
               </div>
 
@@ -605,12 +604,12 @@ export default function ServiceTemplate({ data, techStackComponent }) {
               </button>
             </div>
           </div>
-          
+
           {/* Right Column (Image) */}
           <div className="w-full lg:w-[45%] h-64 lg:h-auto min-h-[300px]">
-            <img 
-              src="https://res.cloudinary.com/wowukaao/image/upload/v1783865631/CTA_1_1_ymdwgy.jpg" 
-              alt="CTA Image" 
+            <img
+              src="https://res.cloudinary.com/wowukaao/image/upload/v1783865631/CTA_1_1_ymdwgy.jpg"
+              alt="CTA Image"
               className="w-full h-full object-cover"
             />
           </div>
@@ -622,7 +621,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
       {/* ========================================================= */}
       <section className="w-full bg-[#050505] py-24 px-6 lg:px-16">
         <div className="max-w-7xl mx-auto flex flex-col gap-16 lg:gap-20">
-          
+
           {/* Top Column - Text */}
           <div className="w-full max-w-4xl flex flex-col">
             <h2 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-cyan-500 to-blue-600 text-transparent bg-clip-text mb-6 tracking-tight pb-2 whitespace-pre-line text-balance line-clamp-2">
@@ -638,7 +637,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
             <div className="border-t border-white/10">
               {data?.industries?.list?.map((industry, idx) => (
                 <div key={idx} className="border-b border-white/10">
-                  <button 
+                  <button
                     onClick={() => {
                       setIsIndustryAutomated(false);
                       setOpenIndustry(openIndustry === idx ? null : idx);
@@ -676,25 +675,25 @@ export default function ServiceTemplate({ data, techStackComponent }) {
           {/* Left Column (Blue Gradient text area) */}
           <div className="w-full lg:w-[55%] bg-gradient-to-br from-cyan-500 to-blue-600 p-10 lg:p-12 flex flex-col justify-center text-white relative">
             <h2 className="text-3xl lg:text-4xl leading-tight mb-4">
-              <span className="font-light">Your Industry Demands </span>
-              <span className="font-bold">Custom Mobile Solutions.</span><span className="font-light"> Off-the-shelf Solutions are Not Enough!</span>
+              <span className="font-light"> Build Custom Software</span>
+              <span className="font-bold"> That Gives Your</span><span className="font-light"> Business a Competitive Advantage</span>
             </h2>
             <p className="text-sm lg:text-base text-blue-50 leading-relaxed mb-8 max-w-xl font-medium">
-              With 1700+ experts and ISO/HIPAA-compliant processes, we engineer secure, hyper-scalable digital assets that deliver measurable business outcomes in your sector.
+              Whether you're building enterprise software, modernizing legacy systems, developing SaaS products, or automating business operations, SyncTechn delivers secure, scalable, and future-ready custom software solutions tailored to your industry and business goals.
             </p>
             <div>
               <Link to="/contact-us" className="bg-white text-slate-900 rounded-full px-8 py-3.5 font-semibold text-sm inline-flex items-center gap-3 hover:bg-slate-100 transition-colors shadow-xl w-max">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                Consult Our Industry Specialists
+                Schedule a Free Consultation
               </Link>
             </div>
           </div>
-          
+
           {/* Right Column (Image) */}
           <div className="w-full lg:w-[45%] h-64 lg:h-auto min-h-[300px]">
-            <img 
-              src="https://res.cloudinary.com/wowukaao/image/upload/v1783865631/CTA_1_2_fxgfo0.jpg" 
-              alt="Industry Specialists" 
+            <img
+              src="https://res.cloudinary.com/wowukaao/image/upload/v1783865631/CTA_1_2_fxgfo0.jpg"
+              alt="Industry Specialists"
               className="w-full h-full object-cover"
             />
           </div>
@@ -727,7 +726,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                       0{idx + 1}
                     </span>
                   </div>
-                  
+
                   {/* Content */}
                   <div className="flex-1 md:pl-12 md:border-l border-white/10 group-hover:border-blue-500/50 transition-colors">
                     <h3 className="text-2xl font-bold mb-6 group-hover:text-blue-400 transition-colors">{card.title}</h3>
@@ -747,11 +746,11 @@ export default function ServiceTemplate({ data, techStackComponent }) {
       {/* ========================================================= */}
       <section className="w-full bg-[#050505] py-24 px-6 lg:px-16 flex justify-center">
         <div className="w-full max-w-7xl rounded-[2.5rem] overflow-hidden flex flex-col lg:flex-row shadow-2xl">
-          
+
           {/* Left Column (Solid Bright Blue) */}
           <div className="w-full lg:w-[55%] bg-gradient-to-br from-cyan-500 to-blue-600 p-10 lg:p-12 flex flex-col justify-center text-white relative">
             <h2 className="text-3xl lg:text-4xl leading-tight mb-4 font-medium">
-              <span className="font-bold">{data?.secondaryCta?.title}</span> <br/>{data?.secondaryCta?.highlight}
+              <span className="font-bold">{data?.secondaryCta?.title}</span> <br />{data?.secondaryCta?.highlight}
             </h2>
             <p className="text-sm lg:text-base text-blue-50 leading-relaxed mb-8 max-w-xl">
               {data?.secondaryCta?.subtitle}
@@ -763,12 +762,12 @@ export default function ServiceTemplate({ data, techStackComponent }) {
               </Link>
             </div>
           </div>
-          
+
           {/* Right Column (Image) */}
           <div className="w-full lg:w-[45%] h-64 lg:h-auto min-h-[300px]">
-            <img 
-              src="https://res.cloudinary.com/wowukaao/image/upload/v1783865630/CTA_1_3_rpss5y.jpg" 
-              alt="Secondary CTA Image" 
+            <img
+              src="https://res.cloudinary.com/wowukaao/image/upload/v1783865630/CTA_1_3_rpss5y.jpg"
+              alt="Secondary CTA Image"
               className="w-full h-full object-cover"
             />
           </div>
@@ -800,8 +799,8 @@ export default function ServiceTemplate({ data, techStackComponent }) {
           {/* Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 transition-all duration-500">
             {data?.features?.list?.slice(0, showMoreFeatures ? 20 : 12).map((feature, idx) => (
-              <div 
-                key={idx} 
+              <div
+                key={idx}
                 className="flex items-center gap-4 bg-[#0a0a0a] hover:bg-[#111] border border-white/10 rounded-2xl p-6 transition-colors group"
               >
                 <div className="text-white/50 group-hover:text-white transition-colors shrink-0">
@@ -817,7 +816,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
           {/* Show More/Less Button */}
           {data?.features?.list?.length > 12 && (
             <div className="mt-12 flex justify-center">
-              <button 
+              <button
                 onClick={() => setShowMoreFeatures(!showMoreFeatures)}
                 className="flex items-center gap-2 border border-white/20 hover:border-white/40 rounded-full px-6 py-3 text-sm transition-colors font-medium bg-transparent text-white"
               >
@@ -849,7 +848,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
             {/* Center Line Container */}
             <div className="absolute left-4 lg:left-1/2 top-0 bottom-0 w-[2px] bg-[#1a1a1a] lg:-translate-x-1/2"></div>
             {/* Active Blue Line */}
-            <div 
+            <div
               className="absolute left-4 lg:left-1/2 top-0 w-[2px] bg-gradient-to-b from-cyan-500 to-blue-600 lg:-translate-x-1/2 transition-all duration-300 ease-out"
               style={{ height: `${timelineProgress * 100}%` }}
             ></div>
@@ -860,7 +859,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                 const isActive = timelineProgress >= (nodePosition * 0.95); // Slight offset for visual sync
                 return (
                   <div key={idx} className="relative flex flex-col lg:flex-row items-start lg:items-center w-full group">
-                    
+
                     {/* Center Node */}
                     <div className={`absolute left-4 lg:left-1/2 w-4 h-4 rounded-full -translate-x-1/2 mt-1 lg:mt-0 z-10 transition-colors duration-500 box-content border-[4px] ${isActive ? "bg-cyan-500 border-[#050505] shadow-[0_0_15px_rgba(6,182,212,0.5)]" : "bg-[#1a1a1a] border-[#050505]"}`}>
                     </div>
@@ -905,11 +904,11 @@ export default function ServiceTemplate({ data, techStackComponent }) {
           {/* Accordion */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-start">
             {data?.faqs?.list?.map((faq, idx) => (
-              <div 
-                key={idx} 
+              <div
+                key={idx}
                 className="bg-[#0a0a0a] border border-white/10 rounded-2xl overflow-hidden transition-all duration-300"
               >
-                <button 
+                <button
                   onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
                   className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none group hover:bg-[#111] transition-colors"
                 >
@@ -920,11 +919,11 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                     <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${openFaq === idx ? "rotate-180" : ""}`} />
                   </div>
                 </button>
-                
-                <div 
-                  className={`overflow-hidden transition-all duration-300 ease-in-out ${openFaq === idx ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
+
+                <div
+                  className={`overflow-hidden transition-all duration-300 ease-in-out ${openFaq === idx ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"}`}
                 >
-                  <div className="px-6 pb-6 pt-2 text-slate-400 text-sm lg:text-base leading-relaxed border-t border-white/5 mt-2">
+                  <div className="px-6 pb-6 pt-2 text-slate-400 text-sm lg:text-base leading-relaxed border-t border-white/5 mt-2 whitespace-pre-line">
                     {faq.a}
                   </div>
                 </div>

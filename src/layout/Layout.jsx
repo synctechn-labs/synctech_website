@@ -2,7 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import LeadFormModal from "../components/LeadFormModal/LeadFormModal";
+// import LeadFormModal from "../components/LeadFormModal/LeadFormModal";
 
 export default function Layout() {
   return (
@@ -12,7 +12,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <Footer />
-      <LeadFormModal />
+      {/* <LeadFormModal /> */}
     </>
   );
 }
