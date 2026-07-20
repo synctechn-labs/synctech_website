@@ -19,7 +19,7 @@
     "react-icons": "^5.7.0",
     "react-router-dom": "^7.18.0",
     "sharp": "^0.35.2",
-    "swiper": "^14.0.5"
+    "swiper": "^14.0.6"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.2.4",
