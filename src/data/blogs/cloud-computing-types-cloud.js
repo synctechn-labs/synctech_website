@@ -6,9 +6,10 @@ const typesOfCloudComputingServices = {
   date: "July 17, 2026",
   readTime: "12–15 min read",
   author: {
-    name: "Synctechn Software Solutions",
-    role: "Company",
-    avatar: "",
+    name: "Sai Sabiksha ",
+    role: "Founder",
+    avatar:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
   },
   category: "Cloud Computing",
   coverImage: "https://res.cloudinary.com/wowukaao/image/upload/v1784651967/cloud_2_sd7uiz.png",

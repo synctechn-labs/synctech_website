@@ -6,10 +6,10 @@ const top10MobileAppDevelopmentCompaniesInChennai = {
   date: "July 16, 2026",
   readTime: "12 min read",
   author: {
-    name: "Elena Rostova",
-    role: "Mobile App Technology Strategist",
+    name: "Sai Sabiksha ",
+    role: "Founder",
     avatar:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
   },
   category: "Mobile App Development",
   coverImage:
