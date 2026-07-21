@@ -16,6 +16,7 @@ import aiVoiceCloningScamsBankingSafety from "./ai-voice-cloning-scams-banking-s
 import fordGlobalTechnologyBusinessCenter from "./ford-global-technology-business-center-chennai.js";
 import financialTechnologyTrends from "./financial-technology-trends.js";
 import whatAreAIDevelopmentServices from "./what-are-ai-development-services.js";
+import top10MobileAppDevelopmentCompaniesInChennai from "./top-10-mobile-app-development-companies-in-chennai.js";
 // Map of blogs keyed by their unique URL slug (id)
 export const blogs = {
 
@@ -33,6 +34,7 @@ export const blogs = {
   //  "ford-global-technology-business-center-chennai": fordGlobalTechnologyBusinessCenter,
   "financial-technology-trends": financialTechnologyTrends,
   "what-are-ai-development-services": whatAreAIDevelopmentServices,
+  "top-10-mobile-app-development-companies-in-chennai": top10MobileAppDevelopmentCompaniesInChennai,
 };
 
 // Flat list of all blogs for the listing page
