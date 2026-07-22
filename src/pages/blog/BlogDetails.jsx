@@ -534,6 +534,19 @@ export default function BlogDetails() {
                       </div>
                     );
 
+                  case "link":
+                    return (
+                      <div key={index} className="my-8">
+                        <Link
+                          to={block.url}
+                          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-50 text-blue-600 font-bold hover:bg-blue-100 transition-colors border border-blue-200 shadow-sm text-base"
+                        >
+                          {block.text}
+                          <ArrowLeft size={18} className="rotate-180" />
+                        </Link>
+                      </div>
+                    );
+
                   default:
                     return null;
                 }
