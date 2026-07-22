@@ -16,6 +16,10 @@ import aiVoiceCloningScamsBankingSafety from "./ai-voice-cloning-scams-banking-s
 import fordGlobalTechnologyBusinessCenter from "./ford-global-technology-business-center-chennai.js";
 import financialTechnologyTrends from "./financial-technology-trends.js";
 import whatAreAIDevelopmentServices from "./what-are-ai-development-services.js";
+import top10MobileAppDevelopmentCompaniesInChennai from "./top-10-mobile-app-development-companies-in-chennai.js";
+import typesOfCloudComputingServices from "./cloud-computing-types-cloud.js";
+import leveragingAiForSmarterInboundMarketing from "./leveraging-ai-for-smarter-inbound-marketing.js";
+import howAiIsReinventingEveryStageOfInboundMarketing from "./how-ai-is-reinventing-every-stage-of-inbound-marketing.js";
 // Map of blogs keyed by their unique URL slug (id)
 export const blogs = {
 
@@ -33,6 +37,10 @@ export const blogs = {
   //  "ford-global-technology-business-center-chennai": fordGlobalTechnologyBusinessCenter,
   "financial-technology-trends": financialTechnologyTrends,
   "what-are-ai-development-services": whatAreAIDevelopmentServices,
+  "top-10-mobile-app-development-companies-in-chennai": top10MobileAppDevelopmentCompaniesInChennai,
+  "cloud-computing-types-cloud": typesOfCloudComputingServices,
+  "leveraging-ai-for-smarter-inbound-marketing": leveragingAiForSmarterInboundMarketing,
+  "leveraging-ai-for-smarter-inbound-marketing-part-2": howAiIsReinventingEveryStageOfInboundMarketing,
 };
 
 // Flat list of all blogs for the listing page
