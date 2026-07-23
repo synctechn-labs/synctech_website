@@ -119,16 +119,13 @@ export const metadata = {
 };
 
 export const softwareDevelopmentData = {
+  hideMiddleCtas: true,
   overviewImage: "https://res.cloudinary.com/wowukaao/image/upload/v1783865632/soft_dev_2_wgcix5.jpg",
 
   hero: {
-    title: "Custom Software Development Services",
+    title: "Custom Software Development for Startups, Enterprises & Growing Businesses",
 
-    subtitle: (
-      <>
-        SyncTechn delivers custom software development services for startups, growing businesses, and enterprises looking to build secure, scalable, and high-performance digital solutions. As a custom software development company, we design and develop <a href="/services/custom-web-application-development" className="text-cyan-400 underline hover:text-cyan-300">web applications</a>, <a href="/services/saas-product-development" className="text-cyan-400 underline hover:text-cyan-300">SaaS platforms</a>, CRM and ERP systems, AI-powered software, cloud-native applications, API integrations, and business automation solutions tailored to your unique business requirements. Our team focuses on creating reliable, future-ready software that improves operational efficiency, accelerates digital transformation, and supports long-term business growth.
-      </>
-    ),
+    subtitle: "Build software that's designed around your business—not the other way around. SyncTechn provides custom software development services that help startups, SMEs, and enterprises streamline operations, automate workflows, and scale with confidence. From business software development and enterprise application development to cloud software development and software product development, we create secure, high-performance solutions tailored to your unique goals. As an experienced enterprise software development company, we deliver end-to-end solutions that improve efficiency, accelerate innovation, and support long-term digital growth.",
 
     bgImage:
       "https://res.cloudinary.com/wowukaao/video/upload/v1783796947/SOFTWARE_DEV_SERVICE_opdqyb.mp4",
@@ -143,6 +140,13 @@ export const softwareDevelopmentData = {
       "Microsoft Azure",
       "Docker"
     ]
+  },
+
+  form: {
+    title: "Let's Discuss Your Software Project",
+    desc: "Tell us about your project, business challenges, or technical requirements. Our team will review your requirements and get back to you within 24 hours with the best development approach, estimated timeline, and next steps.",
+    trustLine: "✓ Free Consultation • NDA Available • 24-Hour Response",
+    ctaText: "Schedule a Free Consultation"
   },
 
   metrics: [
@@ -177,226 +181,271 @@ export const softwareDevelopmentData = {
 
   ],
   servicesSuite: {
-    "title": "Comprehensive Custom Software Development Services",
-    "subtitle": (
-      <>
-        SyncTechn provides end-to-end custom software development services for startups, growing businesses, and enterprises looking to build scalable, secure, and future-ready digital solutions. Our expertise includes <a href="/services/custom-web-application-development" className="text-cyan-400 underline hover:text-cyan-300">custom web application development</a>, SaaS product development, CRM and ERP software, enterprise applications, cloud-native solutions, API integrations, <a href="/services/ai-solutions" className="text-cyan-400 underline hover:text-cyan-300">AI-powered software</a>, and business process automation. We develop software tailored to your unique business requirements, helping organizations improve efficiency, streamline operations, and accelerate digital transformation.
-      </>
-    ),
-    "services": [
+    title: "Custom Software Development Services We Offer",
+    subtitle: "Our software development services are designed to solve unique business challenges across industries. Whether you're building a new digital product, modernizing legacy systems, or streamlining operations, our team delivers scalable, secure, and future-ready software solutions tailored to your business goals.",
+    services: [
       {
-        "id": "custom-erp",
-        "title": "Custom ERP Development",
-        "desc": (
-          <>
-            Streamline business operations with <a href="/services/custom-erp-development" className="text-cyan-400 underline hover:text-cyan-300">custom ERP development</a> that centralizes workflows, automates processes, integrates departments, and delivers real-time insights through a secure, scalable, and enterprise-ready solution.
-          </>
-        ),
-        "features": [
-          "Centralized Operations",
-          "Workflow Automation",
-          "Real-time Analytics",
-          "Inventory Management",
-          "Financial Integration",
-          "Scalable Architecture"
+        id: "custom-erp",
+        title: "Custom ERP Development",
+        desc: "Unify your business operations with a custom ERP solution built around your workflows. We develop scalable ERP systems that centralize data, automate processes, improve collaboration, and provide real-time visibility across every department.",
+        features: [
+          "Centralized Business Operations",
+          "Workflow & Process Automation",
+          "Real-Time Reporting & Analytics",
+          "Inventory & Supply Chain Management",
+          "Finance & HR Integration",
+          "Scalable Enterprise Architecture"
         ],
-        "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"
+        image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"
       },
       {
-        "id": "saas-product",
-        "title": "SaaS Product Development",
-        "desc": (
-          <>
-            Build <a href="/services/saas-product-development" className="text-cyan-400 underline hover:text-cyan-300">scalable SaaS products</a> with secure multi-tenant architecture, cloud-native infrastructure, subscription management, API integrations, and enterprise-grade performance to deliver exceptional user experiences and support long-term business growth.
-          </>
-        ),
-        "features": [
-          "Multi-Tenant Architecture",
-          "Subscription Billing",
-          "User Management",
-          "Cloud Deployment",
-          "API Integration",
-          "High Availability"
+        id: "saas-product",
+        title: "SaaS Product Development",
+        desc: "Transform your software idea into a secure, cloud-native SaaS platform. We build scalable, subscription-based applications with modern architecture, seamless user experiences, and infrastructure designed for rapid business growth.",
+        features: [
+          "Multi-Tenant SaaS Architecture",
+          "Subscription & Billing Systems",
+          "Cloud-Native Infrastructure",
+          "User & Role Management",
+          "API & Third-Party Integrations",
+          "High Scalability & Performance"
         ],
-        "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
+        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
       },
       {
-        "id": "legacy-modernization",
-        "title": "Legacy Software Modernization",
-        "desc": (
-          <>
-            <a href="/services/legacy-software-modernization" className="text-cyan-400 underline hover:text-cyan-300">Modernize legacy software</a> with cloud migration, technology stack upgrades, performance optimization, security enhancements, and scalable architecture to improve reliability, reduce technical debt, and extend the lifespan of your business applications.
-          </>
-        ),
-        "features": [
+        id: "legacy-modernization",
+        title: "Legacy Software Modernization",
+        desc: "Modernize outdated applications without disrupting your business operations. We upgrade legacy software with modern technologies, improve performance, enhance security, and prepare your systems for future scalability.",
+        features: [
+          "Application Re-Engineering",
           "Cloud Migration",
-          "Technology Stack Modernization",
-          "Performance Optimization",
-          "Security Enhancements",
           "UI/UX Modernization",
-          "Zero-Downtime Migration"
+          "Performance Optimization",
+          "Security & Compliance Upgrades",
+          "Database & API Modernization"
         ],
-        "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80"
+        image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80"
       },
       {
-        "id": "white-label",
-        "title": "White-Label Software Development",
-        "desc": (
-          <>
-            Launch <a href="/services/white-label-software-development" className="text-cyan-400 underline hover:text-cyan-300">white-label software solutions</a> with fully customizable branding, scalable architecture, secure deployment, and reseller-ready platforms. We develop high-quality software that you can rebrand, market, and deliver as your own.
-          </>
-        ),
-        "features": [
-          "Custom Branding",
-          "Reseller Ready Platform",
-          "Scalable Architecture",
-          "Dedicated Support",
-          "Faster Time-to-Market",
-          "Enterprise Security"
+        id: "white-label",
+        title: "White-Label Software Development",
+        desc: "Launch branded software solutions faster with white-label development services. We build customizable products that allow agencies, startups, and enterprises to deliver software under their own brand.",
+        features: [
+          "Fully Rebrandable Solutions",
+          "Custom Feature Development",
+          "Scalable Codebase",
+          "Multi-Client Deployment",
+          "Ongoing Maintenance & Support",
+          "Faster Time-to-Market"
         ],
-        "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+        image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
       }
     ]
   },
   industries: {
-    title: "Build Scalable Custom Software Solutions for Your Business",
-
-    subtitle: (
-      <>
-        Whether you're building a new software product, <a href="/services/legacy-software-modernization" className="text-cyan-400 underline hover:text-cyan-300">modernizing legacy systems</a>, developing a SaaS platform, implementing <a href="/services/custom-crm-development" className="text-cyan-400 underline hover:text-cyan-300">custom CRM</a> or ERP software, or automating business processes, SyncTechn delivers secure, scalable, and future-ready custom software development services tailored to your business goals. Let's build software that drives long-term growth and digital transformation.
-      </>
-    ),
-
+    title: "Industry-Specific Custom Software Solutions",
+    subtitle: "Every industry has unique operational challenges, compliance requirements, and customer expectations. At Synctechn, we build custom software solutions designed around your industry's specific workflows, helping businesses streamline operations, improve efficiency, and accelerate digital transformation. Whether you're modernizing existing systems or building a new platform from scratch, our team develops scalable, secure, and future-ready software that delivers measurable business value.",
     list: [
-
       {
         icon: <HeartPulse className="w-5 h-5" />,
         title: "Healthcare Software Development",
-
-        desc: (
-          <>
-            Develop secure healthcare software solutions, including Electronic Health Records (EHR), Hospital Management Systems (HMS), telemedicine platforms, <a href="/services/client-customer-portal-development" className="text-cyan-400 underline hover:text-cyan-300">patient portals</a>, <a href="/services/booking-appointment-system-development" className="text-cyan-400 underline hover:text-cyan-300">appointment scheduling systems</a>, pharmacy management software, healthcare analytics, and digital healthcare applications designed to improve patient care, data security, and operational efficiency.
-          </>
-        )
+        desc: "Deliver secure, compliant, and patient-centric healthcare solutions that improve clinical workflows, enhance patient experiences, and simplify healthcare management.",
+        solutions: [
+          "Electronic Health Records (EHR/EMR)",
+          "Hospital Management Systems",
+          "Telemedicine Platforms",
+          "Appointment Scheduling",
+          "Patient Portals",
+          "Healthcare Analytics"
+        ]
       },
-
       {
         icon: <Landmark className="w-5 h-5" />,
         title: "Banking & Financial Software Development",
-
-        desc:
-          "Develop secure banking and financial software solutions, including digital banking platforms, payment gateway integrations, financial management systems, investment platforms, accounting software, loan management systems, and FinTech applications that enhance security, compliance, and operational efficiency."
+        desc: "Build secure financial applications that simplify transactions, improve customer experiences, and meet modern security and compliance standards.",
+        solutions: [
+          "Digital Banking Platforms",
+          "Loan Management Systems",
+          "Payment Gateway Integration",
+          "Fraud Detection Solutions",
+          "Investment & Wealth Management",
+          "Financial Reporting Systems"
+        ]
       },
-
       {
         icon: <ShoppingBag className="w-5 h-5" />,
         title: "Retail & eCommerce Software",
-
-        desc:
-          "Build retail and eCommerce software solutions with inventory management, POS systems, eCommerce platforms, order management, warehouse automation, customer loyalty programs, and omnichannel commerce capabilities to deliver seamless shopping experiences."
+        desc: "Create digital commerce solutions that improve customer engagement, streamline inventory management, and drive online sales growth.",
+        solutions: [
+          "eCommerce Platforms",
+          "Inventory Management",
+          "Order Processing Systems",
+          "Customer Loyalty Programs",
+          "Omnichannel Commerce",
+          "Analytics & Reporting"
+        ]
       },
-
       {
         icon: <Truck className="w-5 h-5" />,
         title: "Logistics & Supply Chain Software",
-
-        desc:
-          "Develop logistics and supply chain software solutions, including transportation management systems, warehouse automation, shipment tracking platforms, fleet management, inventory optimization, and supply chain analytics to improve operational efficiency and visibility."
+        desc: "Optimize supply chain operations with intelligent software that improves visibility, tracking, warehouse efficiency, and delivery management.",
+        solutions: [
+          "Fleet Management",
+          "Shipment Tracking",
+          "Warehouse Management Systems",
+          "Route Optimization",
+          "Inventory Tracking",
+          "Supply Chain Analytics"
+        ]
       },
-
       {
         icon: <Factory className="w-5 h-5" />,
         title: "Manufacturing Software Development",
-
-        desc:
-          "Build manufacturing software solutions, including production planning systems, ERP software, quality management systems, inventory automation, predictive maintenance, and Industry 4.0 applications to optimize production and improve operational performance."
+        desc: "Improve production efficiency with software that automates manufacturing processes, tracks operations, and enhances operational visibility.",
+        solutions: [
+          "Production Planning",
+          "Inventory Control",
+          "Quality Management",
+          "Factory Automation",
+          "ERP Integration",
+          "Equipment Monitoring"
+        ]
       },
-
       {
         icon: <GraduationCap className="w-5 h-5" />,
         title: "Education & eLearning Software",
-
-        desc:
-          "Develop education and eLearning software solutions, including Learning Management Systems (LMS), student information systems, virtual classrooms, examination portals, online learning platforms, and education management software to deliver engaging digital learning experiences."
+        desc: "Develop engaging digital learning platforms that improve collaboration between educators and learners while simplifying education management.",
+        solutions: [
+          "Learning Management Systems",
+          "Student Information Systems",
+          "Online Assessment Platforms",
+          "Virtual Classrooms",
+          "Course Management",
+          "Analytics Dashboards"
+        ]
       },
-
       {
         icon: <Building2 className="w-5 h-5" />,
         title: "Real Estate Software Development",
-
-        desc:
-          "Build real estate software solutions, including property management systems, real estate CRM software, property listing platforms, booking applications, rental management software, and analytics dashboards to streamline property operations and customer engagement."
+        desc: "Build modern real estate solutions that simplify property management, improve customer engagement, and streamline transactions.",
+        solutions: [
+          "Property Management Systems",
+          "CRM for Real Estate",
+          "Listing Platforms",
+          "Booking & Scheduling",
+          "Document Management",
+          "Investment Portals"
+        ]
       },
-
       {
         icon: <Plane className="w-5 h-5" />,
         title: "Travel & Hospitality Software",
-
-        desc:
-          "Develop travel and hospitality software solutions, including hotel management systems, travel booking platforms, reservation systems, tourism portals, travel CRM software, customer loyalty programs, and hospitality management solutions to enhance guest experiences and business efficiency."
+        desc: "Create digital experiences that improve bookings, customer satisfaction, and operational efficiency across the hospitality industry.",
+        solutions: [
+          "Hotel Management Systems",
+          "Online Booking Platforms",
+          "Travel Portals",
+          "Customer Loyalty Programs",
+          "Property Management",
+          "Reservation Management"
+        ]
       }
+    ]
+  },
 
+  coreCapabilities: {
+    title: "Our Custom Software Development Capabilities",
+    desc: "We combine technical expertise, industry knowledge, and a user-first approach to deliver custom software development that solves real business challenges. From strategy and architecture to deployment and ongoing optimization, our team builds secure, scalable, and high-performing software tailored to your unique business objectives.",
+    cards: [
+      {
+        title: "Custom Software Solutions",
+        desc: "We design and develop software tailored to your workflows, goals, and operational requirements instead of relying on one-size-fits-all platforms."
+      },
+      {
+        title: "Scalable Software Architecture",
+        desc: "Build applications that can handle growing user bases, expanding features, and increasing workloads without compromising performance."
+      },
+      {
+        title: "Cloud-Native Development",
+        desc: "Develop modern, cloud-ready applications that deliver better reliability, flexibility, and seamless scalability across environments."
+      },
+      {
+        title: "Enterprise Application Development",
+        desc: "Create secure, integrated enterprise solutions that streamline operations, improve collaboration, and support long-term business growth."
+      },
+      {
+        title: "Business Process Automation",
+        desc: "Automate repetitive workflows and manual tasks with intelligent software that improves efficiency, reduces errors, and saves valuable time."
+      },
+      {
+        title: "Secure & Future-Ready Engineering",
+        desc: "Develop software with security, performance, maintainability, and future scalability built into every stage of the development lifecycle."
+      }
+    ]
+  },
+
+  whyInvest: {
+    title: "Why Invest in Custom Software Development?",
+    desc: "Off-the-shelf software often forces businesses to adapt their processes around predefined features and limitations. Custom software development gives you complete control by creating solutions that align with your business goals, workflows, and future growth plans. From automating operations to improving productivity and customer experiences, custom software helps organizations innovate faster, operate more efficiently, and build a lasting competitive advantage.",
+    cards: [
+      {
+        title: "Built Around Your Business",
+        desc: "Your business is unique, and your software should be too. We develop custom software solutions that align with your workflows, eliminate unnecessary features, and solve the challenges specific to your organization."
+      },
+      {
+        title: "Automate Business Processes",
+        desc: "Replace repetitive manual tasks with intelligent business process automation software that improves efficiency, minimizes errors, and allows your team to focus on high-value work."
+      },
+      {
+        title: "Scale Without Limitations",
+        desc: "As your business grows, your software should grow with it. Our scalable software development approach ensures your applications can support increasing users, data, and functionality without sacrificing performance."
+      },
+      {
+        title: "Improve Productivity & Collaboration",
+        desc: "Centralize data, streamline communication, and simplify everyday operations with integrated software that empowers teams to work smarter and make faster decisions."
+      },
+      {
+        title: "Strengthen Security & Compliance",
+        desc: "Protect your business with secure software designed around industry best practices, role-based access controls, encrypted data, and compliance-ready architectures."
+      },
+      {
+        title: "Accelerate Digital Transformation",
+        desc: "Leverage modern technologies, cloud platforms, and enterprise integrations to modernize operations, enhance customer experiences, and drive long-term business growth through digital transformation services."
+      }
     ]
   },
 
   whyChooseUs: {
     title: "Why Choose SyncTechn for Custom Software Development?",
-
-    subtitle: (
-      <>
-        At SyncTechn, we combine technical expertise, <a href="/process" className="text-cyan-400 underline hover:text-cyan-300">agile software development methodologies</a>, and a business-first approach to deliver secure, scalable, and future-ready custom software solutions. We work closely with you to understand your goals, solve complex business challenges, and build software that drives long-term growth, operational efficiency, and digital transformation.
-      </>
-    ),
-
+    subtitle: "Choosing the right custom software development partner can make the difference between software that simply works and software that drives long-term business growth. At SyncTechn, we combine strategic consulting, modern software engineering services, and agile development practices to deliver secure, scalable, and future-ready custom software solutions. As a trusted enterprise software development company, we build software that improves operational efficiency, accelerates innovation, and supports your digital transformation goals.",
     cards: [
-
       {
-        title: "Business-Focused Software Development",
-
-        desc:
-          "We develop custom software aligned with your business goals, operational workflows, and long-term strategy, delivering scalable solutions that improve efficiency, automate processes, and generate measurable business value."
+        title: "Business-First Development Approach",
+        desc: "We begin every custom software development project by understanding your business goals, operational workflows, and future vision. This enables us to deliver business software development solutions that solve real challenges, improve productivity, and create measurable business value."
       },
-
       {
-        title: "Modern Technology Stack",
-
-        desc:
-          "Our developers leverage React, Next.js, Node.js, Python, Java, .NET, PostgreSQL, MongoDB, Docker, Kubernetes, AWS, Microsoft Azure, and Google Cloud to build secure, scalable, and high-performance software solutions."
+        title: "Modern Technologies, Built for the Future",
+        desc: "Our engineers leverage modern frameworks, cloud infrastructure, and proven development practices to deliver high-performance cloud software development solutions that are secure, scalable, and built for future growth."
       },
-
       {
-        title: "Secure & Scalable Architecture",
-
-        desc:
-          "Every application is built with security, scalability, and maintainability at its core using secure coding standards, cloud-native architecture, API-first development, and industry best practices for long-term reliability."
+        title: "Security & Scalability by Design",
+        desc: "Security, scalability, and reliability are built into every solution we create. Using modern architecture, secure coding standards, and best engineering practices, we deliver scalable software development that supports long-term business growth."
       },
-
       {
-        title: "Custom Software Solutions",
-
-        desc:
-          "We design and develop custom software tailored to your unique business processes, helping you automate operations, improve productivity, streamline workflows, and support sustainable business growth."
+        title: "Tailored Software, Never One-Size-Fits-All",
+        desc: "Every organization operates differently. That's why we build custom software solutions tailored to your unique workflows, helping automate operations, improve collaboration, and streamline business processes instead of forcing your team to adapt to generic software."
       },
-
       {
-        title: "Agile Development Process",
-
-        desc:
-          "Our agile software development process emphasizes transparent communication, milestone-driven delivery, iterative development, continuous testing, and regular feedback to ensure successful project outcomes."
+        title: "Transparent & Agile Development Process",
+        desc: "Our end-to-end software development process keeps you involved at every stage through transparent communication, agile delivery, continuous testing, and regular feedback, ensuring projects are delivered on time and aligned with your business objectives."
       },
-
       {
-        title: "Long-Term Technical Partnership",
-
-        desc: (
-          <>
-            Beyond development, we provide software maintenance, feature enhancements, performance optimization, cloud support, and <a href="/contact-us" className="text-cyan-400 underline hover:text-cyan-300">ongoing technical consulting</a> to keep your software secure, scalable, and future-ready.
-          </>
-        )
+        title: "Long-Term Technology Partnership",
+        desc: "Our partnership continues beyond deployment with proactive maintenance, feature enhancements, performance optimization, cloud support, and technical consulting to ensure your software continues delivering value as your business evolves."
       }
-
     ]
   },
+
   primaryCta: {
     title: "Build Custom Software That Grows with Your Business",
 
@@ -446,235 +495,250 @@ export const softwareDevelopmentData = {
   },
 
   features: {
-    title: "Enterprise-Ready Software Features",
-
-    subtitle: (
-      <>
-        Every custom software solution is built with enterprise-grade security, scalable architecture, high performance, and long-term maintainability at its core. Our applications are designed to <a href="/services/operations-exception-management-systems" className="text-cyan-400 underline hover:text-cyan-300">streamline business operations</a>, support digital transformation, and deliver seamless user experiences as your business grows.
-      </>
-    ),
-
+    title: "Built for Scale, Security & Business Growth",
+    subtitle: "Every custom software solution we build is designed for long-term success. From security and scalability to automation and cloud readiness, our engineering approach ensures your software performs reliably today while supporting your business as it grows.",
     list: [
-
       {
         icon: <Workflow />,
-        text: "Business Process Automation"
+        text: "Business Process Automation",
+        desc: "Automate repetitive workflows to improve efficiency, reduce manual effort, and streamline everyday business operations."
       },
-
       {
         icon: <Database />,
-        text: "Scalable Database Design & Data Management"
+        text: "Scalable Database Design",
+        desc: "Build reliable data architectures that support growing users, high-performance applications, and future expansion."
       },
-
       {
         icon: <ShieldCheck />,
-        text: "Enterprise Security & Secure Coding Practices"
+        text: "Enterprise Security",
+        desc: "Protect your applications with secure coding practices, encryption, authentication, and role-based access control."
       },
-
       {
         icon: <Cloud />,
-        text: "Cloud-Native Software Architecture"
+        text: "Cloud-Native Architecture",
+        desc: "Develop cloud-ready applications that deliver flexibility, reliability, and seamless scalability across modern infrastructure."
       },
-
       {
         icon: <LineChart />,
-        text: "Performance Monitoring & Optimization"
+        text: "Performance Optimization",
+        desc: "Deliver consistently fast, stable, and responsive software through continuous performance monitoring and optimization."
       },
-
       {
         icon: <Target />,
-        text: "Custom Business Workflows"
+        text: "Custom Business Workflows",
+        desc: "Design software around your unique business processes instead of forcing your team to adapt to generic systems."
       },
-
       {
         icon: <RotateCcw />,
-        text: "Legacy Software Modernization"
+        text: "Legacy System Modernization",
+        desc: "Upgrade outdated applications with modern technologies while preserving critical business functionality."
       },
-
       {
         icon: <Lock />,
-        text: "Authentication & Role-Based Access Control"
+        text: "Secure User Access",
+        desc: "Implement authentication, authorization, and permission management to protect sensitive business data."
       },
-
       {
         icon: <Users />,
-        text: "Multi-User Collaboration & Team Management"
+        text: "Team Collaboration",
+        desc: "Enable departments to collaborate efficiently with centralized data, shared workflows, and real-time information."
       },
-
       {
         icon: <BarChart3 />,
-        text: "Analytics, Reporting & Business Intelligence"
+        text: "Analytics & Business Intelligence",
+        desc: "Turn business data into actionable insights with dashboards, reporting, and performance analytics."
       },
-
       {
         icon: <Globe />,
-        text: "Cross-Platform & Cloud Accessibility"
+        text: "Cross-Platform Accessibility",
+        desc: "Access your software seamlessly across web, mobile, and cloud environments from anywhere."
       },
-
       {
         icon: <Award />,
-        text: "Maintainable & Future-Ready Architecture"
+        text: "Future-Ready Architecture",
+        desc: "Build maintainable software that adapts easily to new technologies, integrations, and changing business requirements."
       }
-
     ]
   },
 
   process: {
-    title: "Our Custom Software Development Process",
-
-    subtitle: (
-      <>
-        Our custom software development process follows a structured <a href="/process" className="text-cyan-400 underline hover:text-cyan-300">Software Development Lifecycle (SDLC)</a> that combines business analysis, agile methodologies, modern architecture, quality assurance, deployment, and continuous improvement to deliver secure, scalable, and high-performance software solutions.
-      </>
-    ),
-
+    title: "Our End-to-End Custom Software Development Process",
+    subtitle: "Every successful software product starts with a clear strategy and a structured development process. Our end-to-end software development approach combines business analysis, agile execution, quality assurance, and continuous optimization to deliver secure, scalable, and high-performance custom software solutions.",
     steps: [
-
       {
-        title: "1. Business Discovery & Requirement Analysis",
-
-        desc:
-          "Understand your business goals, operational workflows, user requirements, technical specifications, and project scope to create a clear roadmap for your custom software development project."
+        title: "1. Discovery & Business Analysis",
+        desc: "We begin by understanding your business objectives, operational challenges, user needs, and technical requirements. This discovery phase helps us define project scope, priorities, and a clear development roadmap aligned with your business goals."
       },
-
       {
-        title: "2. Solution Planning & Architecture",
-
-        desc:
-          "Design a scalable software architecture, database schema, technology stack, APIs, cloud infrastructure, and implementation strategy for long-term performance."
+        title: "2. Solution Architecture & Technical Planning",
+        desc: "Our architects design a scalable software architecture, select the right technology stack, define APIs, databases, integrations, and infrastructure to ensure long-term performance and maintainability."
       },
-
       {
-        title: "3. UI/UX Design & Prototyping",
-
-        desc: (
-          <>
-            Create intuitive UI/UX designs, interactive wireframes, and prototypes that deliver seamless user experiences across web and <a href="/services/mobile-application-development" className="text-cyan-400 underline hover:text-cyan-300">mobile applications</a>.
-          </>
-        )
+        title: "3. UI/UX Design & Interactive Prototyping",
+        desc: "Before development begins, we create intuitive user flows, wireframes, and interactive prototypes that validate the user experience and reduce development risks."
       },
-
       {
-        title: "4. Agile Software Development",
-
-        desc:
-          "Develop secure, scalable software using agile methodologies, modern frameworks, cloud-native architecture, and industry best coding practices."
+        title: "4. Agile Custom Software Development",
+        desc: "Using agile methodologies, our developers build secure, scalable, and high-performance software through iterative sprints, regular feedback, and continuous collaboration."
       },
-
       {
         title: "5. API Development & System Integration",
-
-        desc: (
-          <>
-            Integrate payment gateways, ERP systems, CRM platforms, cloud services, third-party APIs, and legacy software for seamless <a href="/services/business-system-integration-hub" className="text-cyan-400 underline hover:text-cyan-300">business system integration</a>.
-          </>
-        )
+        desc: "We integrate your software with third-party platforms, ERP systems, CRM solutions, payment gateways, cloud services, and business tools to create a connected digital ecosystem."
       },
-
       {
-        title: "6. Testing & Quality Assurance",
-
-        desc:
-          "Perform functional, security, performance, usability, compatibility, and automated testing to ensure reliable, high-quality software delivery."
+        title: "6. Quality Assurance & Performance Testing",
+        desc: "Every release undergoes functional, usability, security, compatibility, and performance testing to ensure reliable software delivery across all environments."
       },
-
       {
         title: "7. Deployment & Cloud Infrastructure",
-
-        desc:
-          "Deploy applications using CI/CD pipelines on AWS, Microsoft Azure, Google Cloud, or private cloud environments with monitoring, backup, and security best practices."
+        desc: "We deploy your application using modern DevOps practices, CI/CD pipelines, and cloud platforms while ensuring security, monitoring, backups, and high availability."
       },
-
       {
-        title: "8. Maintenance & Continuous Improvement",
-
-        desc:
-          "Provide ongoing software maintenance, performance optimization, security updates, feature enhancements, cloud monitoring, and long-term technical support."
+        title: "8. Continuous Support & Product Evolution",
+        desc: "After launch, we continue optimizing your software with performance improvements, feature enhancements, security updates, cloud monitoring, and long-term technical support as your business evolves."
       }
-
     ]
   },
+
   faqs: {
     title: "Frequently Asked Questions",
-    subtitle: "Common questions about our software development services.",
+    subtitle: "Find answers to the most common questions about our custom software development services, process, timelines, and technology expertise.",
     list: [
       {
-        q: "1. Why choose SyncTechn for custom software development?",
-        a: "SyncTechn develops secure, scalable, and cloud-ready software tailored to your business goals. Our team builds web applications, mobile apps, SaaS platforms, enterprise software, ERP systems, and AI-powered solutions using modern technologies like React, Next.js, Node.js, Python, Java, and cloud platforms such as AWS, Azure, and Google Cloud. We focus on long-term scalability, performance, and business growth."
+        q: "1. What is custom software development, and how is it different from off-the-shelf software?",
+        a: "Custom software development involves designing and building software specifically for your business requirements, workflows, and goals. Unlike off-the-shelf solutions, custom software provides greater flexibility, scalability, seamless integrations, and long-term value because it's built around your business rather than requiring your business to adapt to the software."
       },
       {
         q: "2. What custom software development services does SyncTechn offer?",
-        a: (
-          <>
-            We provide end-to-end custom software development services, including:
-            {"\n\n"}
-            Enterprise Software Development
-            {"\n"}
-            SaaS Product Development
-            {"\n"}
-            Custom ERP Development
-            {"\n"}
-            CRM Development
-            {"\n"}
-            AI Software Solutions
-            {"\n"}
-            API Development & Integration
-            {"\n"}
-            Legacy Software Modernization
-            {"\n"}
-            Cloud Application Development
-            {"\n"}
-            <a href="/services/white-label-software-development" className="text-cyan-400 underline hover:text-cyan-300">White-Label Software Development</a>
-            {"\n"}
-            <a href="/services/mobile-app-development" className="text-cyan-400 underline hover:text-cyan-300">Web & Mobile App Development</a>
-            {"\n\n"}
-            Every solution is designed specifically for your business requirements.
-          </>
-        )
+        a: "We provide end-to-end custom software development services, including ERP development, SaaS product development, legacy software modernization, white-label software development, API integrations, cloud application development, UI/UX design, quality assurance, deployment, and ongoing maintenance. Every solution is tailored to your business objectives and future growth."
       },
       {
         q: "3. How much does custom software development cost?",
-        a: "The cost depends on project complexity, features, technology stack, integrations, and development timeline. Simple business applications require less investment than enterprise platforms or SaaS products. Contact SyncTechn for a free consultation and a customized project estimate."
+        a: "The cost depends on several factors, including project complexity, features, integrations, technology stack, platforms, and development timeline. After understanding your requirements, we provide a transparent proposal with estimated costs, milestones, and delivery timelines—without hidden charges."
       },
       {
-        q: "4. How long does it take to build custom software?",
-        a: "Development timelines vary based on project scope. MVPs can typically be delivered within a few weeks, while larger enterprise applications may take several months. We follow an Agile development process with regular milestones, transparent communication, and continuous progress updates."
+        q: "4. How long does it take to develop custom software?",
+        a: "Development timelines vary depending on the project's scope and complexity. A small MVP may take a few weeks, while enterprise-grade software typically requires several months. During the discovery phase, we define a realistic roadmap with clear milestones and iterative releases."
       },
       {
-        q: "5. Which technologies does SyncTechn use?",
-        a: (
-          <>
-            Our development team works with modern technologies including React, Next.js, Node.js, Python, Java, .NET, PostgreSQL, MongoDB, Docker, Kubernetes, AWS, Microsoft Azure, Google Cloud, REST APIs, GraphQL, and <a href="/services/ai-integration-services" className="text-cyan-400 underline hover:text-cyan-300">AI integrations</a> to build secure, scalable software solutions.
-          </>
-        )
+        q: "5. Which technologies does SyncTechn use for software development?",
+        a: "Our team builds software using modern technologies, including React, Next.js, Node.js, Python, Flutter, React Native, AWS, Google Cloud, Microsoft Azure, Docker, PostgreSQL, MongoDB, and other industry-standard frameworks and cloud platforms. We select the technology stack based on your business requirements and long-term scalability goals."
       },
       {
-        q: "6. Can you modernize or upgrade existing software?",
-        a: "Yes. We help businesses modernize legacy applications by upgrading outdated technology stacks, improving performance, migrating to the cloud, enhancing security, integrating new APIs, and redesigning user experiences without disrupting business operations."
+        q: "6. Can you modernize or upgrade our existing software?",
+        a: "Yes. We help businesses modernize legacy applications by improving performance, updating outdated technologies, migrating to the cloud, enhancing security, integrating modern APIs, and adding new features while minimizing disruption to ongoing operations."
       },
       {
-        q: "7. Do you provide software maintenance and support after launch?",
-        a: "Yes. Our post-launch services include software maintenance, security updates, bug fixes, performance optimization, feature enhancements, cloud monitoring, infrastructure management, and ongoing technical support to keep your software running smoothly."
+        q: "7. Can you integrate custom software with our existing business systems?",
+        a: "Absolutely. We develop software that integrates seamlessly with ERP systems, CRM platforms, payment gateways, accounting software, cloud services, third-party APIs, and other business applications, creating a connected and efficient digital ecosystem."
       },
       {
-        q: "8. Can SyncTechn integrate software with our existing systems?",
-        a: "Absolutely. We integrate custom software with ERP systems, CRM platforms, payment gateways, accounting software, third-party APIs, cloud services, authentication providers, and other business applications to create seamless workflows."
+        q: "8. Do you provide maintenance and support after launch?",
+        a: "Yes. Our relationship continues after deployment. We provide ongoing software maintenance, security updates, performance optimization, feature enhancements, cloud monitoring, bug fixes, and technical support to ensure your software continues to perform reliably as your business grows."
       }
     ]
+  },
+  finalCta: {
+    title: "Ready to Build Your Custom Software?",
+    desc: "Whether you're launching a new product, modernizing legacy systems, or building enterprise software from the ground up, Synctechn delivers custom software development solutions tailored to your business goals. Let's discuss your requirements and create software that's secure, scalable, and built for long-term success.",
+    ctaText: "Schedule a Free Consultation",
+    showForm: true
   }
 };
 
 export default function SoftwareDevelopment() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is custom software development, and how is it different from off-the-shelf software?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Custom software development involves designing and building software specifically for your business requirements, workflows, and goals. Unlike off-the-shelf solutions, custom software provides greater flexibility, scalability, seamless integrations, and long-term value because it is built around your business."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What custom software development services does Synctechn offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Synctechn provides end-to-end custom software development services including ERP development, SaaS product development, legacy software modernization, white-label software development, API integrations, cloud application development, UI/UX design, quality assurance, deployment, and ongoing maintenance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does custom software development cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost depends on project complexity, required features, integrations, technology stack, supported platforms, and development timeline. After understanding your requirements, we provide a transparent estimate with project milestones and delivery timelines."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to develop custom software?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Project timelines vary based on scope and complexity. A minimum viable product may take several weeks, while enterprise software projects typically require several months. During discovery, we define a realistic roadmap and delivery schedule."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which technologies does Synctechn use for software development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We build software using modern technologies including React, Next.js, Node.js, Python, Flutter, React Native, AWS, Google Cloud, Microsoft Azure, Docker, PostgreSQL, MongoDB, and other industry-standard frameworks and cloud platforms selected according to your business requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you modernize or upgrade our existing software?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We modernize legacy software by improving performance, migrating applications to modern technologies and cloud platforms, strengthening security, integrating new APIs, and adding features while minimizing disruption to your business."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you integrate custom software with our existing business systems?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. We integrate custom software with ERP systems, CRM platforms, payment gateways, accounting software, cloud services, third-party APIs, and other business applications to create a connected digital ecosystem."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide maintenance and support after launch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We provide ongoing maintenance, security updates, performance optimization, feature enhancements, cloud monitoring, bug fixes, and technical support to ensure your software continues to perform reliably as your business grows."
+        }
+      }
+    ]
+  };
+
   return (
     <>
       <SEO
-        title="Custom Software Development Services | Enterprise Software Development Company | SyncTech"
-        description="SyncTech Software Solutions provides custom software development services, enterprise application development, web and mobile app development, software product development, API integration, cloud solutions, and legacy software modernization to help businesses accelerate digital transformation."
+        title="Custom Software Development Company | Scalable Software Solutions | Synctechn"
+        description="Build secure, scalable custom software development solutions with Synctechn. We design, develop, modernize, and maintain enterprise software tailored to your business goals."
         keywords="custom software development, software development company, enterprise software development, custom software solutions, software product development, web application development, mobile app development, cloud application development, API development, software integration services, legacy software modernization, SaaS application development, business software development, custom enterprise applications"
+        canonicalUrl="https://synctechn.com/services/software-development"
+        ogTitle="Custom Software Development Services | Synctechn"
+        ogDescription="Build secure, scalable software tailored to your business. From SaaS products to enterprise applications, Synctechn delivers end-to-end custom software development services."
+        twitterTitle="Custom Software Development Services | Synctechn"
+        twitterDescription="Transform your ideas into scalable software with Synctechn's custom software development services."
+        schema={faqSchema}
       />
       <ServiceTemplate
         data={softwareDevelopmentData}
-        techStackComponent={<EnterpriseTechStack />}
+        techStackComponent={
+          <EnterpriseTechStack
+            title="Modern Technology Stack"
+            subtitle="Built with trusted technologies to deliver secure, scalable, and high-performance custom software solutions."
+          />
+        }
       />
     </>
   );

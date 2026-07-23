@@ -58,6 +58,27 @@ const categories = [
       { name: "Docker", icon: "https://cdn.simpleicons.org/docker/2496ED" },
     ],
   },
+  {
+    id: "AI & ML",
+    techs: [
+      {
+        name: "OpenAI",
+        icon: "https://cdn.simpleicons.org/openai/black",
+      },
+      {
+        name: "LangChain",
+        icon: "https://cdn.simpleicons.org/langchain/1C3C3A",
+      },
+      {
+        name: "TensorFlow",
+        icon: "https://cdn.simpleicons.org/tensorflow/FF6F00",
+      },
+      {
+        name: "PyTorch",
+        icon: "https://cdn.simpleicons.org/pytorch/EE4C2C",
+      },
+    ],
+  },
 ];
 
 function TechIcon({ src, alt, className }) {
@@ -99,7 +120,7 @@ function TechIcon({ src, alt, className }) {
   );
 }
 
-export default function EnterpriseTechStack() {
+export default function EnterpriseTechStack({ title = "Technology Stack", subtitle = "Building Intelligent Digital Experiences" }) {
   const containerRef = useRef(null);
   const isInView = useInView(containerRef, { once: false, margin: "-20%" });
   const [playCount, setPlayCount] = useState(0);
@@ -232,10 +253,10 @@ export default function EnterpriseTechStack() {
           className="absolute inset-0 flex flex-col items-center justify-center"
         >
           <h2 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-cyan-500 to-blue-600 text-transparent bg-clip-text mb-4 tracking-tight pb-2">
-            Technology Stack
+            {title}
           </h2>
           <p className="text-xl text-slate-300 font-medium max-w-2xl mx-auto">
-            Building Intelligent Digital Experiences
+            {subtitle}
           </p>
         </motion.div>
       </div>
@@ -336,7 +357,7 @@ export default function EnterpriseTechStack() {
               transition={{ duration: 1.5, ease: "easeOut" }}
               className="relative z-30 w-full flex flex-col items-center justify-start pb-12"
             >
-              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 w-full max-w-7xl px-8 relative z-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 w-full max-w-8xl px-8 relative z-10">
                 {categories.map((cat, i) => (
                   <motion.div
                     key={cat.id}

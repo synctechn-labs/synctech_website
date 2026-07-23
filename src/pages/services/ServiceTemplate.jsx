@@ -335,9 +335,11 @@ export default function ServiceTemplate({ data, techStackComponent }) {
         {/* Right Side: Transparent Blur + Form */}
         <div className="w-full lg:w-[40%] bg-white/5 backdrop-blur-lg border-l border-white/10 flex flex-col justify-center px-6 lg:px-12 py-20 lg:py-32 relative z-10 shadow-[-20px_0_40px_rgba(0,0,0,0.3)]">
           <div className="w-full max-w-lg mx-auto">
-            <h3 className="text-xl lg:text-2xl font-bold text-white mb-2">Let's Discuss Your App Vision</h3>
+            <h3 className="text-xl lg:text-2xl font-bold text-white mb-2">
+              {data?.form?.title || "Let's Discuss Your App Vision"}
+            </h3>
             <p className="text-slate-300 text-sm mb-6">
-              Tell us about your project and we'll get back within 24 hours with a clear next step.
+              {data?.form?.desc || "Tell us about your project and we'll get back within 24 hours with a clear next step."}
             </p>
 
             <form className="space-y-4 lg:space-y-5" onSubmit={handleFormSubmit}>
@@ -396,7 +398,9 @@ export default function ServiceTemplate({ data, techStackComponent }) {
 
               <div className="bg-slate-800/80 border border-slate-700 rounded-lg p-2.5 flex items-center gap-3">
                 <svg className="text-amber-500 w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
-                <span className="text-[11px] text-white leading-tight">Fast 2-minute response, fully <strong className="font-bold">NDA-protected</strong>.</span>
+                <span className="text-[11px] text-white leading-tight">
+                  {data?.form?.trustLine || <>Fast 2-minute response, fully <strong className="font-bold">NDA-protected</strong>.</>}
+                </span>
               </div>
 
               <div className="flex items-center justify-between gap-4 pt-1">
@@ -412,7 +416,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                   type="submit"
                   className="w-full text-center block bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-cyan-500/25 text-white font-bold py-2.5 rounded-full transition-all duration-300 shadow-lg text-sm"
                 >
-                  Schedule a Call
+                  {data?.form?.ctaText || "Schedule a Call"}
                 </button>
               </div>
             </form>
@@ -426,44 +430,69 @@ export default function ServiceTemplate({ data, techStackComponent }) {
       <section className="w-full flex flex-col lg:flex-row min-h-[60vh]">
         {/* Left Side: Dark Background */}
         <div className="w-full lg:w-1/2 bg-[#050505] text-white py-24 px-8 lg:px-20 flex flex-col justify-center">
-          <p className="text-xl leading-relaxed text-slate-200 font-medium mb-16">
-            At SyncTechn, we build custom software solutions that help businesses automate operations, improve efficiency, and accelerate digital transformation. Our custom software development services cover enterprise applications, SaaS platforms, CRM and ERP systems, cloud-native applications, API integrations, AI-powered software, and business process automation. Every solution is designed with scalability, security, and long-term performance in mind, enabling organizations to adapt quickly and grow with confidence.
-          </p>
+          {data?.coreCapabilities ? (
+            <>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                {data.coreCapabilities.title}
+              </h2>
+              <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-10">
+                {data.coreCapabilities.desc}
+              </p>
+              
+              <div className="space-y-4 max-h-[500px] overflow-y-auto pr-2 custom-scrollbar">
+                {data.coreCapabilities.cards.map((card, idx) => (
+                  <div key={idx} className="flex gap-4 items-start p-4 rounded-xl border border-white/5 bg-white/[0.01] hover:border-blue-500/20 hover:bg-white/[0.02] transition-all duration-300">
+                    <CheckCheck className="text-blue-500 mt-1 shrink-0 w-5 h-5" />
+                    <div>
+                      <h4 className="font-bold text-white text-base">{card.title}</h4>
+                      <p className="text-slate-400 text-xs mt-1 leading-relaxed">{card.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
+          ) : (
+            <>
+              <p className="text-xl leading-relaxed text-slate-200 font-medium mb-16">
+                At SyncTechn, we build custom software solutions that help businesses automate operations, improve efficiency, and accelerate digital transformation. Our custom software development services cover enterprise applications, SaaS platforms, CRM and ERP systems, cloud-native applications, API integrations, AI-powered software, and business process automation. Every solution is designed with scalability, security, and long-term performance in mind, enabling organizations to adapt quickly and grow with confidence.
+              </p>
 
-          <h2 className="text-2xl font-bold mb-8">Our Core Capabilities:</h2>
+              <h2 className="text-2xl font-bold mb-8">Our Core Capabilities:</h2>
 
-          <ul className="space-y-6">
-            <li className="flex items-start gap-4">
-              <CheckCheck className="text-[#3a86ff] mt-1 shrink-0 w-5 h-5" />
-              <span className="text-lg md:text-xl font-medium text-slate-300 leading-relaxed">
-                Developing secure, scalable custom software, web applications, and enterprise platforms using modern technologies and cloud infrastructure such as AWS, Microsoft Azure, and Google Cloud.
-              </span>
-            </li>
-            <li className="flex items-start gap-4">
-              <CheckCheck className="text-[#3a86ff] mt-1 shrink-0 w-5 h-5" />
-              <span className="text-lg md:text-xl font-medium text-slate-300 leading-relaxed">
-                Building custom CRM, ERP, SaaS, and workflow automation solutions that streamline business operations, improve productivity, and support long-term growth.
-              </span>
-            </li>
-            <li className="flex items-start gap-4">
-              <CheckCheck className="text-[#3a86ff] mt-1 shrink-0 w-5 h-5" />
-              <span className="text-lg md:text-xl font-medium text-slate-300 leading-relaxed">
-                Building intelligent mobile platforms powered by AI, ML, and real-time data analytics
-              </span>
-            </li>
-            <li className="flex items-start gap-4">
-              <CheckCheck className="text-[#3a86ff] mt-1 shrink-0 w-5 h-5" />
-              <span className="text-lg md:text-xl font-medium text-slate-300 leading-relaxed">
-                Implementing enterprise-grade security with encrypted communication, secure authentication, role-based access control, compliance best practices, and multi-layer protection for sensitive business data.
-              </span>
-            </li>
-            <li className="flex items-start gap-4">
-              <CheckCheck className="text-[#3a86ff] mt-1 shrink-0 w-5 h-5" />
-              <span className="text-base md:text-lg font-medium text-slate-300 leading-relaxed">
-                Integrating custom software seamlessly with third-party APIs, payment gateways, ERP systems, CRM platforms, legacy applications, and cloud services to create a connected digital ecosystem.
-              </span>
-            </li>
-          </ul>
+              <ul className="space-y-6">
+                <li className="flex items-start gap-4">
+                  <CheckCheck className="text-[#3a86ff] mt-1 shrink-0 w-5 h-5" />
+                  <span className="text-lg md:text-xl font-medium text-slate-300 leading-relaxed">
+                    Developing secure, scalable custom software, web applications, and enterprise platforms using modern technologies and cloud infrastructure such as AWS, Microsoft Azure, and Google Cloud.
+                  </span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <CheckCheck className="text-[#3a86ff] mt-1 shrink-0 w-5 h-5" />
+                  <span className="text-lg md:text-xl font-medium text-slate-300 leading-relaxed">
+                    Building custom CRM, ERP, SaaS, and workflow automation solutions that streamline business operations, improve productivity, and support long-term growth.
+                  </span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <CheckCheck className="text-[#3a86ff] mt-1 shrink-0 w-5 h-5" />
+                  <span className="text-lg md:text-xl font-medium text-slate-300 leading-relaxed">
+                    Building intelligent mobile platforms powered by AI, ML, and real-time data analytics
+                  </span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <CheckCheck className="text-[#3a86ff] mt-1 shrink-0 w-5 h-5" />
+                  <span className="text-lg md:text-xl font-medium text-slate-300 leading-relaxed">
+                    Implementing enterprise-grade security with encrypted communication, secure authentication, role-based access control, compliance best practices, and multi-layer protection for sensitive business data.
+                  </span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <CheckCheck className="text-[#3a86ff] mt-1 shrink-0 w-5 h-5" />
+                  <span className="text-base md:text-lg font-medium text-slate-300 leading-relaxed">
+                    Integrating custom software seamlessly with third-party APIs, payment gateways, ERP systems, CRM platforms, legacy applications, and cloud services to create a connected digital ecosystem.
+                  </span>
+                </li>
+              </ul>
+            </>
+          )}
         </div>
 
         {/* Right Side: Service Image */}
@@ -479,27 +508,29 @@ export default function ServiceTemplate({ data, techStackComponent }) {
       {/* ========================================================= */}
       {/* 3. METRICS SECTION */}
       {/* ========================================================= */}
-      <section className="w-full bg-[#050505] py-20 px-6 lg:px-16 flex justify-center">
-        <div className="w-full max-w-6xl rounded-[2rem] relative overflow-hidden bg-gradient-to-r from-cyan-500 to-blue-600 p-10 lg:p-16 shadow-2xl border border-white/5">
-          <div className="relative z-10 text-white">
-            <h3 className="text-lg lg:text-xl font-bold mb-16">
-              We engineer complexity into results:
-            </h3>
+      {!data?.hideMiddleCtas && (
+        <section className="w-full bg-[#050505] py-20 px-6 lg:px-16 flex justify-center">
+          <div className="w-full max-w-6xl rounded-[2rem] relative overflow-hidden bg-gradient-to-r from-cyan-500 to-blue-600 p-10 lg:p-16 shadow-2xl border border-white/5">
+            <div className="relative z-10 text-white">
+              <h3 className="text-lg lg:text-xl font-bold mb-16">
+                We engineer complexity into results:
+              </h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
-              {data?.metrics?.map((metric, idx) => (
-                <div key={idx} className="border-b border-white/20 pb-8 flex flex-col justify-end">
-                  <h4 className="text-5xl lg:text-6xl font-light mb-6 tracking-tight">{metric.value}</h4>
-                  <p className="text-sm text-blue-50 font-medium">
-                    {metric.title}
-                    {metric.subtitle && <span className="block mt-1 text-blue-100/80">{metric.subtitle}</span>}
-                  </p>
-                </div>
-              ))}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
+                {data?.metrics?.map((metric, idx) => (
+                  <div key={idx} className="border-b border-white/20 pb-8 flex flex-col justify-end">
+                    <h4 className="text-5xl lg:text-6xl font-light mb-6 tracking-tight">{metric.value}</h4>
+                    <p className="text-sm text-blue-50 font-medium">
+                      {metric.title}
+                      {metric.subtitle && <span className="block mt-1 text-blue-100/80">{metric.subtitle}</span>}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* ========================================================= */}
       {/* 4. SERVICES SUITE SECTION */}
@@ -564,7 +595,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                   {suiteServices?.[activeService]?.desc}
                 </p>
                 <Link to={serviceRoutes[suiteServices?.[activeService]?.title] || "#"} target="_blank" rel="noopener noreferrer" className="mt-auto inline-flex items-center gap-2 text-white font-semibold hover:text-cyan-200 transition-colors w-max">
-                  Explore Service <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                  Learn More <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                 </Link>
               </div>
 
@@ -585,36 +616,83 @@ export default function ServiceTemplate({ data, techStackComponent }) {
       </section>
 
       {/* ========================================================= */}
-      {/* 5. CTA SECTION */}
+      {/* NEW: WHY INVEST SECTION */}
       {/* ========================================================= */}
-      <section className="w-full bg-[#050505] py-24 px-6 lg:px-16 flex justify-center">
-        <div className="w-full max-w-7xl rounded-[2.5rem] overflow-hidden flex flex-col lg:flex-row shadow-2xl">
-          {/* Left Column (Blue Gradient text area) */}
-          <div className="w-full lg:w-[55%] bg-gradient-to-br from-cyan-500 to-blue-600 p-10 lg:p-12 flex flex-col justify-center text-white relative">
-            <h2 className="text-3xl lg:text-4xl leading-tight mb-4 whitespace-pre-line font-bold">
-              {data?.primaryCta?.title}
-            </h2>
-            <p className="text-sm lg:text-base text-blue-50 leading-relaxed mb-8 max-w-xl">
-              {data?.primaryCta?.subtitle}
-            </p>
-            <div>
-              <button className="bg-white text-slate-900 rounded-full px-8 py-3.5 font-semibold text-sm flex items-center gap-3 hover:bg-slate-100 transition-colors shadow-xl">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                {data?.primaryCta?.buttonText}
-              </button>
+      {data?.whyInvest && (
+        <section className="w-full bg-[#050505] py-24 px-6 lg:px-16 text-white border-t border-white/5">
+          <div className="max-w-7xl mx-auto">
+            {/* Header */}
+            <div className="max-w-4xl mb-16">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-cyan-500 to-blue-600 text-transparent bg-clip-text mb-6 tracking-tight pb-2 text-balance">
+                {data.whyInvest.title}
+              </h2>
+              <p className="text-slate-300 text-base md:text-lg leading-relaxed">
+                {data.whyInvest.desc}
+              </p>
+            </div>
+
+            {/* Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+              {data.whyInvest.cards.map((card, idx) => (
+                <div
+                  key={idx}
+                  className="bg-[#0a0a0a] hover:bg-[#111] border border-white/10 rounded-[2rem] p-8 transition-all duration-300 shadow-xl group hover:border-blue-500/20 hover:shadow-blue-500/5 relative overflow-hidden"
+                >
+                  {/* Subtle top light effect */}
+                  <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  
+                  {/* Icon or Index */}
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-500/10 to-blue-600/10 border border-white/10 flex items-center justify-center text-cyan-400 font-bold mb-6 group-hover:from-cyan-500/20 group-hover:to-blue-600/20 transition-all">
+                    0{idx + 1}
+                  </div>
+
+                  <h3 className="text-xl font-bold mb-4 text-white group-hover:text-cyan-400 transition-colors">
+                    {card.title}
+                  </h3>
+                  
+                  <p className="text-slate-400 text-sm leading-relaxed">
+                    {card.desc}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
+        </section>
+      )}
 
-          {/* Right Column (Image) */}
-          <div className="w-full lg:w-[45%] h-64 lg:h-auto min-h-[300px]">
-            <img
-              src="https://res.cloudinary.com/wowukaao/image/upload/v1783865631/CTA_1_1_ymdwgy.jpg"
-              alt="CTA Image"
-              className="w-full h-full object-cover"
-            />
+      {/* ========================================================= */}
+      {/* 5. CTA SECTION */}
+      {/* ========================================================= */}
+      {!data?.hideMiddleCtas && (
+        <section className="w-full bg-[#050505] py-24 px-6 lg:px-16 flex justify-center">
+          <div className="w-full max-w-7xl rounded-[2.5rem] overflow-hidden flex flex-col lg:flex-row shadow-2xl">
+            {/* Left Column (Blue Gradient text area) */}
+            <div className="w-full lg:w-[55%] bg-gradient-to-br from-cyan-500 to-blue-600 p-10 lg:p-12 flex flex-col justify-center text-white relative">
+              <h2 className="text-3xl lg:text-4xl leading-tight mb-4 whitespace-pre-line font-bold">
+                {data?.primaryCta?.title}
+              </h2>
+              <p className="text-sm lg:text-base text-blue-50 leading-relaxed mb-8 max-w-xl">
+                {data?.primaryCta?.subtitle}
+              </p>
+              <div>
+                <button className="bg-white text-slate-900 rounded-full px-8 py-3.5 font-semibold text-sm flex items-center gap-3 hover:bg-slate-100 transition-colors shadow-xl">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  {data?.primaryCta?.buttonText}
+                </button>
+              </div>
+            </div>
+
+            {/* Right Column (Image) */}
+            <div className="w-full lg:w-[45%] h-64 lg:h-auto min-h-[300px]">
+              <img
+                src="https://res.cloudinary.com/wowukaao/image/upload/v1783865631/CTA_1_1_ymdwgy.jpg"
+                alt="CTA Image"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* ========================================================= */}
       {/* 6. INDUSTRIES SECTION */}
@@ -655,10 +733,25 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                     <ChevronDown className={`w-5 h-5 text-slate-500 transition-transform duration-300 ${openIndustry === idx ? 'rotate-180 text-cyan-500' : ''}`} />
                   </button>
                   {/* Accordion Content */}
-                  <div className={`overflow-hidden transition-all duration-300 ${openIndustry === idx ? 'max-h-40 pb-6 opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <p className="text-base md:text-lg text-slate-400 px-4">
-                      {industry.desc}
-                    </p>
+                  <div className={`overflow-hidden transition-all duration-500 ${openIndustry === idx ? 'max-h-[600px] pb-8 opacity-100' : 'max-h-0 opacity-0'}`}>
+                    <div className="px-4 md:px-12 space-y-6">
+                      <p className="text-base md:text-lg text-slate-300 leading-relaxed">
+                        {industry.desc}
+                      </p>
+                      {industry.solutions && (
+                        <div>
+                          <h4 className="text-sm font-bold text-white/40 uppercase tracking-wider mb-3">Solutions Include:</h4>
+                          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                            {industry.solutions.map((sol, sIdx) => (
+                              <div key={sIdx} className="flex items-center gap-2 text-slate-400">
+                                <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></span>
+                                <span className="text-sm md:text-base">{sol}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
               ))}
@@ -670,35 +763,37 @@ export default function ServiceTemplate({ data, techStackComponent }) {
       {/* ========================================================= */}
       {/* 7. SECOND CTA SECTION */}
       {/* ========================================================= */}
-      <section className="w-full bg-[#050505] py-24 px-6 lg:px-16 flex justify-center">
-        <div className="w-full max-w-7xl rounded-[2.5rem] overflow-hidden flex flex-col lg:flex-row shadow-2xl">
-          {/* Left Column (Blue Gradient text area) */}
-          <div className="w-full lg:w-[55%] bg-gradient-to-br from-cyan-500 to-blue-600 p-10 lg:p-12 flex flex-col justify-center text-white relative">
-            <h2 className="text-3xl lg:text-4xl leading-tight mb-4">
-              <span className="font-light"> Build Custom Software</span>
-              <span className="font-bold"> That Gives Your</span><span className="font-light"> Business a Competitive Advantage</span>
-            </h2>
-            <p className="text-sm lg:text-base text-blue-50 leading-relaxed mb-8 max-w-xl font-medium">
-              Whether you're building enterprise software, modernizing legacy systems, developing SaaS products, or automating business operations, SyncTechn delivers secure, scalable, and future-ready custom software solutions tailored to your industry and business goals.
-            </p>
-            <div>
-              <Link to="/contact-us" className="bg-white text-slate-900 rounded-full px-8 py-3.5 font-semibold text-sm inline-flex items-center gap-3 hover:bg-slate-100 transition-colors shadow-xl w-max">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                Schedule a Free Consultation
-              </Link>
+      {!data?.hideMiddleCtas && (
+        <section className="w-full bg-[#050505] py-24 px-6 lg:px-16 flex justify-center">
+          <div className="w-full max-w-7xl rounded-[2.5rem] overflow-hidden flex flex-col lg:flex-row shadow-2xl">
+            {/* Left Column (Blue Gradient text area) */}
+            <div className="w-full lg:w-[55%] bg-gradient-to-br from-cyan-500 to-blue-600 p-10 lg:p-12 flex flex-col justify-center text-white relative">
+              <h2 className="text-3xl lg:text-4xl leading-tight mb-4">
+                <span className="font-light"> Build Custom Software</span>
+                <span className="font-bold"> That Gives Your</span><span className="font-light"> Business a Competitive Advantage</span>
+              </h2>
+              <p className="text-sm lg:text-base text-blue-50 leading-relaxed mb-8 max-w-xl font-medium">
+                Whether you're building enterprise software, modernizing legacy systems, developing SaaS products, or automating business operations, SyncTechn delivers secure, scalable, and future-ready custom software solutions tailored to your industry and business goals.
+              </p>
+              <div>
+                <Link to="/contact-us" className="bg-white text-slate-900 rounded-full px-8 py-3.5 font-semibold text-sm inline-flex items-center gap-3 hover:bg-slate-100 transition-colors shadow-xl w-max">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  Schedule a Free Consultation
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Column (Image) */}
+            <div className="w-full lg:w-[45%] h-64 lg:h-auto min-h-[300px]">
+              <img
+                src="https://res.cloudinary.com/wowukaao/image/upload/v1783865631/CTA_1_2_fxgfo0.jpg"
+                alt="Industry Specialists"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
-
-          {/* Right Column (Image) */}
-          <div className="w-full lg:w-[45%] h-64 lg:h-auto min-h-[300px]">
-            <img
-              src="https://res.cloudinary.com/wowukaao/image/upload/v1783865631/CTA_1_2_fxgfo0.jpg"
-              alt="Industry Specialists"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* ========================================================= */}
       {/* 8. WHY CHOOSE US SECTION (With Scroll Animation) */}
@@ -741,38 +836,37 @@ export default function ServiceTemplate({ data, techStackComponent }) {
         </div>
       </section>
 
-      {/* ========================================================= */}
-      {/* 9. SERVICE SPECIFIC CTA / FEATURE SECTION */}
-      {/* ========================================================= */}
-      <section className="w-full bg-[#050505] py-24 px-6 lg:px-16 flex justify-center">
-        <div className="w-full max-w-7xl rounded-[2.5rem] overflow-hidden flex flex-col lg:flex-row shadow-2xl">
+      {!data?.hideMiddleCtas && (
+        <section className="w-full bg-[#050505] py-24 px-6 lg:px-16 flex justify-center">
+          <div className="w-full max-w-7xl rounded-[2.5rem] overflow-hidden flex flex-col lg:flex-row shadow-2xl">
 
-          {/* Left Column (Solid Bright Blue) */}
-          <div className="w-full lg:w-[55%] bg-gradient-to-br from-cyan-500 to-blue-600 p-10 lg:p-12 flex flex-col justify-center text-white relative">
-            <h2 className="text-3xl lg:text-4xl leading-tight mb-4 font-medium">
-              <span className="font-bold">{data?.secondaryCta?.title}</span> <br />{data?.secondaryCta?.highlight}
-            </h2>
-            <p className="text-sm lg:text-base text-blue-50 leading-relaxed mb-8 max-w-xl">
-              {data?.secondaryCta?.subtitle}
-            </p>
-            <div>
-              <Link to="/contact-us" className="bg-white text-slate-900 rounded-full px-8 py-3.5 font-semibold text-sm inline-flex items-center gap-3 hover:bg-slate-100 transition-colors shadow-xl w-max">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                {data?.secondaryCta?.buttonText}
-              </Link>
+            {/* Left Column (Solid Bright Blue) */}
+            <div className="w-full lg:w-[55%] bg-gradient-to-br from-cyan-500 to-blue-600 p-10 lg:p-12 flex flex-col justify-center text-white relative">
+              <h2 className="text-3xl lg:text-4xl leading-tight mb-4 font-medium">
+                <span className="font-bold">{data?.secondaryCta?.title}</span> <br />{data?.secondaryCta?.highlight}
+              </h2>
+              <p className="text-sm lg:text-base text-blue-50 leading-relaxed mb-8 max-w-xl">
+                {data?.secondaryCta?.subtitle}
+              </p>
+              <div>
+                <Link to="/contact-us" className="bg-white text-slate-900 rounded-full px-8 py-3.5 font-semibold text-sm inline-flex items-center gap-3 hover:bg-slate-100 transition-colors shadow-xl w-max">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  {data?.secondaryCta?.buttonText}
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Column (Image) */}
+            <div className="w-full lg:w-[45%] h-64 lg:h-auto min-h-[300px]">
+              <img
+                src="https://res.cloudinary.com/wowukaao/image/upload/v1783865630/CTA_1_3_rpss5y.jpg"
+                alt="Secondary CTA Image"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
-
-          {/* Right Column (Image) */}
-          <div className="w-full lg:w-[45%] h-64 lg:h-auto min-h-[300px]">
-            <img
-              src="https://res.cloudinary.com/wowukaao/image/upload/v1783865630/CTA_1_3_rpss5y.jpg"
-              alt="Secondary CTA Image"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Optional Technology Stack Section */}
       {techStackComponent && (
@@ -801,14 +895,25 @@ export default function ServiceTemplate({ data, techStackComponent }) {
             {data?.features?.list?.slice(0, showMoreFeatures ? 20 : 12).map((feature, idx) => (
               <div
                 key={idx}
-                className="flex items-center gap-4 bg-[#0a0a0a] hover:bg-[#111] border border-white/10 rounded-2xl p-6 transition-colors group"
+                className={`bg-[#0a0a0a] hover:bg-[#111] border border-white/10 rounded-2xl p-6 transition-colors group ${feature.desc ? 'flex flex-col items-start gap-4' : 'flex items-center gap-4'}`}
               >
                 <div className="text-white/50 group-hover:text-white transition-colors shrink-0">
                   {feature.icon}
                 </div>
-                <p className="text-sm font-medium leading-snug">
-                  {feature.text}
-                </p>
+                {feature.desc ? (
+                  <div>
+                    <h4 className="font-bold text-white text-base group-hover:text-cyan-400 transition-colors">
+                      {feature.text}
+                    </h4>
+                    <p className="text-slate-400 text-xs mt-1.5 leading-relaxed">
+                      {feature.desc}
+                    </p>
+                  </div>
+                ) : (
+                  <p className="text-sm font-medium leading-snug">
+                    {feature.text}
+                  </p>
+                )}
               </div>
             ))}
           </div>
@@ -932,6 +1037,114 @@ export default function ServiceTemplate({ data, techStackComponent }) {
           </div>
         </div>
       </section>
+
+      {/* ========================================================= */}
+      {/* NEW: FINAL CTA SECTION */}
+      {/* ========================================================= */}
+      {data?.finalCta && (
+        <section className="w-full bg-[#050505] py-24 px-6 lg:px-16 flex justify-center border-t border-white/5">
+          <div className={`w-full max-w-7xl rounded-[2.5rem] overflow-hidden bg-gradient-to-br from-[#0c1220] to-[#050912] border border-white/10 p-10 lg:p-16 relative shadow-2xl flex flex-col ${data.finalCta.showForm ? 'lg:flex-row gap-12 items-center' : 'items-center justify-center text-center'}`}>
+            
+            {/* Background glowing circle */}
+            <div className="absolute w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[100px] -top-64 -left-64 pointer-events-none"></div>
+            <div className="absolute w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[100px] -bottom-64 -right-64 pointer-events-none"></div>
+
+            {/* Left Column (Text Info) */}
+            <div className={`relative z-10 w-full ${data.finalCta.showForm ? 'lg:w-1/2 text-left' : 'max-w-3xl mx-auto flex flex-col items-center'}`}>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 text-transparent bg-clip-text mb-6 tracking-tight leading-tight">
+                {data.finalCta.title}
+              </h2>
+              
+              <p className="text-slate-300 text-base md:text-lg leading-relaxed mb-8 max-w-2xl">
+                {data.finalCta.desc}
+              </p>
+
+              {!data.finalCta.showForm && (
+                <div>
+                  <Link
+                    to="/contact-us"
+                    className="px-10 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold rounded-full transition-all duration-300 shadow-[0_4px_20px_rgba(6,182,212,0.25)] hover:shadow-[0_10px_30px_rgba(6,182,212,0.4)] hover:-translate-y-0.5 inline-flex items-center gap-3 text-base"
+                  >
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    {data.finalCta.ctaText}
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            {/* Right Column: Contact Form */}
+            {data.finalCta.showForm && (
+              <div className="relative z-10 w-full lg:w-1/2 bg-white/[0.01] border border-white/10 rounded-3xl p-8 lg:p-10 backdrop-blur-md">
+                <form className="space-y-4 lg:space-y-5" onSubmit={handleFormSubmit}>
+                  <div>
+                    <label className="block text-xs font-semibold text-slate-300 mb-1">Name</label>
+                    <input
+                      type="text"
+                      placeholder="Full Name"
+                      className="w-full bg-transparent border-b border-slate-750 focus:border-white text-white py-1.5 outline-none transition-colors placeholder:text-slate-650"
+                    />
+                  </div>
+
+                  <div className="flex gap-4">
+                    <div className="w-20 shrink-0">
+                      <label className="block text-xs font-semibold text-slate-300 mb-1">Code</label>
+                      <select className="w-full bg-transparent border-b border-slate-750 focus:border-white text-white py-1.5 outline-none cursor-pointer appearance-none">
+                        <option value="+91" className="text-slate-900">+91</option>
+                        <option value="+1" className="text-slate-900">+1</option>
+                        <option value="+44" className="text-slate-900">+44</option>
+                      </select>
+                    </div>
+                    <div className="flex-1">
+                      <label className="block text-xs font-semibold text-slate-300 mb-1">Contact Number</label>
+                      <input
+                        type="text"
+                        placeholder="Enter Your Number*"
+                        className="w-full bg-transparent border-b border-slate-750 focus:border-white text-white py-1.5 outline-none transition-colors placeholder:text-slate-655"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label className="block text-xs font-semibold text-slate-300 mb-1">Work Email</label>
+                    <input
+                      type="email"
+                      placeholder="Enter your email Address*"
+                      className="w-full bg-transparent border-b border-slate-750 focus:border-white text-white py-1.5 outline-none transition-colors placeholder:text-slate-655"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-xs font-semibold text-slate-300 mb-1">Describe your project (Help us come back better prepared)</label>
+                    <textarea
+                      placeholder="Describe your project"
+                      rows="1"
+                      className="w-full bg-transparent border-b border-slate-750 focus:border-white text-white py-1.5 outline-none transition-colors placeholder:text-slate-655 resize-none"
+                    ></textarea>
+                  </div>
+
+                  <div className="flex items-center justify-between gap-4 pt-4">
+                    <div className="flex items-center gap-2 text-white font-semibold text-sm whitespace-nowrap">
+                      {captchaNum1} + {captchaNum2} = <input
+                        type="text"
+                        value={captchaInput}
+                        onChange={(e) => setCaptchaInput(e.target.value)}
+                        className="w-10 bg-white text-slate-900 rounded px-2 py-1.5 text-center outline-none"
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold rounded-full transition-all duration-300 shadow-[0_4px_20px_rgba(6,182,212,0.25)] text-sm"
+                    >
+                      {data.finalCta.ctaText}
+                    </button>
+                  </div>
+                </form>
+              </div>
+            )}
+
+          </div>
+        </section>
+      )}
 
       {/* Subsequent sections will be added here based on your images */}
 

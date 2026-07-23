@@ -11,28 +11,28 @@ import {
 export const PROCESS_STEPS = [
   {
     icon: SearchCheck,
-    title: "Requirement Analysis",
-    desc: "We gather business requirements, understand project goals, identify challenges, and create a strategic roadmap for successful software development.",
+    title: "Discovery & Requirement Analysis",
+    desc: "We begin by understanding your business objectives, workflows, and technical requirements to define a clear roadmap for successful software development.",
   },
   {
     icon: ClipboardCheck,
-    title: "Planning & Architecture",
-    desc: "Our experts design scalable system architecture, select modern technologies, and define project milestones for efficient execution.",
+    title: "Planning & Solution Architecture",
+    desc: "Our team designs the software architecture, selects the right technology stack, and creates a scalable development plan tailored to your business.",
   },
   {
     icon: Code2,
-    title: "Development",
-    desc: "We build secure, high-performance web applications, mobile apps, AI solutions, and enterprise software using modern development practices.",
+    title: "Design & Development",
+    desc: "We build secure, high-performance web applications, mobile apps, enterprise software, and AI-powered solutions using modern development practices.",
   },
   {
     icon: ShieldCheck,
-    title: "Quality Assurance",
-    desc: "Comprehensive testing ensures reliability, security, performance optimization, and a seamless user experience across all platforms.",
+    title: "Testing & Quality Assurance",
+    desc: "Every feature is thoroughly tested to ensure reliability, security, performance, and a seamless user experience across all supported platforms.",
   },
   {
     icon: Rocket,
-    title: "Deployment & Support",
-    desc: "We deploy solutions smoothly, monitor performance, provide ongoing maintenance, and ensure long-term business growth.",
+    title: "Deployment & Ongoing Support",
+    desc: "After launch, we monitor performance, provide continuous maintenance, release updates, and help your software evolve as your business grows.",
   },
 ];
 
@@ -65,7 +65,7 @@ const Operations = () => {
                   mb-6
                 "
               >
-                Development Process
+                OUR DEVELOPMENT PROCESS
               </span>
 
               <h2
@@ -81,15 +81,12 @@ const Operations = () => {
               >
                 Our Proven{" "}
                 <span className="block bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                  Software Development Process
+                  Custom Software Development Process
                 </span>
               </h2>
 
-              <p className="mt-3 text-lg md:text-xl text-slate-400 leading-relaxed max-w-3xl mx-auto">
-                At SyncTech Software Solutions, we follow a structured software
-                development lifecycle that ensures transparency, faster
-                delivery, scalable architecture, and exceptional user
-                experiences.
+              <p className="mt-4 text-base md:text-lg text-slate-500 leading-relaxed max-w-4xl mx-auto">
+                Every successful project starts with a structured approach. Our custom software development process focuses on understanding your business goals, building scalable solutions, and delivering secure, high-quality software through transparent collaboration and agile development practices.
               </p>
             </div>
           </Reveal>

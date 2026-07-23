@@ -1,21 +1,5 @@
 import React from "react";
-import { useScrollReveal } from "../../../hooks/useScrollReveal";
-
-const ScrollTypingText = ({ text, delayOffset = 0, speed = 0.04 }) => {
-  return (
-    <span>
-      {text.split("").map((char, index) => (
-        <span
-          key={index}
-          className="char-reveal"
-          style={{ transitionDelay: `${delayOffset + index * speed}s` }}
-        >
-          {char === " " ? "\u00A0" : char}
-        </span>
-      ))}
-    </span>
-  );
-};
+import { Reveal } from "../../../components/Reveal";
 
 const ROW1 = [
   { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
@@ -99,31 +83,27 @@ function MarqueeItem({ tech }) {
 }
 
 export default function TechStackMarquee() {
-  const [revealRef, revealClass] = useScrollReveal();
-
   return (
-    <section className="py-24 border-t border-b border-slate-900 bg-gradient-to-b from-[#060910]/30 to-[#060910]/80 relative overflow-hidden">
+    <section className="py-24 border-t border-slate-900 bg-[#060910]/40 relative overflow-hidden font-sans">
       <TechMarqueeStyles />
 
-      {/* Visual background lights */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-blue-500/5 rounded-full blur-[140px] pointer-events-none -z-10" />
-
-      <div ref={revealRef} className={`max-w-7xl mx-auto px-6 text-center mb-16 overflow-hidden ${revealClass}`}>
-        {/* <span className="text-xs font-semibold px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 mb-4 inline-block tracking-widest uppercase">
-          Technology Stack
-        </span> */}
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-          <ScrollTypingText text="Built with Modern Technologies" />
-        </h2>
-        <p className={`text-slate-400 text-base md:text-lg max-w-2xl mx-auto transition-all duration-1000 delay-500 transform ${revealClass === "revealed" ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
-          }`}>
-          Multi-layered infrastructure engineered for maximum latency control and computation speed.
-        </p>
+      <div className="max-w-7xl mx-auto px-6 mb-16 relative z-10">
+        <Reveal>
+          <div className="text-center max-w-4xl mx-auto">
+            <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-semibold uppercase tracking-[0.25em] mb-6">
+              TECHNOLOGY STACK
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              Modern Technologies Behind Our Custom Software Development
+            </h2>
+            <p className="text-slate-400 text-sm md:text-base leading-relaxed">
+              As a leading custom software development company, we use trusted frameworks, cloud platforms, and AI technologies to build secure, scalable, and high-performance software solutions. Our custom software development services are powered by a carefully selected technology stack that ensures reliability, flexibility, and long-term business growth.
+            </p>
+          </div>
+        </Reveal>
       </div>
 
-      {/* Skewed and tilted 3D perspective wrapper */}
-      <div className="relative flex flex-col gap-6 w-full max-w-8xl mx-auto py-4 overflow-hidden [perspective:1000px] transform hover:scale-[1.01] transition-transform duration-500">
-
+      <div className="relative w-full flex flex-col gap-6 select-none overflow-hidden pb-4">
         {/* Row 1: Left scrolling */}
         <div className="w-full overflow-hidden relative">
           <div className="animate-marquee-left flex gap-6 items-center">

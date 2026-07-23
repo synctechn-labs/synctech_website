@@ -35,35 +35,52 @@ export default function DemoHero() {
 
       <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
         {/* Heading */}
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 max-w-4xl mx-auto leading-[1.1]">
-          Intelligent Solutions <br />
+        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-4 max-w-5xl mx-auto leading-[1.1]">
+          Custom Software Development Company <br />
           <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
-            Powered by AI.
+            for Modern Businesses
           </span>
         </h1>
 
-        {/* Subtitle */}
-        <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Gain clarity and harness the power of your data with SyncTech. <br className="hidden md:inline" />
-          Our intuitive dashboard provides real-time analytics.
+        {/* Highlighted text (below H1 in small size) */}
+        <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs md:text-sm font-bold tracking-wider mb-8">
+          Scalable Software. Smarter Growth.
+        </div>
+
+        {/* Description */}
+        <p className="text-base md:text-lg text-slate-400 max-w-4xl mx-auto mb-10 leading-relaxed">
+          Transform your ideas into scalable digital products with a trusted custom software development company. We provide custom software development services, including web applications, mobile apps, AI-powered solutions, and enterprise software tailored to your business goals. As a reliable software development agency, we build secure, high-performance solutions that streamline operations, improve efficiency, and support long-term growth.
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-          <a
-            href="/services"
-            className="glass-button-simple w-full sm:w-auto px-8 py-3.5 text-white text-sm font-semibold flex items-center justify-center gap-2"
-          >
-            Explore Services
-            <ArrowRight size={16} className="text-blue-400" />
-          </a>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
           <a
             href="/contact-us"
             className="glass-button-glow w-full sm:w-auto px-8 py-3.5 text-white text-sm font-semibold flex items-center justify-center gap-2"
           >
-            Book a Demo
+            Get a Free Consultation
             <ArrowRight size={16} />
           </a>
+          <a
+            href="/services"
+            className="glass-button-simple w-full sm:w-auto px-8 py-3.5 text-white text-sm font-semibold flex items-center justify-center gap-2"
+          >
+            Explore Our Services
+            <ArrowRight size={16} className="text-blue-400" />
+          </a>
+        </div>
+
+        {/* Small Trust Line */}
+        <div className="text-xs md:text-sm text-slate-400 font-semibold tracking-wider mb-12 max-w-3xl mx-auto border-t border-white/5 pt-6 flex flex-wrap justify-center items-center gap-x-4 gap-y-2 opacity-85">
+          <span>Custom Software Development</span>
+          <span className="text-blue-400">•</span>
+          <span>AI Solutions</span>
+          <span className="text-blue-400">•</span>
+          <span>Web Applications</span>
+          <span className="text-blue-400">•</span>
+          <span>Mobile Apps</span>
+          <span className="text-blue-400">•</span>
+          <span>Business Automation</span>
         </div>
 
         {/* Metallic Circle */}

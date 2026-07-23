@@ -208,16 +208,13 @@ export default function FeaturesGrid() {
 
       <div className="relative z-10">
         {/* About Section Header */}
-        <div ref={revealRef} className={`text-center max-w-3xl mx-auto mb-20 overflow-hidden ${revealClass}`}>
-          {/* <span className="text-xs font-semibold px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 mb-4 inline-block tracking-widest uppercase">
-            About SyncTech
-          </span> */}
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            <ScrollTypingText text="Driving Digital Transformation" />
+        <div ref={revealRef} className={`text-center max-w-5xl mx-auto mb-20 overflow-hidden ${revealClass}`}>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <ScrollTypingText text="Custom Software Development Services" />
           </h2>
-          <p className={`text-slate-400 text-base md:text-lg transition-all duration-1000 delay-500 transform ${revealClass === "revealed" ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
+          <p className={`text-slate-400 text-base md:text-lg leading-relaxed transition-all duration-1000 delay-500 transform ${revealClass === "revealed" ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
             }`}>
-            We are a premier software development partner dedicated to scaling enterprises through custom web architectures, cloud engineering, and custom CRM solutions.
+            Every solution we develop combines modern software engineering with AI capabilities to help businesses automate workflows, improve decision-making, and scale efficiently. From web and mobile applications to enterprise platforms, our custom software development services are built for real business outcomes.
           </p>
         </div>
 
