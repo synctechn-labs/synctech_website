@@ -10,7 +10,7 @@ const mobileAppDesignTrends = {
     avatar:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
   },
-  category: "Design",
+  category: "Mobile App Development",
   coverImage: "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1200&auto=format&fit=crop",
   content: [
     {

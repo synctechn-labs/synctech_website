@@ -11,7 +11,7 @@ const typesOfCloudComputingServices = {
     avatar:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
   },
-  category: "Cloud Computing",
+  category: "Software & Digital Transformation",
   coverImage: "https://res.cloudinary.com/wowukaao/image/upload/v1784651967/cloud_2_sd7uiz.png",
   content: [
     { type: "heading", level: 2, text: "Types of Cloud Computing Services: A Complete Guide to IaaS, PaaS, and SaaS", id: "introduction" },

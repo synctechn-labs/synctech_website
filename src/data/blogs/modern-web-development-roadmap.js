@@ -11,7 +11,7 @@ const webDevelopmentRoadmap2026 = {
     avatar:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
   },
-  category: "Software & Digital Transformation",
+  category: "Web Development",
   coverImage:
     "https://res.cloudinary.com/wowukaao/image/upload/v1783357103/image_6_oex8u9.png",
   content: [

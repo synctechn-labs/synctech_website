@@ -7,12 +7,27 @@ import { blogsList } from "../../data/blogs/index.js";
 export default function BlogList() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [currentPage, setCurrentPage] = useState(1);
+  const blogsPerPage = 5;
+
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+    setCurrentPage(1);
+  };
+
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+    setCurrentPage(1);
+  };
 
   const categories = [
     "All",
     "Software & Digital Transformation",
-    "CRM & Business Solutions",
+    "Web Development",
+    "Mobile App Development",
+    "CRM Solutions",
     "AI development",
+    "Digital Marketing",
   ];
 
   const filteredBlogs = [...blogsList]
@@ -26,6 +41,26 @@ export default function BlogList() {
       return matchesSearch && matchesCategory;
     })
     .sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  const totalPages = Math.ceil(filteredBlogs.length / blogsPerPage);
+  const paginatedBlogs = filteredBlogs.slice(
+    (currentPage - 1) * blogsPerPage,
+    currentPage * blogsPerPage
+  );
+
+  const maxVisiblePages = 5;
+  let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
+  let endPage = startPage + maxVisiblePages - 1;
+
+  if (endPage > totalPages) {
+    endPage = totalPages;
+    startPage = Math.max(1, endPage - maxVisiblePages + 1);
+  }
+
+  const visiblePageNumbers = [];
+  for (let i = startPage; i <= endPage; i++) {
+    visiblePageNumbers.push(i);
+  }
 
   return (
     <div className="min-h-screen bg-slate-50/50 text-slate-800 relative overflow-hidden pb-24">
@@ -73,7 +108,7 @@ export default function BlogList() {
             {categories.map((category) => (
               <button
                 key={category}
-                onClick={() => setSelectedCategory(category)}
+                onClick={() => handleCategoryChange(category)}
                 className={`whitespace-nowrap text-[15px] transition-colors duration-200 ${
                   selectedCategory === category
                     ? "text-[#005187] font-semibold"
@@ -92,18 +127,18 @@ export default function BlogList() {
               type="text"
               placeholder="Search articles..."
               value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
+              onChange={handleSearchChange}
               className="w-32 focus:w-64 bg-transparent border-none text-slate-800 placeholder-slate-500 focus:outline-none focus:ring-0 pl-2.5 transition-all duration-300 text-[15px] font-medium"
             />
           </div>
         </div>
 
         {/* Featured / Articles Grid */}
-        {filteredBlogs.length > 0 ? (
+        {paginatedBlogs.length > 0 ? (
           <div className="flex flex-col gap-12">
             {/* Featured Latest Blog (First item) */}
             {(() => {
-              const latestBlog = filteredBlogs[0];
+              const latestBlog = paginatedBlogs[0];
               return (
                 <Link
                   to={`/blog/${latestBlog.id}/`}
@@ -150,13 +185,13 @@ export default function BlogList() {
             })()}
 
             {/* Rest of the Blogs List */}
-            {filteredBlogs.length > 1 && (
+            {paginatedBlogs.length > 1 && (
               <div className="mt-8">
                 <h3 className="text-4xl font-extrabold text-slate-900 mb-10">Latest</h3>
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
                   {/* Left Column: Blogs List */}
                   <div className="lg:col-span-8 flex flex-col gap-8">
-                    {filteredBlogs.slice(1).map((blog) => (
+                    {paginatedBlogs.slice(1).map((blog) => (
                       <Link
                         key={blog.id}
                         to={`/blog/${blog.id}/`}
@@ -243,6 +278,57 @@ export default function BlogList() {
                     </div>
                   </div>
                 </div>
+              </div>
+            )}
+
+            {/* Pagination Controls */}
+            {totalPages > 1 && (
+              <div className="flex justify-center items-center gap-2 mt-12 pb-4">
+                <button
+                  onClick={() => {
+                    setCurrentPage((prev) => Math.max(prev - 1, 1));
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
+                  disabled={currentPage === 1}
+                  className="px-5 py-2.5 rounded-xl bg-white border border-slate-200 text-slate-700 font-semibold hover:bg-slate-50 hover:border-slate-300 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-sm flex items-center justify-center"
+                >
+                  Previous
+                </button>
+                
+                <div className="flex items-center gap-2 hidden sm:flex">
+                  {visiblePageNumbers.map(pageNum => (
+                    <button
+                      key={pageNum}
+                      onClick={() => {
+                        setCurrentPage(pageNum);
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                      }}
+                      className={`w-11 h-11 flex items-center justify-center rounded-xl font-bold transition-all shadow-sm ${
+                        currentPage === pageNum 
+                          ? 'bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-blue-500/25'
+                          : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:border-slate-300'
+                      }`}
+                    >
+                      {pageNum}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Mobile page indicator */}
+                <span className="sm:hidden text-slate-600 font-medium text-sm bg-slate-100 px-4 py-2 rounded-lg">
+                  {currentPage} / {totalPages}
+                </span>
+
+                <button
+                  onClick={() => {
+                    setCurrentPage((prev) => Math.min(prev + 1, totalPages));
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
+                  disabled={currentPage === totalPages}
+                  className="px-5 py-2.5 rounded-xl bg-white border border-slate-200 text-slate-700 font-semibold hover:bg-slate-50 hover:border-slate-300 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-sm flex items-center justify-center"
+                >
+                  Next
+                </button>
               </div>
             )}
           </div>

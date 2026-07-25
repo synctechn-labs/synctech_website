@@ -10,7 +10,7 @@ const maximizingRoiDigitalMarketing = {
     avatar:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
   },
-  category: "Marketing",
+  category: "Digital Marketing",
   coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
   content: [
     {

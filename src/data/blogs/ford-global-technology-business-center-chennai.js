@@ -12,7 +12,7 @@ const fordGlobalTechnologyBusinessCenter = {
     avatar:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
   },
-  category: "CRM & Business Solutions",
+  category: "Software & Digital Transformation",
   coverImage:
     "https://res.cloudinary.com/wowukaao/image/upload/v1783529698/image4_btglhl.png",
   content: [
