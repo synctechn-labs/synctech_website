@@ -510,6 +510,11 @@ const howAiIsReinventingEveryStageOfInboundMarketing = {
         "Personalize website experiences.",
         "Deliver smarter email campaigns."
       ]
+    },
+    {
+      type: "link",
+      text: "Read Part 3: From Automation to Intelligence",
+      url: "/blog/leveraging-ai-for-smarter-inbound-marketing-part-3"
     }
   ]
 };

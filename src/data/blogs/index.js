@@ -20,6 +20,8 @@ import top10MobileAppDevelopmentCompaniesInChennai from "./top-10-mobile-app-dev
 import typesOfCloudComputingServices from "./cloud-computing-types-cloud.js";
 import leveragingAiForSmarterInboundMarketing from "./leveraging-ai-for-smarter-inbound-marketing.js";
 import howAiIsReinventingEveryStageOfInboundMarketing from "./how-ai-is-reinventing-every-stage-of-inbound-marketing.js";
+import fromAutomationToIntelligence from "./from-automation-to-intelligence-how-ai-helps-marketers-make-better-decisions.js";
+import preparingYourBusinessForAnAiFirstFuture from "./preparing-your-business-for-an-ai-first-future.js";
 // Map of blogs keyed by their unique URL slug (id)
 export const blogs = {
 
@@ -41,6 +43,8 @@ export const blogs = {
   "cloud-computing-types-cloud": typesOfCloudComputingServices,
   "leveraging-ai-for-smarter-inbound-marketing": leveragingAiForSmarterInboundMarketing,
   "leveraging-ai-for-smarter-inbound-marketing-part-2": howAiIsReinventingEveryStageOfInboundMarketing,
+  "leveraging-ai-for-smarter-inbound-marketing-part-3": fromAutomationToIntelligence,
+  "leveraging-ai-for-smarter-inbound-marketing-part-4": preparingYourBusinessForAnAiFirstFuture,
 };
 
 // Flat list of all blogs for the listing page
