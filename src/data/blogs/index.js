@@ -1,4 +1,5 @@
 import customSoftwareDevelopmentCompany from "./custom-software-development-company.js";
+import customSoftwareVsSaas from "./custom-software-vs-saas.js";
 import scalingModernWebApplications from "./scaling-modern-web-applications.js";
 import maximizingRoiDigitalMarketing from "./maximizing-roi-digital-marketing.js";
 import crmSolutionsForGrowth from "./crm-solutions-for-growth.js";
@@ -26,6 +27,7 @@ import preparingYourBusinessForAnAiFirstFuture from "./preparing-your-business-f
 // Map of blogs keyed by their unique URL slug (id)
 export const blogs = {
 
+  "custom-software-vs-saas": customSoftwareVsSaas,
   "custom-software-development-company": customSoftwareDevelopmentCompany,
   "prepare-data-for-ml-apis-google-cloud-challenge-lab-solution": prepareDataML,
   "modern-web-development-roadmap": webDevelopmentRoadmap2026,

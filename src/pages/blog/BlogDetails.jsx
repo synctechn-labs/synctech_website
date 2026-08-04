@@ -97,8 +97,86 @@ export default function BlogDetails() {
     );
   }
 
-  const shareUrl = window.location.href;
+  const siteUrl = "https://synctechn.com";
+  const canonicalUrl = `${siteUrl}/blog/${blog.id}`;
+  const shareUrl = typeof window !== 'undefined' ? window.location.href : canonicalUrl;
   const shareTitle = blog.title;
+  const publishedDate = new Date(blog.date).toString() !== "Invalid Date" ? new Date(blog.date).toISOString() : new Date().toISOString();
+  const modifiedDate = blog.updatedDate && new Date(blog.updatedDate).toString() !== "Invalid Date" ? new Date(blog.updatedDate).toISOString() : publishedDate;
+
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": siteUrl
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": `${siteUrl}/blog`
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": blog.title,
+            "item": canonicalUrl
+          }
+        ]
+      },
+      {
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": canonicalUrl
+        },
+        "headline": blog.title,
+        "description": blog.description,
+        "image": blog.coverImage,
+        "author": {
+          "@type": "Person",
+          "name": blog.author.name,
+          "jobTitle": blog.author.role
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "SyncTechn Software Solutions",
+          "logo": {
+            "@type": "ImageObject",
+            "url": `${siteUrl}/assets/logo.png`
+          }
+        },
+        "datePublished": publishedDate,
+        "dateModified": modifiedDate
+      },
+      {
+        "@type": "Organization",
+        "name": "SyncTechn Software Solutions",
+        "url": siteUrl,
+        "logo": `${siteUrl}/assets/logo.png`
+      }
+    ]
+  };
+
+  if (blog.faqs && blog.faqs.length > 0) {
+    blogSchema["@graph"].push({
+      "@type": "FAQPage",
+      "mainEntity": blog.faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    });
+  }
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(shareUrl);
@@ -131,6 +209,13 @@ export default function BlogDetails() {
         title={`${blog.title} | SyncTech Insights`}
         description={blog.description}
         keywords={`${blog.category}, SyncTech solutions, ${blog.title}`}
+        canonicalUrl={canonicalUrl}
+        ogTitle={blog.title}
+        ogDescription={blog.description}
+        ogUrl={canonicalUrl}
+        ogImage={blog.coverImage}
+        ogType="article"
+        schema={blogSchema}
       />
 
       {/* Decorative Orbs (Soft Light Opacity) */}
@@ -174,15 +259,14 @@ export default function BlogDetails() {
           {/* Left info column */}
           <div className="lg:col-span-7 relative z-10 space-y-6">
             
-            {/* Category tag & Date */}
-            <div className="flex items-center gap-3.5 text-xs font-bold uppercase tracking-widest text-blue-600">
-              <span className="px-3 py-1.5 rounded-lg bg-blue-50 border border-blue-100 shadow-inner">
+            {/* Category tag & Dates */}
+            <div className="flex flex-wrap items-center gap-3.5 text-xs font-bold tracking-wide">
+              <span className="px-3 py-1.5 rounded-lg bg-blue-50 border border-blue-100 shadow-inner uppercase tracking-widest text-blue-600">
                 {blog.category}
               </span>
-              <span className="text-slate-350">•</span>
-              <span className="flex items-center gap-1.5 text-slate-500 font-semibold">
+              <span className="flex items-center gap-1.5 text-slate-500 font-semibold bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-100">
                 <Calendar size={13} className="text-slate-400" />
-                {blog.date}
+                Published: {blog.date}
               </span>
             </div>
 
@@ -193,6 +277,30 @@ export default function BlogDetails() {
             <p className="text-slate-600 text-base md:text-lg leading-relaxed font-medium">
               {blog.description}
             </p>
+
+            {/* AEO Summary & Definition Blocks */}
+            {(blog.keyTakeaway || blog.definition) && (
+              <div className="space-y-3 pt-2">
+                {blog.keyTakeaway && (
+                  <div className="bg-blue-50/50 border border-blue-100 rounded-xl p-4 flex gap-3">
+                    <span className="shrink-0 w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold">!</span>
+                    <div>
+                      <p className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">Key Takeaway</p>
+                      <p className="text-sm font-semibold text-slate-700 leading-relaxed">{blog.keyTakeaway}</p>
+                    </div>
+                  </div>
+                )}
+                {blog.definition && (
+                  <div className="bg-slate-50 border border-slate-100 rounded-xl p-4 flex gap-3">
+                    <BookOpen size={20} className="shrink-0 text-slate-400 mt-0.5" />
+                    <div>
+                      <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Definition</p>
+                      <p className="text-sm font-medium text-slate-600 leading-relaxed">{blog.definition}</p>
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
 
             {/* Author info & Read time row */}
             <div className="flex flex-wrap items-center gap-6 pt-6 border-t border-slate-100">
@@ -390,14 +498,13 @@ export default function BlogDetails() {
                     return (
                       <p
                         key={index}
-                        className={`text-slate-700 leading-relaxed mb-6 text-base md:text-lg ${
+                        className={`text-slate-700 leading-relaxed mb-6 text-base md:text-lg [&>a]:text-blue-600 [&>a]:font-semibold [&>a]:hover:underline ${
                           isFirstParagraph
                             ? "first-letter:text-5xl first-letter:font-extrabold first-letter:text-blue-600 first-letter:float-left first-letter:mr-3 first-letter:mt-1.5 first-letter:font-sans"
                             : ""
                         }`}
-                      >
-                        {block.text}
-                      </p>
+                        dangerouslySetInnerHTML={{ __html: block.text }}
+                      />
                     );
 
                   case "heading":
@@ -422,7 +529,10 @@ export default function BlogDetails() {
                             <span className="w-5 h-5 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-600 shrink-0 mt-0.5 border border-blue-500/15">
                               <Check size={11} className="stroke-[3]" />
                             </span>
-                            <span className="leading-relaxed">{item}</span>
+                            <span 
+                              className="leading-relaxed [&>a]:text-blue-600 [&>a]:font-semibold [&>a]:hover:underline"
+                              dangerouslySetInnerHTML={{ __html: item }}
+                            />
                           </li>
                         ))}
                       </ul>
