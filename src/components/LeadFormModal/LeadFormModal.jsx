@@ -1,5 +1,6 @@
+"use client";
 // import React, { useState, useEffect, useRef } from "react";
-// import { useNavigate, useLocation } from "react-router-dom";
+// 
 // import {
 //   X,
 //   MessageSquare,
@@ -13,6 +14,7 @@
 //   CheckCircle,
 // } from "lucide-react";
 // import "./LeadFormModal.css";
+import { useRouter, usePathname } from "next/navigation";
 
 // export default function LeadFormModal() {
 //   const [isOpen, setIsOpen] = useState(false);
@@ -32,9 +34,9 @@
 //   const [errors, setErrors] = useState({});
 
 //   const modalRef = useRef(null);
-//   const navigate = useNavigate();
+//   const navigate = useRouter();
 
-//   const location = useLocation();
+//   const location = { pathname: usePathname() };
 
 //   // 10-second trigger after page load or navigation
 //   useEffect(() => {
@@ -121,7 +123,7 @@
 //       if (url.startsWith("http")) {
 //         window.location.href = url;
 //       } else {
-//         navigate(url);
+//         navigate.push(url);
 //       }
 //     }
 //   };

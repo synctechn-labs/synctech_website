@@ -1,3 +1,4 @@
+"use client";
 const reactNativeTutorialBeginners = {
   id: "react-native-tutorial-beginners",
   title: "React Native Tutorial for Beginners: Build Your First App Step by Step",

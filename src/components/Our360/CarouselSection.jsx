@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { our360Services } from "../../data/our360Services";

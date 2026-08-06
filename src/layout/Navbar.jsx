@@ -1,6 +1,9 @@
+"use client";
 import React, { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { Link, useLocation } from "react-router-dom";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 
 const NAV_ITEMS = [
   { label: "Services", href: "services" },
@@ -76,7 +79,7 @@ const SERVICES_MENU = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const location = useLocation();
+  const location = { pathname: usePathname() };
   const isHomePage = location.pathname === "/";
 
   useEffect(() => {
@@ -101,7 +104,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
 
           {/* Logo — existing content preserved */}
-          <Link to="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-3 group">
             <img
               src="https://res.cloudinary.com/dij2x0ixo/image/upload/e_background_removal/f_png/v1782032673/SyncTechWhiteLogo_bt3s0u.webp"
               alt="SyncTech Logo"
@@ -122,7 +125,7 @@ const Navbar = () => {
                     className="relative h-full flex items-center group cursor-pointer"
                   >
                     <Link
-                      to={isHomePage ? item.href : `/${item.href}`}
+                      href={isHomePage ? item.href : `/${item.href}`}
                       className="relative px-5 h-full flex items-center text-sm font-medium text-slate-300 hover:text-blue-400 transition-colors duration-200"
                     >
                       {item.label}
@@ -138,7 +141,7 @@ const Navbar = () => {
                         {SERVICES_MENU.map((cat) => (
                           <div key={cat.category} className="flex flex-col gap-3">
                             <Link
-                              to={`/${cat.href}`}
+                              href={`/${cat.href}`}
                               className="font-bold text-slate-200 hover:text-blue-400 text-sm border-b border-white/[0.06] pb-2 mb-1 block transition-colors"
                             >
                               {cat.category}
@@ -147,7 +150,7 @@ const Navbar = () => {
                               {cat.items.map((subItem) => (
                                 <Link
                                   key={subItem.label}
-                                  to={`/${subItem.href}`}
+                                  href={`/${subItem.href}`}
                                   className="text-xs text-slate-400 hover:text-cyan-400 hover:translate-x-1 transition-all duration-200 leading-snug"
                                 >
                                   {subItem.label}
@@ -166,7 +169,7 @@ const Navbar = () => {
               return (
                 <Link
                   key={item.label}
-                  to={targetPath}
+                  href={targetPath}
                   className="relative px-5 h-full flex items-center text-sm font-medium text-slate-300 hover:text-blue-400 transition-colors duration-200"
                 >
                   {item.label}
@@ -178,7 +181,7 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <Link
-              to="/contact-us"
+              href="/contact-us"
               className="glass-button-glow px-5 py-2.5 text-white text-sm font-semibold flex items-center justify-center shadow-[0_0_20px_rgba(59,130,246,0.3)]"
             >
               Contact Us
@@ -204,7 +207,7 @@ const Navbar = () => {
                     <div key={item.label} className="flex flex-col border-b border-white/[0.06]">
                       <div className="px-2 py-4 flex items-center justify-between text-slate-300 font-medium">
                         <Link
-                          to={isHomePage ? item.href : `/${item.href}`}
+                          href={isHomePage ? item.href : `/${item.href}`}
                           onClick={() => setIsOpen(false)}
                         >
                           {item.label}
@@ -221,7 +224,7 @@ const Navbar = () => {
                               {cat.items.map((subItem) => (
                                 <Link
                                   key={subItem.label}
-                                  to={`/${subItem.href}`}
+                                  href={`/${subItem.href}`}
                                   onClick={() => setIsOpen(false)}
                                   className="py-1 text-sm font-medium text-slate-500 hover:text-blue-400 transition-colors"
                                 >
@@ -240,7 +243,7 @@ const Navbar = () => {
                 return (
                   <Link
                     key={item.label}
-                    to={targetPath}
+                    href={targetPath}
                     onClick={() => setIsOpen(false)}
                     className="px-2 py-4 text-slate-300 font-medium border-b border-white/[0.06] hover:text-blue-400 transition-colors"
                   >
@@ -252,7 +255,7 @@ const Navbar = () => {
             <div className="h-px bg-white/[0.06]" />
             <div className="flex flex-col gap-4">
               <Link
-                to="/contact-us"
+                href="/contact-us"
                 onClick={() => setIsOpen(false)}
                 className="w-full text-center py-3 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold text-sm shadow-[0_0_20px_rgba(59,130,246,0.3)]"
               >
