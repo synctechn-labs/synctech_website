@@ -7,3 +7,8 @@ dist-ssr/
 .env.local
 .env.*.local
 .vite/
+
+# Next.js
+.next/
+out/
+build/
