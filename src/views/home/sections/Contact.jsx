@@ -15,7 +15,7 @@ const Contact = () => {
       <div className="container mx-auto px-4 mb-20 text-center relative z-10">
         <Reveal>
           <h2 className="text-3xl md:text-5xl font-extrabold mb-8 tracking-tight text-slate-900">
-            Looking for a Reliable Software Development Company in India?
+            Looking for a Reliable Custom Software Development Company in India?
           </h2>
           <p className="text-xl text-slate-500 max-w-2xl mx-auto mb-12">
             Let’s build powerful digital solutions for your business.

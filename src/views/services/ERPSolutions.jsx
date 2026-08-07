@@ -24,7 +24,7 @@ import {
 
 export const metadata = {
   title:
-    "Custom ERP Development Company | Enterprise ERP Software Development Services | SyncTechn",
+    "Custom ERP Custom Software Development Company | Enterprise ERP Custom Software Development Services | SyncTechn",
 
   description:
     "SyncTechn develops custom ERP software to streamline finance, HR, inventory, procurement, manufacturing, CRM, warehouse, and business operations. Our ERP development services help businesses automate workflows, centralize data, improve productivity, and scale with secure cloud-based ERP solutions.",
@@ -32,7 +32,7 @@ export const metadata = {
   keywords: [
     "custom ERP development",
     "ERP development company",
-    "ERP software development",
+    "ERP custom software development",
     "enterprise ERP software",
     "custom ERP software",
     "ERP solution provider",
@@ -53,24 +53,24 @@ export const metadata = {
     "workflow automation",
     "business process automation",
     "digital transformation",
-    "enterprise software development",
+    "enterprise custom software development",
     "ERP modernization"
   ],
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/custom-erp-development",
+      "https://synctechn.com/services/custom-erp-software-development-services",
   },
 
   openGraph: {
     title:
-      "Custom ERP Development Services | SyncTechn",
+      "Custom ERP Custom Software Development Services | SyncTechn",
 
     description:
       "Develop secure, scalable, and intelligent ERP software that unifies your business operations, automates workflows, and improves organizational efficiency.",
 
     url:
-      "https://synctechn.com/services/custom-erp-development",
+      "https://synctechn.com/services/custom-erp-software-development-services",
 
     siteName: "SyncTechn",
 
@@ -80,10 +80,10 @@ export const metadata = {
 
     images: [
       {
-        url: "/images/services/custom-erp-development-og.webp",
+        url: "/images/services/custom-erp-software-development-services-og.webp",
         width: 1200,
         height: 630,
-        alt: "Custom ERP Development Services"
+        alt: "Custom ERP Custom Software Development Services"
       }
     ]
   },
@@ -92,13 +92,13 @@ export const metadata = {
     card: "summary_large_image",
 
     title:
-      "Enterprise ERP Software Development | SyncTechn",
+      "Enterprise ERP Custom Software Development | SyncTechn",
 
     description:
-      "Custom ERP software development for finance, HR, inventory, manufacturing, procurement, CRM, warehouse, and enterprise automation.",
+      "Custom ERP custom software development for finance, HR, inventory, manufacturing, procurement, CRM, warehouse, and enterprise automation.",
 
     images: [
-      "/images/services/custom-erp-development-og.webp"
+      "/images/services/custom-erp-software-development-services-og.webp"
     ]
   },
 
@@ -114,7 +114,7 @@ export const erpDevelopmentData = {
   overviewImage: "https://res.cloudinary.com/wowukaao/image/upload/v1783865632/soft_dev_2_wgcix5.jpg",
 
 hero: {
-  title: "Custom ERP Development Services",
+  title: "Custom ERP Custom Software Development Services",
 
   subtitle:
     "Transform the way your business operates with custom ERP software designed specifically for your organization. SyncTechn develops secure, scalable, and cloud-ready Enterprise Resource Planning (ERP) systems that centralize business operations, automate workflows, eliminate manual processes, and provide real-time visibility across departments. Our ERP development services include finance management, HR management, inventory management, procurement, warehouse management, manufacturing ERP, CRM integration, supply chain management, reporting dashboards, analytics, and cloud-based enterprise applications built using modern technologies.",
@@ -175,7 +175,7 @@ servicesSuite: {
   "services": [
     {
       "id": "custom-erp",
-      "title": "Custom ERP Development",
+      "title": "Custom ERP Custom Software Development",
       "desc": "Centralize your business operations, automate workflows, and gain real-time insights with a scalable Custom ERP system tailored to your unique industry requirements.",
       "features": [
         "Centralized Operations",
@@ -217,8 +217,8 @@ servicesSuite: {
     },
     {
       "id": "white-label",
-      "title": "White-Label Software Development",
-      "desc": "Expand your service offerings quickly with our white-label software development. We build the platform, and you brand it as your own to resell to your clients.",
+      "title": "White-Label Custom Software Development",
+      "desc": "Expand your service offerings quickly with our white-label custom software development. We build the platform, and you brand it as your own to resell to your clients.",
       "features": [
         "Custom Branding",
         "Reseller Ready",
@@ -291,7 +291,7 @@ industries: {
 },
 
 whyChooseUs: {
-  title: "Why Choose SyncTechn for Custom ERP Development?",
+  title: "Why Choose SyncTechn for Custom ERP Custom Software Development?",
 
   subtitle:
     "SyncTechn develops modern ERP software that helps businesses simplify complex operations, automate repetitive processes, and improve organizational efficiency. Our ERP solutions are designed to integrate departments, improve decision-making, and support long-term business growth through secure, scalable, and cloud-ready architecture.",
@@ -488,7 +488,7 @@ process: {
     },
 
     {
-      title: "4. Custom ERP Development",
+      title: "4. Custom ERP Custom Software Development",
 
       desc:
         "Develop scalable ERP software using React, Next.js, Node.js, Python, Java, PostgreSQL, cloud technologies, and secure enterprise development practices."
@@ -528,14 +528,14 @@ faqs: {
   title: "Frequently Asked Questions",
 
   subtitle:
-    "Find answers to common questions about our custom ERP software development services, implementation process, integrations, security, pricing, and ongoing support.",
+    "Find answers to common questions about our custom ERP custom software development services, implementation process, integrations, security, pricing, and ongoing support.",
 
   list: [
 
     {
-      q: "What is Custom ERP Software Development?",
+      q: "What is Custom ERP Custom Software Development?",
 
-      a: "Custom ERP software development is the process of designing and building an Enterprise Resource Planning (ERP) system tailored specifically to your business operations. Unlike off-the-shelf ERP solutions, custom ERP software is developed around your workflows, departments, business rules, reporting requirements, and future growth plans."
+      a: "Custom ERP custom software development is the process of designing and building an Enterprise Resource Planning (ERP) system tailored specifically to your business operations. Unlike off-the-shelf ERP solutions, custom ERP software is developed around your workflows, departments, business rules, reporting requirements, and future growth plans."
     },
 
     {

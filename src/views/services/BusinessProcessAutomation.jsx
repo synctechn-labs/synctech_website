@@ -50,7 +50,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/business-process-automation",
+      "https://synctechn.com/services/business-process-automation-services",
   },
 
   openGraph: {
@@ -61,7 +61,7 @@ export const metadata = {
       "Automate repetitive tasks, streamline operations, and boost employee productivity with custom Business Process Automation (BPA) solutions from SyncTechn.",
 
     url:
-      "https://synctechn.com/services/business-process-automation",
+      "https://synctechn.com/services/business-process-automation-services",
 
     siteName: "SyncTechn",
 
@@ -71,7 +71,7 @@ export const metadata = {
 
     images: [
       {
-        url: "/images/services/business-process-automation-og.webp",
+        url: "/images/services/business-process-automation-services-og.webp",
         width: 1200,
         height: 630,
         alt: "Business Process Automation Services"
@@ -89,7 +89,7 @@ export const metadata = {
       "Streamline enterprise workflows, reduce manual labor, and optimize operations with intelligent Business Process Automation solutions.",
 
     images: [
-      "/images/services/business-process-automation-og.webp"
+      "/images/services/business-process-automation-services-og.webp"
     ]
   },
 
@@ -194,7 +194,7 @@ servicesSuite: {
     },
     {
       "id": "system-integration",
-      "title": "Business System Integration Hub",
+      "title": "Business System Integration",
       "desc": "Connect disparate business software into a unified ecosystem. We ensure your ERP, CRM, marketing, and support tools speak the same language.",
       "features": [
         "Data Mapping",

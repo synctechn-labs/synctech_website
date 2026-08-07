@@ -12,7 +12,7 @@ export const PROCESS_STEPS = [
   {
     icon: SearchCheck,
     title: "Discovery & Requirement Analysis",
-    desc: "We begin by understanding your business objectives, workflows, and technical requirements to define a clear roadmap for successful software development.",
+    desc: "We begin by understanding your business objectives, workflows, and technical requirements to define a clear roadmap for successful custom software development.",
   },
   {
     icon: ClipboardCheck,

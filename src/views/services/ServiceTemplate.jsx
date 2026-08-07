@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 
-import { ShieldCheck, CheckCheck, ChevronDown } from "lucide-react";
+import { ShieldCheck, CheckCheck, ChevronDown, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 
@@ -124,74 +124,88 @@ function HeroBackground({ bgImage, fallbackImg, defaultFallback }) {
 }
 
 const serviceRoutes = {
-  "Custom ERP Development": "/services/custom-erp-development",
-  "SaaS Product Development": "/services/saas-product-development",
-  "Legacy Software Modernization": "/services/legacy-software-modernization",
-  "White-Label Software Development": "/services/white-label-software-development",
-  "Custom Web Application Development": "/services/custom-web-application-development",
-  "Client & Customer Portal Development": "/services/client-customer-portal-development",
-  "Admin Dashboard Development": "/services/admin-dashboard-development",
-  "Booking & Appointment Systems": "/services/booking-appointment-system-development",
-  "Mobile Application Development": "/services/mobile-application-development",
-  "Human Approval Automation Systems": "/services/human-approval-automation-systems",
-  "Role-Based Business Workspace Development": "/services/role-based-business-workspace-development",
-  "Operations Exception Management Systems": "/services/operations-exception-management-systems",
-  "Custom CRM Development": "/services/custom-crm-development",
-  "Business Process Automation": "/services/business-process-automation",
-  "Business System Integration Hub": "/services/business-system-integration-hub",
-  "API Development & Integration": "/services/api-development-integration",
+  "Custom ERP Custom Software Development": "/services/custom-erp-software-development-services",
+  "SaaS Product Development": "/services/saas-product-development-services",
+  "Legacy Software Modernization": "/services/legacy-software-modernization-services",
+  "White-Label Custom Software Development": "/services/white-label-software-development-services",
+  "Custom Web Application Development": "/services/custom-web-application-development-services",
+  "Customer Portal Development": "/services/customer-portal-development-services",
+  "Admin Dashboard Development": "/services/admin-dashboard-development-services",
+  "Appointment Booking System Development": "/services/appointment-booking-software-development-services",
+  "Custom Mobile App Development": "/services/custom-mobile-application-development-services",
+  "Human Approval Workflow Automation": "/services/human-approval-workflow-automation-services",
+  "Role-Based Business Workspace Development": "/services/role-based-business-workspace-development-services",
+  "Operations Exception Management": "/services/operations-exception-management-software-services",
+  "Custom CRM Development": "/services/custom-crm-development-services",
+  "Business Process Automation": "/services/business-process-automation-services",
+  "Business System Integration": "/services/business-system-integration-services",
+  "API Development & Integration": "/services/api-development-integration-services",
   "AI Integration Services": "/services/ai-integration-services",
-  "AI Workflow Agent Development": "/services/ai-workflow-agent-development",
-  "AI Email Operations Automation": "/services/ai-email-operations-automation",
-  "AI Document Verification Systems": "/services/ai-document-verification-systems",
-  "Document Processing Automation": "/services/document-processing-automation",
-  "Software Usage Intelligence Systems": "/services/software-usage-intelligence-systems",
-  "AI-Assisted Quality Control Platforms": "/services/ai-assisted-quality-control",
-  "Micro-SaaS Development for Businesses": "/services/micro-saas-development",
-  "Software Development": "/services/software-development",
-  "Web Development": "/services/web-development",
+  "AI Workflow Agent Development": "/services/ai-workflow-agent-development-services",
+  "AI Email Automation": "/services/ai-email-automation-services",
+  "AI Document Verification": "/services/ai-document-verification-services",
+  "Document Processing Automation": "/services/document-processing-automation-services",
+  "Software Usage Analytics": "/services/software-usage-analytics-services",
+  "AI Quality Control": "/services/ai-quality-control-solutions-services",
+  "Micro-SaaS Development": "/services/micro-saas-development-services",
+  "Custom Software Development": "/services/custom-software-development-services",
+  "Custom Web Development": "/services/custom-web-development-services",
   "Mobile App Development": "/services/mobile-app-development",
-  "CRM Solutions": "/services/crm",
-  "AI Solutions": "/services/ai-solutions",
-  "Digital Marketing": "/services/digital-marketing"
+  "CRM Development Services": "/services/crm-development-services",
+  "AI Development Services": "/services/ai-development-services",
+  "Digital Marketing Services": "/services/digital-marketing-services",
+  
+  // New Software Development service titles mappings
+  "Enterprise Software Development": "/services/custom-erp-software-development-services",
+  "Custom Application Development": "/services/custom-web-application-development-services",
+  "SaaS Product Engineering": "/services/saas-product-development-services",
+  "Business Process Automation (BPA) & AI Integration": "/services/business-process-automation-services",
+  "Custom API & Systems Integration": "/services/api-development-integration-services"
 };
 
 const serviceToParentMap = {
-  "Custom ERP Development": "Software Development",
-  "SaaS Product Development": "Software Development",
-  "Legacy Software Modernization": "Software Development",
-  "White-Label Software Development": "Software Development",
-  "Custom Web Application Development": "Web Development",
-  "Client & Customer Portal Development": "Web Development",
-  "Admin Dashboard Development": "Web Development",
-  "Booking & Appointment Systems": "Web Development",
-  "Mobile Application Development": "Mobile App Development",
-  "Human Approval Automation Systems": "Mobile App Development",
+  "Custom ERP Custom Software Development": "Custom Software Development",
+  "SaaS Product Development": "Custom Software Development",
+  "Legacy Software Modernization": "Custom Software Development",
+  "White-Label Custom Software Development": "Custom Software Development",
+  "Custom Web Application Development": "Custom Web Development",
+  "Customer Portal Development": "Custom Web Development",
+  "Admin Dashboard Development": "Custom Web Development",
+  "Appointment Booking System Development": "Custom Web Development",
+  "Custom Mobile App Development": "Mobile App Development",
+  "Human Approval Workflow Automation": "Mobile App Development",
   "Role-Based Business Workspace Development": "Mobile App Development",
-  "Operations Exception Management Systems": "Mobile App Development",
-  "Custom CRM Development": "CRM Solutions",
-  "Business Process Automation": "CRM Solutions",
-  "Business System Integration Hub": "CRM Solutions",
-  "API Development & Integration": "CRM Solutions",
-  "AI Integration Services": "AI Solutions",
-  "AI Workflow Agent Development": "AI Solutions",
-  "AI Email Operations Automation": "AI Solutions",
-  "AI Document Verification Systems": "AI Solutions",
-  "Document Processing Automation": "Digital Marketing",
-  "Software Usage Intelligence Systems": "Digital Marketing",
-  "AI-Assisted Quality Control Platforms": "Digital Marketing",
-  "Micro-SaaS Development for Businesses": "Digital Marketing",
+  "Operations Exception Management": "Mobile App Development",
+  "Custom CRM Development": "CRM Development Services",
+  "Business Process Automation": "CRM Development Services",
+  "Business System Integration": "CRM Development Services",
+  "API Development & Integration": "CRM Development Services",
+  "AI Integration Services": "AI Development Services",
+  "AI Workflow Agent Development": "AI Development Services",
+  "AI Email Automation": "AI Development Services",
+  "AI Document Verification": "AI Development Services",
+  "Document Processing Automation": "Digital Marketing Services",
+  "Software Usage Analytics": "Digital Marketing Services",
+  "AI Quality Control": "Digital Marketing Services",
+  "Micro-SaaS Development": "Digital Marketing Services",
+
+  // New Software Development service titles mappings
+  "Enterprise Software Development": "Custom Software Development",
+  "Custom Application Development": "Custom Software Development",
+  "SaaS Product Engineering": "Custom Software Development",
+  "Business Process Automation (BPA) & AI Integration": "Custom Software Development",
+  "Custom API & Systems Integration": "Custom Software Development"
 };
 
 const PARENT_SERVICES = {
-  "Software Development": {
-    title: "Software Development",
+  "Custom Software Development": {
+    title: "Custom Software Development",
     desc: "End-to-end custom software development services that help businesses automate operations and accelerate digital transformation.",
     features: ["Custom Software", "Enterprise Solutions", "Cloud-Native", "Agile Methodologies", "High Performance", "Secure Architecture"],
     image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"
   },
-  "Web Development": {
-    title: "Web Development",
+  "Custom Web Development": {
+    title: "Custom Web Development",
     desc: "Secure, scalable, and high-performance web applications using modern web technologies and agile practices.",
     features: ["Responsive Design", "Frontend Development", "Backend Architecture", "API Integration", "Cloud Hosting", "Performance Tuned"],
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
@@ -202,20 +216,20 @@ const PARENT_SERVICES = {
     features: ["iOS Apps", "Android Apps", "Cross-Platform", "UI/UX Design", "App Store Optimization", "Enterprise Mobile"],
     image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80"
   },
-  "CRM Solutions": {
-    title: "CRM Solutions",
+  "CRM Development Services": {
+    title: "CRM Development Services",
     desc: "Empower your business with custom CRM solutions, seamless system integrations, and intelligent process automation.",
     features: ["Custom CRM", "Sales Automation", "Data Migration", "Third-party Integration", "Analytics Dashboard", "Secure Access"],
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
   },
-  "AI Solutions": {
-    title: "AI Solutions",
+  "AI Development Services": {
+    title: "AI Development Services",
     desc: "Harness Artificial Intelligence to automate complex workflows, manage operations, and drive unprecedented efficiency.",
     features: ["Machine Learning", "NLP Models", "AI Chatbots", "Workflow Automation", "Predictive Analytics", "Process Optimization"],
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80"
   },
-  "Digital Marketing": {
-    title: "Digital Marketing",
+  "Digital Marketing Services": {
+    title: "Digital Marketing Services",
     desc: "Leverage intelligent systems and software analytics to optimize operations, scale marketing efforts, and uncover new revenue streams.",
     features: ["SEO Optimization", "Content Strategy", "Performance Marketing", "Analytics Setup", "Conversion Optimization", "Growth Hacking"],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
@@ -316,11 +330,19 @@ export default function ServiceTemplate({ data, techStackComponent }) {
         {/* Left Side: Text */}
         <div className="relative z-10 w-full lg:w-[60%] flex flex-col justify-center px-6 lg:px-20 py-32 lg:py-40">
           <div className="relative text-white">
-            <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-[1.1] mb-6 whitespace-pre-line">
+            {/* Heading */}
+            <h1 className="text-4xl md:text-5xl xl:text-7xl font-black leading-[1.05] tracking-tight">
               {data?.hero?.title}
             </h1>
-            <p className="text-base md:text-lg text-slate-300 leading-relaxed max-w-2xl">
+
+            {/* Subtitle */}
+            <p className="mt-6 text-lg md:text-xl text-slate-200 leading-relaxed max-w-2xl">
               {data?.hero?.subtitle}
+            </p>
+
+            {/* Paragraph */}
+            <p className="mt-6 text-base md:text-lg text-slate-300 leading-8 max-w-3xl">
+              {data?.hero?.paragraph}
             </p>
           </div>
         </div>
@@ -372,8 +394,8 @@ export default function ServiceTemplate({ data, techStackComponent }) {
 
               <div>
                 <label className="block text-xs font-semibold text-slate-300 mb-1">Budget Range</label>
-                <select className="w-full bg-transparent border-b border-slate-500 focus:border-white text-slate-400 py-1.5 outline-none cursor-pointer appearance-none">
-                  <option value="" disabled selected className="text-slate-900">Select a Budget Range</option>
+                <select defaultValue="" className="w-full bg-transparent border-b border-slate-500 focus:border-white text-slate-400 py-1.5 outline-none cursor-pointer appearance-none">
+                  <option value="" disabled className="text-slate-900">Select a Budget Range</option>
                   <option value="10k-25k" className="text-slate-900">$10k - $25k</option>
                   <option value="25k-50k" className="text-slate-900">$25k - $50k</option>
                   <option value="50k+" className="text-slate-900">$50k+</option>
@@ -416,571 +438,674 @@ export default function ServiceTemplate({ data, techStackComponent }) {
           </div>
         </div>
       </section>
-
       {/* ========================================================= */}
-      {/* 2. OVERVIEW & COMPLIANCE SECTION */}
+      {/* 2. PROBLEM STATEMENT */}
       {/* ========================================================= */}
-      <section className="w-full flex flex-col lg:flex-row min-h-[60vh]">
-        {/* Left Side: Dark Background */}
-        <div className="w-full lg:w-1/2 bg-[#050505] text-white py-24 px-8 lg:px-20 flex flex-col justify-center">
-          {data?.coreCapabilities ? (
-            <>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                {data.coreCapabilities.title}
-              </h2>
-              <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-10">
-                {data.coreCapabilities.desc}
-              </p>
-              
-              <div className="space-y-4 max-h-[500px] overflow-y-auto pr-2 custom-scrollbar">
-                {data.coreCapabilities.cards.map((card, idx) => (
-                  <div key={idx} className="flex gap-4 items-start p-4 rounded-xl border border-white/5 bg-white/[0.01] hover:border-blue-500/20 hover:bg-white/[0.02] transition-all duration-300">
-                    <CheckCheck className="text-blue-500 mt-1 shrink-0 w-5 h-5" />
-                    <div>
-                      <h4 className="font-bold text-white text-base">{card.title}</h4>
-                      <p className="text-slate-400 text-xs mt-1 leading-relaxed">{card.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </>
-          ) : (
-            <>
-              <p className="text-xl leading-relaxed text-slate-200 font-medium mb-16">
-                At SyncTechn, we build custom software solutions that help businesses automate operations, improve efficiency, and accelerate digital transformation. Our custom software development services cover enterprise applications, SaaS platforms, CRM and ERP systems, cloud-native applications, API integrations, AI-powered software, and business process automation. Every solution is designed with scalability, security, and long-term performance in mind, enabling organizations to adapt quickly and grow with confidence.
-              </p>
+      <section className="relative bg-[#050505] overflow-hidden py-24">
 
-              <h2 className="text-2xl font-bold mb-8">Our Core Capabilities:</h2>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(6,182,212,.08),transparent_45%)]" />
 
-              <ul className="space-y-6">
-                <li className="flex items-start gap-4">
-                  <CheckCheck className="text-[#3a86ff] mt-1 shrink-0 w-5 h-5" />
-                  <span className="text-lg md:text-xl font-medium text-slate-300 leading-relaxed">
-                    Developing secure, scalable custom software, web applications, and enterprise platforms using modern technologies and cloud infrastructure such as AWS, Microsoft Azure, and Google Cloud.
-                  </span>
-                </li>
-                <li className="flex items-start gap-4">
-                  <CheckCheck className="text-[#3a86ff] mt-1 shrink-0 w-5 h-5" />
-                  <span className="text-lg md:text-xl font-medium text-slate-300 leading-relaxed">
-                    Building custom CRM, ERP, SaaS, and workflow automation solutions that streamline business operations, improve productivity, and support long-term growth.
-                  </span>
-                </li>
-                <li className="flex items-start gap-4">
-                  <CheckCheck className="text-[#3a86ff] mt-1 shrink-0 w-5 h-5" />
-                  <span className="text-lg md:text-xl font-medium text-slate-300 leading-relaxed">
-                    Building intelligent mobile platforms powered by AI, ML, and real-time data analytics
-                  </span>
-                </li>
-                <li className="flex items-start gap-4">
-                  <CheckCheck className="text-[#3a86ff] mt-1 shrink-0 w-5 h-5" />
-                  <span className="text-lg md:text-xl font-medium text-slate-300 leading-relaxed">
-                    Implementing enterprise-grade security with encrypted communication, secure authentication, role-based access control, compliance best practices, and multi-layer protection for sensitive business data.
-                  </span>
-                </li>
-                <li className="flex items-start gap-4">
-                  <CheckCheck className="text-[#3a86ff] mt-1 shrink-0 w-5 h-5" />
-                  <span className="text-base md:text-lg font-medium text-slate-300 leading-relaxed">
-                    Integrating custom software seamlessly with third-party APIs, payment gateways, ERP systems, CRM platforms, legacy applications, and cloud services to create a connected digital ecosystem.
-                  </span>
-                </li>
-              </ul>
-            </>
-          )}
-        </div>
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
 
-        {/* Right Side: Service Image */}
-        <div className="w-full lg:w-1/2 bg-[#050505] flex items-center justify-center p-8 lg:p-12 border-l border-white/5">
-          <img
-            src={data?.overviewImage || data?.primaryCta?.image || "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"}
-            alt="Service Overview"
-            className="w-full h-auto rounded-[2rem] shadow-2xl"
-          />
-        </div>
-      </section>
+          <div className="max-w-4xl mb-16">
 
-      {/* ========================================================= */}
-      {/* 3. METRICS SECTION */}
-      {/* ========================================================= */}
-      {!data?.hideMiddleCtas && (
-        <section className="w-full bg-[#050505] py-20 px-6 lg:px-16 flex justify-center">
-          <div className="w-full max-w-6xl rounded-[2rem] relative overflow-hidden bg-gradient-to-r from-cyan-500 to-blue-600 p-10 lg:p-16 shadow-2xl border border-white/5">
-            <div className="relative z-10 text-white">
-              <h3 className="text-lg lg:text-xl font-bold mb-16">
-                We engineer complexity into results:
-              </h3>
+            <span className="inline-flex items-center rounded-full bg-cyan-500/10 border border-cyan-500/20 px-4 py-2 text-cyan-300 text-sm font-medium mb-6">
+              Business Challenges
+            </span>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
-                {data?.metrics?.map((metric, idx) => (
-                  <div key={idx} className="border-b border-white/20 pb-8 flex flex-col justify-end">
-                    <h4 className="text-5xl lg:text-6xl font-light mb-6 tracking-tight">{metric.value}</h4>
-                    <p className="text-sm text-blue-50 font-medium">
-                      {metric.title}
-                      {metric.subtitle && <span className="block mt-1 text-blue-100/80">{metric.subtitle}</span>}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
+            <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
+              {data?.coreChallenges?.title}
+            </h2>
 
-      {/* ========================================================= */}
-      {/* 4. SERVICES SUITE SECTION */}
-      {/* ========================================================= */}
-      <section className="w-full bg-[#050505] py-24 px-6 lg:px-16">
-        <div className="max-w-7xl mx-auto mb-16 flex flex-col gap-8">
-          <h2 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-cyan-500 to-blue-600 text-transparent bg-clip-text mb-2 tracking-tight pb-2 w-full text-balance line-clamp-2">
-            {data?.servicesSuite?.title}
-          </h2>
-          <p className="text-slate-300 text-lg md:text-xl leading-relaxed max-w-4xl">
-            {data?.servicesSuite?.subtitle}
-          </p>
-        </div>
+            <p className="text-slate-400 text-lg leading-8">
+              {data?.coreChallenges?.desc}
+            </p>
 
-        {/* Interactive Tabs Area */}
-        <div className="w-full flex flex-col lg:flex-row rounded-[2.5rem] overflow-hidden bg-white mx-auto shadow-2xl border border-white/5">
-          {/* Left Navigation */}
-          <div className="w-full lg:w-[35%] bg-white p-8 lg:p-10 border-r border-slate-100 max-h-[600px] overflow-y-auto">
-            <div className="space-y-2">
-              {suiteServices?.map((service, idx) => (
-                <Link
-                  href={serviceRoutes[service.title] || "#"}
-                  target="_blank" rel="noopener noreferrer"
-                  key={idx}
-                  onMouseEnter={() => setActiveService(idx)}
-                  className={`w-full text-left py-6 px-4 border-b border-slate-200 transition-all duration-300 flex items-center gap-6 group ${activeService === idx ? 'opacity-100' : 'opacity-40 hover:opacity-100'}`}
-                >
-                  <span className={`text-sm font-bold ${activeService === idx ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-transparent bg-clip-text' : 'text-slate-400'}`}>
-                    [0{idx + 1}]
-                  </span>
-                  <span className={`text-xl lg:text-2xl font-bold transition-all duration-300 ${activeService === idx ? 'text-slate-900' : 'text-slate-500 group-hover:bg-gradient-to-r group-hover:from-cyan-500 group-hover:to-blue-600 group-hover:text-transparent group-hover:bg-clip-text'}`}>
-                    {service.title}
-                  </span>
-                </Link>
-              ))}
-            </div>
           </div>
 
-          {/* Right Content Area */}
-          <div className="w-full lg:w-[65%] flex flex-col bg-slate-50 relative">
-            {/* Image Banner */}
-            <div className="w-full h-64 lg:h-80 overflow-hidden relative">
-              <img
-                src={suiteServices?.[activeService]?.image || "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80"}
-                alt={suiteServices?.[activeService]?.title}
-                className="w-full h-full object-cover transition-all duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent pointer-events-none"></div>
-            </div>
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
 
-            {/* Info Split */}
-            <div className="flex flex-col lg:flex-row flex-1 relative -mt-6">
-              {/* Blue Info Box */}
-              <div className="w-full lg:w-1/2 bg-gradient-to-br from-cyan-500 to-blue-600 text-white p-10 lg:p-12 flex flex-col justify-center rounded-tl-3xl shadow-[0_-10px_20px_rgba(0,0,0,0.1)] relative z-10">
-                <div className="flex items-center gap-2 mb-6">
-                  <ShieldCheck className="w-6 h-6" />
+            {data?.coreChallenges?.cards?.map((item, index) => (
+              <div
+                key={index}
+                className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition-all duration-300 hover:border-cyan-500/30 hover:bg-white/[0.05]"
+              >
+
+                <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-cyan-500 to-blue-600 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
+
+                <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 mb-6">
+
+                  <CheckCheck className="w-7 h-7 text-cyan-400" />
+
                 </div>
-                <h4 className="text-xl font-bold mb-6 uppercase tracking-wider">
-                  {suiteServices?.[activeService]?.title}
-                </h4>
-                <p className="text-lg md:text-xl leading-relaxed text-blue-50 mb-8">
+
+                <h3 className="text-2xl font-bold text-white mb-4 leading-snug">
+                  {item.title}
+                </h3>
+
+                <p className="text-slate-400 leading-7">
+                  {item.desc}
+                </p>
+
+              </div>
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+      {/* ========================================================= */}
+      {/* 3. SOLUTION SECTION */}
+      {/* ========================================================= */}
+      <section
+        id="services"
+        className="relative bg-gradient-to-b from-[#050505] via-[#0b1120] to-[#050505] py-24 overflow-hidden"
+      >
+
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+
+          {/* Heading */}
+          <div className="text-center max-w-4xl mx-auto mb-20">
+
+            <span className="inline-flex items-center rounded-full bg-cyan-500/10 border border-cyan-500/20 px-4 py-2 text-cyan-300 text-sm font-medium mb-6">
+              Our Solutions
+            </span>
+
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              {data?.servicesSuite?.title}
+            </h2>
+
+            <p className="text-slate-400 text-lg leading-8">
+              {data?.servicesSuite?.subtitle}
+            </p>
+
+          </div>
+
+          {/* Interactive Section */}
+
+          <div className="rounded-[32px] overflow-hidden border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl flex flex-col lg:flex-row">
+
+            {/* LEFT MENU */}
+
+            <div className="w-full lg:w-[34%] border-r border-white/10 bg-black/20">
+
+              {suiteServices?.map((service, index) => (
+
+                <button
+                  key={index}
+                  onMouseEnter={() => setActiveService(index)}
+                  onClick={() => setActiveService(index)}
+                  className={`w-full text-left px-8 py-8 transition-all duration-300 border-b border-white/5
+
+            ${activeService === index
+                      ? "bg-gradient-to-r from-cyan-500/20 to-blue-500/10 border-l-4 border-cyan-400"
+                      : "hover:bg-white/5"
+                    }
+            `}
+                >
+
+                  <div className="flex items-start gap-5">
+
+                    <span
+                      className={`text-lg font-bold
+
+                ${activeService === index
+                          ? "text-cyan-400"
+                          : "text-slate-500"
+                        }
+                `}
+                    >
+                      0{index + 1}
+                    </span>
+
+                    <div>
+
+                      <h3
+                        className={`text-xl font-bold
+
+                  ${activeService === index
+                            ? "text-white"
+                            : "text-slate-300"
+                          }
+                  `}
+                      >
+                        {service.title}
+                      </h3>
+
+                      <p className="text-sm text-slate-500 mt-2 line-clamp-2">
+                        {service.desc}
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </button>
+
+              ))}
+
+            </div>
+
+            {/* RIGHT CONTENT */}
+
+            <div className="w-full lg:w-[66%] bg-[#0d1117]">
+
+              {/* Image */}
+
+              <div className="relative h-80 overflow-hidden">
+
+                <img
+                  src={suiteServices?.[activeService]?.image}
+                  alt={suiteServices?.[activeService]?.title}
+                  className="w-full h-full object-cover"
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-black/30 to-transparent" />
+
+              </div>
+
+              {/* Content */}
+
+              <div className="p-10 lg:p-14">
+
+                <div className="flex items-center gap-3 mb-6">
+
+                  <div className="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center">
+
+                    <ShieldCheck className="w-7 h-7 text-cyan-400" />
+
+                  </div>
+
+                  <div>
+
+                    <h3 className="text-3xl font-bold text-white">
+                      {suiteServices?.[activeService]?.title}
+                    </h3>
+
+                  </div>
+
+                </div>
+
+                <p className="text-slate-300 text-lg leading-8 mb-10">
                   {suiteServices?.[activeService]?.desc}
                 </p>
-                <Link href={serviceRoutes[suiteServices?.[activeService]?.title] || "#"} target="_blank" rel="noopener noreferrer" className="mt-auto inline-flex items-center gap-2 text-white font-semibold hover:text-cyan-200 transition-colors w-max">
-                  Learn More <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-                </Link>
-              </div>
 
-              {/* White Bullets Box */}
-              <div className="w-full lg:w-1/2 bg-white p-10 lg:p-12 flex flex-col justify-center rounded-tr-3xl lg:rounded-none shadow-[0_-10px_20px_rgba(0,0,0,0.05)] relative z-10">
-                {suiteServices?.[activeService]?.features?.map((feature, idx) => (
-                  <div className="mb-8 last:mb-0" key={idx}>
-                    <h5 className="font-bold text-slate-900 mb-2 flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-slate-900 shrink-0"></span>
-                      {feature}
-                    </h5>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                {/* Features */}
 
-      {/* ========================================================= */}
-      {/* NEW: WHY INVEST SECTION */}
-      {/* ========================================================= */}
-      {data?.whyInvest && (
-        <section className="w-full bg-[#050505] py-24 px-6 lg:px-16 text-white border-t border-white/5">
-          <div className="max-w-7xl mx-auto">
-            {/* Header */}
-            <div className="max-w-4xl mb-16">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-cyan-500 to-blue-600 text-transparent bg-clip-text mb-6 tracking-tight pb-2 text-balance">
-                {data.whyInvest.title}
-              </h2>
-              <p className="text-slate-300 text-base md:text-lg leading-relaxed">
-                {data.whyInvest.desc}
-              </p>
-            </div>
+                <div className="grid md:grid-cols-2 gap-5">
 
-            {/* Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-              {data.whyInvest.cards.map((card, idx) => (
-                <div
-                  key={idx}
-                  className="bg-[#0a0a0a] hover:bg-[#111] border border-white/10 rounded-[2rem] p-8 transition-all duration-300 shadow-xl group hover:border-blue-500/20 hover:shadow-blue-500/5 relative overflow-hidden"
+                  {suiteServices?.[activeService]?.features?.map(
+                    (feature, index) => (
+
+                      <div
+                        key={index}
+                        className="flex items-start gap-3 rounded-xl bg-white/5 border border-white/10 p-4"
+                      >
+
+                        <CheckCheck className="w-5 h-5 text-cyan-400 mt-1 shrink-0" />
+
+                        <span className="text-slate-200">
+                          {feature}
+                        </span>
+
+                      </div>
+
+                    )
+                  )}
+
+                </div>
+
+                <Link
+                  href={
+                    serviceRoutes[
+                    suiteServices?.[activeService]?.title
+                    ] || "#"
+                  }
+                  target="_blank"
+                  className="inline-flex items-center gap-3 mt-10 rounded-full bg-cyan-500 hover:bg-cyan-400 px-8 py-4 font-semibold text-white transition"
                 >
-                  {/* Subtle top light effect */}
-                  <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  
-                  {/* Icon or Index */}
-                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-500/10 to-blue-600/10 border border-white/10 flex items-center justify-center text-cyan-400 font-bold mb-6 group-hover:from-cyan-500/20 group-hover:to-blue-600/20 transition-all">
-                    0{idx + 1}
-                  </div>
-
-                  <h3 className="text-xl font-bold mb-4 text-white group-hover:text-cyan-400 transition-colors">
-                    {card.title}
-                  </h3>
-                  
-                  <p className="text-slate-400 text-sm leading-relaxed">
-                    {card.desc}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* ========================================================= */}
-      {/* 5. CTA SECTION */}
-      {/* ========================================================= */}
-      {!data?.hideMiddleCtas && (
-        <section className="w-full bg-[#050505] py-24 px-6 lg:px-16 flex justify-center">
-          <div className="w-full max-w-7xl rounded-[2.5rem] overflow-hidden flex flex-col lg:flex-row shadow-2xl">
-            {/* Left Column (Blue Gradient text area) */}
-            <div className="w-full lg:w-[55%] bg-gradient-to-br from-cyan-500 to-blue-600 p-10 lg:p-12 flex flex-col justify-center text-white relative">
-              <h2 className="text-3xl lg:text-4xl leading-tight mb-4 whitespace-pre-line font-bold">
-                {data?.primaryCta?.title}
-              </h2>
-              <p className="text-sm lg:text-base text-blue-50 leading-relaxed mb-8 max-w-xl">
-                {data?.primaryCta?.subtitle}
-              </p>
-              <div>
-                <button className="bg-white text-slate-900 rounded-full px-8 py-3.5 font-semibold text-sm flex items-center gap-3 hover:bg-slate-100 transition-colors shadow-xl">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                  {data?.primaryCta?.buttonText}
-                </button>
-              </div>
-            </div>
-
-            {/* Right Column (Image) */}
-            <div className="w-full lg:w-[45%] h-64 lg:h-auto min-h-[300px]">
-              <img
-                src="https://res.cloudinary.com/wowukaao/image/upload/v1783865631/CTA_1_1_ymdwgy.jpg"
-                alt="CTA Image"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* ========================================================= */}
-      {/* 6. INDUSTRIES SECTION */}
-      {/* ========================================================= */}
-      <section className="w-full bg-[#050505] py-24 px-6 lg:px-16">
-        <div className="max-w-7xl mx-auto flex flex-col gap-16 lg:gap-20">
-
-          {/* Top Column - Text */}
-          <div className="w-full max-w-4xl flex flex-col">
-            <h2 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-cyan-500 to-blue-600 text-transparent bg-clip-text mb-6 tracking-tight pb-2 whitespace-pre-line text-balance line-clamp-2">
-              {data?.industries?.title}
-            </h2>
-            <p className="text-lg md:text-xl leading-relaxed text-slate-300">
-              {data?.industries?.subtitle}
-            </p>
-          </div>
-
-          {/* Bottom Column - Accordion List */}
-          <div className="w-full">
-            <div className="border-t border-white/10">
-              {data?.industries?.list?.map((industry, idx) => (
-                <div key={idx} className="border-b border-white/10">
-                  <button
-                    onClick={() => {
-                      setIsIndustryAutomated(false);
-                      setOpenIndustry(openIndustry === idx ? null : idx);
-                    }}
-                    className="w-full py-6 flex items-center justify-between focus:outline-none group"
-                  >
-                    <div className="flex items-center gap-6">
-                      <span className="text-blue-600 group-hover:text-cyan-500 transition-colors">
-                        {industry.icon}
-                      </span>
-                      <span className={`text-xl md:text-2xl font-semibold transition-colors duration-300 ${openIndustry === idx ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-transparent bg-clip-text' : 'text-white group-hover:text-blue-100'}`}>
-                        {industry.title}
-                      </span>
-                    </div>
-                    <ChevronDown className={`w-5 h-5 text-slate-500 transition-transform duration-300 ${openIndustry === idx ? 'rotate-180 text-cyan-500' : ''}`} />
-                  </button>
-                  {/* Accordion Content */}
-                  <div className={`overflow-hidden transition-all duration-500 ${openIndustry === idx ? 'max-h-[600px] pb-8 opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="px-4 md:px-12 space-y-6">
-                      <p className="text-base md:text-lg text-slate-300 leading-relaxed">
-                        {industry.desc}
-                      </p>
-                      {industry.solutions && (
-                        <div>
-                          <h4 className="text-sm font-bold text-white/40 uppercase tracking-wider mb-3">Solutions Include:</h4>
-                          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-                            {industry.solutions.map((sol, sIdx) => (
-                              <div key={sIdx} className="flex items-center gap-2 text-slate-400">
-                                <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></span>
-                                <span className="text-sm md:text-base">{sol}</span>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ========================================================= */}
-      {/* 7. SECOND CTA SECTION */}
-      {/* ========================================================= */}
-      {!data?.hideMiddleCtas && (
-        <section className="w-full bg-[#050505] py-24 px-6 lg:px-16 flex justify-center">
-          <div className="w-full max-w-7xl rounded-[2.5rem] overflow-hidden flex flex-col lg:flex-row shadow-2xl">
-            {/* Left Column (Blue Gradient text area) */}
-            <div className="w-full lg:w-[55%] bg-gradient-to-br from-cyan-500 to-blue-600 p-10 lg:p-12 flex flex-col justify-center text-white relative">
-              <h2 className="text-3xl lg:text-4xl leading-tight mb-4">
-                <span className="font-light"> Build Custom Software</span>
-                <span className="font-bold"> That Gives Your</span><span className="font-light"> Business a Competitive Advantage</span>
-              </h2>
-              <p className="text-sm lg:text-base text-blue-50 leading-relaxed mb-8 max-w-xl font-medium">
-                Whether you're building enterprise software, modernizing legacy systems, developing SaaS products, or automating business operations, SyncTechn delivers secure, scalable, and future-ready custom software solutions tailored to your industry and business goals.
-              </p>
-              <div>
-                <Link href="/contact-us" className="bg-white text-slate-900 rounded-full px-8 py-3.5 font-semibold text-sm inline-flex items-center gap-3 hover:bg-slate-100 transition-colors shadow-xl w-max">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                  Schedule a Free Consultation
+                  Learn More
+                  <ArrowRight className="w-5 h-5" />
                 </Link>
+
               </div>
+
             </div>
 
-            {/* Right Column (Image) */}
-            <div className="w-full lg:w-[45%] h-64 lg:h-auto min-h-[300px]">
-              <img
-                src="https://res.cloudinary.com/wowukaao/image/upload/v1783865631/CTA_1_2_fxgfo0.jpg"
-                alt="Industry Specialists"
-                className="w-full h-full object-cover"
-              />
-            </div>
           </div>
-        </section>
-      )}
 
+        </div>
+
+      </section>
       {/* ========================================================= */}
-      {/* 8. WHY CHOOSE US SECTION (With Scroll Animation) */}
+      {/* 4. FEATURES SECTION */}
       {/* ========================================================= */}
-      <section className="w-full bg-[#050505] py-24 px-6 lg:px-16 text-white overflow-hidden">
-        <div className="max-w-6xl mx-auto">
-          {/* Header */}
-          <div className="text-center md:text-left mb-20 md:ml-12">
-            <h2 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-cyan-500 to-blue-600 text-transparent bg-clip-text mb-6 tracking-tight pb-2 whitespace-pre-line text-balance line-clamp-2">
-              {data?.whyChooseUs?.title}
+
+      <section className="relative py-24 bg-[#050505] overflow-hidden">
+
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+
+          <div className="text-center max-w-4xl mx-auto mb-20">
+
+            <span className="inline-flex rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-cyan-300 text-sm font-medium mb-6">
+              Enterprise Features
+            </span>
+
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              {data?.features?.title}
             </h2>
-            <p className="text-lg md:text-xl text-slate-400 leading-relaxed max-w-2xl">
-              {data?.whyChooseUs?.subtitle}
+
+            <p className="text-lg text-slate-400 leading-8">
+              {data?.features?.subtitle}
             </p>
+
           </div>
 
-          {/* Cards List */}
-          <div className="space-y-0 border-t border-white/10">
-            {data?.whyChooseUs?.cards?.map((card, idx) => (
-              <FadeInUpCard key={idx} delay={idx * 150}>
-                <div className="group border-b border-white/10 flex flex-col md:flex-row items-start py-12 md:py-16 hover:bg-white/[0.02] transition-colors">
-                  {/* Number */}
-                  <div className="w-full md:w-32 mb-6 md:mb-0 shrink-0">
-                    <span className="text-xl font-bold font-mono text-white/50 group-hover:text-blue-500 transition-colors">
-                      0{idx + 1}
-                    </span>
-                  </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
 
-                  {/* Content */}
-                  <div className="flex-1 md:pl-12 md:border-l border-white/10 group-hover:border-blue-500/50 transition-colors">
-                    <h3 className="text-2xl font-bold mb-6 group-hover:text-blue-400 transition-colors">{card.title}</h3>
-                    <p className="text-slate-400 leading-relaxed max-w-2xl text-base md:text-lg">
-                      {card.desc}
-                    </p>
-                  </div>
+            {data?.features?.list?.map((feature, index) => (
+
+              <div
+                key={index}
+                className="group rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition-all duration-300 hover:border-cyan-500/30 hover:bg-white/[0.05]"
+              >
+
+                <div className="w-16 h-16 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-110 transition">
+
+                  {feature.icon}
+
                 </div>
-              </FadeInUpCard>
+
+                <h3 className="text-xl font-bold text-white mb-4">
+                  {feature.text}
+                </h3>
+
+                <p className="text-slate-400 leading-7">
+                  {feature.desc}
+                </p>
+
+              </div>
+
             ))}
+
           </div>
+
         </div>
+
       </section>
+      {/* ========================================================= */}
+      {/* 5. BENEFITS SECTION */}
+      {/* ========================================================= */}
 
-      {!data?.hideMiddleCtas && (
-        <section className="w-full bg-[#050505] py-24 px-6 lg:px-16 flex justify-center">
-          <div className="w-full max-w-7xl rounded-[2.5rem] overflow-hidden flex flex-col lg:flex-row shadow-2xl">
+      <section className="relative py-24 bg-gradient-to-b from-[#050505] via-[#07121f] to-[#050505] overflow-hidden">
 
-            {/* Left Column (Solid Bright Blue) */}
-            <div className="w-full lg:w-[55%] bg-gradient-to-br from-cyan-500 to-blue-600 p-10 lg:p-12 flex flex-col justify-center text-white relative">
-              <h2 className="text-3xl lg:text-4xl leading-tight mb-4 font-medium">
-                <span className="font-bold">{data?.secondaryCta?.title}</span> <br />{data?.secondaryCta?.highlight}
-              </h2>
-              <p className="text-sm lg:text-base text-blue-50 leading-relaxed mb-8 max-w-xl">
-                {data?.secondaryCta?.subtitle}
-              </p>
-              <div>
-                <Link href="/contact-us" className="bg-white text-slate-900 rounded-full px-8 py-3.5 font-semibold text-sm inline-flex items-center gap-3 hover:bg-slate-100 transition-colors shadow-xl w-max">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                  {data?.secondaryCta?.buttonText}
-                </Link>
-              </div>
-            </div>
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
-            {/* Right Column (Image) */}
-            <div className="w-full lg:w-[45%] h-64 lg:h-auto min-h-[300px]">
-              <img
-                src="https://res.cloudinary.com/wowukaao/image/upload/v1783865630/CTA_1_3_rpss5y.jpg"
-                alt="Secondary CTA Image"
-                className="w-full h-full object-cover"
-              />
-            </div>
+          <div className="text-center max-w-4xl mx-auto mb-20">
+
+            <span className="inline-flex rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-green-300 text-sm font-medium mb-6">
+              Business Benefits
+            </span>
+
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              {data?.whyInvest?.title}
+            </h2>
+
+            <p className="text-lg text-slate-400 leading-8">
+              {data?.whyInvest?.desc}
+            </p>
+
           </div>
-        </section>
-      )}
 
-      {/* Optional Technology Stack Section */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            {data?.whyInvest?.cards?.map((card, index) => (
+
+              <div
+                key={index}
+                className="group relative rounded-3xl border border-white/10 bg-white/[0.03] p-8 overflow-hidden transition-all duration-300 hover:border-green-500/30 hover:bg-white/[0.05]"
+              >
+
+                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-green-400 to-cyan-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
+
+                <div className="w-16 h-16 rounded-2xl bg-green-500/10 border border-green-500/20 flex items-center justify-center text-green-400 text-xl font-bold mb-6">
+
+                  {index + 1}
+
+                </div>
+
+                <h3 className="text-2xl font-bold text-white mb-5">
+                  {card.title}
+                </h3>
+
+                <p className="text-slate-400 leading-7">
+                  {card.desc}
+                </p>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
       {techStackComponent && (
         <div className="w-full">
           {techStackComponent}
         </div>
       )}
+      {/* ========================================================= */}
+      {/* 11. PROCESS SECTION */}
+      {/* ========================================================= */}
+      <section className="relative py-24 lg:py-32 bg-[#050505] overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
 
-      {/* ========================================================= */}
-      {/* 10. MUST HAVE FEATURES SECTION */}
-      {/* ========================================================= */}
-      <section className="w-full bg-[#050505] py-24 px-6 lg:px-16 text-white">
-        <div className="max-w-7xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-cyan-500 to-blue-600 text-transparent bg-clip-text mb-6 tracking-tight pb-2 max-w-5xl mx-auto whitespace-pre-line text-balance line-clamp-2">
-              {data?.features?.title}
-            </h2>
-            <p className="text-sm lg:text-base text-slate-400 leading-relaxed max-w-3xl mx-auto">
-              {data?.features?.subtitle}
-            </p>
-          </div>
+          <div className="max-w-4xl mx-auto text-center mb-20">
+            <span className="inline-flex items-center rounded-full border border-cyan-500/30 bg-cyan-500/10 px-5 py-2 text-cyan-400 text-sm font-semibold mb-6">
+              Agile Development Process
+            </span>
 
-          {/* Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 transition-all duration-500">
-            {data?.features?.list?.slice(0, showMoreFeatures ? 20 : 12).map((feature, idx) => (
-              <div
-                key={idx}
-                className={`bg-[#0a0a0a] hover:bg-[#111] border border-white/10 rounded-2xl p-6 transition-colors group ${feature.desc ? 'flex flex-col items-start gap-4' : 'flex items-center gap-4'}`}
-              >
-                <div className="text-white/50 group-hover:text-white transition-colors shrink-0">
-                  {feature.icon}
-                </div>
-                {feature.desc ? (
-                  <div>
-                    <h4 className="font-bold text-white text-base group-hover:text-cyan-400 transition-colors">
-                      {feature.text}
-                    </h4>
-                    <p className="text-slate-400 text-xs mt-1.5 leading-relaxed">
-                      {feature.desc}
-                    </p>
-                  </div>
-                ) : (
-                  <p className="text-sm font-medium leading-snug">
-                    {feature.text}
-                  </p>
-                )}
-              </div>
-            ))}
-          </div>
-
-          {/* Show More/Less Button */}
-          {data?.features?.list?.length > 12 && (
-            <div className="mt-12 flex justify-center">
-              <button
-                onClick={() => setShowMoreFeatures(!showMoreFeatures)}
-                className="flex items-center gap-2 border border-white/20 hover:border-white/40 rounded-full px-6 py-3 text-sm transition-colors font-medium bg-transparent text-white"
-              >
-                {showMoreFeatures ? "Show Less" : "Show More"}
-                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${showMoreFeatures ? "rotate-180" : ""}`} />
-              </button>
-            </div>
-          )}
-        </div>
-      </section>
-
-      {/* ========================================================= */}
-      {/* 11. PROCESS / TIMELINE SECTION */}
-      {/* ========================================================= */}
-      <section className="w-full bg-[#050505] py-24 px-6 lg:px-16 text-white overflow-hidden">
-        <div className="max-w-6xl mx-auto">
-          {/* Header */}
-          <div className="text-center mb-24">
-            <h2 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-cyan-500 to-blue-600 text-transparent bg-clip-text mb-6 tracking-tight pb-2 max-w-4xl mx-auto whitespace-pre-line text-balance line-clamp-2">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               {data?.process?.title}
             </h2>
-            <p className="text-lg md:text-xl text-slate-400 leading-relaxed max-w-3xl mx-auto">
+
+            <p className="text-lg text-slate-400 leading-relaxed">
               {data?.process?.subtitle}
             </p>
           </div>
 
           {/* Timeline */}
           <div className="relative" ref={timelineRef}>
-            {/* Center Line Container */}
-            <div className="absolute left-4 lg:left-1/2 top-0 bottom-0 w-[2px] bg-[#1a1a1a] lg:-translate-x-1/2"></div>
-            {/* Active Blue Line */}
+
+            {/* Timeline Line */}
+            <div className="absolute left-5 lg:left-1/2 top-0 bottom-0 w-[2px] bg-white/10 lg:-translate-x-1/2"></div>
+
+            {/* Active Line */}
             <div
-              className="absolute left-4 lg:left-1/2 top-0 w-[2px] bg-gradient-to-b from-cyan-500 to-blue-600 lg:-translate-x-1/2 transition-all duration-300 ease-out"
-              style={{ height: `${timelineProgress * 100}%` }}
-            ></div>
+              className="absolute left-5 lg:left-1/2 top-0 w-[2px] bg-gradient-to-b from-cyan-400 via-sky-500 to-blue-600 lg:-translate-x-1/2 transition-all duration-300"
+              style={{
+                height: `${timelineProgress * 100}%`,
+              }}
+            />
 
-            <div className="space-y-16 lg:space-y-24">
+            <div className="space-y-16 lg:space-y-20">
+
               {data?.process?.steps?.map((step, idx) => {
-                const nodePosition = idx / Math.max(1, (data.process.steps.length - 1));
-                const isActive = timelineProgress >= (nodePosition * 0.95); // Slight offset for visual sync
+
+                const nodePosition =
+                  idx / Math.max(1, data.process.steps.length - 1);
+
+                const isActive =
+                  timelineProgress >= nodePosition * 0.95;
+
                 return (
-                  <div key={idx} className="relative flex flex-col lg:flex-row items-start lg:items-center w-full group">
 
-                    {/* Center Node */}
-                    <div className={`absolute left-4 lg:left-1/2 w-4 h-4 rounded-full -translate-x-1/2 mt-1 lg:mt-0 z-10 transition-colors duration-500 box-content border-[4px] ${isActive ? "bg-cyan-500 border-[#050505] shadow-[0_0_15px_rgba(6,182,212,0.5)]" : "bg-[#1a1a1a] border-[#050505]"}`}>
+                  <div
+                    key={idx}
+                    className={`relative flex flex-col lg:flex-row items-start lg:items-center ${idx % 2 === 0 ? "" : "lg:flex-row-reverse"
+                      }`}
+                  >
+
+                    {/* Node */}
+                    <div
+                      className={`absolute left-5 lg:left-1/2 -translate-x-1/2 z-20
+                w-12 h-12 rounded-full border-4 flex items-center justify-center
+                font-bold transition-all duration-500
+
+                ${isActive
+                          ? "bg-cyan-500 border-[#050505] text-white shadow-[0_0_30px_rgba(6,182,212,.5)]"
+                          : "bg-[#111] border-[#050505] text-slate-400"
+                        }`}
+                    >
+                      {idx + 1}
                     </div>
 
-                    {/* Left Content (Title) */}
-                    <div className="w-full lg:w-1/2 pl-12 lg:pl-0 lg:pr-24 text-left lg:text-right mb-4 lg:mb-0">
-                      <h3 className={`text-xl lg:text-2xl font-bold transition-colors duration-500 ${isActive ? 'text-white' : 'text-slate-200'}`}>
-                        {step.title}
-                      </h3>
-                    </div>
+                    {/* Card */}
+                    <div
+                      className={`w-full lg:w-[46%] pl-20 lg:pl-0 ${idx % 2 === 0
+                        ? "lg:pr-20"
+                        : "lg:pl-20"
+                        }`}
+                    >
+                      <div
+                        className={`rounded-3xl border p-8 transition-all duration-500
 
-                    {/* Right Content (Description) */}
-                    <div className="w-full lg:w-1/2 pl-12 lg:pl-24 text-left">
-                      <p className="text-base md:text-lg text-slate-400 leading-relaxed max-w-md">
-                        {step.desc}
-                      </p>
+                  ${isActive
+                            ? "bg-gradient-to-br from-cyan-500/10 to-blue-600/10 border-cyan-500/30"
+                            : "bg-[#0b0b0b] border-white/10"
+                          }`}
+                      >
+
+                        <div className="flex items-center gap-4 mb-6">
+
+                          <div
+                            className={`w-14 h-14 rounded-2xl flex items-center justify-center font-bold
+
+                      ${isActive
+                                ? "bg-gradient-to-r from-cyan-500 to-blue-600 text-white"
+                                : "bg-white/5 text-slate-400"
+                              }`}
+                          >
+                            0{idx + 1}
+                          </div>
+
+                          <h3 className="text-2xl font-bold text-white">
+                            {step.title}
+                          </h3>
+
+                        </div>
+
+                        <p className="text-slate-400 leading-8">
+                          {step.desc}
+                        </p>
+
+                      </div>
                     </div>
 
                   </div>
+
                 );
               })}
+
             </div>
+
           </div>
+        </div>
+      </section>
+
+      {/* ========================================================= */}
+      {/* 6. INDUSTRIES SECTION */}
+      {/* ========================================================= */}
+      <section className="relative py-24 lg:py-32 bg-[#050505] overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+
+          {/* Header */}
+          <div className="max-w-4xl mx-auto text-center mb-20">
+
+            <span className="inline-flex items-center rounded-full border border-cyan-500/30 bg-cyan-500/10 px-5 py-2 text-cyan-400 text-sm font-semibold mb-6">
+              Industries We Serve
+            </span>
+
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              {data?.industries?.title}
+            </h2>
+
+            <p className="text-lg text-slate-400 leading-relaxed">
+              {data?.industries?.subtitle}
+            </p>
+
+          </div>
+
+          {/* Industries Grid */}
+          <div className="grid lg:grid-cols-2 gap-8">
+
+            {data?.industries?.list?.map((industry, idx) => {
+
+              const isOpen = openIndustry === idx;
+
+              return (
+
+                <div
+                  key={idx}
+                  className="rounded-3xl border border-white/10 bg-[#0b0b0b] overflow-hidden transition-all duration-300 hover:border-cyan-500/30 hover:shadow-[0_0_35px_rgba(6,182,212,.08)]"
+                >
+
+                  {/* Header */}
+                  <button
+                    onClick={() => {
+                      setIsIndustryAutomated(false);
+                      setOpenIndustry(isOpen ? null : idx);
+                    }}
+                    className="w-full flex items-center justify-between p-8 text-left"
+                  >
+
+                    <div className="flex items-start gap-5">
+
+                      <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-blue-600/20 flex items-center justify-center text-cyan-400 shrink-0">
+                        {industry.icon}
+                      </div>
+
+                      <div>
+
+                        <h3 className="text-2xl font-bold text-white mb-2">
+                          {industry.title}
+                        </h3>
+
+                        <p className="text-slate-400 leading-7">
+                          {industry.desc}
+                        </p>
+
+                      </div>
+
+                    </div>
+
+                    <ChevronDown
+                      className={`w-6 h-6 text-cyan-400 transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+                        }`}
+                    />
+
+                  </button>
+
+                  {/* Expandable Solutions */}
+                  <div
+                    className={`transition-all duration-500 overflow-hidden ${isOpen
+                      ? "max-h-[600px] opacity-100"
+                      : "max-h-0 opacity-0"
+                      }`}
+                  >
+
+                    <div className="px-8 pb-8">
+
+                      <div className="border-t border-white/10 pt-6">
+
+                        <h4 className="uppercase tracking-[0.2em] text-xs font-semibold text-cyan-400 mb-5">
+                          Solutions Include
+                        </h4>
+
+                        <div className="grid sm:grid-cols-2 gap-4">
+
+                          {industry.solutions?.map((solution, sIdx) => (
+
+                            <div
+                              key={sIdx}
+                              className="flex items-center gap-3 bg-white/5 rounded-xl px-4 py-3 border border-white/5"
+                            >
+
+                              <div className="w-2 h-2 rounded-full bg-cyan-400 shrink-0"></div>
+
+                              <span className="text-slate-300">
+                                {solution}
+                              </span>
+
+                            </div>
+
+                          ))}
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              );
+
+            })}
+
+          </div>
+
+        </div>
+      </section>
+      {/* ========================================================= */}
+      {/* 8. WHY CHOOSE US SECTION */}
+      {/* ========================================================= */}
+      <section className="relative py-24 lg:py-32 bg-[#050505] overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+
+          {/* Header */}
+          <div className="max-w-4xl mx-auto text-center mb-20">
+
+            <span className="inline-flex items-center rounded-full border border-cyan-500/30 bg-cyan-500/10 px-5 py-2 text-cyan-400 text-sm font-semibold mb-6">
+              Why SyncTechn
+            </span>
+
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              {data?.whyChooseUs?.title}
+            </h2>
+
+            <p className="text-lg text-slate-400 leading-relaxed">
+              {data?.whyChooseUs?.subtitle}
+            </p>
+
+          </div>
+
+
+          {/* Reasons */}
+          <div className="space-y-0 border-t border-white/10">
+
+            {data?.whyChooseUs?.points?.map((point, idx) => (
+
+              <FadeInUpCard key={idx} delay={idx * 120}>
+
+                <div className="group flex flex-col lg:flex-row py-12 border-b border-white/10 hover:bg-white/[0.02] transition-all duration-300">
+
+                  {/* Left */}
+                  <div className="w-full lg:w-24 flex-shrink-0 mb-6 lg:mb-0">
+
+                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white flex items-center justify-center font-bold text-lg">
+                      0{idx + 1}
+                    </div>
+
+                  </div>
+
+                  {/* Right */}
+                  <div className="flex-1 lg:pl-10">
+
+                    <h3 className="text-2xl font-bold text-white mb-5 group-hover:text-cyan-400 transition-colors">
+                      {point.title}
+                    </h3>
+
+                    <p className="text-slate-400 leading-8 max-w-4xl">
+                      {point.desc}
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </FadeInUpCard>
+
+            ))}
+
+          </div>
+
         </div>
       </section>
 
@@ -1001,7 +1126,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
 
           {/* Accordion */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-start">
-            {data?.faqs?.list?.map((faq, idx) => (
+            {data?.faqs?.items?.map((faq, idx) => (
               <div
                 key={idx}
                 className="bg-[#0a0a0a] border border-white/10 rounded-2xl overflow-hidden transition-all duration-300"
@@ -1011,7 +1136,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                   className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none group hover:bg-[#111] transition-colors"
                 >
                   <span className="font-semibold text-sm lg:text-base pr-4 group-hover:text-blue-400 transition-colors">
-                    {faq.q}
+                    {faq.question}
                   </span>
                   <div className={`shrink-0 w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-300 ${openFaq === idx ? 'border-blue-500 bg-blue-500 text-white' : 'border-white/20 text-white/50 group-hover:border-white/50 group-hover:text-white'}`}>
                     <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${openFaq === idx ? "rotate-180" : ""}`} />
@@ -1022,7 +1147,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                   className={`overflow-hidden transition-all duration-300 ease-in-out ${openFaq === idx ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"}`}
                 >
                   <div className="px-6 pb-6 pt-2 text-slate-400 text-sm lg:text-base leading-relaxed border-t border-white/5 mt-2 whitespace-pre-line">
-                    {faq.a}
+                    {faq.answer}
                   </div>
                 </div>
               </div>
@@ -1034,39 +1159,39 @@ export default function ServiceTemplate({ data, techStackComponent }) {
       {/* ========================================================= */}
       {/* NEW: FINAL CTA SECTION */}
       {/* ========================================================= */}
-      {data?.finalCta && (
+      {data?.cta && (
         <section className="w-full bg-[#050505] py-24 px-6 lg:px-16 flex justify-center border-t border-white/5">
-          <div className={`w-full max-w-7xl rounded-[2.5rem] overflow-hidden bg-gradient-to-br from-[#0c1220] to-[#050912] border border-white/10 p-10 lg:p-16 relative shadow-2xl flex flex-col ${data.finalCta.showForm ? 'lg:flex-row gap-12 items-center' : 'items-center justify-center text-center'}`}>
-            
+          <div className={`w-full max-w-7xl rounded-[2.5rem] overflow-hidden bg-gradient-to-br from-[#0c1220] to-[#050912] border border-white/10 p-10 lg:p-16 relative shadow-2xl flex flex-col ${data.cta.showForm ? 'lg:flex-row gap-12 items-center' : 'items-center justify-center text-center'}`}>
+
             {/* Background glowing circle */}
             <div className="absolute w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[100px] -top-64 -left-64 pointer-events-none"></div>
             <div className="absolute w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[100px] -bottom-64 -right-64 pointer-events-none"></div>
 
             {/* Left Column (Text Info) */}
-            <div className={`relative z-10 w-full ${data.finalCta.showForm ? 'lg:w-1/2 text-left' : 'max-w-3xl mx-auto flex flex-col items-center'}`}>
+            <div className={`relative z-10 w-full ${data.cta.showForm ? 'lg:w-1/2 text-left' : 'max-w-3xl mx-auto flex flex-col items-center'}`}>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 text-transparent bg-clip-text mb-6 tracking-tight leading-tight">
-                {data.finalCta.title}
+                {data.cta.title}
               </h2>
-              
+
               <p className="text-slate-300 text-base md:text-lg leading-relaxed mb-8 max-w-2xl">
-                {data.finalCta.desc}
+                {data.cta.subtitle}
               </p>
 
-              {!data.finalCta.showForm && (
+              {!data.cta.showForm && (
                 <div>
                   <Link
                     href="/contact-us"
                     className="px-10 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold rounded-full transition-all duration-300 shadow-[0_4px_20px_rgba(6,182,212,0.25)] hover:shadow-[0_10px_30px_rgba(6,182,212,0.4)] hover:-translate-y-0.5 inline-flex items-center gap-3 text-base"
                   >
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                    {data.finalCta.ctaText}
+                    {data.cta.ctaText}
                   </Link>
                 </div>
               )}
             </div>
 
             {/* Right Column: Contact Form */}
-            {data.finalCta.showForm && (
+            {data.cta.showForm && (
               <div className="relative z-10 w-full lg:w-1/2 bg-white/[0.01] border border-white/10 rounded-3xl p-8 lg:p-10 backdrop-blur-md">
                 <form className="space-y-4 lg:space-y-5" onSubmit={handleFormSubmit}>
                   <div>
@@ -1128,7 +1253,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                       type="submit"
                       className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold rounded-full transition-all duration-300 shadow-[0_4px_20px_rgba(6,182,212,0.25)] text-sm"
                     >
-                      {data.finalCta.ctaText}
+                      {data.cta.ctaText}
                     </button>
                   </div>
                 </form>

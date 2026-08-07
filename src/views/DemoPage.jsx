@@ -731,7 +731,7 @@ export default function DemoPage() {
           <p className={`text-slate-400 text-base md:text-lg transition-all duration-1000 delay-500 transform ${
             aboutClass === "revealed" ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
           }`}>
-            We are a premier software development partner dedicated to scaling enterprises through custom web architectures, cloud engineering, and custom CRM solutions.
+            We are a premier custom software development partner dedicated to scaling enterprises through custom web architectures, cloud engineering, and custom CRM solutions.
           </p>
         </div>
 
@@ -1174,7 +1174,7 @@ export default function DemoPage() {
                 <div className="p-6">
                   <div className="flex items-center gap-3 text-xs text-slate-500 mb-3">
                     <span className="px-2 py-0.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 font-semibold">
-                      AI Solutions
+                      AI Development Services
                     </span>
                     <span className="flex items-center gap-1">
                       <Clock size={12} />

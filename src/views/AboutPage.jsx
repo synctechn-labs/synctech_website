@@ -20,9 +20,9 @@ import Link from "next/link";
 const AboutPage = () => {
     const services = [
         "Custom Software",
-        "Web Development",
+        "Custom Web Development",
         "Mobile Apps",
-        "AI Solutions",
+        "AI Development Services",
         "Cloud Services",
         "UI/UX Design",
         "SaaS Platforms",
@@ -106,7 +106,7 @@ const AboutPage = () => {
     ];
 
     const whyChoose = [
-        "Business-focused software development approach",
+        "Business-focused custom software development approach",
         "Scalable, secure, and performance-driven architecture",
         "Expertise in web, mobile, AI, cloud, and custom software",
         "Transparent communication and agile project execution",
@@ -350,7 +350,7 @@ const AboutPage = () => {
                                 Helping Businesses Build Smarter Digital Products
                             </h2>
                             <p className="mt-6 text-lg leading-relaxed text-slate-600">
-                                We deliver end-to-end software development services that combine
+                                We deliver end-to-end custom software development services that combine
                                 strategy, design, engineering, and support to help businesses
                                 launch faster, operate efficiently, and scale with confidence.
                             </p>

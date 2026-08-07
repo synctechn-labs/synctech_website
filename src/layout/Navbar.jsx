@@ -15,63 +15,63 @@ const NAV_ITEMS = [
 
 const SERVICES_MENU = [
   {
-    category: "Software Development",
-    href: "services/software-development",
+    category: "Custom Software Development",
+    href: "services/custom-software-development-services",
     items: [
-      { label: "Custom ERP Development", href: "services/custom-erp-development" },
-      { label: "SaaS Product Development", href: "services/saas-product-development" },
-      { label: "Legacy Software Modernization", href: "services/legacy-software-modernization" },
-      { label: "White-Label Software Development", href: "services/white-label-software-development" },
+      { label: "Custom ERP Custom Software Development", href: "services/custom-erp-software-development-services" },
+      { label: "SaaS Product Development", href: "services/saas-product-development-services" },
+      { label: "Legacy Software Modernization", href: "services/legacy-software-modernization-services" },
+      { label: "White-Label Custom Software Development", href: "services/white-label-software-development-services" },
     ]
   },
   {
-    category: "Web Development",
-    href: "services/web-development",
+    category: "Custom Web Development",
+    href: "services/custom-web-development-services",
     items: [
-      { label: "Custom Web Application Development", href: "services/custom-web-application-development" },
-      { label: "Client & Customer Portal Development", href: "services/client-customer-portal-development" },
-      { label: "Admin Dashboard Development", href: "services/admin-dashboard-development" },
-      { label: "Booking & Appointment Systems", href: "services/booking-appointment-system-development" },
+      { label: "Custom Web Application Development", href: "services/custom-web-application-development-services" },
+      { label: "Customer Portal Development", href: "services/customer-portal-development-services" },
+      { label: "Admin Dashboard Development", href: "services/admin-dashboard-development-services" },
+      { label: "Appointment Booking System Development", href: "services/appointment-booking-software-development-services" },
     ]
   },
   {
     category: "Mobile App Development",
     href: "services/mobile-app-development",
     items: [
-      { label: "Mobile Application Development", href: "services/mobile-application-development" },
-      { label: "Human Approval Automation Systems", href: "services/human-approval-automation-systems" },
-      { label: "Role-Based Business Workspace Development", href: "services/role-based-business-workspace-development" },
-      { label: "Operations Exception Management Systems", href: "services/operations-exception-management-systems" },
+      { label: "Custom Mobile App Development", href: "services/custom-mobile-application-development-services" },
+      { label: "Human Approval Workflow Automation", href: "services/human-approval-workflow-automation-services" },
+      { label: "Role-Based Business Workspace Development", href: "services/role-based-business-workspace-development-services" },
+      { label: "Operations Exception Management", href: "services/operations-exception-management-software-services" },
     ]
   },
   {
-    category: "CRM Solutions",
-    href: "services/crm",
+    category: "CRM Development Services",
+    href: "services/crm-development-services",
     items: [
-      { label: "Custom CRM Development", href: "services/custom-crm-development" },
-      { label: "Business Process Automation", href: "services/business-process-automation" },
-      { label: "Business System Integration Hub", href: "services/business-system-integration-hub" },
-      { label: "API Development & Integration", href: "services/api-development-integration" },
+      { label: "Custom CRM Development", href: "services/custom-crm-development-services" },
+      { label: "Business Process Automation", href: "services/business-process-automation-services" },
+      { label: "Business System Integration", href: "services/business-system-integration-services" },
+      { label: "API Development & Integration", href: "services/api-development-integration-services" },
     ]
   },
   {
-    category: "AI Solutions",
-    href: "services/ai-solutions",
+    category: "AI Development Services",
+    href: "services/ai-development-services",
     items: [
       { label: "AI Integration Services", href: "services/ai-integration-services" },
-      { label: "AI Workflow Agent Development", href: "services/ai-workflow-agent-development" },
-      { label: "AI Email Operations Automation", href: "services/ai-email-operations-automation" },
-      { label: "AI Document Verification Systems", href: "services/ai-document-verification-systems" },
+      { label: "AI Workflow Agent Development", href: "services/ai-workflow-agent-development-services" },
+      { label: "AI Email Automation", href: "services/ai-email-automation-services" },
+      { label: "AI Document Verification", href: "services/ai-document-verification-services" },
     ]
   },
   {
-    category: "Digital Marketing",
-    href: "services/digital-marketing",
+    category: "Digital Marketing Services",
+    href: "services/digital-marketing-services",
     items: [
-      { label: "Document Processing Automation", href: "services/document-processing-automation" },
-      { label: "Software Usage Intelligence Systems", href: "services/software-usage-intelligence-systems" },
-      { label: "AI-Assisted Quality Control Platforms", href: "services/ai-assisted-quality-control" },
-      { label: "Micro-SaaS Development for Businesses", href: "services/micro-saas-development" },
+      { label: "Document Processing Automation", href: "services/document-processing-automation-services" },
+      { label: "Software Usage Analytics", href: "services/software-usage-analytics-services" },
+      { label: "AI Quality Control", href: "services/ai-quality-control-solutions-services" },
+      { label: "Micro-SaaS Development", href: "services/micro-saas-development-services" },
     ]
   }
 ];

@@ -25,11 +25,11 @@ export default function BlogList() {
   const categories = [
     "All",
     "Software & Digital Transformation",
-    "Web Development",
+    "Custom Web Development",
     "Mobile App Development",
-    "CRM Solutions",
+    "CRM Development Services",
     "AI development",
-    "Digital Marketing",
+    "Digital Marketing Services",
   ];
 
   const filteredBlogs = [...blogsList]
@@ -69,7 +69,7 @@ export default function BlogList() {
       <SEO
         title="Tech & Marketing Insights | SyncTech Solutions"
         description="Discover cutting edge strategies, programming guides, software architectures, and marketing secrets from the engineering desk at SyncTech."
-        keywords="software blog, digital marketing tips, React scaling, coding tutorials, SyncTech"
+        keywords="software blog, digital marketing services tips, React scaling, coding tutorials, SyncTech"
       />
 
       {/* Futuristic Background Accents (Soft Light Opacity) */}

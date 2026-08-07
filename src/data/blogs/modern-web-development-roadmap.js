@@ -1,8 +1,8 @@
 const webDevelopmentRoadmap2026 = {
   id: "modern-web-development-roadmap",
-  title: "The Modern Web Development Roadmap: From Scratch to Production-Ready in 2026",
+  title: "The Modern Custom Web Development Roadmap: From Scratch to Production-Ready in 2026",
   description:
-    "Explore the complete web development roadmap for 2026—from HTML, CSS, and JavaScript fundamentals to frameworks, APIs, deployment, AI-assisted development, and hiring insights for businesses.",
+    "Explore the complete custom web development roadmap for 2026—from HTML, CSS, and JavaScript fundamentals to frameworks, APIs, deployment, AI-assisted development, and hiring insights for businesses.",
   date: "July 2, 2026",
   readTime: "12 min read",
   author: {
@@ -11,24 +11,24 @@ const webDevelopmentRoadmap2026 = {
     avatar:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
   },
-  category: "Web Development",
+  category: "Custom Web Development",
   coverImage:
     "https://res.cloudinary.com/wowukaao/image/upload/v1783357103/image_6_oex8u9.png",
   content: [
     {
       type: "paragraph",
       text:
-        "Web development remains one of the most accessible and in-demand career paths in technology, but it is also one of the most misunderstood. Beginners often struggle to understand how to start learning web development from scratch, while business owners and startups want clarity on custom development costs, hiring decisions, and which technologies actually matter in 2026."
+        "Web development remains one of the most accessible and in-demand career paths in technology, but it is also one of the most misunderstood. Beginners often struggle to understand how to start learning custom web development from scratch, while business owners and startups want clarity on custom development costs, hiring decisions, and which technologies actually matter in 2026."
     },
     {
       type: "paragraph",
       text:
-        "This guide brings both perspectives together. Whether you are exploring web development as a career, comparing front-end vs back-end vs full-stack development, or evaluating how modern web development supports business growth, this roadmap explains what production-ready web development looks like today."
+        "This guide brings both perspectives together. Whether you are exploring custom web development as a career, comparing front-end vs back-end vs full-stack development, or evaluating how modern custom web development supports business growth, this roadmap explains what production-ready custom web development looks like today."
     },
     {
       type: "heading",
       level: 2,
-      text: "Why Web Development Still Matters in 2026",
+      text: "Why Custom Web Development Still Matters in 2026",
       id: "why-web-development-still-matters"
     },
     {
@@ -39,7 +39,7 @@ const webDevelopmentRoadmap2026 = {
     {
       type: "paragraph",
       text:
-        "For professionals, web development remains a strong career choice because it offers multiple specialization paths, remote work opportunities, freelancing potential, and relatively low entry barriers compared to many other technical roles."
+        "For professionals, custom web development remains a strong career choice because it offers multiple specialization paths, remote work opportunities, freelancing potential, and relatively low entry barriers compared to many other technical roles."
     },
     {
       type: "heading",
@@ -50,7 +50,7 @@ const webDevelopmentRoadmap2026 = {
     {
       type: "paragraph",
       text:
-        "If you want to learn web development effectively, the best approach is to follow a phased roadmap instead of jumping between random tutorials. Modern web development requires a mix of core technical skills, project-building discipline, deployment knowledge, and increasingly, the ability to use AI tools responsibly."
+        "If you want to learn custom web development effectively, the best approach is to follow a phased roadmap instead of jumping between random tutorials. Modern custom web development requires a mix of core technical skills, project-building discipline, deployment knowledge, and increasingly, the ability to use AI tools responsibly."
     },
     {
       type: "heading",
@@ -61,7 +61,7 @@ const webDevelopmentRoadmap2026 = {
     {
       type: "paragraph",
       text:
-        "Every serious web development journey starts with three foundational technologies: HTML5, CSS3, and JavaScript. These are the building blocks behind almost every modern web experience."
+        "Every serious custom web development journey starts with three foundational technologies: HTML5, CSS3, and JavaScript. These are the building blocks behind almost every modern web experience."
     },
     {
       type: "list",
@@ -79,13 +79,13 @@ const webDevelopmentRoadmap2026 = {
     {
       type: "heading",
       level: 2,
-      text: "Does Web Development Require Math?",
+      text: "Does Custom Web Development Require Math?",
       id: "does-web-development-require-math"
     },
     {
       type: "paragraph",
       text:
-        "For most front-end and full-stack roles, advanced mathematics is not required. Basic logic, problem-solving, percentages, layouts, and simple calculations are usually enough. More advanced math becomes useful in specialized areas such as graphics, game development, data visualization, or machine learning integrations, but it is not a barrier to standard web development work."
+        "For most front-end and full-stack roles, advanced mathematics is not required. Basic logic, problem-solving, percentages, layouts, and simple calculations are usually enough. More advanced math becomes useful in specialized areas such as graphics, game development, data visualization, or machine learning integrations, but it is not a barrier to standard custom web development work."
     },
     {
       type: "heading",
@@ -125,7 +125,7 @@ const webDevelopmentRoadmap2026 = {
     {
       type: "paragraph",
       text:
-        "One of the biggest decisions in a web development roadmap is choosing a specialization. Each role focuses on a different layer of the product stack."
+        "One of the biggest decisions in a custom web development roadmap is choosing a specialization. Each role focuses on a different layer of the product stack."
     },
     {
       type: "table",
@@ -160,7 +160,7 @@ const webDevelopmentRoadmap2026 = {
     {
       type: "paragraph",
       text:
-        "Modern applications need to store and retrieve data, which makes databases and APIs a core part of production-ready web development. User accounts, orders, dashboards, settings, notifications, and reports all depend on reliable data architecture."
+        "Modern applications need to store and retrieve data, which makes databases and APIs a core part of production-ready custom web development. User accounts, orders, dashboards, settings, notifications, and reports all depend on reliable data architecture."
     },
     {
       type: "paragraph",
@@ -204,7 +204,7 @@ const webDevelopmentRoadmap2026 = {
     //   type: "image",
     //   url: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
     //   caption:
-    //     "Modern web development projects require responsive UI, API integration, and production deployment workflows."
+    //     "Modern custom web development projects require responsive UI, API integration, and production deployment workflows."
     // },
     {
       type: "heading",
@@ -255,13 +255,13 @@ const webDevelopmentRoadmap2026 = {
     {
       type: "heading",
       level: 2,
-      text: "Web Development Process: Step-by-Step Workflow",
+      text: "Custom Web Development Process: Step-by-Step Workflow",
       id: "web-development-process-step-by-step-workflow"
     },
     {
       type: "image",
       url: "https://res.cloudinary.com/wowukaao/image/upload/v1783357099/image_8_d1ioxh.png",
-      caption: "Web Development Process: Step-by-Step Workflow"
+      caption: "Custom Web Development Process: Step-by-Step Workflow"
     },
     {
       type: "paragraph",
@@ -271,7 +271,7 @@ const webDevelopmentRoadmap2026 = {
     {
       type: "paragraph",
       text:
-        "A modern web development workflow typically includes discovery, planning, UI/UX design, front-end development, back-end development, testing, deployment, and ongoing optimization."
+        "A modern custom web development workflow typically includes discovery, planning, UI/UX design, front-end development, back-end development, testing, deployment, and ongoing optimization."
     },
     {
       type: "table",
@@ -373,7 +373,7 @@ const webDevelopmentRoadmap2026 = {
     {
       type: "heading",
       level: 2,
-      text: "Best Web Development Frameworks for Enterprise Projects",
+      text: "Best Custom Web Development Frameworks for Enterprise Projects",
       id: "best-frameworks-for-enterprise-projects"
     },
     {
@@ -411,7 +411,7 @@ const webDevelopmentRoadmap2026 = {
     {
       type: "heading",
       level: 2,
-      text: "Common Mistakes Beginners Make in Web Development",
+      text: "Common Mistakes Beginners Make in Custom Web Development",
       id: "common-mistakes-beginners-make"
     },
     {
@@ -422,7 +422,7 @@ const webDevelopmentRoadmap2026 = {
     {
       type: "paragraph",
       text:
-        "Professional web development is not just about making something look good on one screen. It is about creating reliable, accessible, maintainable products that solve real user and business problems."
+        "Professional custom web development is not just about making something look good on one screen. It is about creating reliable, accessible, maintainable products that solve real user and business problems."
     },
     {
       type: "heading",
@@ -433,12 +433,12 @@ const webDevelopmentRoadmap2026 = {
     {
       type: "paragraph",
       text:
-        "Web development in 2026 is bigger than coding alone. It combines technical execution, business problem-solving, digital product thinking, collaboration, deployment discipline, and smart use of AI. For learners, the most effective path is to master the fundamentals, choose a specialization, build real projects, deploy them, and gradually develop production-ready habits. For businesses, modern web development is the infrastructure behind growth, customer experience, automation, and digital transformation."
+        "Web development in 2026 is bigger than coding alone. It combines technical execution, business problem-solving, digital product thinking, collaboration, deployment discipline, and smart use of AI. For learners, the most effective path is to master the fundamentals, choose a specialization, build real projects, deploy them, and gradually develop production-ready habits. For businesses, modern custom web development is the infrastructure behind growth, customer experience, automation, and digital transformation."
     }
   ],
   faqs: [
     {
-      question: "How long does it take to learn web development from scratch?",
+      question: "How long does it take to learn custom web development from scratch?",
       answer:
         "It depends on your consistency and goals. Many beginners can build basic projects within a few months, but becoming job-ready typically requires sustained project work, practical debugging experience, Git usage, and deployment practice."
     },
@@ -458,7 +458,7 @@ const webDevelopmentRoadmap2026 = {
         "AI can speed up repetitive coding tasks and improve productivity, but it cannot replace product thinking, debugging judgment, architecture decisions, collaboration, and business understanding. Developers who use AI well will have an advantage, but fundamentals still matter."
     },
     {
-      question: "What makes a web development project production-ready?",
+      question: "What makes a custom web development project production-ready?",
       answer:
         "A production-ready project goes beyond local code. It includes clean structure, responsive UI, accessibility, API integration, testing, version control, deployment, environment configuration, and the ability to maintain and scale the application over time."
     }

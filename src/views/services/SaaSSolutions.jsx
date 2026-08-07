@@ -42,15 +42,15 @@ export const metadata = {
     "multi tenant application",
     "enterprise saas solutions",
     "saas platform development",
-    "saas software development",
+    "saas custom software development",
     "mvp development company",
-    "startup software development",
+    "startup custom software development",
     "subscription management software",
     "cloud native applications",
     "api development",
     "microservices development",
     "custom software development",
-    "business software development",
+    "business custom software development",
     "saas consulting",
     "saas migration",
     "product engineering services",
@@ -62,7 +62,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/saas-product-development",
+      "https://synctechn.com/services/saas-product-development-services",
   },
 
   openGraph: {
@@ -73,7 +73,7 @@ export const metadata = {
       "Build secure, scalable, and cloud-native SaaS products with multi-tenant architecture, subscription management, API integrations, and modern software engineering.",
 
     url:
-      "https://synctechn.com/services/saas-product-development",
+      "https://synctechn.com/services/saas-product-development-services",
 
     siteName: "SyncTechn",
 
@@ -177,7 +177,7 @@ servicesSuite: {
   "services": [
     {
       "id": "custom-erp",
-      "title": "Custom ERP Development",
+      "title": "Custom ERP Custom Software Development",
       "desc": "Centralize your business operations, automate workflows, and gain real-time insights with a scalable Custom ERP system tailored to your unique industry requirements.",
       "features": [
         "Centralized Operations",
@@ -219,8 +219,8 @@ servicesSuite: {
     },
     {
       "id": "white-label",
-      "title": "White-Label Software Development",
-      "desc": "Expand your service offerings quickly with our white-label software development. We build the platform, and you brand it as your own to resell to your clients.",
+      "title": "White-Label Custom Software Development",
+      "desc": "Expand your service offerings quickly with our white-label custom software development. We build the platform, and you brand it as your own to resell to your clients.",
       "features": [
         "Custom Branding",
         "Reseller Ready",

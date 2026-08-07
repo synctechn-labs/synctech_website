@@ -12,8 +12,8 @@ export const our360Services = [
       "Backend Development"
     ],
     video: "https://res.cloudinary.com/wowukaao/video/upload/v1783796948/web_development_360_mtr6oy.mp4",
-    poster: "/images/services/web-development-poster.webp",
-    route: "/services/web-development"
+    poster: "/images/services/custom-web-development-services-poster.webp",
+    route: "/services/custom-web-development-services"
   },
   {
     id: "mobile-development",
@@ -45,7 +45,7 @@ export const our360Services = [
     ],
     video: "https://res.cloudinary.com/wowukaao/video/upload/v1783796942/soft_dev_360_ujefoe.mp4",
     poster: "/images/services/custom-software-poster.webp",
-    route: "/services/software-development"
+    route: "/services/custom-software-development-services"
   },
   {
     id: "crm-solutions",
@@ -60,8 +60,8 @@ export const our360Services = [
       "Customer Data Management"
     ],
     video: "https://res.cloudinary.com/wowukaao/video/upload/v1783796946/CRM_360_pvq9s4.mp4",
-    poster: "/images/services/crm-solutions-poster.webp",
-    route: "/services/crm"
+    poster: "/images/services/crm-development-services-solutions-poster.webp",
+    route: "/services/crm-development-services"
   },
   {
     id: "ai-automation",
@@ -77,7 +77,7 @@ export const our360Services = [
     ],
     video: "https://res.cloudinary.com/wowukaao/video/upload/v1783796943/AI_360_csjb2i.mp4",
     poster: "/images/services/ai-automation-poster.webp",
-    route: "/services/ai-solutions"
+    route: "/services/ai-development-services"
   },
   {
     id: "digital-marketing",
@@ -92,7 +92,7 @@ export const our360Services = [
       "Performance Marketing"
     ],
     video: "https://res.cloudinary.com/wowukaao/video/upload/v1783796942/digital_marketing_360_tnaeur.mp4",
-    poster: "/images/services/digital-marketing-poster.webp",
-    route: "/services/digital-marketing"
+    poster: "/images/services/digital-marketing-services-poster.webp",
+    route: "/services/digital-marketing-services"
   }
 ];

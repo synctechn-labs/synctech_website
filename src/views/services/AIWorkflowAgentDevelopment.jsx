@@ -43,7 +43,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/ai-workflow-agent-development",
+      "https://synctechn.com/services/ai-workflow-agent-development-services",
   },
 
   openGraph: {
@@ -54,7 +54,7 @@ export const metadata = {
       "Deploy autonomous AI agents that can reason, use external APIs, and execute complex business workflows independently.",
 
     url:
-      "https://synctechn.com/services/ai-workflow-agent-development",
+      "https://synctechn.com/services/ai-workflow-agent-development-services",
 
     siteName: "SyncTechn",
 
@@ -187,7 +187,7 @@ servicesSuite: {
     },
     {
       "id": "ai-email",
-      "title": "AI Email Operations Automation",
+      "title": "AI Email Automation",
       "desc": "Automate your inbox with AI that reads, categorizes, drafts replies, and routes customer inquiries to the appropriate department instantly.",
       "features": [
         "Intent Recognition",
@@ -201,7 +201,7 @@ servicesSuite: {
     },
     {
       "id": "ai-document",
-      "title": "AI Document Verification Systems",
+      "title": "AI Document Verification",
       "desc": "Streamline compliance and onboarding with AI systems that automatically extract, verify, and validate data from uploaded documents and IDs.",
       "features": [
         "OCR Technology",

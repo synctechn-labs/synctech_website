@@ -21,7 +21,7 @@ import {
 
 export const metadata = {
   title:
-    "Micro-SaaS Development for Businesses | Niche SaaS | SyncTechn",
+    "Micro-SaaS Development | Niche SaaS | SyncTechn",
 
   description:
     "SyncTechn develops custom Micro-SaaS platforms. Build highly focused, profitable, and scalable SaaS products designed for niche B2B and B2C markets.",
@@ -43,7 +43,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/micro-saas-development",
+      "https://synctechn.com/services/micro-saas-development-services",
   },
 
   openGraph: {
@@ -54,7 +54,7 @@ export const metadata = {
       "Turn your niche software idea into a profitable subscription business. We build secure, scalable Micro-SaaS platforms from MVP to launch.",
 
     url:
-      "https://synctechn.com/services/micro-saas-development",
+      "https://synctechn.com/services/micro-saas-development-services",
 
     siteName: "SyncTechn",
 
@@ -67,7 +67,7 @@ export const metadata = {
         url: "/images/services/micro-saas-og.webp",
         width: 1200,
         height: 630,
-        alt: "Micro-SaaS Development for Businesses"
+        alt: "Micro-SaaS Development"
       }
     ]
   },
@@ -98,7 +98,7 @@ export const microSaaSData = {
   overviewImage: "https://res.cloudinary.com/wowukaao/image/upload/v1783865629/digital_marketing_z4aivk.jpg",
 
 hero: {
-  title: "Micro-SaaS Development for Businesses",
+  title: "Micro-SaaS Development",
 
   subtitle:
     "Small teams. Niche markets. High profitability. SyncTechn helps entrepreneurs and established businesses conceptualize, build, and launch highly focused Micro-SaaS (Software as a Service) products that solve specific pain points for targeted audiences.",
@@ -173,7 +173,7 @@ servicesSuite: {
     },
     {
       "id": "software-intelligence",
-      "title": "Software Usage Intelligence Systems",
+      "title": "Software Usage Analytics",
       "desc": "Gain deep insights into how users interact with your software to drive product-led growth and targeted marketing campaigns.",
       "features": [
         "User Tracking",
@@ -187,7 +187,7 @@ servicesSuite: {
     },
     {
       "id": "ai-quality",
-      "title": "AI-Assisted Quality Control Platforms",
+      "title": "AI Quality Control",
       "desc": "Ensure the highest standards for your digital content and marketing assets with AI systems that automatically check for quality, consistency, and compliance.",
       "features": [
         "Content Auditing",
@@ -201,7 +201,7 @@ servicesSuite: {
     },
     {
       "id": "micro-saas",
-      "title": "Micro-SaaS Development for Businesses",
+      "title": "Micro-SaaS Development",
       "desc": "Create targeted, niche Micro-SaaS products to solve specific pain points for your audience, generating new recurring revenue channels.",
       "features": [
         "Rapid Prototyping",

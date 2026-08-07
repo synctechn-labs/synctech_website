@@ -71,7 +71,7 @@ export default function RootLayout({ children }) {
                   "name": "What custom software development services does SyncTechn offer?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "SyncTechn provides custom software development services including web application development, mobile app development, enterprise software development, AI solutions, SaaS product development, ERP and CRM development, workflow automation, API integrations, and cloud-based software solutions."
+                    "text": "SyncTechn provides custom software development services including web application development, mobile app development, enterprise custom software development, AI solutions, SaaS product development, ERP and CRM development, workflow automation, API integrations, and cloud-based software solutions."
                   }
                 },
                 {

@@ -24,17 +24,17 @@ import {
 
 export const metadata = {
   title:
-    "AI-Assisted Quality Control Platforms | Computer Vision AI | SyncTechn",
+    "AI Quality Control | Computer Vision AI | SyncTechn",
 
   description:
-    "SyncTechn develops AI-Assisted Quality Control Platforms. Automate visual inspections, detect manufacturing defects in real-time, and ensure product compliance using custom computer vision models.",
+    "SyncTechn develops AI Quality Control. Automate visual inspections, detect manufacturing defects in real-time, and ensure product compliance using custom computer vision models.",
 
   keywords: [
     "ai quality control",
     "automated visual inspection",
     "computer vision quality assurance",
     "ai defect detection",
-    "manufacturing ai solutions",
+    "manufacturing ai development services",
     "smart factory software",
     "machine vision software",
     "real time defect detection",
@@ -46,18 +46,18 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/ai-assisted-quality-control",
+      "https://synctechn.com/services/ai-quality-control-solutions-services",
   },
 
   openGraph: {
     title:
-      "AI-Assisted Quality Control Platforms | SyncTechn",
+      "AI Quality Control | SyncTechn",
 
     description:
       "Catch defects before they ship. We build custom computer vision platforms that automate visual quality control on manufacturing and assembly lines.",
 
     url:
-      "https://synctechn.com/services/ai-assisted-quality-control",
+      "https://synctechn.com/services/ai-quality-control-solutions-services",
 
     siteName: "SyncTechn",
 
@@ -101,7 +101,7 @@ export const aiQualityControlData = {
   overviewImage: "https://res.cloudinary.com/wowukaao/image/upload/v1783865629/digital_marketing_z4aivk.jpg",
 
 hero: {
-  title: "AI-Assisted Quality Control Platforms",
+  title: "AI Quality Control",
 
   subtitle:
     "Human inspectors get tired; AI doesn't. SyncTechn develops custom AI-Assisted Quality Control platforms that utilize high-speed Computer Vision to inspect products, detect microscopic defects, and ensure perfect compliance on your production lines in real time.",
@@ -176,7 +176,7 @@ servicesSuite: {
     },
     {
       "id": "software-intelligence",
-      "title": "Software Usage Intelligence Systems",
+      "title": "Software Usage Analytics",
       "desc": "Gain deep insights into how users interact with your software to drive product-led growth and targeted marketing campaigns.",
       "features": [
         "User Tracking",
@@ -190,7 +190,7 @@ servicesSuite: {
     },
     {
       "id": "ai-quality",
-      "title": "AI-Assisted Quality Control Platforms",
+      "title": "AI Quality Control",
       "desc": "Ensure the highest standards for your digital content and marketing assets with AI systems that automatically check for quality, consistency, and compliance.",
       "features": [
         "Content Auditing",
@@ -204,7 +204,7 @@ servicesSuite: {
     },
     {
       "id": "micro-saas",
-      "title": "Micro-SaaS Development for Businesses",
+      "title": "Micro-SaaS Development",
       "desc": "Create targeted, niche Micro-SaaS products to solve specific pain points for your audience, generating new recurring revenue channels.",
       "features": [
         "Rapid Prototyping",

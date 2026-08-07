@@ -62,7 +62,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/legacy-software-modernization",
+      "https://synctechn.com/services/legacy-software-modernization-services",
   },
 
   openGraph: {
@@ -73,7 +73,7 @@ export const metadata = {
       "Modernize legacy software, migrate enterprise applications to the cloud, improve performance, enhance security, and extend software lifespan with SyncTechn.",
 
     url:
-      "https://synctechn.com/services/legacy-software-modernization",
+      "https://synctechn.com/services/legacy-software-modernization-services",
 
     siteName: "SyncTechn",
 
@@ -178,7 +178,7 @@ servicesSuite: {
   "services": [
     {
       "id": "custom-erp",
-      "title": "Custom ERP Development",
+      "title": "Custom ERP Custom Software Development",
       "desc": "Centralize your business operations, automate workflows, and gain real-time insights with a scalable Custom ERP system tailored to your unique industry requirements.",
       "features": [
         "Centralized Operations",
@@ -220,8 +220,8 @@ servicesSuite: {
     },
     {
       "id": "white-label",
-      "title": "White-Label Software Development",
-      "desc": "Expand your service offerings quickly with our white-label software development. We build the platform, and you brand it as your own to resell to your clients.",
+      "title": "White-Label Custom Software Development",
+      "desc": "Expand your service offerings quickly with our white-label custom software development. We build the platform, and you brand it as your own to resell to your clients.",
       "features": [
         "Custom Branding",
         "Reseller Ready",

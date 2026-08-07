@@ -9,7 +9,7 @@ const preparingYourBusinessForAnAiFirstFuture = {
     role: "Founder",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
   },
-  category: "Digital Marketing",
+  category: "Digital Marketing Services",
   coverImage: "https://res.cloudinary.com/wowukaao/image/upload/v1784740373/Picture1_zfw7ty.png",
   content: [
     {
@@ -432,7 +432,7 @@ const preparingYourBusinessForAnAiFirstFuture = {
     },
     {
       type: "link",
-      text: "Microsoft. Microsoft Copilot and AI Solutions.",
+      text: "Microsoft. Microsoft Copilot and AI Development Services.",
       url: "https://www.microsoft.com/copilot"
     },
     {

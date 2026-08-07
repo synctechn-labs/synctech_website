@@ -42,8 +42,8 @@ const sections = [
       "Synctech Software Solutions provides technology-related services to businesses and organizations.",
     points: [
       "Custom Software Development",
-      "Web Development",
-      "Mobile Application Development",
+      "Custom Web Development",
+      "Custom Mobile App Development",
       "AI & Machine Learning Solutions",
       "Cloud Solutions",
       "IT Consulting Services",

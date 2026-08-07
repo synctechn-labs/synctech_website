@@ -7,9 +7,9 @@ import Link from "next/link";
 const About = () => {
   const services = [
     "Custom Software",
-    "Web Development",
+    "Custom Web Development",
     "Mobile Apps",
-    "AI Solutions",
+    "AI Development Services",
     "Cloud Services",
     "UI/UX Design",
   ];

@@ -18,7 +18,7 @@ const customSoftwareEngineeringAssociateGuide2026 = {
     {
       type: "paragraph",
       text:
-        "If you have searched for 'custom software engineering associate', you have probably noticed that most search results are not generic software engineering articles. Instead, they are job pages, salary discussions, employee reviews, and interview preparation threads related to enterprise technology companies such as Accenture. That search pattern reveals something important: users searching this keyword are usually looking for a role-specific career guide, not a broad explanation of software development."
+        "If you have searched for 'custom software engineering associate', you have probably noticed that most search results are not generic software engineering articles. Instead, they are job pages, salary discussions, employee reviews, and interview preparation threads related to enterprise technology companies such as Accenture. That search pattern reveals something important: users searching this keyword are usually looking for a role-specific career guide, not a broad explanation of custom software development."
     },
     {
       type: "paragraph",

@@ -39,7 +39,7 @@ export const metadata = {
     "custom web app development",
     "enterprise web application development",
     "business web application",
-    "web software development",
+    "web custom software development",
     "cloud web applications",
     "custom business applications",
     "web portal development",
@@ -50,19 +50,19 @@ export const metadata = {
     "crm web application",
     "erp web application",
     "business process automation",
-    "react web development",
+    "react custom web development",
     "next js development",
     "node js development",
-    "python web development",
-    "full stack web development",
+    "python custom web development",
+    "full stack custom web development",
     "progressive web application",
     "digital transformation services",
-    "enterprise software development"
+    "enterprise custom software development"
   ],
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/custom-web-application-development",
+      "https://synctechn.com/services/custom-web-application-development-services",
   },
 
   openGraph: {
@@ -73,7 +73,7 @@ export const metadata = {
       "Develop secure, scalable, and cloud-ready web applications for startups, enterprises, and growing businesses using modern technologies.",
 
     url:
-      "https://synctechn.com/services/custom-web-application-development",
+      "https://synctechn.com/services/custom-web-application-development-services",
 
     siteName: "SyncTechn",
 
@@ -98,7 +98,7 @@ export const metadata = {
       "Custom Web Application Development Company | SyncTechn",
 
     description:
-      "Enterprise web applications, SaaS platforms, business portals, workflow automation, cloud applications, and full-stack web development.",
+      "Enterprise web applications, SaaS platforms, business portals, workflow automation, cloud applications, and full-stack custom web development.",
 
     images: [
       "/images/services/web-application-development-og.webp"
@@ -173,7 +173,7 @@ metrics: [
 
 ],
 servicesSuite: {
-  "title": "Comprehensive Web Development Services",
+  "title": "Comprehensive Custom Web Development Services",
   "subtitle": "From responsive business websites to enterprise web applications, we build secure, scalable, and high-performance digital products using modern web technologies and agile practices.",
   "services": [
     {
@@ -192,7 +192,7 @@ servicesSuite: {
     },
     {
       "id": "customer-portal",
-      "title": "Client & Customer Portal Development",
+      "title": "Customer Portal Development",
       "desc": "Enhance customer engagement with self-service portals that provide secure access to account details, billing, support tickets, and personalized resources.",
       "features": [
         "Secure Authentication",
@@ -220,7 +220,7 @@ servicesSuite: {
     },
     {
       "id": "booking-systems",
-      "title": "Booking & Appointment Systems",
+      "title": "Appointment Booking System Development",
       "desc": "Streamline scheduling with custom booking systems designed for healthcare, salons, consulting, and service-based businesses.",
       "features": [
         "Calendar Integration",
@@ -381,7 +381,7 @@ secondaryCta: {
   subtitle:
     "Create high-performance web applications using modern technologies, cloud-native architecture, API integrations, automation, analytics, and enterprise-grade security. We help businesses digitize operations and deliver exceptional user experiences.",
 
-  buttonText: "Talk to Our Web Development Experts",
+  buttonText: "Talk to Our Custom Web Development Experts",
 
   image:
     "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80",

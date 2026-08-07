@@ -5,7 +5,7 @@ import { Reveal } from "../../../components/Reveal";
 
 const FAQS = [
   {
-    question: "What software development services does SyncTech provide?",
+    question: "What custom software development services does SyncTech provide?",
     answer:
       "SyncTech provides custom software development, web application development, mobile app development, AI-powered solutions, cloud integration, SaaS development, and digital transformation services tailored to your business requirements.",
   },
@@ -40,7 +40,7 @@ const FAQS = [
       "Development timelines vary depending on the project's complexity. Simple applications may take a few weeks, while enterprise-grade platforms may require several months.",
   },
   {
-    question: "Why choose SyncTech as your software development partner?",
+    question: "Why choose SyncTech as your custom software development partner?",
     answer:
       "SyncTech combines technical expertise, innovative thinking, agile methodologies, and a client-focused approach to deliver scalable, secure, and high-performance software solutions.",
   },

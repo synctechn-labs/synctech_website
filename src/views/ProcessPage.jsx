@@ -137,7 +137,7 @@ const methodologyItems = [
   {
     title: "Quality at Every Stage",
     description:
-      "From design reviews to QA testing and deployment checks, quality is integrated into every stage of the software development lifecycle.",
+      "From design reviews to QA testing and deployment checks, quality is integrated into every stage of the custom software development lifecycle.",
     icon: CheckCircle2,
   },
   {
@@ -192,14 +192,14 @@ const benefits = [
 
 const faqs = [
   {
-    question: "What is your software development process at SyncTech Software Solutions?",
+    question: "What is your custom software development process at SyncTech Software Solutions?",
     answer:
-      "Our software development process includes discovery and requirement analysis, project planning, UI/UX design, agile development, testing, deployment, and ongoing support. This structured workflow helps us deliver scalable and reliable digital solutions aligned with business goals.",
+      "Our custom software development process includes discovery and requirement analysis, project planning, UI/UX design, agile development, testing, deployment, and ongoing support. This structured workflow helps us deliver scalable and reliable digital solutions aligned with business goals.",
   },
   {
     question: "Do you follow agile development methodology?",
     answer:
-      "Yes. We follow an agile software development process with sprint-based execution, continuous feedback, regular progress updates, and iterative delivery to ensure flexibility, speed, and better project visibility.",
+      "Yes. We follow an agile custom software development process with sprint-based execution, continuous feedback, regular progress updates, and iterative delivery to ensure flexibility, speed, and better project visibility.",
   },
   {
     question: "Can SyncTech handle both web and mobile app development projects?",
@@ -207,7 +207,7 @@ const faqs = [
       "Yes. Our team builds web applications, mobile apps, custom software platforms, SaaS products, and AI-powered business solutions for startups, SMBs, and enterprises.",
   },
   {
-    question: "How long does a software development project usually take?",
+    question: "How long does a custom software development project usually take?",
     answer:
       "The timeline depends on the project scope, complexity, features, integrations, and business requirements. Smaller applications may take a few weeks, while large custom software or AI-driven platforms may take several months.",
   },
@@ -264,14 +264,14 @@ const ProcessPage = () => {
             <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
               A Transparent and Scalable{" "}
               <span className="bg-gradient-to-r from-cyan-300 via-sky-400 to-blue-500 bg-clip-text text-transparent">
-                Software Development Process
+                Custom Software Development Process
               </span>{" "}
               for Modern Businesses
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300 sm:text-xl">
               At <span className="font-semibold text-white">SyncTech Software Solutions</span>,
-              we follow a structured and agile software development process to
+              we follow a structured and agile custom software development process to
               transform ideas into secure, scalable, and high-performing digital
               products. From discovery and planning to design, development,
               testing, deployment, and support, our workflow is built to deliver
@@ -324,7 +324,7 @@ const ProcessPage = () => {
           <SectionHeading
             eyebrow="Why Our Process Matters"
             title="A Well-Defined Development Process Reduces Risk and Improves Outcomes"
-            description="A clear software development process helps businesses reduce uncertainty, improve collaboration, control timelines, and build better products. At SyncTech, our workflow combines strategic planning, user-focused design, agile development, and continuous testing to deliver software that is reliable, scalable, and aligned with real business goals."
+            description="A clear custom software development process helps businesses reduce uncertainty, improve collaboration, control timelines, and build better products. At SyncTech, our workflow combines strategic planning, user-focused design, agile development, and continuous testing to deliver software that is reliable, scalable, and aligned with real business goals."
             center
           />
 
@@ -362,8 +362,8 @@ const ProcessPage = () => {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <SectionHeading
             eyebrow="Our Workflow"
-            title="Our 7-Step Software Development Process"
-            description="We follow a structured and agile software development methodology that transforms ideas into scalable digital products. Every stage is designed to improve clarity, reduce risk, and deliver measurable business value."
+            title="Our 7-Step Custom Software Development Process"
+            description="We follow a structured and agile custom software development methodology that transforms ideas into scalable digital products. Every stage is designed to improve clarity, reduce risk, and deliver measurable business value."
             center
           />
 
@@ -499,7 +499,7 @@ const ProcessPage = () => {
           <div>
             <SectionHeading
               eyebrow="Why Choose SyncTech"
-              title="Why Businesses Choose SyncTech for Software Development"
+              title="Why Businesses Choose SyncTech for Custom Software Development"
               description="We combine technical expertise, strategic thinking, and a transparent development workflow to help businesses build reliable digital products that deliver long-term value."
             />
 
@@ -555,7 +555,7 @@ const ProcessPage = () => {
           <SectionHeading
             eyebrow="FAQs"
             title="Frequently Asked Questions About Our Development Process"
-            description="Here are answers to common questions about our software development workflow, project execution model, delivery timelines, and post-launch support."
+            description="Here are answers to common questions about our custom software development workflow, project execution model, delivery timelines, and post-launch support."
             center
           />
 

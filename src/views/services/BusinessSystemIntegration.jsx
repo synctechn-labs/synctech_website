@@ -22,10 +22,10 @@ import {
 
 export const metadata = {
   title:
-    "Business System Integration Hub | Enterprise Software Integration | SyncTechn",
+    "Business System Integration | Enterprise Software Integration | SyncTechn",
 
   description:
-    "SyncTechn develops Business System Integration Hubs that connect your ERP, CRM, HRMS, and legacy systems into a unified architecture. Eliminate data silos, ensure real-time synchronization, and improve operational visibility.",
+    "SyncTechn develops Business System Integrations that connect your ERP, CRM, HRMS, and legacy systems into a unified architecture. Eliminate data silos, ensure real-time synchronization, and improve operational visibility.",
 
   keywords: [
     "business system integration",
@@ -48,18 +48,18 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/business-system-integration-hub",
+      "https://synctechn.com/services/business-system-integration-services",
   },
 
   openGraph: {
     title:
-      "Business System Integration Hub | SyncTechn",
+      "Business System Integration | SyncTechn",
 
     description:
       "Connect your disparate enterprise software into a unified ecosystem. We develop integration hubs that synchronize data in real-time and eliminate silos.",
 
     url:
-      "https://synctechn.com/services/business-system-integration-hub",
+      "https://synctechn.com/services/business-system-integration-services",
 
     siteName: "SyncTechn",
 
@@ -72,7 +72,7 @@ export const metadata = {
         url: "/images/services/system-integration-og.webp",
         width: 1200,
         height: 630,
-        alt: "Business System Integration Hub"
+        alt: "Business System Integration"
       }
     ]
   },
@@ -103,10 +103,10 @@ export const businessSystemIntegrationData = {
   overviewImage: "https://res.cloudinary.com/wowukaao/image/upload/v1783865630/AI_Solutions_3_d3m38m.jpg",
 
 hero: {
-  title: "Business System Integration Hub",
+  title: "Business System Integration",
 
   subtitle:
-    "Break down data silos and create a unified technological ecosystem. SyncTechn develops robust Business System Integration Hubs that seamlessly connect your ERP, CRM, legacy software, and cloud applications, ensuring real-time data synchronization and enterprise-wide visibility.",
+    "Break down data silos and create a unified technological ecosystem. SyncTechn develops robust Business System Integrations that seamlessly connect your ERP, CRM, legacy software, and cloud applications, ensuring real-time data synchronization and enterprise-wide visibility.",
 
   bgImage:
     "https://res.cloudinary.com/wowukaao/video/upload/v1783796944/CRM_SERVICE_fqe94n.mp4",
@@ -192,7 +192,7 @@ servicesSuite: {
     },
     {
       "id": "system-integration",
-      "title": "Business System Integration Hub",
+      "title": "Business System Integration",
       "desc": "Connect disparate business software into a unified ecosystem. We ensure your ERP, CRM, marketing, and support tools speak the same language.",
       "features": [
         "Data Mapping",

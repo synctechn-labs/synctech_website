@@ -61,7 +61,7 @@ const whatAreAIDevelopmentServices = {
     {
       type: "list",
       items: [
-        "Custom AI software development",
+        "Custom AI custom software development",
         "AI consulting and strategy planning",
         "Machine Learning (ML) model development",
         "Generative AI application development",
@@ -176,7 +176,7 @@ const whatAreAIDevelopmentServices = {
     },
     {
       type: "paragraph",
-      text: "Companies are integrating generative AI into products and internal workflows to automate content creation, improve customer experiences, accelerate software development, and power intelligent search systems.",
+      text: "Companies are integrating generative AI into products and internal workflows to automate content creation, improve customer experiences, accelerate custom software development, and power intelligent search systems.",
     },
     {
       type: "list",
@@ -517,7 +517,7 @@ const whatAreAIDevelopmentServices = {
     {
       type: "heading",
       level: 2,
-      text: "Need Help Building AI Solutions?",
+      text: "Need Help Building AI Development Services?",
       id: "need-help-building-ai-solutions",
     },
     {
@@ -557,7 +557,7 @@ const whatAreAIDevelopmentServices = {
         "Development timelines vary depending on project scope. Basic AI integrations can be completed within a few weeks, while custom enterprise AI platforms with multiple models, integrations, and workflows may require several months.",
     },
     {
-      question: "What is the difference between AI development services and traditional software development?",
+      question: "What is the difference between AI development services and traditional custom software development?",
       answer:
         "Traditional software follows predefined rules and logic, whereas AI-powered software learns from data, adapts to changing patterns, makes predictions, and continuously improves its performance using machine learning and other AI technologies.",
     },

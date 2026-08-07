@@ -24,7 +24,7 @@ const tintBlueStyle = { filter: "hue-rotate(200deg) saturate(130%)" };
 
 // ---- Custom Widget UIs matching the FeaturesGrid design system & App.jsx ----
 
-// Card 1: Web Development & Custom Software IDE Mockup
+// Card 1: Custom Web Development & Custom Software IDE Mockup
 const WebDevWidget = () => (
   <div className="relative mt-6 rounded-xl border border-white/[0.06] bg-slate-950/60 backdrop-blur-md overflow-hidden text-left font-mono text-[11px] leading-relaxed shadow-2xl">
     <div className="flex items-center gap-1.5 px-4 py-2 border-b border-white/[0.06] bg-white/[0.02]">
@@ -240,7 +240,7 @@ export default function ServicesSection() {
         <div id="service-web" className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32 scroll-mt-24">
           <div>
             <h3 className="text-3xl font-bold text-white mb-6 leading-tight">
-              Custom Software & Enterprise Web Development
+              Custom Software & Enterprise Custom Web Development
             </h3>
             <p className="text-slate-400 mb-8 leading-relaxed">
               We design and engineer bespoke, high-performance web applications and custom software solutions 
@@ -271,7 +271,7 @@ export default function ServicesSection() {
             ) : (
               <img
                 src="https://cdn.prod.website-files.com/673c8623b53e085c22dcde7d/673ca401ef8e7fd09ba9f4fa_Feature%20Image%2001.jpg"
-                alt="Custom Software and Web Development Services"
+                alt="Custom Software and Custom Web Development Services"
                 style={tintBlueStyle}
                 className="w-full h-auto rounded-xl border border-slate-900"
               />
@@ -345,8 +345,8 @@ export default function ServicesSection() {
                 </li>
               ))}
             </ul>
-            <a href="/services/ai-solutions" className="glass-button-glow inline-flex items-center gap-2 px-5 py-3 text-white text-sm font-semibold">
-              Explore AI Solutions <ArrowRight size={16} />
+            <a href="/services/ai-development-services" className="glass-button-glow inline-flex items-center gap-2 px-5 py-3 text-white text-sm font-semibold">
+              Explore AI Development Services <ArrowRight size={16} />
             </a>
           </div>
           <div className="relative rounded-2xl border border-slate-800/80 bg-[#060910] p-2 shadow-[0_0_40px_rgba(59,130,246,0.1)]">

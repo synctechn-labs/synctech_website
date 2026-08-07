@@ -12,7 +12,7 @@ const Hero = () => {
     },
     {
       icon: "🌐",
-      title: "Web Development",
+      title: "Custom Web Development",
     },
     {
       icon: "📱",
@@ -20,7 +20,7 @@ const Hero = () => {
     },
     {
       icon: "🤖",
-      title: "AI Solutions",
+      title: "AI Development Services",
     },
   ];
 
@@ -73,7 +73,7 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[0.95] tracking-tight text-blue-800">
               Transform Your Business With
               <span className="block bg-gradient-to-r from-blue-800 via-cyan-500 to-cyan-500 bg-clip-text text-transparent">
-                Custom Software AI Solutions
+                Custom Software AI Development Services
               </span>
             </h1>
           </Reveal>

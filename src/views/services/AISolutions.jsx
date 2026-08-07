@@ -27,7 +27,7 @@ import {
 } from "lucide-react";
 export const metadata = {
   title:
-    "AI Development Company | Custom AI Solutions & Generative AI Services | SyncTechn",
+    "AI Development Company | Custom AI Development Services & Generative AI Services | SyncTechn",
 
   description:
     "SyncTechn provides AI development services including Generative AI, AI chatbot development, Machine Learning, Computer Vision, NLP, AI automation, AI agents, predictive analytics, and custom AI solutions for startups and businesses.",
@@ -35,7 +35,7 @@ export const metadata = {
   keywords: [
     "ai development company",
     "artificial intelligence development",
-    "custom ai solutions",
+    "custom ai development services",
     "ai development services",
     "generative ai development",
     "machine learning development",
@@ -52,12 +52,12 @@ export const metadata = {
     "langchain development",
     "openai integration",
     "business ai automation",
-    "enterprise ai solutions",
+    "enterprise ai development services",
     "intelligent document processing",
     "ocr ai",
     "voice ai",
     "ai consulting services",
-    "ai software development"
+    "ai custom software development"
   ],
 
   alternates: {
@@ -120,7 +120,7 @@ hero: {
   title: "Custom AI Development Services",
 
   subtitle:
-    "SyncTechn develops intelligent AI solutions that help businesses automate workflows, improve decision-making, enhance customer experiences, and accelerate digital transformation. Our AI development services include Generative AI, AI chatbot development, Large Language Model (LLM) integration, AI agents, Machine Learning, Computer Vision, Natural Language Processing (NLP), Predictive Analytics, AI automation, and custom AI software development built using modern AI frameworks and cloud technologies.",
+    "SyncTechn develops intelligent AI solutions that help businesses automate workflows, improve decision-making, enhance customer experiences, and accelerate digital transformation. Our AI development services include Generative AI, AI chatbot development, Large Language Model (LLM) integration, AI agents, Machine Learning, Computer Vision, Natural Language Processing (NLP), Predictive Analytics, AI automation, and custom AI custom software development built using modern AI frameworks and cloud technologies.",
 
   bgImage:
     "https://res.cloudinary.com/wowukaao/video/upload/v1783796946/AI_SERVICE_scgypa.mp4",
@@ -141,7 +141,7 @@ metrics: [
 
   {
     value: "100%",
-    title: "Custom AI Solutions",
+    title: "Custom AI Development Services",
 
     subtitle:
       "Every AI solution is designed around your business goals, workflows, and use cases."
@@ -206,7 +206,7 @@ metrics: [
       },
       {
         "id": "ai-email",
-        "title": "AI Email Operations Automation",
+        "title": "AI Email Automation",
         "desc": "Automate your inbox with AI that reads, categorizes, drafts replies, and routes customer inquiries to the appropriate department instantly.",
         "features": [
           "Intent Recognition",
@@ -220,7 +220,7 @@ metrics: [
       },
       {
         "id": "ai-document",
-        "title": "AI Document Verification Systems",
+        "title": "AI Document Verification",
         "desc": "Streamline compliance and onboarding with AI systems that automatically extract, verify, and validate data from uploaded documents and IDs.",
         "features": [
           "OCR Technology",
@@ -235,7 +235,7 @@ metrics: [
     ]
   },
   industries: {
-  title: "AI Solutions for Every Industry",
+  title: "AI Development Services for Every Industry",
 
   subtitle:
     "Artificial Intelligence is transforming every industry by automating repetitive tasks, improving decision-making, and delivering personalized customer experiences. SyncTechn develops industry-specific AI solutions tailored to your business processes, operational goals, and digital transformation initiatives.",
@@ -244,7 +244,7 @@ metrics: [
 
     {
       icon: <HeartPulse className="w-5 h-5" />,
-      title: "Healthcare AI Solutions",
+      title: "Healthcare AI Development Services",
 
       desc:
         "Develop AI-powered healthcare solutions including medical image analysis, intelligent patient management, clinical decision support, healthcare chatbots, electronic health record (EHR) automation, appointment scheduling, predictive diagnostics, and AI-assisted healthcare workflows."
@@ -309,7 +309,7 @@ whyChooseUs: {
     },
 
     {
-      title: "Business-Focused AI Solutions",
+      title: "Business-Focused AI Development Services",
 
       desc:
         "Every AI solution is designed around your business goals, operational workflows, and customer needs, helping you improve productivity, automate repetitive tasks, and make better business decisions."
@@ -360,7 +360,7 @@ whyChooseUs: {
 secondaryCta: {
   title: "Transform Your Business",
 
-  highlight: "with Intelligent AI Solutions",
+  highlight: "with Intelligent AI Development Services",
 
   subtitle:
     "Leverage Generative AI, Large Language Models, Machine Learning, AI Agents, Computer Vision, Natural Language Processing, and intelligent automation to improve productivity, automate workflows, enhance customer experiences, and accelerate digital transformation.",
@@ -547,9 +547,9 @@ export default function AISolutions() {
   return (
     <>
       <SEO 
-        title="AI Solutions & Artificial Intelligence Development Services | SyncTech Software Solutions"
+        title="AI Development Services & Artificial Intelligence Development Services | SyncTech Software Solutions"
         description="SyncTech Software Solutions provides AI solutions including Generative AI, Machine Learning, AI Chatbots, Computer Vision, Natural Language Processing (NLP), Predictive Analytics, AI Automation, Recommendation Systems, and custom AI application development to help businesses accelerate digital transformation."
-        keywords="AI solutions, artificial intelligence development, AI development company, generative AI development, machine learning solutions, AI chatbot development, conversational AI, computer vision development, NLP solutions, natural language processing, predictive analytics, AI automation, recommendation engine development, intelligent automation, AI consulting services, custom AI applications, enterprise AI solutions, LLM development, OpenAI integration, AI software development"
+        keywords="AI solutions, artificial intelligence development, AI development company, generative AI development, machine learning solutions, AI chatbot development, conversational AI, computer vision development, NLP solutions, natural language processing, predictive analytics, AI automation, recommendation engine development, intelligent automation, AI consulting services, custom AI applications, enterprise AI solutions, LLM development, OpenAI integration, AI custom software development"
       />
       <ServiceTemplate data={aiSolutionsData} />
     </>

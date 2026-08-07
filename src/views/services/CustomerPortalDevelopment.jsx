@@ -25,10 +25,10 @@ import {
 
 export const metadata = {
   title:
-    "Client & Customer Portal Development Company | Custom Customer Portal Development Services | SyncTechn",
+    "Customer Portal Development Company | Custom Customer Portal Development Services | SyncTechn",
 
   description:
-    "SyncTechn provides custom client and customer portal development services including self-service portals, customer dashboards, client management portals, secure document sharing, account management, support portals, B2B portals, B2C portals, and enterprise customer portal solutions.",
+    "SyncTechn provides custom customer portal development services including self-service portals, customer dashboards, client management portals, secure document sharing, account management, support portals, B2B portals, B2C portals, and enterprise customer portal solutions.",
 
   keywords: [
     "client portal development",
@@ -55,23 +55,23 @@ export const metadata = {
     "support portal development",
     "business portal development",
     "enterprise portal solutions",
-    "portal software development"
+    "portal custom software development"
   ],
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/client-customer-portal-development",
+      "https://synctechn.com/services/customer-portal-development-services",
   },
 
   openGraph: {
     title:
-      "Client & Customer Portal Development Services | SyncTechn",
+      "Customer Portal Development Services | SyncTechn",
 
     description:
       "Develop secure client and customer portals with self-service features, dashboards, document management, workflow automation, account management, and real-time communication.",
 
     url:
-      "https://synctechn.com/services/client-customer-portal-development",
+      "https://synctechn.com/services/customer-portal-development-services",
 
     siteName: "SyncTechn",
 
@@ -84,7 +84,7 @@ export const metadata = {
         url: "/images/services/customer-portal-development-og.webp",
         width: 1200,
         height: 630,
-        alt: "Client & Customer Portal Development"
+        alt: "Customer Portal Development"
       }
     ]
   },
@@ -93,7 +93,7 @@ export const metadata = {
     card: "summary_large_image",
 
     title:
-      "Client & Customer Portal Development Company | SyncTechn",
+      "Customer Portal Development Company | SyncTechn",
 
     description:
       "Custom customer portals, client dashboards, self-service portals, partner portals, secure document sharing, workflow automation, and enterprise portal development.",
@@ -115,7 +115,7 @@ export const customerPortalDevelopmentData = {
   overviewImage: "https://res.cloudinary.com/wowukaao/image/upload/v1783865629/web_5_ztsnre.jpg",
 
 hero: {
-  title: "Client & Customer Portal Development Services",
+  title: "Customer Portal Development Services",
 
   subtitle:
     "Deliver exceptional digital experiences with secure, scalable, and feature-rich client and customer portals. SyncTechn develops custom customer portals that enable businesses to provide self-service capabilities, account management, document sharing, communication, workflow automation, service requests, payment management, reporting, and real-time business interactions through a centralized web platform.",
@@ -171,7 +171,7 @@ metrics: [
 
 ],
 servicesSuite: {
-  "title": "Comprehensive Web Development Services",
+  "title": "Comprehensive Custom Web Development Services",
   "subtitle": "From responsive business websites to enterprise web applications, we build secure, scalable, and high-performance digital products using modern web technologies and agile practices.",
   "services": [
     {
@@ -190,7 +190,7 @@ servicesSuite: {
     },
     {
       "id": "customer-portal",
-      "title": "Client & Customer Portal Development",
+      "title": "Customer Portal Development",
       "desc": "Enhance customer engagement with self-service portals that provide secure access to account details, billing, support tickets, and personalized resources.",
       "features": [
         "Secure Authentication",
@@ -218,7 +218,7 @@ servicesSuite: {
     },
     {
       "id": "booking-systems",
-      "title": "Booking & Appointment Systems",
+      "title": "Appointment Booking System Development",
       "desc": "Streamline scheduling with custom booking systems designed for healthcare, salons, consulting, and service-based businesses.",
       "features": [
         "Calendar Integration",
@@ -308,7 +308,7 @@ industries: {
 },
 
 whyChooseUs: {
-  title: "Why Choose SyncTechn for Client & Customer Portal Development?",
+  title: "Why Choose SyncTechn for Customer Portal Development?",
 
   subtitle:
     "SyncTechn develops secure, scalable, and user-focused client and customer portals that improve collaboration, enhance customer satisfaction, streamline business operations, and support digital transformation. Every portal is designed around your business processes, security requirements, and long-term growth strategy.",
@@ -476,7 +476,7 @@ features: {
 },
 
 process: {
-  title: "Our Client & Customer Portal Development Process",
+  title: "Our Customer Portal Development Process",
 
   subtitle:
     "We follow a structured portal development methodology that combines user experience, secure architecture, business process automation, and scalable technologies to deliver reliable client and customer portals.",
@@ -545,7 +545,7 @@ faqs: {
   title: "Frequently Asked Questions",
 
   subtitle:
-    "Find answers to common questions about our client and customer portal development services, self-service portals, integrations, security, deployment, and ongoing support.",
+    "Find answers to common questions about our customer portal development services, self-service portals, integrations, security, deployment, and ongoing support.",
 
   list: [
 

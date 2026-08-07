@@ -21,10 +21,10 @@ import {
 
 export const metadata = {
   title:
-    "AI Document Verification Systems | Fraud Detection AI | SyncTechn",
+    "AI Document Verification | Fraud Detection AI | SyncTechn",
 
   description:
-    "SyncTechn develops custom AI Document Verification Systems. Automate KYC compliance, detect fraudulent documents, and verify IDs instantly with computer vision and machine learning.",
+    "SyncTechn develops custom AI Document Verification. Automate KYC compliance, detect fraudulent documents, and verify IDs instantly with computer vision and machine learning.",
 
   keywords: [
     "ai document verification",
@@ -44,18 +44,18 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/ai-document-verification-systems",
+      "https://synctechn.com/services/ai-document-verification-services",
   },
 
   openGraph: {
     title:
-      "AI Document Verification Systems | SyncTechn",
+      "AI Document Verification | SyncTechn",
 
     description:
       "Protect your business from fraud. We build AI systems that instantly verify IDs, passports, and financial documents with pixel-perfect accuracy.",
 
     url:
-      "https://synctechn.com/services/ai-document-verification-systems",
+      "https://synctechn.com/services/ai-document-verification-services",
 
     siteName: "SyncTechn",
 
@@ -68,7 +68,7 @@ export const metadata = {
         url: "/images/services/ai-document-verification-og.webp",
         width: 1200,
         height: 630,
-        alt: "AI Document Verification Systems"
+        alt: "AI Document Verification"
       }
     ]
   },
@@ -99,7 +99,7 @@ export const aiDocumentVerificationData = {
   overviewImage: "https://res.cloudinary.com/wowukaao/image/upload/v1783865631/AI_Solutions_4_in447t.jpg",
 
 hero: {
-  title: "AI Document Verification Systems",
+  title: "AI Document Verification",
 
   subtitle:
     "Speed up onboarding and eliminate fraud. SyncTechn develops enterprise-grade AI Document Verification systems that utilize advanced Computer Vision and Machine Learning to authenticate IDs, passports, and financial documents in real time, ensuring strict KYC and AML compliance.",
@@ -188,7 +188,7 @@ servicesSuite: {
     },
     {
       "id": "ai-email",
-      "title": "AI Email Operations Automation",
+      "title": "AI Email Automation",
       "desc": "Automate your inbox with AI that reads, categorizes, drafts replies, and routes customer inquiries to the appropriate department instantly.",
       "features": [
         "Intent Recognition",
@@ -202,7 +202,7 @@ servicesSuite: {
     },
     {
       "id": "ai-document",
-      "title": "AI Document Verification Systems",
+      "title": "AI Document Verification",
       "desc": "Streamline compliance and onboarding with AI systems that automatically extract, verify, and validate data from uploaded documents and IDs.",
       "features": [
         "OCR Technology",

@@ -58,7 +58,7 @@ export const SERVICES = [
   },
   {
     id: "web",
-    title: <a href='services/web-development' className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">Website Development</a>,
+    title: <a href='services/custom-web-development-services' className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">Website Development</a>,
     icon: Globe,
     shortDesc:
       "Professional Website Development Services designed to convert visitors into customers.",
@@ -83,12 +83,12 @@ export const SERVICES = [
   },
   {
     id: "marketing",
-    title: <a href='services/digital-marketing' className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">Digital Marketing</a>,
+    title: <a href='services/digital-marketing-services' className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">Digital Marketing Services</a>,
     icon: Megaphone,
     shortDesc:
       "Result-Driven Digital Marketing Services focusing on traffic growth and ROI.",
     fullDesc:
-      "Our digital marketing strategies focus on traffic growth, lead generation, and ROI. We help brands improve online visibility and customer engagement.",
+      "Our digital marketing services strategies focus on traffic growth, lead generation, and ROI. We help brands improve online visibility and customer engagement.",
     benefits: [
       "Traffic Growth",
       "Lead Generation",
@@ -102,7 +102,7 @@ export const SERVICES = [
       "Content Marketing",
     ],
     comparison:
-      "Professional digital marketing delivers long-term growth compared to short-term boosting ads.",
+      "Professional digital marketing services delivers long-term growth compared to short-term boosting ads.",
     image:
       "https://res.cloudinary.com/fpgx4yvx/image/upload/v1783099194/Digital_Marketing_ctzpd4.png",
   },
@@ -142,7 +142,7 @@ export const WHY_CHOOSE_US = [
 ];
 
 export const COMPARISON_ANGLE =
-  "Choosing a professional software development company in India ensures better quality, security, and scalability than freelancers.";
+  "Choosing a professional custom software development company in India ensures better quality, security, and scalability than freelancers.";
 
 export const COMPARISONS = [
   {

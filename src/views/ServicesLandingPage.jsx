@@ -205,11 +205,11 @@ const CALCULATOR_SERVICES = {
     ],
   },
   marketing: {
-    name: "Digital Marketing Campaign",
+    name: "Digital Marketing Services Campaign",
     baseUsd: 800,
     baseInr: 65000,
     baseDays: 15,
-    description: "ROI-driven digital marketing, SEO, and paid ad management.",
+    description: "ROI-driven digital marketing services, SEO, and paid ad management.",
     icon: Megaphone,
     features: [
       {
@@ -427,8 +427,8 @@ const ServicesLandingPage = () => {
 
   const FAQS = [
     {
-      q: "What software development services does SyncTech offer?",
-      a: "SyncTech is a premium development agency offering custom website development, enterprise web application building, native and cross-platform mobile app development (iOS & Android), custom CRM portal architectures, and ROI-focused digital marketing (including SEO, PPC, and branding).",
+      q: "What custom software development services does SyncTech offer?",
+      a: "SyncTech is a premium development agency offering custom website development, enterprise web application building, native and cross-platform mobile app development (iOS & Android), custom CRM portal architectures, and ROI-focused digital marketing services (including SEO, PPC, and branding).",
     },
     {
       q: "Do you use generic templates or build custom solutions?",
@@ -457,8 +457,8 @@ const ServicesLandingPage = () => {
       {/* SEO Tags */}
       <SEO
         title="Custom Software & Digital Services | SyncTech Software Solutions"
-        description="Transform your business with SyncTech's professional software development, web app creation, mobile apps, CRM systems, and technical SEO marketing services."
-        keywords="custom software development, web development company india, mobile app development, CRM solutions, CRM portal development, digital marketing services, SEO friendly website, SyncTech solutions"
+        description="Transform your business with SyncTech's professional custom software development, web app creation, mobile apps, CRM systems, and technical SEO marketing services."
+        keywords="custom software development, custom web development company india, mobile app development, CRM solutions, CRM portal development, digital marketing services, SEO friendly website, SyncTech solutions"
       />
 
       {/* Background Orbs */}
@@ -842,7 +842,7 @@ const ServicesLandingPage = () => {
                   </ul>
                 </div>
                 <Link
-                  href="/services/web-development"
+                  href="/services/custom-web-development-services"
                   className="inline-flex items-center gap-2 text-sm font-bold text-blue-600 group/link"
                 >
                   Explore Web Solutions
@@ -862,7 +862,7 @@ const ServicesLandingPage = () => {
                     <Smartphone size={28} />
                   </div>
                   <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
-                    Mobile Application Development
+                    Custom Mobile App Development
                   </h3>
                   <p className="text-slate-600 text-sm leading-relaxed mb-6">
                     High-performance native and cross-platform mobile apps for
@@ -938,10 +938,10 @@ const ServicesLandingPage = () => {
                   </ul>
                 </div>
                 <Link
-                  href="/services/crm"
+                  href="/services/crm-development-services"
                   className="inline-flex items-center gap-2 text-sm font-bold text-blue-600 group/link"
                 >
-                  Explore CRM Solutions
+                  Explore CRM Development Services
                   <ArrowRight
                     size={16}
                     className="group-hover/link:translate-x-1.5 transition-transform"
@@ -950,7 +950,7 @@ const ServicesLandingPage = () => {
               </div>
             </Reveal>
 
-            {/* Service 4: Digital Marketing */}
+            {/* Service 4: Digital Marketing Services */}
             <Reveal delay={400}>
               <div className="bg-white rounded-3xl border border-slate-100 shadow-sm p-8 hover:shadow-xl hover:border-blue-200 transition-all group flex flex-col justify-between h-full">
                 <div>
@@ -958,7 +958,7 @@ const ServicesLandingPage = () => {
                     <Megaphone size={28} />
                   </div>
                   <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
-                    Result-Driven Digital Marketing
+                    Result-Driven Digital Marketing Services
                   </h3>
                   <p className="text-slate-600 text-sm leading-relaxed mb-6">
                     Our performance marketing targets concrete conversion
@@ -986,7 +986,7 @@ const ServicesLandingPage = () => {
                   </ul>
                 </div>
                 <Link
-                  href="/services/digital-marketing"
+                  href="/services/digital-marketing-services"
                   className="inline-flex items-center gap-2 text-sm font-bold text-blue-600 group/link"
                 >
                   Explore Marketing Services

@@ -25,7 +25,7 @@ import {
 
 export const metadata = {
   title:
-    "Booking & Appointment System Development Company | Online Appointment Booking Software | SyncTechn",
+    "Appointment Booking System Development Company | Online Appointment Booking Software | SyncTechn",
 
   description:
     "SyncTechn develops custom booking and appointment management systems for healthcare, salons, clinics, education, fitness, hospitality, professional services, and enterprises. Build secure online scheduling software with calendar integration, automated reminders, payments, customer portals, and workflow automation.",
@@ -35,7 +35,7 @@ export const metadata = {
     "appointment system development",
     "online appointment booking system",
     "appointment scheduling software",
-    "booking software development",
+    "booking custom software development",
     "custom booking software",
     "online booking platform",
     "appointment management system",
@@ -52,7 +52,7 @@ export const metadata = {
     "service booking platform",
     "customer appointment software",
     "booking portal development",
-    "scheduling software development",
+    "scheduling custom software development",
     "enterprise booking solution",
     "appointment management software",
     "online scheduling platform"
@@ -60,18 +60,18 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/booking-appointment-system-development",
+      "https://synctechn.com/services/appointment-booking-software-development-services",
   },
 
   openGraph: {
     title:
-      "Booking & Appointment System Development Services | SyncTechn",
+      "Appointment Booking System Development Services | SyncTechn",
 
     description:
-      "Develop secure online booking and appointment systems with calendar management, automated reminders, online payments, customer portals, and workflow automation.",
+      "Develop secure online appointment booking system development with calendar management, automated reminders, online payments, customer portals, and workflow automation.",
 
     url:
-      "https://synctechn.com/services/booking-appointment-system-development",
+      "https://synctechn.com/services/appointment-booking-software-development-services",
 
     siteName: "SyncTechn",
 
@@ -84,7 +84,7 @@ export const metadata = {
         url: "/images/services/booking-system-development-og.webp",
         width: 1200,
         height: 630,
-        alt: "Booking & Appointment System Development"
+        alt: "Appointment Booking System Development"
       }
     ]
   },
@@ -93,7 +93,7 @@ export const metadata = {
     card: "summary_large_image",
 
     title:
-      "Booking & Appointment System Development Company | SyncTechn",
+      "Appointment Booking System Development Company | SyncTechn",
 
     description:
       "Custom online booking systems, appointment scheduling software, reservation platforms, customer portals, payment integration, and automated scheduling solutions.",
@@ -115,7 +115,7 @@ export const bookingAppointmentSystemData = {
   overviewImage: "https://res.cloudinary.com/wowukaao/image/upload/v1783865629/web_5_ztsnre.jpg",
 
 hero: {
-  title: "Booking & Appointment System Development Services",
+  title: "Appointment Booking System Development Services",
 
   subtitle:
     "Simplify scheduling, reduce administrative work, and improve customer experience with custom booking and appointment management systems. SyncTechn develops secure, scalable online booking platforms that enable customers to schedule appointments, make reservations, manage bookings, receive automated reminders, process online payments, and access self-service portals from any device.",
@@ -171,7 +171,7 @@ metrics: [
 
 ],
 servicesSuite: {
-  "title": "Comprehensive Web Development Services",
+  "title": "Comprehensive Custom Web Development Services",
   "subtitle": "From responsive business websites to enterprise web applications, we build secure, scalable, and high-performance digital products using modern web technologies and agile practices.",
   "services": [
     {
@@ -190,7 +190,7 @@ servicesSuite: {
     },
     {
       "id": "customer-portal",
-      "title": "Client & Customer Portal Development",
+      "title": "Customer Portal Development",
       "desc": "Enhance customer engagement with self-service portals that provide secure access to account details, billing, support tickets, and personalized resources.",
       "features": [
         "Secure Authentication",
@@ -218,7 +218,7 @@ servicesSuite: {
     },
     {
       "id": "booking-systems",
-      "title": "Booking & Appointment Systems",
+      "title": "Appointment Booking System Development",
       "desc": "Streamline scheduling with custom booking systems designed for healthcare, salons, consulting, and service-based businesses.",
       "features": [
         "Calendar Integration",
@@ -236,7 +236,7 @@ industries: {
   title: "Booking & Appointment Solutions for Every Industry",
 
   subtitle:
-    "Every business has unique scheduling and reservation requirements. SyncTechn develops secure, scalable, and user-friendly booking and appointment systems that simplify scheduling, automate reservations, improve customer experiences, and streamline operations across multiple industries.",
+    "Every business has unique scheduling and reservation requirements. SyncTechn develops secure, scalable, and user-friendly appointment booking system development that simplify scheduling, automate reservations, improve customer experiences, and streamline operations across multiple industries.",
 
   list: [
 
@@ -308,7 +308,7 @@ industries: {
 },
 
 whyChooseUs: {
-  title: "Why Choose SyncTechn for Booking & Appointment System Development?",
+  title: "Why Choose SyncTechn for Appointment Booking System Development?",
 
   subtitle:
     "SyncTechn develops intelligent booking and appointment management systems that improve customer experiences, automate scheduling, reduce manual administration, and help businesses efficiently manage appointments, reservations, staff availability, and customer communications.",
@@ -363,7 +363,7 @@ primaryCta: {
   title: "Streamline Bookings with a Custom Appointment System",
 
   subtitle:
-    "Eliminate manual scheduling, reduce missed appointments, and improve customer satisfaction with a secure, scalable booking platform. SyncTechn develops custom booking and appointment systems that automate scheduling, reminders, payments, and customer communication.",
+    "Eliminate manual scheduling, reduce missed appointments, and improve customer satisfaction with a secure, scalable booking platform. SyncTechn develops custom appointment booking system development that automate scheduling, reminders, payments, and customer communication.",
 
   buttonText: "Schedule a Free Consultation",
 
@@ -405,7 +405,7 @@ secondaryCta: {
 },
 
 features: {
-  title: "Advanced Booking & Appointment System Features",
+  title: "Advanced Appointment Booking System Features",
 
   subtitle:
     "Our booking platforms include everything businesses need to manage appointments efficiently, improve customer experience, automate operations, and scale with business growth.",
@@ -476,7 +476,7 @@ features: {
 },
 
 process: {
-  title: "Our Booking & Appointment System Development Process",
+  title: "Our Appointment Booking System Development Process",
 
   subtitle:
     "We follow a structured development approach to build secure, scalable, and user-friendly booking systems that simplify appointment scheduling, improve operational efficiency, and deliver seamless customer experiences.",
@@ -545,7 +545,7 @@ faqs: {
   title: "Frequently Asked Questions",
 
   subtitle:
-    "Find answers to common questions about our booking and appointment system development services, scheduling software, online reservations, integrations, security, deployment, and ongoing support.",
+    "Find answers to common questions about our appointment booking system development services, scheduling software, online reservations, integrations, security, deployment, and ongoing support.",
 
   list: [
 

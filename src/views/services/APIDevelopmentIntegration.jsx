@@ -48,7 +48,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/api-development-integration",
+      "https://synctechn.com/services/api-development-integration-services",
   },
 
   openGraph: {
@@ -59,7 +59,7 @@ export const metadata = {
       "Build a connected digital ecosystem. We develop robust, secure, and scalable APIs to power your web and mobile applications.",
 
     url:
-      "https://synctechn.com/services/api-development-integration",
+      "https://synctechn.com/services/api-development-integration-services",
 
     siteName: "SyncTechn",
 
@@ -192,7 +192,7 @@ servicesSuite: {
     },
     {
       "id": "system-integration",
-      "title": "Business System Integration Hub",
+      "title": "Business System Integration",
       "desc": "Connect disparate business software into a unified ecosystem. We ensure your ERP, CRM, marketing, and support tools speak the same language.",
       "features": [
         "Data Mapping",

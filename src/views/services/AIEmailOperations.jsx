@@ -22,7 +22,7 @@ import {
 
 export const metadata = {
   title:
-    "AI Email Operations Automation | Intelligent Inbox Management | SyncTechn",
+    "AI Email Automation | Intelligent Inbox Management | SyncTechn",
 
   description:
     "SyncTechn develops AI-powered email operations automation to categorize, route, draft, and respond to high volumes of corporate emails autonomously, saving thousands of manual hours.",
@@ -44,18 +44,18 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/ai-email-operations-automation",
+      "https://synctechn.com/services/ai-email-automation-services",
   },
 
   openGraph: {
     title:
-      "AI Email Operations Automation | SyncTechn",
+      "AI Email Automation | SyncTechn",
 
     description:
       "Automate your corporate inboxes. We build AI systems that read, route, and reply to thousands of emails daily with human-like accuracy.",
 
     url:
-      "https://synctechn.com/services/ai-email-operations-automation",
+      "https://synctechn.com/services/ai-email-automation-services",
 
     siteName: "SyncTechn",
 
@@ -68,7 +68,7 @@ export const metadata = {
         url: "/images/services/ai-email-automation-og.webp",
         width: 1200,
         height: 630,
-        alt: "AI Email Operations Automation"
+        alt: "AI Email Automation"
       }
     ]
   },
@@ -99,7 +99,7 @@ export const aiEmailOperationsData = {
   overviewImage: "https://res.cloudinary.com/wowukaao/image/upload/v1783865631/AI_Solutions_4_in447t.jpg",
 
 hero: {
-  title: "AI Email Operations Automation",
+  title: "AI Email Automation",
 
   subtitle:
     "Stop drowning in your corporate inbox. SyncTechn develops intelligent AI Email Operations systems that autonomously read, categorize, route, and draft highly accurate responses to thousands of emails a day, drastically reducing response times and manual administrative overhead.",
@@ -188,7 +188,7 @@ servicesSuite: {
     },
     {
       "id": "ai-email",
-      "title": "AI Email Operations Automation",
+      "title": "AI Email Automation",
       "desc": "Automate your inbox with AI that reads, categorizes, drafts replies, and routes customer inquiries to the appropriate department instantly.",
       "features": [
         "Intent Recognition",
@@ -202,7 +202,7 @@ servicesSuite: {
     },
     {
       "id": "ai-document",
-      "title": "AI Document Verification Systems",
+      "title": "AI Document Verification",
       "desc": "Streamline compliance and onboarding with AI systems that automatically extract, verify, and validate data from uploaded documents and IDs.",
       "features": [
         "OCR Technology",

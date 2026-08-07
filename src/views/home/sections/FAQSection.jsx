@@ -18,7 +18,7 @@ const FAQS = [
 
 • Custom Web Application Development
 • Mobile App Development
-• Enterprise Software Development
+• Enterprise Custom Software Development
 • AI & Machine Learning Solutions
 • SaaS Product Development
 • ERP & CRM Development
@@ -63,7 +63,7 @@ export default function FAQSection() {
           Frequently Asked Questions About Custom Software Development
         </h2>
         <p className="text-slate-400 text-sm md:text-base max-w-3xl mx-auto leading-relaxed">
-          Have questions about our custom software development services? Here are answers to the most common questions businesses ask before starting a software development project with SyncTechn.
+          Have questions about our custom software development services? Here are answers to the most common questions businesses ask before starting a custom software development project with SyncTechn.
         </p>
       </div>
 

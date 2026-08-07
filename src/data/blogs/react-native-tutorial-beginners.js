@@ -320,7 +320,7 @@ const styles = StyleSheet.create({
       type: "list",
       items: [
         "View is one of the most important native UI components in React Native. It works like a container for grouping and arranging other elements.",
-        "Text displays text on the screen. Unlike web development, text must be wrapped inside a Text component in React Native.",
+        "Text displays text on the screen. Unlike custom web development, text must be wrapped inside a Text component in React Native.",
         "StyleSheet.create() is used to define styles in JavaScript. Instead of external CSS files, React Native uses object-based styling.",
         "flex: 1 tells the container to take up the full available screen height.",
         "justifyContent: 'center' centers the content vertically.",

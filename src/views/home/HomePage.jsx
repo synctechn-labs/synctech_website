@@ -45,7 +45,7 @@ const HOME_FAQ_SCHEMA = {
       "name": "What custom software development services does SyncTechn offer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "SyncTechn provides custom software development services including web application development, mobile app development, enterprise software development, AI solutions, SaaS product development, ERP and CRM development, workflow automation, API integrations, and cloud-based software solutions."
+        "text": "SyncTechn provides custom software development services including web application development, mobile app development, enterprise custom software development, AI solutions, SaaS product development, ERP and CRM development, workflow automation, API integrations, and cloud-based software solutions."
       }
     },
     {
@@ -184,7 +184,7 @@ function HomePage() {
       <SEO
         title="Custom Software Development Company | SyncTechn"
         description="SyncTechn is a custom software development company delivering web applications, mobile apps, AI solutions, and enterprise software tailored to your business goals."
-        keywords="Custom Software Development Company, Custom Software Development Services, Software Development Company, Website Development, Mobile Application Development, Enterprise Software Development, AI Software Development, ERP Development, CRM Development"
+        keywords="Custom Software Development Company, Custom Software Development Services, Custom Software Development Company, Website Development, Custom Mobile App Development, Enterprise Custom Software Development, AI Custom Software Development, ERP Development, CRM Development"
         canonicalUrl="https://synctechn.com/"
         ogTitle="Custom Software Development Company | SyncTechn"
         ogDescription="Build scalable web applications, mobile apps, enterprise software, and AI-powered solutions with SyncTechn's custom software development services."

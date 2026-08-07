@@ -57,12 +57,12 @@ export const metadata = {
     "custom reporting software",
     "management dashboard",
     "cloud dashboard development",
-    "enterprise software development"
+    "enterprise custom software development"
   ],
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/admin-dashboard-development",
+      "https://synctechn.com/services/admin-dashboard-development-services",
   },
 
   openGraph: {
@@ -73,7 +73,7 @@ export const metadata = {
       "Develop secure, scalable, and modern admin dashboards with analytics, reporting, user management, workflow automation, and real-time business insights.",
 
     url:
-      "https://synctechn.com/services/admin-dashboard-development",
+      "https://synctechn.com/services/admin-dashboard-development-services",
 
     siteName: "SyncTechn",
 
@@ -83,7 +83,7 @@ export const metadata = {
 
     images: [
       {
-        url: "/images/services/admin-dashboard-development-og.webp",
+        url: "/images/services/admin-dashboard-development-services-og.webp",
         width: 1200,
         height: 630,
         alt: "Admin Dashboard Development"
@@ -101,7 +101,7 @@ export const metadata = {
       "Custom admin dashboards, analytics, reporting, user management, SaaS dashboards, enterprise dashboards, and business intelligence solutions.",
 
     images: [
-      "/images/services/admin-dashboard-development-og.webp"
+      "/images/services/admin-dashboard-development-services-og.webp"
     ]
   },
 
@@ -173,7 +173,7 @@ metrics: [
 
 ],
 servicesSuite: {
-  "title": "Comprehensive Web Development Services",
+  "title": "Comprehensive Custom Web Development Services",
   "subtitle": "From responsive business websites to enterprise web applications, we build secure, scalable, and high-performance digital products using modern web technologies and agile practices.",
   "services": [
     {
@@ -192,7 +192,7 @@ servicesSuite: {
     },
     {
       "id": "customer-portal",
-      "title": "Client & Customer Portal Development",
+      "title": "Customer Portal Development",
       "desc": "Enhance customer engagement with self-service portals that provide secure access to account details, billing, support tickets, and personalized resources.",
       "features": [
         "Secure Authentication",
@@ -220,7 +220,7 @@ servicesSuite: {
     },
     {
       "id": "booking-systems",
-      "title": "Booking & Appointment Systems",
+      "title": "Appointment Booking System Development",
       "desc": "Streamline scheduling with custom booking systems designed for healthcare, salons, consulting, and service-based businesses.",
       "features": [
         "Calendar Integration",

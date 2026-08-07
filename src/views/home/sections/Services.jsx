@@ -20,7 +20,7 @@ const Services = () => {
         <Reveal>
           <div className="mb-20 max-w-5xl mx-auto text-center">
             <h4 className="text-blue-600 font-bold uppercase tracking-[0.3em] text-sm mb-2">
-              Software Development Services
+              Custom Software Development Services
             </h4>
 
             <h2 className="text-5xl md:text-6xl font-extrabold tracking-tight text-blue-800 leading-[1.05] mb-5">

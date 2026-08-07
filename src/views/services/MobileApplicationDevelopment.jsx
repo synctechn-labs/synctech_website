@@ -25,13 +25,13 @@ import {
 
 export const metadata = {
   title:
-    "Mobile Application Development Company | Custom Mobile App Development Services | SyncTechn",
+    "Custom Mobile App Development Company | Custom Mobile App Development Services | SyncTechn",
 
   description:
-    "SyncTechn provides custom mobile application development services for Android, iOS, Flutter, React Native, enterprise mobility, SaaS, healthcare, fintech, logistics, eCommerce, and startups. Build secure, scalable, and high-performance mobile apps tailored to your business goals.",
+    "SyncTechn provides custom custom mobile app development services for Android, iOS, Flutter, React Native, enterprise mobility, SaaS, healthcare, fintech, logistics, eCommerce, and startups. Build secure, scalable, and high-performance mobile apps tailored to your business goals.",
 
   keywords: [
-    "mobile application development",
+    "custom mobile app development",
     "mobile app development company",
     "custom mobile app development",
     "android app development",
@@ -40,9 +40,9 @@ export const metadata = {
     "react native app development",
     "cross platform app development",
     "enterprise mobile app development",
-    "mobile software development",
+    "mobile custom software development",
     "business mobile applications",
-    "mobile application development services",
+    "custom mobile app development services",
     "hybrid app development",
     "native mobile app development",
     "mobile ui ux design",
@@ -60,18 +60,18 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/mobile-application-development",
+      "https://synctechn.com/services/custom-mobile-application-development-services",
   },
 
   openGraph: {
     title:
-      "Mobile Application Development Services | SyncTechn",
+      "Custom Mobile App Development Services | SyncTechn",
 
     description:
       "Develop secure Android, iOS, Flutter, and cross-platform mobile applications with modern UI/UX, cloud integration, enterprise security, and scalable architecture.",
 
     url:
-      "https://synctechn.com/services/mobile-application-development",
+      "https://synctechn.com/services/custom-mobile-application-development-services",
 
     siteName: "SyncTechn",
 
@@ -81,10 +81,10 @@ export const metadata = {
 
     images: [
       {
-        url: "/images/services/mobile-application-development-og.webp",
+        url: "/images/services/custom-mobile-application-development-services-og.webp",
         width: 1200,
         height: 630,
-        alt: "Mobile Application Development Services"
+        alt: "Custom Mobile App Development Services"
       }
     ]
   },
@@ -93,13 +93,13 @@ export const metadata = {
     card: "summary_large_image",
 
     title:
-      "Custom Mobile Application Development Company | SyncTechn",
+      "Custom Custom Mobile App Development Company | SyncTechn",
 
     description:
       "Android, iOS, Flutter, React Native, enterprise mobile apps, SaaS applications, and cross-platform mobile development.",
 
     images: [
-      "/images/services/mobile-application-development-og.webp"
+      "/images/services/custom-mobile-application-development-services-og.webp"
     ]
   },
 
@@ -115,10 +115,10 @@ export const mobileApplicationDevelopmentData = {
   overviewImage: "https://res.cloudinary.com/wowukaao/image/upload/v1783865632/mobile_app_3_sar2fq.jpg",
 
 hero: {
-  title: "Custom Mobile Application Development Services",
+  title: "Custom Custom Mobile App Development Services",
 
   subtitle:
-    "Transform your ideas into powerful mobile applications with SyncTechn. We design and develop secure, scalable, and high-performance mobile apps for Android, iOS, Flutter, and React Native. From startup MVPs to enterprise mobility solutions, our mobile application development services help businesses improve customer engagement, automate operations, increase productivity, and accelerate digital transformation through intuitive user experiences and modern technologies.",
+    "Transform your ideas into powerful mobile applications with SyncTechn. We design and develop secure, scalable, and high-performance mobile apps for Android, iOS, Flutter, and React Native. From startup MVPs to enterprise mobility solutions, our custom mobile app development services help businesses improve customer engagement, automate operations, increase productivity, and accelerate digital transformation through intuitive user experiences and modern technologies.",
 
   bgImage:
     "https://res.cloudinary.com/wowukaao/video/upload/v1783796946/MOBILE_APP_360_b8hm3v.mp4",
@@ -176,7 +176,7 @@ servicesSuite: {
   "services": [
     {
       "id": "mobile-app",
-      "title": "Mobile Application Development",
+      "title": "Custom Mobile App Development",
       "desc": "Build native and cross-platform mobile apps for iOS and Android that deliver exceptional user experiences and robust functionality.",
       "features": [
         "iOS Development",
@@ -190,7 +190,7 @@ servicesSuite: {
     },
     {
       "id": "human-approval",
-      "title": "Human Approval Automation Systems",
+      "title": "Human Approval Workflow Automation",
       "desc": "Accelerate decision-making with mobile-first automation systems that route requests to the right stakeholders for instant review and approval.",
       "features": [
         "Mobile Notifications",
@@ -218,7 +218,7 @@ servicesSuite: {
     },
     {
       "id": "exception-management",
-      "title": "Operations Exception Management Systems",
+      "title": "Operations Exception Management",
       "desc": "Equip your mobile workforce with tools to quickly log, track, and resolve operational exceptions, ensuring business continuity.",
       "features": [
         "Real-time Reporting",
@@ -308,7 +308,7 @@ industries: {
 },
 
 whyChooseUs: {
-  title: "Why Choose SyncTechn for Mobile Application Development?",
+  title: "Why Choose SyncTechn for Custom Mobile App Development?",
 
   subtitle:
     "SyncTechn develops custom mobile applications that combine modern technology, intuitive user experiences, enterprise security, and scalable architecture. Our goal is to help businesses launch reliable mobile solutions that improve customer engagement, streamline operations, and support long-term business growth.",
@@ -476,7 +476,7 @@ features: {
 },
 
 process: {
-  title: "Our Mobile Application Development Process",
+  title: "Our Custom Mobile App Development Process",
 
   subtitle:
     "We follow a structured mobile app development lifecycle to build secure, scalable, and user-friendly applications that align with your business objectives and provide exceptional digital experiences.",
@@ -505,7 +505,7 @@ process: {
     },
 
     {
-      title: "4. Mobile Application Development",
+      title: "4. Custom Mobile App Development",
 
       desc:
         "Develop Android, iOS, Flutter, and React Native applications using modern programming frameworks, scalable backend services, secure APIs, and cloud-native technologies."
@@ -545,12 +545,12 @@ faqs: {
   title: "Frequently Asked Questions",
 
   subtitle:
-    "Find answers to common questions about our mobile application development services, technologies, security, deployment, integrations, and long-term support.",
+    "Find answers to common questions about our custom mobile app development services, technologies, security, deployment, integrations, and long-term support.",
 
   list: [
 
     {
-      q: "What mobile application development services does SyncTechn provide?",
+      q: "What custom mobile app development services does SyncTechn provide?",
 
       a:
         "SyncTechn develops custom Android applications, iOS applications, Flutter apps, React Native apps, cross-platform mobile applications, enterprise mobility solutions, customer-facing mobile apps, business applications, SaaS mobile applications, and industry-specific mobile solutions tailored to your business objectives."

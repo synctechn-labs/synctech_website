@@ -61,7 +61,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/role-based-business-workspace-development",
+      "https://synctechn.com/services/role-based-business-workspace-development-services",
   },
 
   openGraph: {
@@ -72,7 +72,7 @@ export const metadata = {
       "Develop secure role-based business workspaces with employee portals, department dashboards, workflow automation, collaboration tools, access control, and enterprise integrations.",
 
     url:
-      "https://synctechn.com/services/role-based-business-workspace-development",
+      "https://synctechn.com/services/role-based-business-workspace-development-services",
 
     siteName: "SyncTechn",
 
@@ -82,7 +82,7 @@ export const metadata = {
 
     images: [
       {
-        url: "/images/services/role-based-business-workspace-development-og.webp",
+        url: "/images/services/role-based-business-workspace-development-services-og.webp",
         width: 1200,
         height: 630,
         alt: "Role-Based Business Workspace Development"
@@ -100,7 +100,7 @@ export const metadata = {
       "Build secure digital business workspaces with role-based access, workflow automation, employee collaboration, dashboards, and enterprise management.",
 
     images: [
-      "/images/services/role-based-business-workspace-development-og.webp"
+      "/images/services/role-based-business-workspace-development-services-og.webp"
     ]
   },
 
@@ -177,7 +177,7 @@ servicesSuite: {
   "services": [
     {
       "id": "mobile-app",
-      "title": "Mobile Application Development",
+      "title": "Custom Mobile App Development",
       "desc": "Build native and cross-platform mobile apps for iOS and Android that deliver exceptional user experiences and robust functionality.",
       "features": [
         "iOS Development",
@@ -191,7 +191,7 @@ servicesSuite: {
     },
     {
       "id": "human-approval",
-      "title": "Human Approval Automation Systems",
+      "title": "Human Approval Workflow Automation",
       "desc": "Accelerate decision-making with mobile-first automation systems that route requests to the right stakeholders for instant review and approval.",
       "features": [
         "Mobile Notifications",
@@ -219,7 +219,7 @@ servicesSuite: {
     },
     {
       "id": "exception-management",
-      "title": "Operations Exception Management Systems",
+      "title": "Operations Exception Management",
       "desc": "Equip your mobile workforce with tools to quickly log, track, and resolve operational exceptions, ensuring business continuity.",
       "features": [
         "Real-time Reporting",

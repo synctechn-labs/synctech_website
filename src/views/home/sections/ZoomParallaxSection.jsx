@@ -13,7 +13,7 @@ export default function ZoomParallaxSection() {
 		},
 		{
 			src: 'https://res.cloudinary.com/wowukaao/image/upload/v1784444632/web_dev_homnb2.png',
-			alt: 'Web Development Platform',
+			alt: 'Custom Web Development Platform',
 		},
 		{
 			src: 'https://res.cloudinary.com/wowukaao/image/upload/v1784444635/mob_hez8np.png',

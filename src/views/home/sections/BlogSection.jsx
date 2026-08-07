@@ -6,7 +6,7 @@ const tintBlueStyle = { filter: "hue-rotate(200deg) saturate(130%)" };
 const POSTS = [
   {
     img: "https://cdn.prod.website-files.com/673c8623b53e085c22dcde7d/673ca401ef8e7fd09ba9f4fa_Feature%20Image%2001.jpg",
-    tag: "AI Solutions",
+    tag: "AI Development Services",
     tagColor: "blue",
     readTime: "5 min read",
     title: "Scaling AI Workflows in Production environments",

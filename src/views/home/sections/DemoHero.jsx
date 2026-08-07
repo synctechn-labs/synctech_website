@@ -50,7 +50,7 @@ export default function DemoHero() {
 
         {/* Description */}
         <p className="text-base md:text-lg text-slate-400 max-w-4xl mx-auto mb-10 leading-relaxed">
-          Transform your ideas into scalable digital products with a trusted custom software development company. We provide custom software development services, including web applications, mobile apps, AI-powered solutions, and enterprise software tailored to your business goals. As a reliable software development agency, we build secure, high-performance solutions that streamline operations, improve efficiency, and support long-term growth.
+          Transform your ideas into scalable digital products with a trusted custom software development company. We provide custom software development services, including web applications, mobile apps, AI-powered solutions, and enterprise software tailored to your business goals. As a reliable custom software development agency, we build secure, high-performance solutions that streamline operations, improve efficiency, and support long-term growth.
         </p>
 
         {/* CTA Buttons */}
@@ -75,7 +75,7 @@ export default function DemoHero() {
         <div className="text-xs md:text-sm text-slate-400 font-semibold tracking-wider mb-12 max-w-3xl mx-auto border-t border-white/5 pt-6 flex flex-wrap justify-center items-center gap-x-4 gap-y-2 opacity-85">
           <span>Custom Software Development</span>
           <span className="text-blue-400">•</span>
-          <span>AI Solutions</span>
+          <span>AI Development Services</span>
           <span className="text-blue-400">•</span>
           <span>Web Applications</span>
           <span className="text-blue-400">•</span>

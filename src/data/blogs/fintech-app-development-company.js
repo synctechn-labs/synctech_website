@@ -39,7 +39,7 @@ const fintechAppDevelopmentCompany = {
     },
     {
       type: "paragraph",
-      text: "That is why buyers searching for a banking app development agency or custom financial software development company are not looking for a generic mobile app vendor. They are looking for a partner with domain depth, technical maturity, and proven delivery discipline.",
+      text: "That is why buyers searching for a banking app development agency or custom financial custom software development company are not looking for a generic mobile app vendor. They are looking for a partner with domain depth, technical maturity, and proven delivery discipline.",
     },
     {
       type: "heading",
@@ -49,14 +49,14 @@ const fintechAppDevelopmentCompany = {
     },
     {
       type: "paragraph",
-      text: "A modern fintech app development company typically supports the full lifecycle of digital financial product delivery, from product strategy to post-launch optimization. Depending on your business model, services may include product discovery and fintech market fit validation, fintech UX/UI design for onboarding, KYC, dashboards, and transaction flows, custom web and mobile application development, backend platform engineering for payments, ledgers, reconciliation, and account management, secure payment gateway integration, API integration with banking systems and identity verification vendors, security engineering, regulatory alignment, QA, penetration testing, performance testing, and long-term maintenance.",
+      text: "A modern fintech app development company typically supports the full lifecycle of digital financial product delivery, from product strategy to post-launch optimization. Depending on your business model, services may include product discovery and fintech market fit validation, fintech UX/UI design for onboarding, KYC, dashboards, and transaction flows, custom web and custom mobile app development, backend platform engineering for payments, ledgers, reconciliation, and account management, secure payment gateway integration, API integration with banking systems and identity verification vendors, security engineering, regulatory alignment, QA, penetration testing, performance testing, and long-term maintenance.",
     },
     {
       type: "list",
       items: [
         "Product discovery and fintech market fit validation",
         "Fintech UX/UI design for onboarding, KYC, dashboards, and transaction flows",
-        "Custom web and mobile application development",
+        "Custom web and custom mobile app development",
         "Backend platform engineering for payments, ledgers, reconciliation, and account management",
         "Secure payment gateway integration for cards, wallets, bank transfers, and recurring billing",
         "API integration with banking systems, open banking providers, identity verification vendors, fraud tools, and analytics platforms",
@@ -147,7 +147,7 @@ const fintechAppDevelopmentCompany = {
     },
     {
       type: "paragraph",
-      text: "The second major filter is compliance literacy. The right custom financial software development company should understand that fintech development exists inside a web of regulations, standards, and audit expectations.",
+      text: "The second major filter is compliance literacy. The right custom financial custom software development company should understand that fintech development exists inside a web of regulations, standards, and audit expectations.",
     },
     {
       type: "paragraph",

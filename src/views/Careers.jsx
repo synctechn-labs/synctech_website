@@ -163,9 +163,9 @@ const Careers = () => {
             <p className="text-slate-600 leading-relaxed max-w-2xl mx-auto mb-8 relative z-10">
               We currently do not have any active job openings. However, we're
               continuously growing and may have opportunities in software
-              development, AI solutions, mobile applications, web development,
-              cloud technologies, UI/UX design, digital marketing, and
-              enterprise software development in the future.
+              development, AI solutions, mobile applications, custom web development,
+              cloud technologies, UI/UX design, digital marketing services, and
+              enterprise custom software development in the future.
             </p>
 
             <div className="bg-slate-50 border border-slate-100 rounded-xl p-6 max-w-xl mx-auto mb-10 relative z-10">

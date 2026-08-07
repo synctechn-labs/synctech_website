@@ -21,10 +21,10 @@ import {
 
 export const metadata = {
   title:
-    "Software Usage Intelligence Systems | Application Analytics | SyncTechn",
+    "Software Usage Analytics | Application Analytics | SyncTechn",
 
   description:
-    "SyncTechn develops custom Software Usage Intelligence Systems that track user behavior, feature adoption, and application performance to drive data-driven product decisions.",
+    "SyncTechn develops custom Software Usage Analytics that track user behavior, feature adoption, and application performance to drive data-driven product decisions.",
 
   keywords: [
     "software usage intelligence",
@@ -43,18 +43,18 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/software-usage-intelligence-systems",
+      "https://synctechn.com/services/software-usage-analytics-services",
   },
 
   openGraph: {
     title:
-      "Software Usage Intelligence Systems | SyncTechn",
+      "Software Usage Analytics | SyncTechn",
 
     description:
       "Understand exactly how users interact with your software. We build custom telemetry and analytics platforms for deep product insights.",
 
     url:
-      "https://synctechn.com/services/software-usage-intelligence-systems",
+      "https://synctechn.com/services/software-usage-analytics-services",
 
     siteName: "SyncTechn",
 
@@ -67,7 +67,7 @@ export const metadata = {
         url: "/images/services/software-usage-intelligence-og.webp",
         width: 1200,
         height: 630,
-        alt: "Software Usage Intelligence Systems"
+        alt: "Software Usage Analytics"
       }
     ]
   },
@@ -98,10 +98,10 @@ export const softwareUsageIntelligenceData = {
   overviewImage: "https://res.cloudinary.com/wowukaao/image/upload/v1783865629/digital_marketing_z4aivk.jpg",
 
 hero: {
-  title: "Software Usage Intelligence Systems",
+  title: "Software Usage Analytics",
 
   subtitle:
-    "Stop guessing how users navigate your product. SyncTechn develops custom Software Usage Intelligence Systems that embed deep telemetry into your applications, providing real-time, actionable data on feature adoption, user friction, and overall product health.",
+    "Stop guessing how users navigate your product. SyncTechn develops custom Software Usage Analytics that embed deep telemetry into your applications, providing real-time, actionable data on feature adoption, user friction, and overall product health.",
 
   bgImage:
     "https://res.cloudinary.com/wowukaao/video/upload/v1783796945/DIGITAL_MARKETING_SERVICE_vkkpyq.mp4",
@@ -173,7 +173,7 @@ servicesSuite: {
     },
     {
       "id": "software-intelligence",
-      "title": "Software Usage Intelligence Systems",
+      "title": "Software Usage Analytics",
       "desc": "Gain deep insights into how users interact with your software to drive product-led growth and targeted marketing campaigns.",
       "features": [
         "User Tracking",
@@ -187,7 +187,7 @@ servicesSuite: {
     },
     {
       "id": "ai-quality",
-      "title": "AI-Assisted Quality Control Platforms",
+      "title": "AI Quality Control",
       "desc": "Ensure the highest standards for your digital content and marketing assets with AI systems that automatically check for quality, consistency, and compliance.",
       "features": [
         "Content Auditing",
@@ -201,7 +201,7 @@ servicesSuite: {
     },
     {
       "id": "micro-saas",
-      "title": "Micro-SaaS Development for Businesses",
+      "title": "Micro-SaaS Development",
       "desc": "Create targeted, niche Micro-SaaS products to solve specific pain points for your audience, generating new recurring revenue channels.",
       "features": [
         "Rapid Prototyping",

@@ -27,53 +27,53 @@ import {
 
 export const metadata = {
   title:
-    "White Label Software Development Company | White Label Software Development Services | SyncTechn",
+    "White Label Custom Software Development Company | White Label Custom Software Development Services | SyncTechn",
 
   description:
-    "SyncTechn provides white label software development services for agencies, startups, SaaS companies, IT consultants, and enterprises. Build custom web applications, mobile apps, SaaS platforms, AI solutions, CRM, ERP, and enterprise software under your own brand.",
+    "SyncTechn provides white label custom software development services for agencies, startups, SaaS companies, IT consultants, and enterprises. Build custom web applications, mobile apps, SaaS platforms, AI solutions, CRM, ERP, and enterprise software under your own brand.",
 
   keywords: [
-    "white label software development",
-    "white label software development company",
-    "white label software development services",
+    "white label custom software development",
+    "white label custom software development company",
+    "white label custom software development services",
     "white label development company",
     "software outsourcing company",
-    "offshore software development",
-    "dedicated software development team",
+    "offshore custom software development",
+    "dedicated custom software development team",
     "custom software development",
-    "white label web development",
+    "white label custom web development",
     "white label mobile app development",
     "white label SaaS development",
     "white label CRM development",
     "white label ERP development",
-    "software development partner",
+    "custom software development partner",
     "software product development",
     "IT outsourcing services",
     "technology partner",
-    "private label software development",
-    "agency software development",
-    "enterprise software development",
+    "private label custom software development",
+    "agency custom software development",
+    "enterprise custom software development",
     "digital product development",
     "startup technology partner",
     "software engineering services",
     "application development company",
-    "business software development"
+    "business custom software development"
   ],
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/white-label-software-development",
+      "https://synctechn.com/services/white-label-software-development-services",
   },
 
   openGraph: {
     title:
-      "White Label Software Development Services | SyncTechn",
+      "White Label Custom Software Development Services | SyncTechn",
 
     description:
-      "Expand your software delivery capabilities with white label software development for agencies, startups, SaaS businesses, and enterprises.",
+      "Expand your software delivery capabilities with white label custom software development for agencies, startups, SaaS businesses, and enterprises.",
 
     url:
-      "https://synctechn.com/services/white-label-software-development",
+      "https://synctechn.com/services/white-label-software-development-services",
 
     siteName: "SyncTechn",
 
@@ -83,10 +83,10 @@ export const metadata = {
 
     images: [
       {
-        url: "/images/services/white-label-software-development-og.webp",
+        url: "/images/services/white-label-software-development-services-og.webp",
         width: 1200,
         height: 630,
-        alt: "White Label Software Development"
+        alt: "White Label Custom Software Development"
       }
     ]
   },
@@ -95,13 +95,13 @@ export const metadata = {
     card: "summary_large_image",
 
     title:
-      "White Label Software Development Company | SyncTechn",
+      "White Label Custom Software Development Company | SyncTechn",
 
     description:
       "Custom white label software, SaaS, web applications, mobile apps, CRM, ERP, AI solutions, and dedicated development teams.",
 
     images: [
-      "/images/services/white-label-software-development-og.webp"
+      "/images/services/white-label-software-development-services-og.webp"
     ]
   },
 
@@ -117,10 +117,10 @@ export const whiteLabelDevelopmentData = {
   overviewImage: "https://res.cloudinary.com/wowukaao/image/upload/v1783865632/soft_dev_2_wgcix5.jpg",
 
 hero: {
-  title: "White Label Software Development Services",
+  title: "White Label Custom Software Development Services",
 
   subtitle:
-    "Scale your business without expanding your in-house engineering team. SyncTechn provides white label software development services that enable agencies, startups, SaaS providers, IT consulting firms, and enterprises to deliver high-quality software solutions under their own brand. We develop custom web applications, mobile apps, SaaS platforms, AI solutions, CRM systems, ERP software, enterprise applications, APIs, and cloud-native solutions while you retain complete ownership of your client relationships and brand identity.",
+    "Scale your business without expanding your in-house engineering team. SyncTechn provides white label custom software development services that enable agencies, startups, SaaS providers, IT consulting firms, and enterprises to deliver high-quality software solutions under their own brand. We develop custom web applications, mobile apps, SaaS platforms, AI solutions, CRM systems, ERP software, enterprise applications, APIs, and cloud-native solutions while you retain complete ownership of your client relationships and brand identity.",
 
   bgImage:
     "https://res.cloudinary.com/wowukaao/video/upload/v1783796947/SOFTWARE_DEV_SERVICE_opdqyb.mp4",
@@ -178,7 +178,7 @@ servicesSuite: {
   "services": [
     {
       "id": "custom-erp",
-      "title": "Custom ERP Development",
+      "title": "Custom ERP Custom Software Development",
       "desc": "Centralize your business operations, automate workflows, and gain real-time insights with a scalable Custom ERP system tailored to your unique industry requirements.",
       "features": [
         "Centralized Operations",
@@ -220,8 +220,8 @@ servicesSuite: {
     },
     {
       "id": "white-label",
-      "title": "White-Label Software Development",
-      "desc": "Expand your service offerings quickly with our white-label software development. We build the platform, and you brand it as your own to resell to your clients.",
+      "title": "White-Label Custom Software Development",
+      "desc": "Expand your service offerings quickly with our white-label custom software development. We build the platform, and you brand it as your own to resell to your clients.",
       "features": [
         "Custom Branding",
         "Reseller Ready",
@@ -238,7 +238,7 @@ industries: {
   title: "White Label Software Solutions for Every Industry",
 
   subtitle:
-    "Businesses across industries rely on trusted technology partners to accelerate software delivery. SyncTechn provides white label software development services that help agencies, startups, consulting firms, and enterprises expand their capabilities while delivering high-quality software under their own brand.",
+    "Businesses across industries rely on trusted technology partners to accelerate software delivery. SyncTechn provides white label custom software development services that help agencies, startups, consulting firms, and enterprises expand their capabilities while delivering high-quality software under their own brand.",
 
   list: [
 
@@ -410,7 +410,7 @@ features: {
   title: "White Label Development Capabilities",
 
   subtitle:
-    "Our white label software development services help agencies, IT consultants, startups, and enterprises deliver modern digital solutions while maintaining complete ownership of their client relationships and brand identity.",
+    "Our white label custom software development services help agencies, IT consultants, startups, and enterprises deliver modern digital solutions while maintaining complete ownership of their client relationships and brand identity.",
 
   list: [
 
@@ -481,7 +481,7 @@ process: {
   title: "Our White Label Development Process",
 
   subtitle:
-    "We follow a transparent software development process that enables agencies and businesses to deliver high-quality digital products under their own brand while maintaining complete control over client relationships.",
+    "We follow a transparent custom software development process that enables agencies and businesses to deliver high-quality digital products under their own brand while maintaining complete control over client relationships.",
 
   steps: [
 
@@ -507,7 +507,7 @@ process: {
     },
 
     {
-      title: "4. Agile Software Development",
+      title: "4. Agile Custom Software Development",
 
       desc:
         "Develop web applications, mobile apps, SaaS platforms, enterprise software, AI solutions, CRM systems, and APIs using modern development frameworks and agile methodologies."
@@ -547,20 +547,20 @@ faqs: {
   title: "Frequently Asked Questions",
 
   subtitle:
-    "Find answers to common questions about our white label software development services, engagement models, security, ownership, delivery process, and long-term technical support.",
+    "Find answers to common questions about our white label custom software development services, engagement models, security, ownership, delivery process, and long-term technical support.",
 
   list: [
 
     {
-      q: "What is White Label Software Development?",
+      q: "What is White Label Custom Software Development?",
 
-      a: "White label software development allows agencies, startups, IT consulting firms, and businesses to offer custom software solutions under their own brand while an external technology partner develops the software. This enables businesses to expand their service offerings without building an in-house development team."
+      a: "White label custom software development allows agencies, startups, IT consulting firms, and businesses to offer custom software solutions under their own brand while an external technology partner develops the software. This enables businesses to expand their service offerings without building an in-house development team."
     },
 
     {
-      q: "Who can benefit from white label software development?",
+      q: "Who can benefit from white label custom software development?",
 
-      a: "Our white label development services are ideal for digital agencies, software companies, startups, IT consulting firms, marketing agencies, SaaS businesses, enterprise organizations, and businesses looking to expand their software development capabilities under their own brand."
+      a: "Our white label development services are ideal for digital agencies, software companies, startups, IT consulting firms, marketing agencies, SaaS businesses, enterprise organizations, and businesses looking to expand their custom software development capabilities under their own brand."
     },
 
     {

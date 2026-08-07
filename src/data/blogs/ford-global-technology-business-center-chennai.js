@@ -55,7 +55,7 @@ const fordGlobalTechnologyBusinessCenter = {
     {
       type: "paragraph",
       text:
-        "Ford’s own India pages position Ford Business Solutions as a global hub of technology and business services with expertise across software engineering, analytics, data sciences, AI and machine learning, product engineering, fintech, manufacturing engineering, logistics, supply chain, accounting and financial analysis, and digital marketing. That gives a clearer picture of why the Chennai center keeps appearing in searches from both engineers and business professionals."
+        "Ford’s own India pages position Ford Business Solutions as a global hub of technology and business services with expertise across software engineering, analytics, data sciences, AI and machine learning, product engineering, fintech, manufacturing engineering, logistics, supply chain, accounting and financial analysis, and digital marketing services. That gives a clearer picture of why the Chennai center keeps appearing in searches from both engineers and business professionals."
     },
     {
       type: "heading",
@@ -161,7 +161,7 @@ const fordGlobalTechnologyBusinessCenter = {
     {
       type: "paragraph",
       text:
-        "Ford Business Solutions also spans business operations. That includes accounting and financial analysis, digital marketing, enterprise connectivity, logistics, planning, and supply chain functions. For some candidates, this is easy to overlook because the Ford GTBC brand sounds heavily engineering-led. In reality, global capability centers often combine technical teams with high-value business operations teams, and Ford’s India footprint appears to follow that model."
+        "Ford Business Solutions also spans business operations. That includes accounting and financial analysis, digital marketing services, enterprise connectivity, logistics, planning, and supply chain functions. For some candidates, this is easy to overlook because the Ford GTBC brand sounds heavily engineering-led. In reality, global capability centers often combine technical teams with high-value business operations teams, and Ford’s India footprint appears to follow that model."
     },
     {
       type: "paragraph",

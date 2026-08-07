@@ -37,7 +37,7 @@ const whatIsFlutterUsedFor = {
     },
     {
       type: "paragraph",
-      text: "Flutter is an open-source UI software development kit (SDK) designed for building applications from one shared codebase. Instead of creating separate native apps for Android, iOS, web, and desktop, developers can write most of the code once and deploy it across multiple platforms.",
+      text: "Flutter is an open-source UI custom software development kit (SDK) designed for building applications from one shared codebase. Instead of creating separate native apps for Android, iOS, web, and desktop, developers can write most of the code once and deploy it across multiple platforms.",
     },
     {
       type: "paragraph",
@@ -600,7 +600,7 @@ const whatIsFlutterUsedFor = {
     },
     {
       type: "paragraph",
-      text: "It’s not perfect for every scenario—particularly SEO-first content websites or highly platform-specific edge cases—but for product-driven software development, Flutter remains one of the most practical frameworks in the cross-platform ecosystem.",
+      text: "It’s not perfect for every scenario—particularly SEO-first content websites or highly platform-specific edge cases—but for product-driven custom software development, Flutter remains one of the most practical frameworks in the cross-platform ecosystem.",
     },
     {
       type: "paragraph",

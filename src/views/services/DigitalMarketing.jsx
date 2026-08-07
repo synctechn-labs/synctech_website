@@ -68,13 +68,13 @@ export const metadata = {
     "youtube marketing",
     "online marketing agency",
     "startup marketing agency",
-    "branding and digital marketing",
+    "branding and digital marketing services",
     "marketing automation"
   ],
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/digital-marketing",
+      "https://synctechn.com/services/digital-marketing-services",
   },
 
   openGraph: {
@@ -85,7 +85,7 @@ export const metadata = {
       "Grow your business with SEO, paid advertising, social media marketing, content marketing, email marketing, and performance marketing services from SyncTechn.",
 
     url:
-      "https://synctechn.com/services/digital-marketing",
+      "https://synctechn.com/services/digital-marketing-services",
 
     siteName: "SyncTechn",
 
@@ -95,7 +95,7 @@ export const metadata = {
 
     images: [
       {
-        url: "/images/services/digital-marketing-og.webp",
+        url: "/images/services/digital-marketing-services-og.webp",
         width: 1200,
         height: 630,
         alt: "Digital Marketing Services"
@@ -113,7 +113,7 @@ export const metadata = {
       "SEO, PPC, Social Media Marketing, Content Marketing, Lead Generation, Email Marketing, and Performance Marketing services.",
 
     images: [
-      "/images/services/digital-marketing-og.webp"
+      "/images/services/digital-marketing-services-og.webp"
     ]
   },
 
@@ -132,7 +132,7 @@ hero: {
   title: "Digital Marketing Services",
 
   subtitle:
-    "SyncTechn helps startups, growing businesses, and enterprises build a strong digital presence through data-driven digital marketing strategies. Our digital marketing services include Search Engine Optimization (SEO), Pay-Per-Click (PPC) advertising, social media marketing, content marketing, email marketing, performance marketing, lead generation, conversion rate optimization, branding, and marketing automation. We create customized marketing strategies that increase online visibility, attract qualified leads, improve customer engagement, and support sustainable business growth.",
+    "SyncTechn helps startups, growing businesses, and enterprises build a strong digital presence through data-driven digital marketing services strategies. Our digital marketing services include Search Engine Optimization (SEO), Pay-Per-Click (PPC) advertising, social media marketing, content marketing, email marketing, performance marketing, lead generation, conversion rate optimization, branding, and marketing automation. We create customized marketing strategies that increase online visibility, attract qualified leads, improve customer engagement, and support sustainable business growth.",
 
   bgImage:
     "https://res.cloudinary.com/wowukaao/video/upload/v1783796945/DIGITAL_MARKETING_SERVICE_vkkpyq.mp4",
@@ -180,7 +180,7 @@ metrics: [
     title: "Marketing Approach",
 
     subtitle:
-      "Scalable digital marketing strategies focused on improving visibility, engagement, and lead generation."
+      "Scalable digital marketing services strategies focused on improving visibility, engagement, and lead generation."
   }
 
 ],
@@ -204,7 +204,7 @@ metrics: [
       },
       {
         "id": "software-intelligence",
-        "title": "Software Usage Intelligence Systems",
+        "title": "Software Usage Analytics",
         "desc": "Gain deep insights into how users interact with your software to drive product-led growth and targeted marketing campaigns.",
         "features": [
           "User Tracking",
@@ -218,7 +218,7 @@ metrics: [
       },
       {
         "id": "ai-quality",
-        "title": "AI-Assisted Quality Control Platforms",
+        "title": "AI Quality Control",
         "desc": "Ensure the highest standards for your digital content and marketing assets with AI systems that automatically check for quality, consistency, and compliance.",
         "features": [
           "Content Auditing",
@@ -232,7 +232,7 @@ metrics: [
       },
       {
         "id": "micro-saas",
-        "title": "Micro-SaaS Development for Businesses",
+        "title": "Micro-SaaS Development",
         "desc": "Create targeted, niche Micro-SaaS products to solve specific pain points for your audience, generating new recurring revenue channels.",
         "features": [
           "Rapid Prototyping",
@@ -247,16 +247,16 @@ metrics: [
     ]
   },
   industries: {
-  title: "Digital Marketing Solutions for Every Industry",
+  title: "Digital Marketing Services Solutions for Every Industry",
 
   subtitle:
-    "Every industry requires a unique digital marketing strategy. SyncTechn develops customized marketing campaigns that align with your business objectives, target audience, and industry trends to improve online visibility, generate qualified leads, and support long-term business growth.",
+    "Every industry requires a unique digital marketing services strategy. SyncTechn develops customized marketing campaigns that align with your business objectives, target audience, and industry trends to improve online visibility, generate qualified leads, and support long-term business growth.",
 
   list: [
 
     {
       icon: <HeartPulse className="w-5 h-5" />,
-      title: "Healthcare Digital Marketing",
+      title: "Healthcare Digital Marketing Services",
 
       desc:
         "Build a stronger online presence for healthcare providers through healthcare SEO, local SEO, content marketing, patient engagement campaigns, reputation management, and healthcare-focused digital advertising."
@@ -306,7 +306,7 @@ metrics: [
 },
 
 whyChooseUs: {
-  title: "Why Choose SyncTechn for Digital Marketing?",
+  title: "Why Choose SyncTechn for Digital Marketing Services?",
 
   subtitle:
     "At SyncTechn, we combine data-driven strategies, creative content, modern marketing technologies, and continuous optimization to help businesses strengthen their online presence, reach the right audience, and achieve sustainable digital growth.",
@@ -317,7 +317,7 @@ whyChooseUs: {
       title: "Customized Marketing Strategies",
 
       desc:
-        "Every digital marketing campaign is tailored to your business goals, industry, competition, target audience, and growth objectives instead of using generic marketing templates."
+        "Every digital marketing services campaign is tailored to your business goals, industry, competition, target audience, and growth objectives instead of using generic marketing templates."
     },
 
     {
@@ -352,16 +352,16 @@ whyChooseUs: {
       title: "Long-Term Growth Partnership",
 
       desc:
-        "Beyond launching campaigns, we continuously optimize marketing strategies, improve campaign performance, update content, monitor trends, and provide ongoing digital marketing support."
+        "Beyond launching campaigns, we continuously optimize marketing strategies, improve campaign performance, update content, monitor trends, and provide ongoing digital marketing services support."
     }
 
   ]
 },
   primaryCta: {
-  title: "Ready to Grow Your Business with Digital Marketing?",
+  title: "Ready to Grow Your Business with Digital Marketing Services?",
 
   subtitle:
-    "Whether you're launching a new business, building brand awareness, generating qualified leads, or improving online conversions, SyncTechn creates customized digital marketing strategies that align with your business goals and long-term growth plans.",
+    "Whether you're launching a new business, building brand awareness, generating qualified leads, or improving online conversions, SyncTechn creates customized digital marketing services strategies that align with your business goals and long-term growth plans.",
 
   buttonText: "Book a Free Marketing Consultation",
 
@@ -372,7 +372,7 @@ whyChooseUs: {
 secondaryCta: {
   title: "Accelerate Your Online Growth",
 
-  highlight: "with Data-Driven Digital Marketing",
+  highlight: "with Data-Driven Digital Marketing Services",
 
   subtitle:
     "Increase your online visibility through SEO, Google Ads, social media marketing, content marketing, email automation, and performance marketing. We combine creativity, analytics, and technology to help businesses attract the right audience and build sustainable digital growth.",
@@ -403,7 +403,7 @@ secondaryCta: {
 },
 
 features: {
-  title: "Digital Marketing Features for Business Growth",
+  title: "Digital Marketing Services Features for Business Growth",
 
   subtitle:
     "Our digital marketing services combine strategy, creativity, analytics, and technology to help businesses improve online visibility, generate quality leads, strengthen customer engagement, and achieve measurable marketing goals.",
@@ -447,7 +447,7 @@ features: {
 
     {
       icon: <Globe />,
-      text: "Local SEO & Global Digital Marketing"
+      text: "Local SEO & Global Digital Marketing Services"
     },
 
     {
@@ -474,10 +474,10 @@ features: {
 },
 
 process: {
-  title: "Our Digital Marketing Process",
+  title: "Our Digital Marketing Services Process",
 
   subtitle:
-    "We follow a structured digital marketing process that combines research, strategy, creative execution, campaign optimization, and continuous improvement to help businesses achieve sustainable online growth.",
+    "We follow a structured digital marketing services process that combines research, strategy, creative execution, campaign optimization, and continuous improvement to help businesses achieve sustainable online growth.",
 
   steps: [
 
@@ -485,7 +485,7 @@ process: {
       title: "1. Business Discovery & Marketing Consultation",
 
       desc:
-        "Understand your business objectives, target audience, competitors, products, services, and marketing goals to develop a customized digital marketing strategy."
+        "Understand your business objectives, target audience, competitors, products, services, and marketing goals to develop a customized digital marketing services strategy."
     },
 
     {
@@ -557,9 +557,9 @@ export default function DigitalMarketing() {
   return (
     <>
       <SEO 
-        title="Performance Digital Marketing & SEO Services | SyncTech"
-        description="Scale your business with SyncTech's ROI-focused digital marketing campaigns. We deliver SEO optimization, social media marketing, PPC Google Ads, and copywriting."
-        keywords="digital marketing, search engine optimization, SEO services, pay per click advertising, Google Ads agency, brand strategy"
+        title="Performance Digital Marketing Services & SEO Services | SyncTech"
+        description="Scale your business with SyncTech's ROI-focused digital marketing services campaigns. We deliver SEO optimization, social media marketing, PPC Google Ads, and copywriting."
+        keywords="digital marketing services, search engine optimization, SEO services, pay per click advertising, Google Ads agency, brand strategy"
       />
       <ServiceTemplate 
         data={digitalMarketingData} 

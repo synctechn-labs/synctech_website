@@ -13,8 +13,7 @@ const Footer = () => {
               SyncTechn
             </div>
             <p className="text-sm leading-relaxed text-slate-400 font-medium">
-              We help ambitious businesses scale through world-class technology
-              solutions.
+              We help businesses accelerate growth with custom software development, web development, mobile app development, AI Development, CRM development, and digital marketing services.
             </p>
           </div>
 
@@ -36,47 +35,47 @@ const Footer = () => {
                     href="/services/mobile-app-development"
                     className="transition-colors duration-300 hover:text-blue-400"
                   >
-                    Mobile Development
+                    Custom Mobile App Development
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/services/web-development"
+                    href="/services/custom-web-development-services"
                     className="transition-colors duration-300 hover:text-blue-400"
                   >
-                    Web Development
+                    Custom Web Development
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/services/digital-marketing"
+                    href="/services/digital-marketing-services"
                     className="transition-colors duration-300 hover:text-blue-400"
                   >
-                    Digital Marketing
+                    Digital Marketing Services
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/services/crm"
+                    href="/services/crm-development-services"
                     className="transition-colors duration-300 hover:text-blue-400"
                   >
-                    CRM Solutions
+                    CRM Development Services
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/services/ai-solutions"
+                    href="/services/ai-development-services"
                     className="transition-colors duration-300 hover:text-blue-400"
                   >
-                    AI Solutions
+                    AI Development Services
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/services/software-development"
+                    href="/services/custom-software-development-services"
                     className="transition-colors duration-300 hover:text-blue-400"
                   >
-                    Software Development
+                    Custom Software Development
                   </a>
                 </li>
               </ul>
@@ -86,16 +85,31 @@ const Footer = () => {
             <div>
               <h4 className="text-white font-medium text-base mb-4">Company</h4>
               <ul className="space-y-3 text-sm font-medium text-slate-400">
-                {NAV_ITEMS.map((item) => (
-                  <li key={item.label}>
-                    <a
-                      href={item.href}
-                      className="transition-colors duration-300 hover:text-blue-400"
-                    >
-                      {item.label}
-                    </a>
-                  </li>
-                ))}
+                <li>
+                  <a
+                    href="/services"
+                    className="transition-colors duration-300 hover:text-blue-400"
+                  >
+                    Our Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/industries"
+                    className="transition-colors duration-300 hover:text-blue-400"
+                  >
+                    Industries
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/blog"
+                    className="transition-colors duration-300 hover:text-blue-400"
+                  >
+                    Blogs
+                  </a>
+                </li>
+
                 <li>
                   <a
                     href="/careers"
@@ -124,7 +138,7 @@ const Footer = () => {
                     href="/terms-of-Service"
                     className="transition-colors duration-300 hover:text-blue-400"
                   >
-                    Terms of Service
+                    Terms & Conditions
                   </a>
                 </li>
                 <li>
@@ -139,8 +153,7 @@ const Footer = () => {
             </div>
 
             {/* Column 4: Social */}
-            <div>
-              <h4 className="text-white font-medium text-base mb-4">Social</h4>
+            <div className="pt-2">
               <div className="flex gap-4 mb-4">
                 <a
                   href="#"

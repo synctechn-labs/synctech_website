@@ -48,10 +48,10 @@ export const metadata = {
     "flutter app development company",
     "react native app development",
     "enterprise mobile app development",
-    "mobile application development company",
+    "custom mobile app development company",
     "cross platform app development",
     "ai mobile app development",
-    "mobile software development",
+    "mobile custom software development",
     "enterprise mobility solutions",
     "business mobile applications",
     "mobile app modernization",
@@ -159,7 +159,7 @@ metrics: [
   {
     value: "2026",
     title: "Founded",
-    subtitle: "A modern software development startup focused on building scalable digital solutions."
+    subtitle: "A modern custom software development startup focused on building scalable digital solutions."
   },
 
   {
@@ -198,7 +198,7 @@ metrics: [
     "services": [
       {
         "id": "mobile-app",
-        "title": "Mobile Application Development",
+        "title": "Custom Mobile App Development",
         "desc": "Build native and cross-platform mobile apps for iOS and Android that deliver exceptional user experiences and robust functionality.",
         "features": [
           "iOS Development",
@@ -212,7 +212,7 @@ metrics: [
       },
       {
         "id": "human-approval",
-        "title": "Human Approval Automation Systems",
+        "title": "Human Approval Workflow Automation",
         "desc": "Accelerate decision-making with mobile-first automation systems that route requests to the right stakeholders for instant review and approval.",
         "features": [
           "Mobile Notifications",
@@ -240,7 +240,7 @@ metrics: [
       },
       {
         "id": "exception-management",
-        "title": "Operations Exception Management Systems",
+        "title": "Operations Exception Management",
         "desc": "Equip your mobile workforce with tools to quickly log, track, and resolve operational exceptions, ensuring business continuity.",
         "features": [
           "Real-time Reporting",
@@ -349,7 +349,7 @@ whyChooseUs: {
       title: "End-to-End Mobile App Development",
 
       desc:
-        "From product discovery and business analysis to UI/UX design, software architecture, development, testing, deployment, maintenance, and modernization, we provide complete mobile application development services under one roof."
+        "From product discovery and business analysis to UI/UX design, software architecture, development, testing, deployment, maintenance, and modernization, we provide complete custom mobile app development services under one roof."
     },
 
     {

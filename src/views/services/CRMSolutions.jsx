@@ -29,14 +29,14 @@ import {
 
 export const metadata = {
   title:
-    "CRM Development Company | Custom CRM Software Development Services | SyncTechn",
+    "CRM Development Company | Custom CRM Custom Software Development Services | SyncTechn",
 
   description:
-    "SyncTechn provides custom CRM development services including CRM software development, CRM customization, CRM integration, sales automation, customer relationship management, workflow automation, cloud CRM solutions, and enterprise CRM software for businesses.",
+    "SyncTechn provides custom CRM development services including CRM custom software development, CRM customization, CRM integration, sales automation, customer relationship management, workflow automation, cloud CRM solutions, and enterprise CRM software for businesses.",
 
   keywords: [
     "crm development company",
-    "crm software development",
+    "crm custom software development",
     "custom crm development",
     "customer relationship management",
     "crm development services",
@@ -67,7 +67,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/crm-development",
+      "https://synctechn.com/services/crm-development-services-development",
   },
 
   openGraph: {
@@ -78,7 +78,7 @@ export const metadata = {
       "Build secure and scalable CRM software to automate sales, customer service, marketing, lead management, and business workflows with SyncTechn.",
 
     url:
-      "https://synctechn.com/services/crm-development",
+      "https://synctechn.com/services/crm-development-services-development",
 
     siteName: "SyncTechn",
 
@@ -88,7 +88,7 @@ export const metadata = {
 
     images: [
       {
-        url: "/images/services/crm-development-og.webp",
+        url: "/images/services/crm-development-services-development-og.webp",
         width: 1200,
         height: 630,
         alt: "CRM Development Services"
@@ -100,13 +100,13 @@ export const metadata = {
     card: "summary_large_image",
 
     title:
-      "CRM Software Development Company | SyncTechn",
+      "CRM Custom Software Development Company | SyncTechn",
 
     description:
-      "Custom CRM software development, CRM integration, workflow automation, sales automation, cloud CRM solutions, and enterprise CRM development.",
+      "Custom CRM custom software development, CRM integration, workflow automation, sales automation, cloud CRM solutions, and enterprise CRM development.",
 
     images: [
-      "/images/services/crm-development-og.webp"
+      "/images/services/crm-development-services-development-og.webp"
     ]
   },
 
@@ -125,7 +125,7 @@ hero: {
   title: "Custom CRM Development Services",
 
   subtitle:
-    "SyncTechn develops custom Customer Relationship Management (CRM) software that helps businesses manage customer interactions, automate sales processes, improve customer support, streamline marketing campaigns, and strengthen customer relationships. Our CRM development services include CRM software development, CRM customization, cloud CRM solutions, sales automation, workflow automation, CRM integration, analytics dashboards, and enterprise CRM platforms built using modern technologies and scalable cloud architecture.",
+    "SyncTechn develops custom Customer Relationship Management (CRM) software that helps businesses manage customer interactions, automate sales processes, improve customer support, streamline marketing campaigns, and strengthen customer relationships. Our CRM development services include CRM custom software development, CRM customization, cloud CRM solutions, sales automation, workflow automation, CRM integration, analytics dashboards, and enterprise CRM platforms built using modern technologies and scalable cloud architecture.",
 
   bgImage:
     "https://res.cloudinary.com/wowukaao/video/upload/v1783796944/CRM_SERVICE_fqe94n.mp4",
@@ -146,7 +146,7 @@ metrics: [
 
   {
     value: "100%",
-    title: "Custom CRM Solutions",
+    title: "Custom CRM Development Services",
 
     subtitle:
       "Every CRM platform is designed around your business workflows, sales process, and customer journey."
@@ -211,7 +211,7 @@ metrics: [
       },
       {
         "id": "system-integration",
-        "title": "Business System Integration Hub",
+        "title": "Business System Integration",
         "desc": "Connect disparate business software into a unified ecosystem. We ensure your ERP, CRM, marketing, and support tools speak the same language.",
         "features": [
           "Data Mapping",
@@ -240,7 +240,7 @@ metrics: [
     ]
   },
   industries: {
-  title: "CRM Solutions for Every Industry",
+  title: "CRM Development Services for Every Industry",
 
   subtitle:
     "Every industry has unique customer engagement, sales, and operational challenges. SyncTechn develops custom CRM solutions tailored to industry-specific workflows, helping businesses strengthen customer relationships, improve team collaboration, automate processes, and accelerate digital transformation.",
@@ -257,7 +257,7 @@ metrics: [
 
     {
       icon: <HeartPulse className="w-5 h-5" />,
-      title: "Healthcare CRM Solutions",
+      title: "Healthcare CRM Development Services",
 
       desc:
         "Develop secure healthcare CRM systems for patient relationship management, appointment scheduling, communication, follow-ups, healthcare marketing, patient engagement, and medical service coordination."
@@ -365,7 +365,7 @@ whyChooseUs: {
 secondaryCta: {
   title: "Accelerate Business Growth",
 
-  highlight: "with Intelligent CRM Solutions",
+  highlight: "with Intelligent CRM Development Services",
 
   subtitle:
     "Improve customer relationships, automate sales pipelines, streamline customer support, and gain valuable business insights with custom CRM software designed around your workflows. We develop cloud-based CRM solutions that integrate seamlessly with your existing business applications.",

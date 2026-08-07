@@ -9,7 +9,7 @@ const leveragingAiForSmarterInboundMarketing = {
     role: "Founder",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
   },
-  category: "Digital Marketing",
+  category: "Digital Marketing Services",
   coverImage: "https://res.cloudinary.com/wowukaao/image/upload/v1784740373/Picture1_zfw7ty.png",
   content: [
     {
@@ -62,7 +62,7 @@ const leveragingAiForSmarterInboundMarketing = {
     },
     {
       type: "paragraph",
-      text: "This shift represents one of the biggest changes in digital marketing over the past decade."
+      text: "This shift represents one of the biggest changes in digital marketing services over the past decade."
     },
     {
       type: "paragraph",

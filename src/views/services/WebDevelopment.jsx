@@ -39,12 +39,12 @@ export const metadata = {
     "Custom Web Development Company | Website & Web Application Development Services | SyncTechn",
 
   description:
-    "SyncTechn is a custom web development company providing website development, web application development, eCommerce development, React, Next.js, Node.js, Python, CMS, SaaS, API integration, and enterprise web development services for startups and businesses worldwide.",
+    "SyncTechn is a custom web development company providing website development, web application development, eCommerce development, React, Next.js, Node.js, Python, CMS, SaaS, API integration, and enterprise custom web development services for startups and businesses worldwide.",
 
   keywords: [
-    "web development company",
+    "custom web development company",
     "custom web development",
-    "web development services",
+    "custom web development services",
     "website development company",
     "website development services",
     "web application development",
@@ -53,8 +53,8 @@ export const metadata = {
     "react development company",
     "next.js development company",
     "node.js development company",
-    "python web development",
-    "full stack web development",
+    "python custom web development",
+    "full stack custom web development",
     "frontend development services",
     "backend development services",
     "ecommerce website development",
@@ -64,7 +64,7 @@ export const metadata = {
     "rest api development",
     "graphql development",
     "saas application development",
-    "enterprise software development",
+    "enterprise custom software development",
     "cloud application development",
     "progressive web app development",
     "responsive website development",
@@ -77,7 +77,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/web-development",
+      "https://synctechn.com/services/custom-web-development-services",
   },
 
   openGraph: {
@@ -88,7 +88,7 @@ export const metadata = {
       "Build secure, scalable, and high-performance websites, web applications, SaaS platforms, enterprise portals, and eCommerce solutions with SyncTechn.",
 
     url:
-      "https://synctechn.com/services/web-development",
+      "https://synctechn.com/services/custom-web-development-services",
 
     siteName: "SyncTechn",
 
@@ -98,7 +98,7 @@ export const metadata = {
 
     images: [
       {
-        url: "/images/services/web-development-og.webp",
+        url: "/images/services/custom-web-development-services-og.webp",
         width: 1200,
         height: 630,
         alt: "Custom Web Development Services",
@@ -113,10 +113,10 @@ export const metadata = {
       "Custom Web Development Company | SyncTechn",
 
     description:
-      "Enterprise web development services including custom websites, web applications, React, Next.js, Node.js, SaaS platforms, cloud-native applications, and eCommerce development.",
+      "Enterprise custom web development services including custom websites, web applications, React, Next.js, Node.js, SaaS platforms, cloud-native applications, and eCommerce development.",
 
     images: [
-      "/images/services/web-development-og.webp",
+      "/images/services/custom-web-development-services-og.webp",
     ],
   },
 
@@ -149,7 +149,7 @@ export const webDevelopmentData = {
   title: "Custom Web Development Services",
 
   subtitle:
-    "SyncTechn develops secure, scalable, and high-performance websites and web applications tailored to your business goals. Our web development services include custom website development, enterprise web application development, eCommerce solutions, SaaS platforms, CMS development, API integration, and cloud-native applications using React, Next.js, Node.js, Python, and modern web technologies. Whether you're launching a startup, modernizing an existing platform, or building enterprise software, we create digital experiences that are fast, secure, user-friendly, and built for long-term growth.",
+    "SyncTechn develops secure, scalable, and high-performance websites and web applications tailored to your business goals. Our custom web development services include custom website development, enterprise web application development, eCommerce solutions, SaaS platforms, CMS development, API integration, and cloud-native applications using React, Next.js, Node.js, Python, and modern web technologies. Whether you're launching a startup, modernizing an existing platform, or building enterprise software, we create digital experiences that are fast, secure, user-friendly, and built for long-term growth.",
 
   bgImage:
     "https://res.cloudinary.com/wowukaao/video/upload/v1783796944/web_dev_service_tljowb.mp4",
@@ -194,7 +194,7 @@ metrics: [
 
 ],
  servicesSuite: {
-   "title": "Comprehensive Web Development Services",
+   "title": "Comprehensive Custom Web Development Services",
    "subtitle": "From responsive business websites to enterprise web applications, we build secure, scalable, and high-performance digital products using modern web technologies and agile practices.",
    "services": [
      {
@@ -213,7 +213,7 @@ metrics: [
      },
      {
        "id": "customer-portal",
-       "title": "Client & Customer Portal Development",
+       "title": "Customer Portal Development",
        "desc": "Enhance customer engagement with self-service portals that provide secure access to account details, billing, support tickets, and personalized resources.",
        "features": [
          "Secure Authentication",
@@ -241,7 +241,7 @@ metrics: [
      },
      {
        "id": "booking-systems",
-       "title": "Booking & Appointment Systems",
+       "title": "Appointment Booking System Development",
        "desc": "Streamline scheduling with custom booking systems designed for healthcare, salons, consulting, and service-based businesses.",
        "features": [
          "Calendar Integration",
@@ -265,7 +265,7 @@ metrics: [
 
     {
       icon: <HeartPulse className="w-5 h-5" />,
-      title: "Healthcare Web Development",
+      title: "Healthcare Custom Web Development",
 
       desc:
         "Develop HIPAA-ready healthcare websites, patient portals, telemedicine platforms, hospital management systems, appointment booking applications, healthcare CRM solutions, and secure medical web applications."
@@ -400,7 +400,7 @@ secondaryCta: {
   highlight: "with Modern Web Technologies",
 
   subtitle:
-    "Build fast, secure, and scalable digital platforms using React, Next.js, Node.js, Python, cloud infrastructure, API integrations, and AI-powered automation. Our web development services help businesses improve customer experiences, streamline operations, and accelerate digital transformation.",
+    "Build fast, secure, and scalable digital platforms using React, Next.js, Node.js, Python, cloud infrastructure, API integrations, and AI-powered automation. Our custom web development services help businesses improve customer experiences, streamline operations, and accelerate digital transformation.",
 
   buttonText: "Discuss Your Project",
 
@@ -499,10 +499,10 @@ features: {
 },
 
 process: {
-  title: "Our Web Development Process",
+  title: "Our Custom Web Development Process",
 
   subtitle:
-    "Our structured web development process combines business strategy, user experience design, modern engineering practices, and agile development to deliver secure, scalable, and future-ready web solutions.",
+    "Our structured custom web development process combines business strategy, user experience design, modern engineering practices, and agile development to deliver secure, scalable, and future-ready web solutions.",
 
   steps: [
 
@@ -566,9 +566,9 @@ process: {
 },
   faqs: {
     title: "Frequently Asked Questions",
-    subtitle: "Everything you need to know about our web development services.",
+    subtitle: "Everything you need to know about our custom web development services.",
     list: [
-      { q: "How long does web development take?", a: "Most business websites take 4–8 weeks while enterprise applications may require several months depending on complexity and integrations." },
+      { q: "How long does custom web development take?", a: "Most business websites take 4–8 weeks while enterprise applications may require several months depending on complexity and integrations." },
       { q: "Will my website be mobile responsive?", a: "Yes. Every website and application we build is optimized for desktops, tablets, and smartphones." },
       { q: "Do you build e-commerce websites?", a: "Yes. We develop secure and scalable online stores with advanced commerce features." },
       { q: "Will my website be scalable?", a: "Yes. Our solutions are designed to support increasing traffic, users, and future business requirements." },
@@ -584,7 +584,7 @@ export default function WebDevelopment() {
       <SEO 
         title="Custom Website Development & Web Applications | SyncTech"
         description="SyncTech Software Solutions builds secure, high-performing websites and web applications tailored to your business operations. Technical SEO and mobile responsive designs standard."
-        keywords="website development, custom web application development, e-commerce web development, React development agency, Next.js web application"
+        keywords="website development, custom web application development, e-commerce custom web development, React development agency, Next.js web application"
       />
       <ServiceTemplate 
         data={webDevelopmentData} 

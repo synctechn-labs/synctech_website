@@ -43,7 +43,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/document-processing-automation",
+      "https://synctechn.com/services/document-processing-automation-services",
   },
 
   openGraph: {
@@ -54,7 +54,7 @@ export const metadata = {
       "Turn unstructured documents into actionable data instantly. Automate data entry and extraction with our AI-powered Intelligent Document Processing.",
 
     url:
-      "https://synctechn.com/services/document-processing-automation",
+      "https://synctechn.com/services/document-processing-automation-services",
 
     siteName: "SyncTechn",
 
@@ -173,7 +173,7 @@ servicesSuite: {
     },
     {
       "id": "software-intelligence",
-      "title": "Software Usage Intelligence Systems",
+      "title": "Software Usage Analytics",
       "desc": "Gain deep insights into how users interact with your software to drive product-led growth and targeted marketing campaigns.",
       "features": [
         "User Tracking",
@@ -187,7 +187,7 @@ servicesSuite: {
     },
     {
       "id": "ai-quality",
-      "title": "AI-Assisted Quality Control Platforms",
+      "title": "AI Quality Control",
       "desc": "Ensure the highest standards for your digital content and marketing assets with AI systems that automatically check for quality, consistency, and compliance.",
       "features": [
         "Content Auditing",
@@ -201,7 +201,7 @@ servicesSuite: {
     },
     {
       "id": "micro-saas",
-      "title": "Micro-SaaS Development for Businesses",
+      "title": "Micro-SaaS Development",
       "desc": "Create targeted, niche Micro-SaaS products to solve specific pain points for your audience, generating new recurring revenue channels.",
       "features": [
         "Rapid Prototyping",

@@ -17,7 +17,7 @@ const customSoftwareVsSaas = {
   content: [
     {
       type: "paragraph",
-      text: "Businesses today have more technology choices than ever before. Whether you're launching a startup, modernizing enterprise operations, or digitizing business processes, one of the biggest decisions you'll face is choosing between <a href=\"/services/software-development\">Custom Software Development</a> and Software as a Service (SaaS)."
+      text: "Businesses today have more technology choices than ever before. Whether you're launching a startup, modernizing enterprise operations, or digitizing business processes, one of the biggest decisions you'll face is choosing between <a href=\"/services/custom-software-development-services\">Custom Software Development</a> and Software as a Service (SaaS)."
     },
     {
       type: "paragraph",
@@ -50,7 +50,7 @@ const customSoftwareVsSaas = {
     },
     {
       type: "paragraph",
-      text: "Every feature is tailored to your business objectives. You can explore our comprehensive <a href=\"/services/software-development\">Custom Software Development</a> services to learn how we build tailored solutions."
+      text: "Every feature is tailored to your business objectives. You can explore our comprehensive <a href=\"/services/custom-software-development-services\">Custom Software Development</a> services to learn how we build tailored solutions."
     },
     {
       type: "heading",
@@ -64,7 +64,7 @@ const customSoftwareVsSaas = {
     },
     {
       type: "paragraph",
-      text: "Businesses can start using SaaS almost immediately without software development. If you are looking to build a SaaS product, check out our <a href=\"/services/saas-product-development\">SaaS Product Development</a> services."
+      text: "Businesses can start using SaaS almost immediately without custom software development. If you are looking to build a SaaS product, check out our <a href=\"/services/saas-product-development-services\">SaaS Product Development</a> services."
     },
     {
       type: "paragraph",

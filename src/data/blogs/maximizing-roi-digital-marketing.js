@@ -1,7 +1,7 @@
 const maximizingRoiDigitalMarketing = {
   id: "maximizing-roi-digital-marketing",
-  title: "Maximizing ROI: High-Impact Digital Marketing Trends",
-  description: "Discover the top digital marketing channels, content strategies, and analytics tactics that will drive qualified leads and maximize budget efficiency.",
+  title: "Maximizing ROI: High-Impact Digital Marketing Services Trends",
+  description: "Discover the top digital marketing services channels, content strategies, and analytics tactics that will drive qualified leads and maximize budget efficiency.",
   date: "June 28, 2026",
   readTime: "5 min read",
   author: {
@@ -10,7 +10,7 @@ const maximizingRoiDigitalMarketing = {
     avatar:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
   },
-  category: "Digital Marketing",
+  category: "Digital Marketing Services",
   coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
   content: [
     {
@@ -92,7 +92,7 @@ const maximizingRoiDigitalMarketing = {
     },
     {
       type: "paragraph",
-      text: "An effective digital marketing campaign requires alignment between engineering and marketing. Ensure your landing pages load in under 1.5 seconds, present a clear call-to-action (CTA), and feed tracking data correctly into your analytics stack."
+      text: "An effective digital marketing services campaign requires alignment between engineering and marketing. Ensure your landing pages load in under 1.5 seconds, present a clear call-to-action (CTA), and feed tracking data correctly into your analytics stack."
     }
   ],
   faqs: [

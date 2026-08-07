@@ -26,7 +26,7 @@ const WhyChooseUsPage = () => {
         "Custom Software Development",
         "Web Application Development",
         "Mobile App Development",
-        "AI Solutions & Automation",
+        "AI Development Services & Automation",
         "Cloud & SaaS Development",
         "UI/UX Design",
         "API Integrations",
@@ -154,14 +154,14 @@ const WhyChooseUsPage = () => {
                 "We work with startups, SMEs, and enterprises across different industries that need custom software, web applications, mobile apps, AI solutions, cloud platforms, automation systems, and scalable digital products.",
         },
         {
-            question: "Do you only build websites, or do you offer full software development services?",
+            question: "Do you only build websites, or do you offer full custom software development services?",
             answer:
-                "SyncTech Software Solutions offers end-to-end software development services including custom software development, web application development, mobile app development, AI solutions, cloud services, UI/UX design, API integrations, testing, deployment, and maintenance.",
+                "SyncTech Software Solutions offers end-to-end custom software development services including custom software development, web application development, mobile app development, AI solutions, cloud services, UI/UX design, API integrations, testing, deployment, and maintenance.",
         },
         {
             question: "How does SyncTech ensure software quality and project success?",
             answer:
-                "We follow a structured software development process that includes requirement analysis, planning, UI/UX design, agile development, quality assurance testing, deployment, and ongoing support. This helps us maintain quality, transparency, and alignment with business goals.",
+                "We follow a structured custom software development process that includes requirement analysis, planning, UI/UX design, agile development, quality assurance testing, deployment, and ongoing support. This helps us maintain quality, transparency, and alignment with business goals.",
         },
         {
             question: "Do you provide post-launch support and maintenance?",
@@ -207,7 +207,7 @@ const WhyChooseUsPage = () => {
                                     <span className="block bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 bg-clip-text text-transparent">
                                         Custom Software Development,
                                     </span>
-                                    Web, Mobile & AI Solutions
+                                    Web, Mobile & AI Development Services
                                 </h1>
                             </Reveal>
 
@@ -230,7 +230,7 @@ const WhyChooseUsPage = () => {
                                         "Custom Software Development",
                                         "Web Application Development",
                                         "Mobile App Development",
-                                        "AI Solutions",
+                                        "AI Development Services",
                                         "Cloud Application Development",
                                         "Scalable Digital Products",
                                     ].map((item) => (
@@ -320,7 +320,7 @@ const WhyChooseUsPage = () => {
                                         20+ Projects Delivered
                                     </p>
                                     <p className="mt-2 text-sm leading-relaxed text-slate-300">
-                                        Across software development, web applications, mobile apps, and AI
+                                        Across custom software development, web applications, mobile apps, and AI
                                         solutions.
                                     </p>
                                 </div>
@@ -362,7 +362,7 @@ const WhyChooseUsPage = () => {
 
                         <Reveal delay={300}>
                             <p className="mt-8 text-lg leading-relaxed text-slate-600">
-                                Choosing the right software development company is about more than
+                                Choosing the right custom software development company is about more than
                                 technical skills. It’s about finding a team that understands your
                                 business goals, communicates clearly, builds reliable solutions,
                                 and stays committed after launch. SyncTech Software Solutions
@@ -390,7 +390,7 @@ const WhyChooseUsPage = () => {
                                 Why Businesses Work With Us
                             </span>
                             <h2 className="text-4xl md:text-5xl font-bold leading-tight text-blue-800">
-                                Key Reasons to Choose SyncTech for Software Development
+                                Key Reasons to Choose SyncTech for Custom Software Development
                             </h2>
                             <p className="mt-6 text-lg leading-relaxed text-slate-600">
                                 We build digital solutions that are aligned with business goals,
@@ -440,7 +440,7 @@ const WhyChooseUsPage = () => {
                                 <h2 className="text-4xl md:text-5xl font-bold leading-tight text-blue-800">
                                     Deep Technical Expertise Across
                                     <span className="block bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 bg-clip-text text-transparent">
-                                        Software, Web, Mobile, Cloud, and AI Solutions
+                                        Software, Web, Mobile, Cloud, and AI Development Services
                                     </span>
                                 </h2>
                             </Reveal>
@@ -499,7 +499,7 @@ const WhyChooseUsPage = () => {
                             <p className="mt-6 text-lg leading-relaxed text-slate-600">
                                 We combine structured execution with agile flexibility so your
                                 project moves forward with clarity, quality, and confidence at
-                                every stage of the software development lifecycle.
+                                every stage of the custom software development lifecycle.
                             </p>
                         </div>
                     </Reveal>
@@ -626,7 +626,7 @@ const WhyChooseUsPage = () => {
                             </h2>
                             <p className="mt-6 text-lg leading-relaxed text-slate-600">
                                 Here are some common questions businesses ask before choosing
-                                SyncTech Software Solutions as their software development partner.
+                                SyncTech Software Solutions as their custom software development partner.
                             </p>
                         </div>
                     </Reveal>
@@ -664,7 +664,7 @@ const WhyChooseUsPage = () => {
                             </span>
 
                             <h2 className="mt-6 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-                                Looking for a Software Development Partner You Can Rely On?
+                                Looking for a Custom Software Development Partner You Can Rely On?
                             </h2>
 
                             <p className="mx-auto mt-6 max-w-3xl text-base md:text-lg leading-relaxed text-blue-50">

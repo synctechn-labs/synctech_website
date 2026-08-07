@@ -22,7 +22,7 @@ const top10MobileAppDevelopmentCompaniesInChennai = {
     },
     {
       type: "paragraph",
-      text: "Chennai has become one of India's leading technology hubs, home to numerous software development companies offering Android, iOS, Flutter, React Native, and cross-platform app development services. However, not every company delivers the same level of expertise, quality, or post-launch support.",
+      text: "Chennai has become one of India's leading technology hubs, home to numerous custom software development companies offering Android, iOS, Flutter, React Native, and cross-platform app development services. However, not every company delivers the same level of expertise, quality, or post-launch support.",
     },
     {
       type: "paragraph",
@@ -55,7 +55,7 @@ const top10MobileAppDevelopmentCompaniesInChennai = {
         "Experienced mobile app development teams",
         "Competitive development costs",
         "Access to modern technologies and frameworks",
-        "Agile software development process",
+        "Agile custom software development process",
         "Strong quality assurance practices",
         "Reliable maintenance and post-launch support",
         "Faster project delivery",
@@ -145,7 +145,7 @@ const top10MobileAppDevelopmentCompaniesInChennai = {
       type: "list",
       items: [
         "Enterprise Mobile Applications",
-        "AI Solutions",
+        "AI Development Services",
         "Cloud Applications",
         "SaaS Product Development",
       ],
@@ -171,7 +171,7 @@ const top10MobileAppDevelopmentCompaniesInChennai = {
       type: "list",
       items: [
         "Mobile App Development",
-        "Web Development",
+        "Custom Web Development",
         "Enterprise Software Solutions",
         "UI/UX Design",
       ],
@@ -249,7 +249,7 @@ const top10MobileAppDevelopmentCompaniesInChennai = {
       items: [
         "Enterprise Mobility",
         "Product Engineering",
-        "AI Solutions",
+        "AI Development Services",
         "Cloud Applications",
       ],
     },
@@ -262,7 +262,7 @@ const top10MobileAppDevelopmentCompaniesInChennai = {
     },
     {
       type: "paragraph",
-      text: "DCKAP provides custom mobile application development with expertise in eCommerce, ERP integration, manufacturing, and B2B software solutions. The company focuses on helping businesses improve operational efficiency through digital transformation.",
+      text: "DCKAP provides custom custom mobile app development with expertise in eCommerce, ERP integration, manufacturing, and B2B software solutions. The company focuses on helping businesses improve operational efficiency through digital transformation.",
     },
     {
       type: "heading",
@@ -575,7 +575,7 @@ const top10MobileAppDevelopmentCompaniesInChennai = {
     },
     {
       type: "paragraph",
-      text: "If you're looking for a reliable mobile app development company in Chennai, Synctechn Software Solution offers comprehensive mobile application development services tailored to your business goals. From idea validation and UI/UX design to development, deployment, and long-term maintenance, the company focuses on building secure, scalable, and user-centric mobile applications that drive measurable business growth.",
+      text: "If you're looking for a reliable mobile app development company in Chennai, Synctechn Software Solution offers comprehensive custom mobile app development services tailored to your business goals. From idea validation and UI/UX design to development, deployment, and long-term maintenance, the company focuses on building secure, scalable, and user-centric mobile applications that drive measurable business growth.",
     },
     {
       type: "paragraph",

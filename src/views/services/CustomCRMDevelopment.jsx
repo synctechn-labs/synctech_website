@@ -25,14 +25,14 @@ import {
 
 export const metadata = {
   title:
-    "Custom CRM Development Company | CRM Software Development Services | SyncTechn",
+    "Custom CRM Development Company | CRM Custom Software Development Services | SyncTechn",
 
   description:
     "SyncTechn develops custom CRM software tailored to your sales, customer support, marketing, and business operations. Build scalable CRM solutions with lead management, sales automation, customer portals, workflow automation, analytics, and third-party integrations.",
 
   keywords: [
     "custom CRM development",
-    "CRM software development",
+    "CRM custom software development",
     "CRM development company",
     "customer relationship management software",
     "custom CRM software",
@@ -60,7 +60,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/custom-crm-development",
+      "https://synctechn.com/services/custom-crm-development-services",
   },
 
   openGraph: {
@@ -71,7 +71,7 @@ export const metadata = {
       "Develop secure and scalable CRM software with lead management, sales automation, workflow automation, customer portals, analytics, and enterprise integrations.",
 
     url:
-      "https://synctechn.com/services/custom-crm-development",
+      "https://synctechn.com/services/custom-crm-development-services",
 
     siteName: "SyncTechn",
 
@@ -81,7 +81,7 @@ export const metadata = {
 
     images: [
       {
-        url: "/images/services/custom-crm-development-og.webp",
+        url: "/images/services/custom-crm-development-services-og.webp",
         width: 1200,
         height: 630,
         alt: "Custom CRM Development Services"
@@ -99,7 +99,7 @@ export const metadata = {
       "Build custom CRM software with sales automation, lead management, workflow automation, customer engagement tools, and enterprise integrations.",
 
     images: [
-      "/images/services/custom-crm-development-og.webp"
+      "/images/services/custom-crm-development-services-og.webp"
     ]
   },
 
@@ -204,7 +204,7 @@ servicesSuite: {
     },
     {
       "id": "system-integration",
-      "title": "Business System Integration Hub",
+      "title": "Business System Integration",
       "desc": "Connect disparate business software into a unified ecosystem. We ensure your ERP, CRM, marketing, and support tools speak the same language.",
       "features": [
         "Data Mapping",
@@ -233,7 +233,7 @@ servicesSuite: {
   ]
 },
 industries: {
-  title: "Custom CRM Solutions for Every Industry",
+  title: "Custom CRM Development Services for Every Industry",
 
   subtitle:
     "Every business manages customer relationships differently. SyncTechn develops industry-specific CRM software that streamlines customer interactions, automates sales processes, improves team collaboration, and delivers valuable business insights through centralized customer management.",

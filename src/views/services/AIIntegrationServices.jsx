@@ -33,13 +33,13 @@ export const metadata = {
     "llm integration",
     "openai integration",
     "machine learning integration",
-    "enterprise ai solutions",
+    "enterprise ai development services",
     "ai consulting company",
     "custom ai development",
     "cognitive services integration",
     "ai automation",
     "chatgpt api integration",
-    "generative ai solutions",
+    "generative ai development services",
     "business ai implementation",
     "predictive analytics",
     "ai powered software"
@@ -191,7 +191,7 @@ servicesSuite: {
     },
     {
       "id": "ai-email",
-      "title": "AI Email Operations Automation",
+      "title": "AI Email Automation",
       "desc": "Automate your inbox with AI that reads, categorizes, drafts replies, and routes customer inquiries to the appropriate department instantly.",
       "features": [
         "Intent Recognition",
@@ -205,7 +205,7 @@ servicesSuite: {
     },
     {
       "id": "ai-document",
-      "title": "AI Document Verification Systems",
+      "title": "AI Document Verification",
       "desc": "Streamline compliance and onboarding with AI systems that automatically extract, verify, and validate data from uploaded documents and IDs.",
       "features": [
         "OCR Technology",
