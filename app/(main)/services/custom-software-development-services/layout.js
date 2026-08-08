@@ -32,7 +32,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/software-development",
+      "https://synctechn.com/services/software-development/",
   },
 
   openGraph: {
@@ -43,7 +43,7 @@ export const metadata = {
       "Build secure, scalable, and future-ready custom software solutions including enterprise applications, SaaS platforms, business software, APIs, AI-powered solutions, and cloud-native applications.",
 
     url:
-      "https://synctechn.com/services/software-development",
+      "https://synctechn.com/services/software-development/",
 
     siteName: "SyncTechn",
 
@@ -94,8 +94,8 @@ export default function CustomSoftwareLayout({ children }) {
         "url": "https://synctechn.com",
         "logo": "https://synctechn.com/assets/logo.png",
         "sameAs": [
-          "https://www.instagram.com/synctechn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-          "https://www.linkedin.com/company/synctechn/"
+          "https://www.instagram.com/synctechn/",
+          "https://www.linkedin.com/company/synctechn/posts/?feedView=all"
         ],
         "contactPoint": {
           "@type": "ContactPoint",

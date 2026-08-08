@@ -17,7 +17,7 @@ const Portfolio = () => {
                 goals.
               </p>
             </div>
-            <button className="px-8 py-3 bg-slate-900 text-white font-bold rounded-lg hover:bg-slate-800 transition-all shadow-lg hover:shadow-xl">
+            <button className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-cyan-500/25 hover:shadow-lg text-white font-bold rounded-lg transition-all duration-300 hover:-translate-y-0.5">
               View All Projects
             </button>
           </div>

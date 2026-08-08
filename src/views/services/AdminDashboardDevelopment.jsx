@@ -62,7 +62,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/admin-dashboard-development-services",
+      "https://synctechn.com/services/admin-dashboard-development-services/",
   },
 
   openGraph: {
@@ -73,7 +73,7 @@ export const metadata = {
       "Develop secure, scalable, and modern admin dashboards with analytics, reporting, user management, workflow automation, and real-time business insights.",
 
     url:
-      "https://synctechn.com/services/admin-dashboard-development-services",
+      "https://synctechn.com/services/admin-dashboard-development-services/",
 
     siteName: "SyncTechn",
 

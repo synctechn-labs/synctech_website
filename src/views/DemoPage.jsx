@@ -410,7 +410,7 @@ export default function DemoPage() {
             </button>
             <a
               href="#pricing"
-              className="glass-button-glow px-5 py-2 flex items-center justify-center text-white text-sm font-semibold shadow-[0_0_20px_rgba(59,130,246,0.3)]"
+              className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-cyan-500/25 hover:shadow-lg rounded-full transition-all duration-300 hover:-translate-y-0.5 px-5 py-2 flex items-center justify-center text-white text-sm font-semibold shadow-[0_0_20px_rgba(59,130,246,0.3)]"
             >
               Book a Demo
             </a>
@@ -503,7 +503,7 @@ export default function DemoPage() {
             </a>
             <a
               href="#pricing"
-              className="glass-button-glow w-full sm:w-auto px-8 py-3.5 text-white text-sm font-semibold flex items-center justify-center gap-2"
+              className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-cyan-500/25 hover:shadow-lg rounded-full transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto px-8 py-3.5 text-white text-sm font-semibold flex items-center justify-center gap-2"
             >
               Book a Demo
               <ArrowRight size={16} />
@@ -1037,7 +1037,7 @@ export default function DemoPage() {
                     </li>
                   </ul>
                 </div>
-                <button className="glass-button-glow w-full mt-8 py-3 text-white font-semibold text-sm flex items-center justify-center">
+                <button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-cyan-500/25 hover:shadow-lg rounded-xl transition-all duration-300 hover:-translate-y-0.5 w-full mt-8 py-3 text-white font-semibold text-sm flex items-center justify-center">
                   Get started
                 </button>
               </div>

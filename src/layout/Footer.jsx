@@ -168,7 +168,7 @@ const Footer = () => {
                   <Facebook size={18} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/synctech-software-solution/"
+                  href="https://www.linkedin.com/company/synctechn/posts/?feedView=all"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
@@ -176,7 +176,7 @@ const Footer = () => {
                   <Linkedin size={18} />
                 </a>
                 <a
-                  href="https://www.instagram.com/synctech_software_solution/"
+                  href="https://www.instagram.com/synctechn/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-slate-400 hover:text-blue-400 transition-colors duration-300"

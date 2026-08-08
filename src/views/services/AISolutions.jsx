@@ -62,7 +62,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/ai-development",
+      "https://synctechn.com/services/ai-development/",
   },
 
   openGraph: {
@@ -73,7 +73,7 @@ export const metadata = {
       "Build intelligent AI solutions including Generative AI, AI Chatbots, Machine Learning, Computer Vision, NLP, AI Agents, Predictive Analytics, and enterprise AI automation.",
 
     url:
-      "https://synctechn.com/services/ai-development",
+      "https://synctechn.com/services/ai-development/",
 
     siteName: "SyncTechn",
 

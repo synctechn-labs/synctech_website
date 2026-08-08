@@ -21,7 +21,7 @@ const Contact = () => {
             Let’s build powerful digital solutions for your business.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <button className="px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white rounded-xl font-bold text-lg transition-all shadow-lg shadow-primary-500/20 hover:-translate-y-1">
+            <button className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-cyan-500/25 hover:shadow-lg text-white rounded-xl font-bold text-lg transition-all duration-300 hover:-translate-y-0.5">
               👉 Get Free Consultation
             </button>
             <button className="px-8 py-4 bg-white hover:bg-slate-50 text-slate-900 border border-slate-200 rounded-xl font-bold text-lg transition-all hover:-translate-y-1 shadow-sm">
@@ -148,7 +148,7 @@ const Contact = () => {
                   ></textarea>
                 </div>
 
-                <button className="w-full py-4 bg-primary-600 hover:bg-primary-700 text-white rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2 mt-4 shadow-lg shadow-primary-600/20">
+                <button className="w-full py-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-cyan-500/25 hover:shadow-lg text-white rounded-xl font-bold text-lg transition-all duration-300 flex items-center justify-center gap-2 mt-4 hover:-translate-y-0.5">
                   Send Request
                   <Send size={18} />
                 </button>

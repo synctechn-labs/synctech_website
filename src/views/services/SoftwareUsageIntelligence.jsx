@@ -43,7 +43,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/software-usage-analytics-services",
+      "https://synctechn.com/services/software-usage-analytics-services/",
   },
 
   openGraph: {
@@ -54,7 +54,7 @@ export const metadata = {
       "Understand exactly how users interact with your software. We build custom telemetry and analytics platforms for deep product insights.",
 
     url:
-      "https://synctechn.com/services/software-usage-analytics-services",
+      "https://synctechn.com/services/software-usage-analytics-services/",
 
     siteName: "SyncTechn",
 

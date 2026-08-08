@@ -53,7 +53,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/operations-exception-management-software-services",
+      "https://synctechn.com/services/operations-exception-management-software-services/",
   },
 
   openGraph: {
@@ -64,7 +64,7 @@ export const metadata = {
       "Develop intelligent Operations Exception Management with real-time monitoring, automated alerts, incident management, workflow automation, reporting, and enterprise integrations.",
 
     url:
-      "https://synctechn.com/services/operations-exception-management-software-services",
+      "https://synctechn.com/services/operations-exception-management-software-services/",
 
     siteName: "SyncTechn",
 

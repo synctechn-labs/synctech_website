@@ -62,7 +62,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/saas-product-development-services",
+      "https://synctechn.com/services/saas-product-development-services/",
   },
 
   openGraph: {
@@ -73,7 +73,7 @@ export const metadata = {
       "Build secure, scalable, and cloud-native SaaS products with multi-tenant architecture, subscription management, API integrations, and modern software engineering.",
 
     url:
-      "https://synctechn.com/services/saas-product-development-services",
+      "https://synctechn.com/services/saas-product-development-services/",
 
     siteName: "SyncTechn",
 

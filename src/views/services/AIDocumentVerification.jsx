@@ -44,7 +44,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/ai-document-verification-services",
+      "https://synctechn.com/services/ai-document-verification-services/",
   },
 
   openGraph: {
@@ -55,7 +55,7 @@ export const metadata = {
       "Protect your business from fraud. We build AI systems that instantly verify IDs, passports, and financial documents with pixel-perfect accuracy.",
 
     url:
-      "https://synctechn.com/services/ai-document-verification-services",
+      "https://synctechn.com/services/ai-document-verification-services/",
 
     siteName: "SyncTechn",
 

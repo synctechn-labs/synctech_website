@@ -46,7 +46,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/ai-quality-control-solutions-services",
+      "https://synctechn.com/services/ai-quality-control-solutions-services/",
   },
 
   openGraph: {
@@ -57,7 +57,7 @@ export const metadata = {
       "Catch defects before they ship. We build custom computer vision platforms that automate visual quality control on manufacturing and assembly lines.",
 
     url:
-      "https://synctechn.com/services/ai-quality-control-solutions-services",
+      "https://synctechn.com/services/ai-quality-control-solutions-services/",
 
     siteName: "SyncTechn",
 

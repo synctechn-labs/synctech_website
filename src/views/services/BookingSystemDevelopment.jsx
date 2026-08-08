@@ -60,7 +60,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/appointment-booking-software-development-services",
+      "https://synctechn.com/services/appointment-booking-software-development-services/",
   },
 
   openGraph: {
@@ -71,7 +71,7 @@ export const metadata = {
       "Develop secure online appointment booking system development with calendar management, automated reminders, online payments, customer portals, and workflow automation.",
 
     url:
-      "https://synctechn.com/services/appointment-booking-software-development-services",
+      "https://synctechn.com/services/appointment-booking-software-development-services/",
 
     siteName: "SyncTechn",
 

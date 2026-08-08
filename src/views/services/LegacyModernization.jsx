@@ -62,7 +62,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/legacy-software-modernization-services",
+      "https://synctechn.com/services/legacy-software-modernization-services/",
   },
 
   openGraph: {
@@ -73,7 +73,7 @@ export const metadata = {
       "Modernize legacy software, migrate enterprise applications to the cloud, improve performance, enhance security, and extend software lifespan with SyncTechn.",
 
     url:
-      "https://synctechn.com/services/legacy-software-modernization-services",
+      "https://synctechn.com/services/legacy-software-modernization-services/",
 
     siteName: "SyncTechn",
 

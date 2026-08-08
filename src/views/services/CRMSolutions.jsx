@@ -67,7 +67,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/crm-development-services-development",
+      "https://synctechn.com/services/crm-development-services-development/",
   },
 
   openGraph: {
@@ -78,7 +78,7 @@ export const metadata = {
       "Build secure and scalable CRM software to automate sales, customer service, marketing, lead management, and business workflows with SyncTechn.",
 
     url:
-      "https://synctechn.com/services/crm-development-services-development",
+      "https://synctechn.com/services/crm-development-services-development/",
 
     siteName: "SyncTechn",
 

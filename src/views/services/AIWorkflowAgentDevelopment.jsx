@@ -43,7 +43,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/ai-workflow-agent-development-services",
+      "https://synctechn.com/services/ai-workflow-agent-development-services/",
   },
 
   openGraph: {
@@ -54,7 +54,7 @@ export const metadata = {
       "Deploy autonomous AI agents that can reason, use external APIs, and execute complex business workflows independently.",
 
     url:
-      "https://synctechn.com/services/ai-workflow-agent-development-services",
+      "https://synctechn.com/services/ai-workflow-agent-development-services/",
 
     siteName: "SyncTechn",
 

@@ -44,7 +44,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/ai-email-automation-services",
+      "https://synctechn.com/services/ai-email-automation-services/",
   },
 
   openGraph: {
@@ -55,7 +55,7 @@ export const metadata = {
       "Automate your corporate inboxes. We build AI systems that read, route, and reply to thousands of emails daily with human-like accuracy.",
 
     url:
-      "https://synctechn.com/services/ai-email-automation-services",
+      "https://synctechn.com/services/ai-email-automation-services/",
 
     siteName: "SyncTechn",
 

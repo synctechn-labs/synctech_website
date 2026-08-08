@@ -121,13 +121,13 @@ const About = () => {
                     py-4
                     rounded-full
                     bg-gradient-to-r
-                    from-blue-600
-                    to-cyan-500
+                    from-cyan-500
+                    to-blue-600
                     text-white
                     font-semibold
-                    shadow-xl
-                    hover:-translate-y-1
-                    hover:shadow-blue-500/30
+                    hover:-translate-y-0.5
+                    hover:shadow-cyan-500/25
+                    hover:shadow-lg
                     transition-all
                     duration-300
                   "

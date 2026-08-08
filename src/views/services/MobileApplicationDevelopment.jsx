@@ -60,7 +60,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/custom-mobile-application-development-services",
+      "https://synctechn.com/services/custom-mobile-application-development-services/",
   },
 
   openGraph: {
@@ -71,7 +71,7 @@ export const metadata = {
       "Develop secure Android, iOS, Flutter, and cross-platform mobile applications with modern UI/UX, cloud integration, enterprise security, and scalable architecture.",
 
     url:
-      "https://synctechn.com/services/custom-mobile-application-development-services",
+      "https://synctechn.com/services/custom-mobile-application-development-services/",
 
     siteName: "SyncTechn",
 

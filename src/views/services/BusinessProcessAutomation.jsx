@@ -50,7 +50,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/business-process-automation-services",
+      "https://synctechn.com/services/business-process-automation-services/",
   },
 
   openGraph: {
@@ -61,7 +61,7 @@ export const metadata = {
       "Automate repetitive tasks, streamline operations, and boost employee productivity with custom Business Process Automation (BPA) solutions from SyncTechn.",
 
     url:
-      "https://synctechn.com/services/business-process-automation-services",
+      "https://synctechn.com/services/business-process-automation-services/",
 
     siteName: "SyncTechn",
 

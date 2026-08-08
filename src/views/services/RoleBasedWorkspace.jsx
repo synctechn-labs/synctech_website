@@ -61,7 +61,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/role-based-business-workspace-development-services",
+      "https://synctechn.com/services/role-based-business-workspace-development-services/",
   },
 
   openGraph: {
@@ -72,7 +72,7 @@ export const metadata = {
       "Develop secure role-based business workspaces with employee portals, department dashboards, workflow automation, collaboration tools, access control, and enterprise integrations.",
 
     url:
-      "https://synctechn.com/services/role-based-business-workspace-development-services",
+      "https://synctechn.com/services/role-based-business-workspace-development-services/",
 
     siteName: "SyncTechn",
 

@@ -62,7 +62,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/custom-web-application-development-services",
+      "https://synctechn.com/services/custom-web-application-development-services/",
   },
 
   openGraph: {
@@ -73,7 +73,7 @@ export const metadata = {
       "Develop secure, scalable, and cloud-ready web applications for startups, enterprises, and growing businesses using modern technologies.",
 
     url:
-      "https://synctechn.com/services/custom-web-application-development-services",
+      "https://synctechn.com/services/custom-web-application-development-services/",
 
     siteName: "SyncTechn",
 

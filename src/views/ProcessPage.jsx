@@ -281,7 +281,7 @@ const ProcessPage = () => {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
                 href="/contact-us"
-                className="inline-flex items-center justify-center rounded-xl bg-cyan-500 px-6 py-3.5 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400"
+                className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-cyan-500/25 hover:shadow-lg px-6 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5"
               >
                 Start Your Project
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -614,7 +614,7 @@ const ProcessPage = () => {
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a
                 href="/contact-us"
-                className="inline-flex items-center justify-center rounded-xl bg-cyan-500 px-6 py-3.5 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400"
+                className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-cyan-500/25 hover:shadow-lg px-6 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5"
               >
                 Get a Free Consultation
                 <ArrowRight className="ml-2 h-4 w-4" />

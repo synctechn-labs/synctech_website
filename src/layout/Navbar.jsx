@@ -95,10 +95,10 @@ const Navbar = () => {
     <>
       {/* ---- Main Navbar ---- */}
       <header
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-[#060910] ${
           isScrolled
-            ? "bg-[#060910]/30 backdrop-blur-xl border-b border-white/[0.04]"
-            : "bg-[#060910] border-b border-transparent"
+            ? "border-b border-white/[0.04] shadow-lg"
+            : "border-b border-transparent"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
@@ -182,7 +182,7 @@ const Navbar = () => {
           <div className="hidden lg:block">
             <Link
               href="/contact-us"
-              className="glass-button-glow px-5 py-2.5 text-white text-sm font-semibold flex items-center justify-center shadow-[0_0_20px_rgba(59,130,246,0.3)]"
+              className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-cyan-500/25 hover:shadow-lg px-6 py-2.5 text-white text-sm font-bold flex items-center justify-center rounded-full transition-all duration-300"
             >
               Contact Us
             </Link>
@@ -257,7 +257,7 @@ const Navbar = () => {
               <Link
                 href="/contact-us"
                 onClick={() => setIsOpen(false)}
-                className="w-full text-center py-3 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold text-sm shadow-[0_0_20px_rgba(59,130,246,0.3)]"
+                className="w-full flex items-center justify-center py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-cyan-500/25 hover:shadow-lg text-white font-semibold text-sm transition-all duration-300"
               >
                 Contact Us
               </Link>

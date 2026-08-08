@@ -108,7 +108,7 @@ const Hero = () => {
             <div className="flex flex-wrap justify-center gap-4 mt-12">
               <Link
                 href="/contact-us"
-                className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-blue-700 to-cyan-500 text-white font-semibold shadow-xl hover:-translate-y-1 hover:shadow-blue-500/30 transition-all duration-300"
+                className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-cyan-500/25 hover:shadow-lg text-white font-semibold transition-all duration-300 hover:-translate-y-0.5"
               >
                 Get Free Consultation
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

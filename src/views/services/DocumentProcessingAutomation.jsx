@@ -43,7 +43,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/document-processing-automation-services",
+      "https://synctechn.com/services/document-processing-automation-services/",
   },
 
   openGraph: {
@@ -54,7 +54,7 @@ export const metadata = {
       "Turn unstructured documents into actionable data instantly. Automate data entry and extraction with our AI-powered Intelligent Document Processing.",
 
     url:
-      "https://synctechn.com/services/document-processing-automation-services",
+      "https://synctechn.com/services/document-processing-automation-services/",
 
     siteName: "SyncTechn",
 

@@ -101,7 +101,7 @@ export default function BlogDetails() {
   }
 
   const siteUrl = "https://synctechn.com";
-  const canonicalUrl = `${siteUrl}/blog/${blog.id}`;
+  const canonicalUrl = `${siteUrl}/blog/${blog.id}/`;
   const shareUrl = typeof window !== 'undefined' ? window.location.href : canonicalUrl;
   const shareTitle = blog.title;
   const publishedDate = new Date(blog.date).toString() !== "Invalid Date" ? new Date(blog.date).toISOString() : new Date().toISOString();

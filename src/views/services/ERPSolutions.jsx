@@ -59,7 +59,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/custom-erp-software-development-services",
+      "https://synctechn.com/services/custom-erp-software-development-services/",
   },
 
   openGraph: {
@@ -70,7 +70,7 @@ export const metadata = {
       "Develop secure, scalable, and intelligent ERP software that unifies your business operations, automates workflows, and improves organizational efficiency.",
 
     url:
-      "https://synctechn.com/services/custom-erp-software-development-services",
+      "https://synctechn.com/services/custom-erp-software-development-services/",
 
     siteName: "SyncTechn",
 

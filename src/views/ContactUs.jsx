@@ -133,7 +133,7 @@ const ContactUs = () => {
     e.preventDefault();
     setStatus({ type: "loading", message: "Sending message..." });
 
-    const googleScriptUrl = import.meta.env.VITE_GOOGLE_SHEETS_SCRIPT_URL || "";
+    const googleScriptUrl = "https://script.google.com/macros/s/AKfycbwbD3RUzV7Yd3qHxMPieMIEpVCAq6sPXHHsMgzjGBQxtZMyU0-rTzP6CKM1vtm4hHA/exec";
 
     if (!googleScriptUrl || googleScriptUrl.includes("PLACEHOLDER")) {
       console.warn(
@@ -219,7 +219,7 @@ const ContactUs = () => {
             <Mail size={18} />
           </a>
           <a
-            href="https://www.linkedin.com/in/synctech-software-solution/"
+            href="https://www.linkedin.com/company/synctechn/posts/?feedView=all"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-700 transition-colors bg-blue-50 p-2 rounded-xl"
@@ -233,7 +233,7 @@ const ContactUs = () => {
             <Twitter size={18} />
           </a>
           <a
-            href="https://www.instagram.com/synctech_software_solution/"
+            href="https://www.instagram.com/synctechn/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-700 transition-colors bg-blue-50 p-2 rounded-xl"
@@ -386,7 +386,7 @@ const ContactUs = () => {
                 <button
                   type="submit"
                   disabled={status.type === "loading"}
-                  className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white font-bold rounded-full px-6 py-3 flex items-center justify-center gap-2 shadow-[0_8px_15px_-5px_rgba(37,99,235,0.5)] hover:-translate-y-0.5 transition-all duration-300 w-[180px] text-sm disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0"
+                  className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-cyan-500/25 hover:shadow-lg text-white font-bold rounded-full px-6 py-3 flex items-center justify-center gap-2 hover:-translate-y-0.5 transition-all duration-300 w-[180px] text-sm disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0"
                 >
                   <Send
                     size={14}

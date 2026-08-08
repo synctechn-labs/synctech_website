@@ -60,7 +60,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/customer-portal-development-services",
+      "https://synctechn.com/services/customer-portal-development-services/",
   },
 
   openGraph: {
@@ -71,7 +71,7 @@ export const metadata = {
       "Develop secure client and customer portals with self-service features, dashboards, document management, workflow automation, account management, and real-time communication.",
 
     url:
-      "https://synctechn.com/services/customer-portal-development-services",
+      "https://synctechn.com/services/customer-portal-development-services/",
 
     siteName: "SyncTechn",
 

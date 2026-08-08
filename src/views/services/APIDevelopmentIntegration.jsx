@@ -48,7 +48,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/api-development-integration-services",
+      "https://synctechn.com/services/api-development-integration-services/",
   },
 
   openGraph: {
@@ -59,7 +59,7 @@ export const metadata = {
       "Build a connected digital ecosystem. We develop robust, secure, and scalable APIs to power your web and mobile applications.",
 
     url:
-      "https://synctechn.com/services/api-development-integration-services",
+      "https://synctechn.com/services/api-development-integration-services/",
 
     siteName: "SyncTechn",
 

@@ -62,7 +62,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/white-label-software-development-services",
+      "https://synctechn.com/services/white-label-software-development-services/",
   },
 
   openGraph: {
@@ -73,7 +73,7 @@ export const metadata = {
       "Expand your software delivery capabilities with white label custom software development for agencies, startups, SaaS businesses, and enterprises.",
 
     url:
-      "https://synctechn.com/services/white-label-software-development-services",
+      "https://synctechn.com/services/white-label-software-development-services/",
 
     siteName: "SyncTechn",
 

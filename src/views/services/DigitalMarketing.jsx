@@ -74,7 +74,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/digital-marketing-services",
+      "https://synctechn.com/services/digital-marketing-services/",
   },
 
   openGraph: {
@@ -85,7 +85,7 @@ export const metadata = {
       "Grow your business with SEO, paid advertising, social media marketing, content marketing, email marketing, and performance marketing services from SyncTechn.",
 
     url:
-      "https://synctechn.com/services/digital-marketing-services",
+      "https://synctechn.com/services/digital-marketing-services/",
 
     siteName: "SyncTechn",
 

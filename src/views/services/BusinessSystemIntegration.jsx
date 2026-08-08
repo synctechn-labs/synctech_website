@@ -48,7 +48,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/business-system-integration-services",
+      "https://synctechn.com/services/business-system-integration-services/",
   },
 
   openGraph: {
@@ -59,7 +59,7 @@ export const metadata = {
       "Connect your disparate enterprise software into a unified ecosystem. We develop integration hubs that synchronize data in real-time and eliminate silos.",
 
     url:
-      "https://synctechn.com/services/business-system-integration-services",
+      "https://synctechn.com/services/business-system-integration-services/",
 
     siteName: "SyncTechn",
 

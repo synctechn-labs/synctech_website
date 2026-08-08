@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { ShieldCheck, CheckCheck, ChevronDown, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
+import LeadFormModal from "@/components/LeadFormModal/LeadFormModal";
 
 function FadeInUpCard({ children, delay = 0 }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,6 +37,43 @@ function FadeInUpCard({ children, delay = 0 }) {
     </div>
   );
 }
+
+const MidCTA = ({ title, desc, btnText, bgVariant = 1, phoneIcon = false }) => {
+  const isVariant2 = bgVariant === 2;
+  return (
+    <section className="w-full bg-[#050505] py-8 lg:py-12 px-6 lg:px-12">
+      <div className={`max-w-7xl mx-auto w-full rounded-[2rem] p-8 lg:p-10 flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden shadow-2xl ${isVariant2 ? 'bg-gradient-to-r from-blue-900 via-indigo-900 to-blue-800' : 'bg-gradient-to-r from-[#008ba3] via-[#005fb8] to-[#5b4bff]'}`}>
+        
+        {/* Decorative elements */}
+        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-white/10 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-black/30 rounded-full blur-[60px] translate-y-1/2 -translate-x-1/3 pointer-events-none"></div>
+
+        {/* Left Side Content */}
+        <div className="relative z-10 flex-1 max-w-4xl flex flex-col items-start text-left">
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-white mb-4 leading-tight">
+            {title}
+          </h2>
+          <p className="text-blue-50 text-base lg:text-lg leading-relaxed mb-6">
+            {desc}
+          </p>
+          <Link href="#contact" data-lead-trigger="true" className="inline-flex items-center justify-center gap-3 px-6 py-3.5 bg-white text-blue-900 font-bold rounded-full hover:bg-slate-100 hover:-translate-y-1 transition-all duration-300 shadow-xl text-sm lg:text-base whitespace-nowrap">
+            {phoneIcon ? (
+              <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            ) : (
+              <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+            )}
+            {btnText}
+          </Link>
+        </div>
+        
+        {/* Right Side Empty Space for Gradient */}
+        <div className="relative z-10 hidden lg:block lg:w-[20%]">
+        </div>
+
+      </div>
+    </section>
+  );
+};
 
 function HeroBackground({ bgImage, fallbackImg, defaultFallback }) {
   const fallback = fallbackImg || defaultFallback || "";
@@ -124,43 +162,43 @@ function HeroBackground({ bgImage, fallbackImg, defaultFallback }) {
 }
 
 const serviceRoutes = {
-  "Custom ERP Custom Software Development": "/services/custom-erp-software-development-services",
-  "SaaS Product Development": "/services/saas-product-development-services",
-  "Legacy Software Modernization": "/services/legacy-software-modernization-services",
-  "White-Label Custom Software Development": "/services/white-label-software-development-services",
-  "Custom Web Application Development": "/services/custom-web-application-development-services",
-  "Customer Portal Development": "/services/customer-portal-development-services",
-  "Admin Dashboard Development": "/services/admin-dashboard-development-services",
-  "Appointment Booking System Development": "/services/appointment-booking-software-development-services",
-  "Custom Mobile App Development": "/services/custom-mobile-application-development-services",
-  "Human Approval Workflow Automation": "/services/human-approval-workflow-automation-services",
-  "Role-Based Business Workspace Development": "/services/role-based-business-workspace-development-services",
-  "Operations Exception Management": "/services/operations-exception-management-software-services",
-  "Custom CRM Development": "/services/custom-crm-development-services",
-  "Business Process Automation": "/services/business-process-automation-services",
-  "Business System Integration": "/services/business-system-integration-services",
-  "API Development & Integration": "/services/api-development-integration-services",
-  "AI Integration Services": "/services/ai-integration-services",
-  "AI Workflow Agent Development": "/services/ai-workflow-agent-development-services",
-  "AI Email Automation": "/services/ai-email-automation-services",
-  "AI Document Verification": "/services/ai-document-verification-services",
-  "Document Processing Automation": "/services/document-processing-automation-services",
-  "Software Usage Analytics": "/services/software-usage-analytics-services",
-  "AI Quality Control": "/services/ai-quality-control-solutions-services",
-  "Micro-SaaS Development": "/services/micro-saas-development-services",
-  "Custom Software Development": "/services/custom-software-development-services",
-  "Custom Web Development": "/services/custom-web-development-services",
-  "Mobile App Development": "/services/mobile-app-development",
-  "CRM Development Services": "/services/crm-development-services",
-  "AI Development Services": "/services/ai-development-services",
-  "Digital Marketing Services": "/services/digital-marketing-services",
+  "Custom ERP Custom Software Development": "/services/custom-erp-software-development-services/",
+  "SaaS Product Development": "/services/saas-product-development-services/",
+  "Legacy Software Modernization": "/services/legacy-software-modernization-services/",
+  "White-Label Custom Software Development": "/services/white-label-software-development-services/",
+  "Custom Web Application Development": "/services/custom-web-application-development-services/",
+  "Customer Portal Development": "/services/customer-portal-development-services/",
+  "Admin Dashboard Development": "/services/admin-dashboard-development-services/",
+  "Appointment Booking System Development": "/services/appointment-booking-software-development-services/",
+  "Custom Mobile App Development": "/services/custom-mobile-application-development-services/",
+  "Human Approval Workflow Automation": "/services/human-approval-workflow-automation-services/",
+  "Role-Based Business Workspace Development": "/services/role-based-business-workspace-development-services/",
+  "Operations Exception Management": "/services/operations-exception-management-software-services/",
+  "Custom CRM Development": "/services/custom-crm-development-services/",
+  "Business Process Automation": "/services/business-process-automation-services/",
+  "Business System Integration": "/services/business-system-integration-services/",
+  "API Development & Integration": "/services/api-development-integration-services/",
+  "AI Integration Services": "/services/ai-integration-services/",
+  "AI Workflow Agent Development": "/services/ai-workflow-agent-development-services/",
+  "AI Email Automation": "/services/ai-email-automation-services/",
+  "AI Document Verification": "/services/ai-document-verification-services/",
+  "Document Processing Automation": "/services/document-processing-automation-services/",
+  "Software Usage Analytics": "/services/software-usage-analytics-services/",
+  "AI Quality Control": "/services/ai-quality-control-solutions-services/",
+  "Micro-SaaS Development": "/services/micro-saas-development-services/",
+  "Custom Software Development": "/services/custom-software-development-services/",
+  "Custom Web Development": "/services/custom-web-development-services/",
+  "Mobile App Development": "/services/mobile-app-development/",
+  "CRM Development Services": "/services/crm-development-services/",
+  "AI Development Services": "/services/ai-development-services/",
+  "Digital Marketing Services": "/services/digital-marketing-services/",
   
   // New Software Development service titles mappings
-  "Enterprise Software Development": "/services/custom-erp-software-development-services",
-  "Custom Application Development": "/services/custom-web-application-development-services",
-  "SaaS Product Engineering": "/services/saas-product-development-services",
-  "Business Process Automation (BPA) & AI Integration": "/services/business-process-automation-services",
-  "Custom API & Systems Integration": "/services/api-development-integration-services"
+  "Enterprise Software Development": "/services/custom-erp-software-development-services/",
+  "Custom Application Development": "/services/custom-web-application-development-services/",
+  "SaaS Product Engineering": "/services/saas-product-development-services/",
+  "Business Process Automation (BPA) & AI Integration": "/services/business-process-automation-services/",
+  "Custom API & Systems Integration": "/services/api-development-integration-services/"
 };
 
 const serviceToParentMap = {
@@ -236,6 +274,71 @@ const PARENT_SERVICES = {
   }
 };
 
+const getCtaContent = (shortName) => {
+  const nameLower = shortName.toLowerCase();
+  
+  if (nameLower.includes("mobile")) {
+    return {
+      title1: "Work with Mobile App Architects Who Understand Enterprise Challenges:",
+      desc1: "Multi-region data residency? Industry-specific compliance? Complex user hierarchies? You need custom mobile solutions to solve these unique challenges, not off-the-shelf templates.",
+      btn1: "Schedule Consultation with Mobile Expert",
+      title2: "Ready to Accelerate Your Mobile Transformation?",
+      desc2: "Leverage our deep industry expertise to build secure, scalable mobile applications tailored to your exact business needs.",
+      btn2: "Discuss Your Mobile App Project"
+    };
+  }
+  if (nameLower.includes("web") || nameLower.includes("portal")) {
+    return {
+      title1: "Work with Web Architects Who Understand Enterprise Challenges:",
+      desc1: "High traffic volumes? Complex third-party integrations? Stringent security requirements? You need custom web solutions engineered to scale seamlessly with your growing user base.",
+      btn1: "Schedule Consultation with Web Expert",
+      title2: "Ready to Accelerate Your Digital Transformation?",
+      desc2: "Leverage our deep industry expertise to build secure, scalable web applications tailored to your exact business needs.",
+      btn2: "Discuss Your Web Project"
+    };
+  }
+  if (nameLower.includes("crm")) {
+    return {
+      title1: "Work with CRM Architects Who Understand Enterprise Challenges:",
+      desc1: "Siloed customer data? Inefficient sales pipelines? Poor adoption rates? You need a custom CRM solution that perfectly aligns with your unique sales and operational workflows.",
+      btn1: "Schedule Consultation with CRM Expert",
+      title2: "Ready to Accelerate Your Business Operations?",
+      desc2: "Leverage our deep industry expertise to build a secure, highly customized CRM platform tailored to your exact business needs.",
+      btn2: "Discuss Your CRM Project"
+    };
+  }
+  if (nameLower.includes("ai") || nameLower.includes("artificial")) {
+    return {
+      title1: "Work with AI Architects Who Understand Enterprise Challenges:",
+      desc1: "Unstructured data overload? Manual bottleneck processes? You need bespoke AI solutions—from predictive models to intelligent automation—built specifically for your operational ecosystem.",
+      btn1: "Schedule Consultation with AI Expert",
+      title2: "Ready to Accelerate Your AI Transformation?",
+      desc2: "Leverage our deep AI expertise to build secure, scalable intelligent systems tailored to your exact business needs.",
+      btn2: "Discuss Your AI Project"
+    };
+  }
+  if (nameLower.includes("marketing") || nameLower.includes("seo")) {
+    return {
+      title1: "Work with Growth Architects Who Understand Enterprise Challenges:",
+      desc1: "Stagnant conversion rates? Inefficient ad spend? Disconnected analytics? You need data-driven digital strategies engineered to maximize ROI and scale your market presence.",
+      btn1: "Schedule Consultation with Marketing Expert",
+      title2: "Ready to Accelerate Your Market Growth?",
+      desc2: "Leverage our deep industry expertise to execute targeted, scalable marketing campaigns tailored to your exact business goals.",
+      btn2: "Discuss Your Marketing Strategy"
+    };
+  }
+  
+  // Default fallback
+  return {
+    title1: `Work with ${shortName} Architects Who Understand Enterprise Challenges:`,
+    desc1: "Multi-region data residency? Industry-specific compliance? Complex user hierarchies? You need custom solutions to solve these unique challenges, not off-the-shelf software.",
+    btn1: `Schedule Consultation with ${shortName} Expert`,
+    title2: "Ready to Accelerate Your Digital Transformation?",
+    desc2: `Leverage our deep industry expertise to build secure, scalable ${shortName.toLowerCase()} solutions tailored to your exact business needs.`,
+    btn2: "Discuss Your Project With Us"
+  };
+};
+
 export default function ServiceTemplate({ data, techStackComponent }) {
   const [activeService, setActiveService] = useState(0);
   const [openIndustry, setOpenIndustry] = useState(0);
@@ -247,8 +350,28 @@ export default function ServiceTemplate({ data, techStackComponent }) {
   const location = { pathname: usePathname() };
   const currentPath = location.pathname;
 
+  const serviceTitle = data?.hero?.title || "";
+  
+  let serviceCategory = "Software";
+  if (serviceToParentMap[serviceTitle]) {
+      serviceCategory = serviceToParentMap[serviceTitle];
+  } else {
+      // Safe fallback if title isn't in map
+      if (serviceTitle.match(/mobile/i)) serviceCategory = "Mobile App";
+      else if (serviceTitle.match(/web/i) || serviceTitle.match(/portal/i)) serviceCategory = "Web";
+      else if (serviceTitle.match(/crm/i)) serviceCategory = "CRM";
+      else if (serviceTitle.match(/ai /i) || serviceTitle.match(/artificial/i)) serviceCategory = "AI";
+      else if (serviceTitle.match(/marketing/i) || serviceTitle.match(/seo/i)) serviceCategory = "Marketing";
+      else serviceCategory = "Software";
+  }
+  
+  const ctaContent = getCtaContent(serviceCategory);
+
   let suiteServices = data?.servicesSuite?.services ? [...data.servicesSuite.services] : [];
-  const activeServiceInSuite = suiteServices.find(s => serviceRoutes[s.title] === currentPath);
+  const activeServiceInSuite = suiteServices.find(s => 
+    serviceRoutes[s.title] === currentPath || 
+    (serviceRoutes[s.title] && serviceRoutes[s.title].replace(/\/$/, "") === currentPath.replace(/\/$/, ""))
+  );
 
   if (activeServiceInSuite) {
     const parentName = serviceToParentMap[activeServiceInSuite.title];
@@ -260,22 +383,49 @@ export default function ServiceTemplate({ data, techStackComponent }) {
   const [captchaNum1, setCaptchaNum1] = useState(0);
   const [captchaNum2, setCaptchaNum2] = useState(0);
   const [captchaInput, setCaptchaInput] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
     setCaptchaNum1(Math.floor(Math.random() * 10) + 1);
     setCaptchaNum2(Math.floor(Math.random() * 10) + 1);
   }, []);
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
-    if (parseInt(captchaInput) === captchaNum1 + captchaNum2) {
-      navigate.push('/contact-us');
-    } else {
+    if (parseInt(captchaInput) !== captchaNum1 + captchaNum2) {
       alert("Incorrect captcha answer. Please try again.");
       setCaptchaNum1(Math.floor(Math.random() * 10) + 1);
       setCaptchaNum2(Math.floor(Math.random() * 10) + 1);
       setCaptchaInput("");
+      return;
     }
+    
+    const formData = new FormData(e.target);
+    formData.append("formType", "Service Leads");
+    
+    // Using the specific web app URL you provided
+    const scriptURL = "https://script.google.com/macros/s/AKfycbwbD3RUzV7Yd3qHxMPieMIEpVCAq6sPXHHsMgzjGBQxtZMyU0-rTzP6CKM1vtm4hHA/exec";
+    
+    if (!scriptURL) {
+      alert("Google Sheets integration is not configured.");
+      return;
+    }
+    
+    // Send in the background instantly
+    fetch(scriptURL, { 
+      method: 'POST', 
+      mode: 'no-cors',
+      body: formData,
+    }).catch(error => {
+      console.error('Error submitting form in background:', error);
+    });
+    
+    // Instant UI feedback
+    alert('Thank you! Your submission has been received.');
+    e.target.reset();
+    setCaptchaInput("");
+    setCaptchaNum1(Math.floor(Math.random() * 10) + 1);
+    setCaptchaNum2(Math.floor(Math.random() * 10) + 1);
   };
 
   const [timelineProgress, setTimelineProgress] = useState(0);
@@ -328,40 +478,32 @@ export default function ServiceTemplate({ data, techStackComponent }) {
         </div>
 
         {/* Left Side: Text */}
-        <div className="relative z-10 w-full lg:w-[60%] flex flex-col justify-center px-6 lg:px-20 py-32 lg:py-40">
+        <div className="relative z-10 w-full lg:w-[65%] flex flex-col justify-end px-6 lg:px-20 py-32 lg:py-40">
           <div className="relative text-white">
             {/* Heading */}
             <h1 className="text-4xl md:text-5xl xl:text-7xl font-black leading-[1.05] tracking-tight">
               {data?.hero?.title}
             </h1>
-
-            {/* Subtitle */}
-            <p className="mt-6 text-lg md:text-xl text-slate-200 leading-relaxed max-w-2xl">
-              {data?.hero?.subtitle}
-            </p>
-
-            {/* Paragraph */}
-            <p className="mt-6 text-base md:text-lg text-slate-300 leading-8 max-w-3xl">
-              {data?.hero?.paragraph}
-            </p>
           </div>
         </div>
 
         {/* Right Side: Transparent Blur + Form */}
-        <div className="w-full lg:w-[40%] bg-white/5 backdrop-blur-lg border-l border-white/10 flex flex-col justify-center px-6 lg:px-12 py-20 lg:py-32 relative z-10 shadow-[-20px_0_40px_rgba(0,0,0,0.3)]">
-          <div className="w-full max-w-lg mx-auto">
+        <div className="w-full lg:w-[40%] flex items-center justify-center p-6 lg:p-12 xl:p-16 relative z-10">
+          <div className="w-full max-w-lg mx-auto bg-black/40 backdrop-blur-3xl border border-white/10 rounded-3xl p-8 lg:p-10 shadow-[0_8px_40px_rgba(0,0,0,0.4)]">
             <h3 className="text-xl lg:text-2xl font-bold text-white mb-2">
               {data?.form?.title || "Let's Discuss Your App Vision"}
             </h3>
-            <p className="text-slate-300 text-sm mb-6">
+            {/* <p className="text-slate-300 text-sm mb-6">
               {data?.form?.desc || "Tell us about your project and we'll get back within 24 hours with a clear next step."}
-            </p>
+            </p> */}
 
             <form className="space-y-4 lg:space-y-5" onSubmit={handleFormSubmit}>
               <div>
                 <label className="block text-xs font-semibold text-slate-300 mb-1">Name</label>
                 <input
                   type="text"
+                  name="Name"
+                  required
                   placeholder="Full Name"
                   className="w-full bg-transparent border-b border-slate-500 focus:border-white text-white py-1.5 outline-none transition-colors placeholder:text-slate-500"
                 />
@@ -370,13 +512,15 @@ export default function ServiceTemplate({ data, techStackComponent }) {
               <div>
                 <label className="block text-xs font-semibold text-slate-300 mb-1">Contact Number</label>
                 <div className="flex gap-4">
-                  <select className="bg-transparent border-b border-slate-500 focus:border-white text-white py-1.5 outline-none cursor-pointer w-20 appearance-none">
+                  <select name="PhoneCode" className="bg-transparent border-b border-slate-500 focus:border-white text-white py-1.5 outline-none cursor-pointer w-20 appearance-none">
                     <option value="+91" className="text-slate-900">+91</option>
                     <option value="+1" className="text-slate-900">+1</option>
                     <option value="+44" className="text-slate-900">+44</option>
                   </select>
                   <input
                     type="text"
+                    name="Phone"
+                    required
                     placeholder="Enter Your Number*"
                     className="w-full bg-transparent border-b border-slate-500 focus:border-white text-white py-1.5 outline-none transition-colors placeholder:text-slate-500"
                   />
@@ -387,6 +531,8 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                 <label className="block text-xs font-semibold text-slate-300 mb-1">Work Email</label>
                 <input
                   type="email"
+                  name="Email"
+                  required
                   placeholder="Enter your email Address*"
                   className="w-full bg-transparent border-b border-slate-500 focus:border-white text-white py-1.5 outline-none transition-colors placeholder:text-slate-500"
                 />
@@ -394,7 +540,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
 
               <div>
                 <label className="block text-xs font-semibold text-slate-300 mb-1">Budget Range</label>
-                <select defaultValue="" className="w-full bg-transparent border-b border-slate-500 focus:border-white text-slate-400 py-1.5 outline-none cursor-pointer appearance-none">
+                <select name="Budget" defaultValue="" required className="w-full bg-transparent border-b border-slate-500 focus:border-white text-slate-400 py-1.5 outline-none cursor-pointer appearance-none">
                   <option value="" disabled className="text-slate-900">Select a Budget Range</option>
                   <option value="10k-25k" className="text-slate-900">$10k - $25k</option>
                   <option value="25k-50k" className="text-slate-900">$25k - $50k</option>
@@ -405,6 +551,8 @@ export default function ServiceTemplate({ data, techStackComponent }) {
               <div>
                 <label className="block text-xs font-semibold text-slate-300 mb-1">Describe your project (Help us come back better prepared)</label>
                 <textarea
+                  name="ProjectDescription"
+                  required
                   placeholder="Describe your project"
                   rows="1"
                   className="w-full bg-transparent border-b border-slate-500 focus:border-white text-white py-1.5 outline-none transition-colors placeholder:text-slate-500 resize-none"
@@ -429,29 +577,49 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                 </div>
                 <button
                   type="submit"
-                  className="w-full text-center block bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-cyan-500/25 text-white font-bold py-2.5 rounded-full transition-all duration-300 shadow-lg text-sm"
+                  disabled={isSubmitting}
+                  className="w-full text-center block bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-cyan-500/25 hover:shadow-lg text-white font-bold py-2.5 rounded-full transition-all duration-300 shadow-lg hover:-translate-y-0.5 text-sm disabled:opacity-70 disabled:cursor-not-allowed"
                 >
-                  {data?.form?.ctaText || "Schedule a Call"}
+                  {isSubmitting ? "Submitting..." : (data?.form?.ctaText || "Schedule a Call")}
                 </button>
               </div>
             </form>
           </div>
         </div>
       </section>
+
+      {/* ========================================================= */}
+      {/* 1.5. HERO DESCRIPTION */}
+      {/* ========================================================= */}
+      {(data?.hero?.subtitle || data?.hero?.paragraph) && (
+        <section className="relative bg-[#050505] overflow-hidden pt-24 pb-12">
+          <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
+            <div className="max-w-5xl mx-auto text-center">
+              {data?.hero?.subtitle && (
+                <h2 className={`mb-6 ${data?.hero?.subtitle.length > 200 ? 'text-lg md:text-xl text-slate-300 font-medium leading-relaxed' : 'text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight'}`}>
+                  {data?.hero?.subtitle}
+                </h2>
+              )}
+              {data?.hero?.paragraph && (
+                <div className="text-lg text-slate-400 leading-relaxed">
+                  {data?.hero?.paragraph}
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* ========================================================= */}
       {/* 2. PROBLEM STATEMENT */}
       {/* ========================================================= */}
       <section className="relative bg-[#050505] overflow-hidden py-24">
 
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(6,182,212,.08),transparent_45%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(6,182,212,.05),transparent_45%)]" />
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
 
           <div className="max-w-4xl mb-16">
-
-            <span className="inline-flex items-center rounded-full bg-cyan-500/10 border border-cyan-500/20 px-4 py-2 text-cyan-300 text-sm font-medium mb-6">
-              Business Challenges
-            </span>
 
             <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
               {data?.coreChallenges?.title}
@@ -468,25 +636,21 @@ export default function ServiceTemplate({ data, techStackComponent }) {
             {data?.coreChallenges?.cards?.map((item, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition-all duration-300 hover:border-cyan-500/30 hover:bg-white/[0.05]"
+                className="group relative rounded-3xl p-[2px] bg-white/10 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-600 transition-all duration-300 cursor-pointer shadow-sm hover:shadow-xl hover:shadow-cyan-500/20 hover:-translate-y-1"
               >
+                <div className="h-full w-full rounded-[22px] bg-[#0b0b0b] p-8 transition-all duration-300">
+                  <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <CheckCheck className="w-7 h-7 text-cyan-400" />
+                  </div>
 
-                <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-cyan-500 to-blue-600 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
+                  <h3 className="text-2xl font-bold text-white mb-4 leading-snug">
+                    {item.title}
+                  </h3>
 
-                <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 mb-6">
-
-                  <CheckCheck className="w-7 h-7 text-cyan-400" />
-
+                  <p className="text-slate-400 leading-7">
+                    {item.desc}
+                  </p>
                 </div>
-
-                <h3 className="text-2xl font-bold text-white mb-4 leading-snug">
-                  {item.title}
-                </h3>
-
-                <p className="text-slate-400 leading-7">
-                  {item.desc}
-                </p>
-
               </div>
             ))}
 
@@ -508,10 +672,6 @@ export default function ServiceTemplate({ data, techStackComponent }) {
           {/* Heading */}
           <div className="text-center max-w-4xl mx-auto mb-20">
 
-            <span className="inline-flex items-center rounded-full bg-cyan-500/10 border border-cyan-500/20 px-4 py-2 text-cyan-300 text-sm font-medium mb-6">
-              Our Solutions
-            </span>
-
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               {data?.servicesSuite?.title}
             </h2>
@@ -522,162 +682,88 @@ export default function ServiceTemplate({ data, techStackComponent }) {
 
           </div>
 
-          {/* Interactive Section */}
-
-          <div className="rounded-[32px] overflow-hidden border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl flex flex-col lg:flex-row">
-
-            {/* LEFT MENU */}
-
-            <div className="w-full lg:w-[34%] border-r border-white/10 bg-black/20">
-
-              {suiteServices?.map((service, index) => (
-
-                <button
+          {/* Accordion Section */}
+          <div className="border-t border-white/10 mt-12">
+            {suiteServices?.map((service, index) => {
+              const isOpen = activeService === index;
+              return (
+                <div 
                   key={index}
-                  onMouseEnter={() => setActiveService(index)}
-                  onClick={() => setActiveService(index)}
-                  className={`w-full text-left px-8 py-8 transition-all duration-300 border-b border-white/5
-
-            ${activeService === index
-                      ? "bg-gradient-to-r from-cyan-500/20 to-blue-500/10 border-l-4 border-cyan-400"
-                      : "hover:bg-white/5"
-                    }
-            `}
+                  className="group relative overflow-hidden border-b border-white/10"
                 >
-
-                  <div className="flex items-start gap-5">
-
-                    <span
-                      className={`text-lg font-bold
-
-                ${activeService === index
-                          ? "text-cyan-400"
-                          : "text-slate-500"
-                        }
-                `}
-                    >
-                      0{index + 1}
-                    </span>
-
-                    <div>
-
-                      <h3
-                        className={`text-xl font-bold
-
-                  ${activeService === index
-                            ? "text-white"
-                            : "text-slate-300"
-                          }
-                  `}
-                      >
-                        {service.title}
-                      </h3>
-
-                      <p className="text-sm text-slate-500 mt-2 line-clamp-2">
-                        {service.desc}
-                      </p>
-
-                    </div>
-
-                  </div>
-
-                </button>
-
-              ))}
-
-            </div>
-
-            {/* RIGHT CONTENT */}
-
-            <div className="w-full lg:w-[66%] bg-[#0d1117]">
-
-              {/* Image */}
-
-              <div className="relative h-80 overflow-hidden">
-
-                <img
-                  src={suiteServices?.[activeService]?.image}
-                  alt={suiteServices?.[activeService]?.title}
-                  className="w-full h-full object-cover"
-                />
-
-                <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-black/30 to-transparent" />
-
-              </div>
-
-              {/* Content */}
-
-              <div className="p-10 lg:p-14">
-
-                <div className="flex items-center gap-3 mb-6">
-
-                  <div className="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center">
-
-                    <ShieldCheck className="w-7 h-7 text-cyan-400" />
-
-                  </div>
-
-                  <div>
-
-                    <h3 className="text-3xl font-bold text-white">
-                      {suiteServices?.[activeService]?.title}
+                  <button
+                    onClick={() => setActiveService(isOpen ? null : index)}
+                    className="w-full text-left cursor-pointer grid grid-cols-[1fr_32px] lg:grid-cols-[1fr_40px] items-center gap-4 lg:gap-6 py-6 lg:py-8 relative z-10"
+                  >
+                    <h3 className="text-xl lg:text-3xl font-bold text-white m-0 min-w-0 break-words leading-tight pr-4">
+                      {service.title}
                     </h3>
+                    <span className={`w-8 h-8 lg:w-10 lg:h-10 rounded-full border flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen ? 'bg-cyan-500 border-cyan-500 rotate-45' : 'border-white/20 bg-transparent'}`}>
+                      <svg viewBox="0 0 24 24" fill="none" strokeWidth="2.5" strokeLinecap="round" className={`w-4 h-4 lg:w-5 lg:h-5 transition-colors ${isOpen ? 'stroke-white' : 'stroke-slate-300'}`}>
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                      </svg>
+                    </span>
+                  </button>
 
-                  </div>
-
-                </div>
-
-                <p className="text-slate-300 text-lg leading-8 mb-10">
-                  {suiteServices?.[activeService]?.desc}
-                </p>
-
-                {/* Features */}
-
-                <div className="grid md:grid-cols-2 gap-5">
-
-                  {suiteServices?.[activeService]?.features?.map(
-                    (feature, index) => (
-
-                      <div
-                        key={index}
-                        className="flex items-start gap-3 rounded-xl bg-white/5 border border-white/10 p-4"
-                      >
-
-                        <CheckCheck className="w-5 h-5 text-cyan-400 mt-1 shrink-0" />
-
-                        <span className="text-slate-200">
-                          {feature}
-                        </span>
-
+                  {/* Panel */}
+                  <div 
+                    className={`relative z-10 transition-all duration-500 ease-in-out overflow-hidden ${isOpen ? 'max-h-[2000px] opacity-100 pb-10' : 'max-h-0 opacity-0 pb-0'}`}
+                  >
+                    <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-8 lg:gap-12 min-w-0 px-2 lg:px-4">
+                      
+                      <div className="min-w-0">
+                        <p className="text-slate-300 text-base leading-relaxed mb-6">
+                          {service.desc}
+                        </p>
+                        <ul className="flex flex-col gap-3 mb-8">
+                          {service.features?.map((feature, i) => (
+                            <li key={i} className="flex gap-3 text-slate-200 text-sm leading-relaxed">
+                              <span className="w-1.5 h-1.5 rounded-full bg-cyan-500 mt-2 shrink-0"></span>
+                              <span>{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                        <Link
+                          href={serviceRoutes[service.title] || "#"}
+                          target="_blank"
+                          className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-cyan-500/25 hover:shadow-lg px-6 py-3 font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 text-sm"
+                        >
+                          Learn More
+                          <ArrowRight className="w-4 h-4" />
+                        </Link>
                       </div>
 
-                    )
-                  )}
+                      <div className="min-w-0 order-first lg:order-last">
+                        <div className="w-full aspect-[16/9] lg:aspect-[4/3] rounded-2xl overflow-hidden bg-white/5">
+                          <img
+                            src={service.image}
+                            alt={service.title}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      </div>
 
+                    </div>
+                  </div>
                 </div>
-
-                <Link
-                  href={
-                    serviceRoutes[
-                    suiteServices?.[activeService]?.title
-                    ] || "#"
-                  }
-                  target="_blank"
-                  className="inline-flex items-center gap-3 mt-10 rounded-full bg-cyan-500 hover:bg-cyan-400 px-8 py-4 font-semibold text-white transition"
-                >
-                  Learn More
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-
-              </div>
-
-            </div>
-
+              );
+            })}
           </div>
 
         </div>
 
       </section>
+
+      {!data?.hideMiddleCtas && (
+        <MidCTA 
+          title={ctaContent.title1}
+          desc={ctaContent.desc1}
+          btnText={ctaContent.btn1}
+          phoneIcon={true}
+        />
+      )}
+
       {/* ========================================================= */}
       {/* 4. FEATURES SECTION */}
       {/* ========================================================= */}
@@ -687,10 +773,6 @@ export default function ServiceTemplate({ data, techStackComponent }) {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
           <div className="text-center max-w-4xl mx-auto mb-20">
-
-            <span className="inline-flex rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-cyan-300 text-sm font-medium mb-6">
-              Enterprise Features
-            </span>
 
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               {data?.features?.title}
@@ -702,32 +784,52 @@ export default function ServiceTemplate({ data, techStackComponent }) {
 
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
 
-            {data?.features?.list?.map((feature, index) => (
+            {data?.features?.list?.map((feature, index) => {
+              const bentoClasses = [
+                "md:col-span-12 lg:col-span-7",
+                "md:col-span-12 lg:col-span-5",
+                "md:col-span-6 lg:col-span-4",
+                "md:col-span-6 lg:col-span-4",
+                "md:col-span-12 lg:col-span-4",
+                "col-span-12 flex flex-col lg:flex-row items-start lg:items-center gap-8",
+              ];
+              const fallbackClass = "md:col-span-6 lg:col-span-4";
+              const gridClass = index < bentoClasses.length ? bentoClasses[index] : fallbackClass;
+              const isFullWidth = index === 5;
 
+              return (
               <div
                 key={index}
-                className="group rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition-all duration-300 hover:border-cyan-500/30 hover:bg-white/[0.05]"
+                className={`group rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition-all duration-300 hover:border-cyan-500/30 hover:bg-white/[0.05] flex ${isFullWidth ? "flex-col lg:flex-row items-start lg:items-center gap-8" : "flex-col"} ${gridClass}`}
               >
+                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition shadow-lg shadow-cyan-500/20 ${isFullWidth ? "mb-0" : "mb-6"}`}>
+                    {feature.icon}
+                  </div>
 
-                <div className="w-16 h-16 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-110 transition">
+                  <div className={isFullWidth ? "flex-1 min-w-0" : "flex-1 flex flex-col min-w-0"}>
+                    <h3 className={`font-bold text-white ${isFullWidth ? "text-2xl mb-2" : "text-xl mb-4"}`}>
+                      {feature.text}
+                    </h3>
 
-                  {feature.icon}
+                    <p className={`text-slate-400 leading-7 ${isFullWidth ? "mb-0" : ""}`}>
+                      {feature.desc}
+                    </p>
+                  </div>
 
-                </div>
-
-                <h3 className="text-xl font-bold text-white mb-4">
-                  {feature.text}
-                </h3>
-
-                <p className="text-slate-400 leading-7">
-                  {feature.desc}
-                </p>
+                  {feature.chips && (
+                    <div className={`flex flex-wrap gap-2 ${isFullWidth ? "lg:w-72 shrink-0" : "mt-6"}`}>
+                      {feature.chips.map((chip, i) => (
+                        <span key={i} className="font-mono text-[11px] tracking-wider text-cyan-300 bg-cyan-500/10 border border-cyan-500/20 px-2.5 py-1.5 rounded-lg whitespace-nowrap">
+                          {chip}
+                        </span>
+                      ))}
+                    </div>
+                  )}
 
               </div>
-
-            ))}
+            )})}
 
           </div>
 
@@ -743,10 +845,6 @@ export default function ServiceTemplate({ data, techStackComponent }) {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
           <div className="text-center max-w-4xl mx-auto mb-20">
-
-            <span className="inline-flex rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-green-300 text-sm font-medium mb-6">
-              Business Benefits
-            </span>
 
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               {data?.whyInvest?.title}
@@ -764,15 +862,13 @@ export default function ServiceTemplate({ data, techStackComponent }) {
 
               <div
                 key={index}
-                className="group relative rounded-3xl border border-white/10 bg-white/[0.03] p-8 overflow-hidden transition-all duration-300 hover:border-green-500/30 hover:bg-white/[0.05]"
+                className="group relative rounded-3xl border border-white/10 bg-white/[0.03] p-8 overflow-hidden transition-all duration-300 hover:border-cyan-500/30 hover:bg-white/[0.05]"
               >
 
-                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-green-400 to-cyan-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
+                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
 
-                <div className="w-16 h-16 rounded-2xl bg-green-500/10 border border-green-500/20 flex items-center justify-center text-green-400 text-xl font-bold mb-6">
-
+                <div className="w-16 h-16 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl font-bold mb-6">
                   {index + 1}
-
                 </div>
 
                 <h3 className="text-2xl font-bold text-white mb-5">
@@ -805,10 +901,6 @@ export default function ServiceTemplate({ data, techStackComponent }) {
 
           {/* Header */}
           <div className="max-w-4xl mx-auto text-center mb-20">
-            <span className="inline-flex items-center rounded-full border border-cyan-500/30 bg-cyan-500/10 px-5 py-2 text-cyan-400 text-sm font-semibold mb-6">
-              Agile Development Process
-            </span>
-
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               {data?.process?.title}
             </h2>
@@ -832,7 +924,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
               }}
             />
 
-            <div className="space-y-16 lg:space-y-20">
+            <div className="space-y-10 lg:space-y-12">
 
               {data?.process?.steps?.map((step, idx) => {
 
@@ -871,38 +963,13 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                         : "lg:pl-20"
                         }`}
                     >
-                      <div
-                        className={`rounded-3xl border p-8 transition-all duration-500
-
-                  ${isActive
-                            ? "bg-gradient-to-br from-cyan-500/10 to-blue-600/10 border-cyan-500/30"
-                            : "bg-[#0b0b0b] border-white/10"
-                          }`}
-                      >
-
-                        <div className="flex items-center gap-4 mb-6">
-
-                          <div
-                            className={`w-14 h-14 rounded-2xl flex items-center justify-center font-bold
-
-                      ${isActive
-                                ? "bg-gradient-to-r from-cyan-500 to-blue-600 text-white"
-                                : "bg-white/5 text-slate-400"
-                              }`}
-                          >
-                            0{idx + 1}
-                          </div>
-
-                          <h3 className="text-2xl font-bold text-white">
-                            {step.title}
-                          </h3>
-
-                        </div>
-
+                      <div className={`transition-all duration-500 ${isActive ? "opacity-100" : "opacity-40"}`}>
+                        <h3 className="text-2xl font-bold text-white mb-4">
+                          {step.title}
+                        </h3>
                         <p className="text-slate-400 leading-8">
                           {step.desc}
                         </p>
-
                       </div>
                     </div>
 
@@ -923,121 +990,63 @@ export default function ServiceTemplate({ data, techStackComponent }) {
       <section className="relative py-24 lg:py-32 bg-[#050505] overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
 
-          {/* Header */}
-          <div className="max-w-4xl mx-auto text-center mb-20">
+          <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 lg:gap-16 items-start">
+            
+            {/* Left Header */}
+            <div className="lg:sticky lg:top-32">
+              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+                {data?.industries?.title}
+              </h2>
+              <p className="text-lg text-slate-400 leading-relaxed">
+                {data?.industries?.subtitle}
+              </p>
+            </div>
 
-            <span className="inline-flex items-center rounded-full border border-cyan-500/30 bg-cyan-500/10 px-5 py-2 text-cyan-400 text-sm font-semibold mb-6">
-              Industries We Serve
-            </span>
+            {/* Right Accordion */}
+            <div className="flex flex-col border-t border-white/10 mt-8 lg:mt-0">
+              {data?.industries?.list?.map((industry, idx) => {
+                const isOpen = openIndustry === idx;
+                return (
+                  <div key={idx} className="group relative overflow-hidden border-b border-white/10">
+                    <button
+                      onClick={() => {
+                        setIsIndustryAutomated(false);
+                        setOpenIndustry(isOpen ? null : idx);
+                      }}
+                      className="w-full text-left cursor-pointer grid grid-cols-[40px_1fr_32px] lg:grid-cols-[64px_1fr_40px] items-center gap-4 lg:gap-6 py-6 lg:py-8 relative z-10"
+                    >
+                      <span className={`font-mono text-sm lg:text-base font-bold transition-colors ${isOpen ? 'text-white' : 'text-slate-500'}`}>
+                        [{idx + 1}]
+                      </span>
+                      <h3 className="text-xl lg:text-2xl font-bold text-white m-0">
+                        {industry.title}
+                      </h3>
+                      <span className={`flex items-center justify-center transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}>
+                        <ChevronDown className="w-5 h-5 text-slate-400" />
+                      </span>
+                    </button>
 
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              {data?.industries?.title}
-            </h2>
-
-            <p className="text-lg text-slate-400 leading-relaxed">
-              {data?.industries?.subtitle}
-            </p>
-
-          </div>
-
-          {/* Industries Grid */}
-          <div className="grid lg:grid-cols-2 gap-8">
-
-            {data?.industries?.list?.map((industry, idx) => {
-
-              const isOpen = openIndustry === idx;
-
-              return (
-
-                <div
-                  key={idx}
-                  className="rounded-3xl border border-white/10 bg-[#0b0b0b] overflow-hidden transition-all duration-300 hover:border-cyan-500/30 hover:shadow-[0_0_35px_rgba(6,182,212,.08)]"
-                >
-
-                  {/* Header */}
-                  <button
-                    onClick={() => {
-                      setIsIndustryAutomated(false);
-                      setOpenIndustry(isOpen ? null : idx);
-                    }}
-                    className="w-full flex items-center justify-between p-8 text-left"
-                  >
-
-                    <div className="flex items-start gap-5">
-
-                      <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-blue-600/20 flex items-center justify-center text-cyan-400 shrink-0">
-                        {industry.icon}
-                      </div>
-
-                      <div>
-
-                        <h3 className="text-2xl font-bold text-white mb-2">
-                          {industry.title}
-                        </h3>
-
-                        <p className="text-slate-400 leading-7">
-                          {industry.desc}
-                        </p>
-
-                      </div>
-
-                    </div>
-
-                    <ChevronDown
-                      className={`w-6 h-6 text-cyan-400 transition-transform duration-300 ${isOpen ? "rotate-180" : ""
-                        }`}
-                    />
-
-                  </button>
-
-                  {/* Expandable Solutions */}
-                  <div
-                    className={`transition-all duration-500 overflow-hidden ${isOpen
-                      ? "max-h-[600px] opacity-100"
-                      : "max-h-0 opacity-0"
-                      }`}
-                  >
-
-                    <div className="px-8 pb-8">
-
-                      <div className="border-t border-white/10 pt-6">
-
-                        <h4 className="uppercase tracking-[0.2em] text-xs font-semibold text-cyan-400 mb-5">
-                          Solutions Include
-                        </h4>
-
+                    {/* Expandable Panel */}
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden ${isOpen ? 'max-h-[1000px] opacity-100 pb-10' : 'max-h-0 opacity-0 pb-0'}`}>
+                      <div className="pl-[40px] lg:pl-[64px] pr-4">
                         <div className="grid sm:grid-cols-2 gap-4">
-
                           {industry.solutions?.map((solution, sIdx) => (
-
-                            <div
-                              key={sIdx}
-                              className="flex items-center gap-3 bg-white/5 rounded-xl px-4 py-3 border border-white/5"
-                            >
-
-                              <div className="w-2 h-2 rounded-full bg-cyan-400 shrink-0"></div>
-
-                              <span className="text-slate-300">
+                            <div key={sIdx} className="flex items-center gap-3 bg-white/5 rounded-xl px-4 py-3 border border-white/5">
+                              <div className="w-5 h-5 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shrink-0">
+                                <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                              </div>
+                              <span className="text-slate-300 text-sm">
                                 {solution}
                               </span>
-
                             </div>
-
                           ))}
-
                         </div>
-
                       </div>
-
                     </div>
-
                   </div>
-
-                </div>
-
-              );
-
-            })}
+                );
+              })}
+            </div>
 
           </div>
 
@@ -1051,11 +1060,6 @@ export default function ServiceTemplate({ data, techStackComponent }) {
 
           {/* Header */}
           <div className="max-w-4xl mx-auto text-center mb-20">
-
-            <span className="inline-flex items-center rounded-full border border-cyan-500/30 bg-cyan-500/10 px-5 py-2 text-cyan-400 text-sm font-semibold mb-6">
-              Why SyncTechn
-            </span>
-
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               {data?.whyChooseUs?.title}
             </h2>
@@ -1109,14 +1113,24 @@ export default function ServiceTemplate({ data, techStackComponent }) {
         </div>
       </section>
 
+      {!data?.hideMiddleCtas && (
+        <MidCTA 
+          title={ctaContent.title2}
+          desc={ctaContent.desc2}
+          btnText={ctaContent.btn2}
+          bgVariant={2}
+        />
+      )}
+
       {/* ========================================================= */}
       {/* 12. FAQ SECTION */}
       {/* ========================================================= */}
       <section className="w-full bg-[#050505] py-24 px-6 lg:px-16 text-white border-t border-white/5">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
+          
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-cyan-500 to-blue-600 text-transparent bg-clip-text mb-6 tracking-tight pb-2 whitespace-pre-line text-balance line-clamp-2">
+            <h2 className="text-4xl lg:text-5xl font-semibold text-white mb-6">
               Frequently Asked Questions
             </h2>
             <p className="text-slate-400 text-sm lg:text-base max-w-2xl mx-auto">
@@ -1124,34 +1138,61 @@ export default function ServiceTemplate({ data, techStackComponent }) {
             </p>
           </div>
 
-          {/* Accordion */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-start">
-            {data?.faqs?.items?.map((faq, idx) => (
-              <div
-                key={idx}
-                className="bg-[#0a0a0a] border border-white/10 rounded-2xl overflow-hidden transition-all duration-300"
-              >
-                <button
-                  onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
-                  className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none group hover:bg-[#111] transition-colors"
-                >
-                  <span className="font-semibold text-sm lg:text-base pr-4 group-hover:text-blue-400 transition-colors">
-                    {faq.question}
-                  </span>
-                  <div className={`shrink-0 w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-300 ${openFaq === idx ? 'border-blue-500 bg-blue-500 text-white' : 'border-white/20 text-white/50 group-hover:border-white/50 group-hover:text-white'}`}>
-                    <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${openFaq === idx ? "rotate-180" : ""}`} />
-                  </div>
-                </button>
+          <div className="grid lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-20 items-start">
+            
+            {/* Left Side: CTA Block */}
+            <div className="lg:sticky lg:top-32 rounded-[2.5rem] bg-gradient-to-b from-[#050505] via-[#0b1b36] to-[#0c5cff] p-10 lg:p-12 text-center h-[500px] flex flex-col justify-end items-center relative overflow-hidden border border-white/10 shadow-2xl">
+              
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,255,255,0.05)_0%,transparent_50%)]" />
+              
+              {/* Fallback huge ? in the background since we don't have the 3D asset */}
+              <div className="absolute top-10 text-[200px] leading-none font-black text-white/[0.03] rotate-12 -right-10 pointer-events-none select-none">
+                ?
+              </div>
 
+              <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4 z-10 relative leading-tight">
+                Didn't Find What You<br/>Were Looking For?
+              </h3>
+              <p className="text-slate-300 text-sm mb-8 z-10 relative max-w-[280px]">
+                We've got more answers waiting for you! If your question didn't make the list, don't hesitate to reach out.
+              </p>
+              
+              <Link href="/contact-us" className="bg-white text-slate-900 font-bold px-8 py-3.5 rounded-full hover:bg-slate-100 transition-colors z-10 relative text-sm w-full max-w-[300px]">
+                Get In Touch With Our Experts
+              </Link>
+
+            </div>
+
+            {/* Right side: FAQ Accordion */}
+            <div className="flex flex-col border-t border-white/10">
+              {data?.faqs?.items?.map((faq, idx) => (
                 <div
-                  className={`overflow-hidden transition-all duration-300 ease-in-out ${openFaq === idx ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"}`}
+                  key={idx}
+                  className="group relative overflow-hidden border-b border-white/10"
                 >
-                  <div className="px-6 pb-6 pt-2 text-slate-400 text-sm lg:text-base leading-relaxed border-t border-white/5 mt-2 whitespace-pre-line">
-                    {faq.answer}
+                  <button
+                    onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
+                    className="w-full flex items-center gap-6 py-6 text-left focus:outline-none"
+                  >
+                    <span className="font-semibold text-sm lg:text-base pr-4 text-slate-100 flex-1">
+                      {faq.question}
+                    </span>
+                    <span className="text-slate-500 font-light text-2xl transition-transform duration-300">
+                      {openFaq === idx ? '−' : '+'}
+                    </span>
+                  </button>
+
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ease-in-out ${openFaq === idx ? "max-h-[600px] opacity-100 pb-6" : "max-h-0 opacity-0 pb-0"}`}
+                  >
+                    <div className="text-slate-400 text-sm lg:text-base leading-relaxed whitespace-pre-line">
+                      {faq.answer}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+
           </div>
         </div>
       </section>
@@ -1198,6 +1239,8 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                     <label className="block text-xs font-semibold text-slate-300 mb-1">Name</label>
                     <input
                       type="text"
+                      name="Name"
+                      required
                       placeholder="Full Name"
                       className="w-full bg-transparent border-b border-slate-750 focus:border-white text-white py-1.5 outline-none transition-colors placeholder:text-slate-650"
                     />
@@ -1206,7 +1249,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                   <div className="flex gap-4">
                     <div className="w-20 shrink-0">
                       <label className="block text-xs font-semibold text-slate-300 mb-1">Code</label>
-                      <select className="w-full bg-transparent border-b border-slate-750 focus:border-white text-white py-1.5 outline-none cursor-pointer appearance-none">
+                      <select name="PhoneCode" className="w-full bg-transparent border-b border-slate-750 focus:border-white text-white py-1.5 outline-none cursor-pointer appearance-none">
                         <option value="+91" className="text-slate-900">+91</option>
                         <option value="+1" className="text-slate-900">+1</option>
                         <option value="+44" className="text-slate-900">+44</option>
@@ -1216,6 +1259,8 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                       <label className="block text-xs font-semibold text-slate-300 mb-1">Contact Number</label>
                       <input
                         type="text"
+                        name="Phone"
+                        required
                         placeholder="Enter Your Number*"
                         className="w-full bg-transparent border-b border-slate-750 focus:border-white text-white py-1.5 outline-none transition-colors placeholder:text-slate-655"
                       />
@@ -1226,6 +1271,8 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                     <label className="block text-xs font-semibold text-slate-300 mb-1">Work Email</label>
                     <input
                       type="email"
+                      name="Email"
+                      required
                       placeholder="Enter your email Address*"
                       className="w-full bg-transparent border-b border-slate-750 focus:border-white text-white py-1.5 outline-none transition-colors placeholder:text-slate-655"
                     />
@@ -1234,6 +1281,8 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                   <div>
                     <label className="block text-xs font-semibold text-slate-300 mb-1">Describe your project (Help us come back better prepared)</label>
                     <textarea
+                      name="ProjectDescription"
+                      required
                       placeholder="Describe your project"
                       rows="1"
                       className="w-full bg-transparent border-b border-slate-750 focus:border-white text-white py-1.5 outline-none transition-colors placeholder:text-slate-655 resize-none"
@@ -1251,9 +1300,10 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                     </div>
                     <button
                       type="submit"
-                      className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold rounded-full transition-all duration-300 shadow-[0_4px_20px_rgba(6,182,212,0.25)] text-sm"
+                      disabled={isSubmitting}
+                      className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold rounded-full transition-all duration-300 shadow-[0_4px_20px_rgba(6,182,212,0.25)] text-sm disabled:opacity-70 disabled:cursor-not-allowed"
                     >
-                      {data.cta.ctaText}
+                      {isSubmitting ? "Submitting..." : data.cta.ctaText}
                     </button>
                   </div>
                 </form>
@@ -1266,6 +1316,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
 
       {/* Subsequent sections will be added here based on your images */}
 
+      <LeadFormModal />
     </div>
   );
 }

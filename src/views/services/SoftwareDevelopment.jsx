@@ -67,7 +67,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/custom-software-development-services",
+      "https://synctechn.com/services/custom-software-development-services/",
   },
 
   openGraph: {
@@ -78,7 +78,7 @@ export const metadata = {
       "Build secure, scalable, and future-ready custom software solutions including enterprise applications, SaaS platforms, business software, APIs, AI-powered solutions, and cloud-native applications.",
 
     url:
-      "https://synctechn.com/services/custom-software-development-services",
+      "https://synctechn.com/services/custom-software-development-services/",
 
     siteName: "SyncTechn",
 
@@ -119,7 +119,6 @@ export const metadata = {
 };
 
 export const softwareDevelopmentData = {
-  hideMiddleCtas: true,
   overviewImage: "https://res.cloudinary.com/wowukaao/image/upload/v1783865632/soft_dev_2_wgcix5.jpg",
 
   hero: {
@@ -307,38 +306,38 @@ export const softwareDevelopmentData = {
       {
         icon: <Cloud />,
         text: "Cloud-Native Scalability",
-        desc:
-          "Built on containerized architectures (Docker, Kubernetes) to dynamically allocate compute resources during traffic spikes."
+        desc: "Built on containerized architectures to dynamically allocate compute resources during traffic spikes.",
+        chips: ["DOCKER", "KUBERNETES", "AUTO-SCALE"]
       },
       {
         icon: <ShieldCheck />,
         text: "Zero-Trust Security Framework",
-        desc:
-          "Implements strict identity verification, role-based access control (RBAC), end-to-end encryption (AES-256 at rest, TLS 1.3 in transit), and OWASP Top 10 mitigation."
+        desc: "Implements strict identity verification, role-based access control, end-to-end encryption, and OWASP Top 10 mitigation.",
+        chips: ["RBAC", "AES-256", "TLS 1.3"]
       },
       {
         icon: <Database />,
         text: "High Availability & Fault Tolerance",
-        desc:
-          "Configured with redundant cloud clusters, database replication, and automated failovers to maintain a 99.99% uptime Service Level Agreement (SLA)."
+        desc: "Redundant cloud clusters, database replication, and automated failovers maintain uptime.",
+        chips: ["99.99% SLA"]
       },
       {
         icon: <Layers />,
         text: "API-First Architecture",
-        desc:
-          "Microservices and modular components allow third-party developers to extend software capabilities effortlessly."
+        desc: "Microservices and modular components let third-party developers extend software capabilities effortlessly.",
+        chips: ["REST", "GRAPHQL"]
       },
       {
         icon: <Zap />,
         text: "Real-time Data Processing",
-        desc:
-          "Low-latency WebSockets and event streams deliver real-time operational updates across global enterprise dashboards."
+        desc: "Low-latency WebSockets and event streams deliver real-time operational updates across global dashboards.",
+        chips: ["WEBSOCKETS"]
       },
       {
         icon: <Lock />,
         text: "Comprehensive Audit Trail Compliance",
-        desc:
-          "Automated logging tracks every user interaction, configuration change, and administrative authorization for compliance and regulatory reporting."
+        desc: "Automated logging tracks every user interaction, configuration change, and administrative action for full accountability.",
+        chips: ["SOC 2", "GDPR", "HIPAA-READY"]
       }
     ]
   },
@@ -651,7 +650,7 @@ export default function SoftwareDevelopment() {
         title="Custom Software Development Company | Scalable Software Solutions | Synctechn"
         description="Build secure, scalable custom software development solutions with Synctechn. We design, develop, modernize, and maintain enterprise software tailored to your business goals."
         keywords="custom software development, custom software development company, enterprise custom software development, custom software solutions, software product development, web application development, mobile app development, cloud application development, API development, software integration services, legacy software modernization, SaaS application development, business custom software development, custom enterprise applications"
-        canonicalUrl="https://synctechn.com/services/custom-software-development-services"
+        canonicalUrl="https://synctechn.com/services/custom-software-development-services/"
         ogTitle="Custom Software Development Services | Synctechn"
         ogDescription="Build secure, scalable software tailored to your business. From SaaS products to enterprise applications, Synctechn delivers end-to-end custom software development services."
         twitterTitle="Custom Software Development Services | Synctechn"

@@ -43,7 +43,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/micro-saas-development-services",
+      "https://synctechn.com/services/micro-saas-development-services/",
   },
 
   openGraph: {
@@ -54,7 +54,7 @@ export const metadata = {
       "Turn your niche software idea into a profitable subscription business. We build secure, scalable Micro-SaaS platforms from MVP to launch.",
 
     url:
-      "https://synctechn.com/services/micro-saas-development-services",
+      "https://synctechn.com/services/micro-saas-development-services/",
 
     siteName: "SyncTechn",
 

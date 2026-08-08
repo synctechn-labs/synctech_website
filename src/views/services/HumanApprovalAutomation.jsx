@@ -62,7 +62,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/human-approval-workflow-automation-services",
+      "https://synctechn.com/services/human-approval-workflow-automation-services/",
   },
 
   openGraph: {
@@ -73,7 +73,7 @@ export const metadata = {
       "Automate business approval workflows with secure approval management systems, digital approvals, workflow automation, notifications, reporting, and enterprise integrations.",
 
     url:
-      "https://synctechn.com/services/human-approval-workflow-automation-services",
+      "https://synctechn.com/services/human-approval-workflow-automation-services/",
 
     siteName: "SyncTechn",
 

@@ -122,7 +122,7 @@ export default function DalaLandingPage() {
         </div>
 
         {/* Primary Action Button - Electric Iris Filled Violet Pill */}
-        <button className="bg-[#8052ff] hover:bg-[#6c3cf5] text-white rounded-full px-6 py-3 text-[14px] font-semibold uppercase tracking-[0.025em] transition-all hover:scale-105 shadow-[0_0_20px_rgba(128,82,255,0.4)] cursor-pointer">
+        <button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-cyan-500/25 hover:shadow-lg text-white rounded-full px-6 py-3 text-[14px] font-semibold uppercase tracking-[0.025em] transition-all duration-300 hover:-translate-y-0.5 cursor-pointer">
           Request Access
         </button>
       </nav>
@@ -153,7 +153,7 @@ export default function DalaLandingPage() {
 
             {/* Actions: Primary Violet Pill + Ghost Link */}
             <div className="flex flex-wrap items-center gap-6">
-              <button className="bg-[#8052ff] hover:bg-[#6c3cf5] text-white rounded-full px-8 py-4 text-[14px] font-semibold uppercase tracking-[0.025em] transition-all hover:scale-105 shadow-[0_0_25px_rgba(128,82,255,0.45)] cursor-pointer">
+              <button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-cyan-500/25 hover:shadow-lg text-white rounded-full px-8 py-4 text-[14px] font-semibold uppercase tracking-[0.025em] transition-all duration-300 hover:-translate-y-0.5 cursor-pointer">
                 Request Access
               </button>
 
@@ -442,7 +442,7 @@ export default function DalaLandingPage() {
         </p>
 
         <div className="flex justify-center">
-          <button className="bg-[#8052ff] hover:bg-[#6c3cf5] text-white rounded-full px-10 py-5 text-[14px] font-semibold uppercase tracking-[0.025em] transition-all hover:scale-105 shadow-[0_0_35px_rgba(128,82,255,0.5)] cursor-pointer">
+          <button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-cyan-500/25 hover:shadow-lg text-white rounded-full px-10 py-5 text-[14px] font-semibold uppercase tracking-[0.025em] transition-all duration-300 hover:-translate-y-0.5 cursor-pointer">
             Request Enterprise Access
           </button>
         </div>

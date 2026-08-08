@@ -47,7 +47,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://synctechn.com/services/ai-integration-services",
+      "https://synctechn.com/services/ai-integration-services/",
   },
 
   openGraph: {
@@ -58,7 +58,7 @@ export const metadata = {
       "Transform your software with Artificial Intelligence. We integrate cutting-edge LLMs and machine learning models into your enterprise ecosystem.",
 
     url:
-      "https://synctechn.com/services/ai-integration-services",
+      "https://synctechn.com/services/ai-integration-services/",
 
     siteName: "SyncTechn",
 
