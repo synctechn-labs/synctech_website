@@ -123,7 +123,7 @@ export default function BlogDetails() {
             "@type": "ListItem",
             "position": 2,
             "name": "Blog",
-            "item": `${siteUrl}/blog`
+            "item": `${siteUrl}/blog/`
           },
           {
             "@type": "ListItem",
