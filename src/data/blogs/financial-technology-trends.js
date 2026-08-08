@@ -3,6 +3,9 @@ const financialTechnologyTrends = {
   title: "Financial Technology Trends Transforming the Industry in 2026",
   description:
     "Explore the biggest financial technology trends shaping 2026, from agentic AI in banking and embedded finance to stablecoin settlement, tokenized assets, and real-time cross-border payments.",
+  metaTitle: "Financial Technology Trends Transforming the Industry in 2026",
+  metaDescription:
+    "Explore the biggest financial technology trends shaping 2026, from agentic AI in banking and embedded finance to stablecoin settlement, tokenized assets...",
   date: "July 6, 2026",
   readTime: "14 min read",
   author: {

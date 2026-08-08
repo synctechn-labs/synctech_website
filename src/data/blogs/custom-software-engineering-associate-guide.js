@@ -3,6 +3,9 @@ const customSoftwareEngineeringAssociateGuide2026 = {
   title: "The Ultimate Career Guide for a Custom Software Engineering Associate (2026)",
   description:
     "Learn what a Custom Software Engineering Associate does, the technical skills required, salary expectations, interview questions, and how to prepare for entry-level enterprise software engineering roles in 2026.",
+  metaTitle: "The Ultimate Career Guide for a Custom Software Engineering Associate (2026)",
+  metaDescription:
+    "Learn what a Custom Software Engineering Associate does, the technical skills required, salary expectations, interview questions, and how to prepare for...",
   date: "July 2, 2026",
   readTime: "12 min read",
  author: {

@@ -1,7 +1,11 @@
 const crmSolutionsForGrowth = {
   id: "crm-solutions-for-growth",
   title: "Why Off-the-Shelf CRMs Fall Short: The Case for Custom Portals",
-  description: "Explore the operational limitations of ready-made CRM platforms and learn why custom-built client portals deliver 3x better team efficiency and customer retention.",
+  description:
+    "Explore the operational limitations of ready-made CRM platforms and learn why custom-built client portals deliver 3x better team efficiency and customer retention.",
+  metaTitle: "Why Off-the-Shelf CRMs Fall Short: The Case for Custom Portals",
+  metaDescription:
+    "Explore the operational limitations of ready-made CRM platforms and learn why custom-built client portals deliver 3x better team efficiency and customer...",
   date: "June 29, 2026",
   readTime: "7 min read",
   author: {

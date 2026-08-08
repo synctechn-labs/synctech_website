@@ -3,6 +3,9 @@ const aiVoiceCloningScamsBankingSafety = {
   title: "AI Voice Cloning Scams: How to Protect Your Family and Bank Account",
   description:
     "Fraudsters are cloning family voices to fake emergencies and steal money. Learn how AI voice scams work, the warning signs to watch for, and the steps recommended by Canara Bank to protect your bank account.",
+  metaTitle: "AI Voice Cloning Scams: How to Protect Your Family and Bank Account",
+  metaDescription:
+    "Fraudsters are cloning family voices to fake emergencies and steal money. Learn how AI voice scams work, the warning signs to watch for, and the steps r...",
   date: "July 6, 2026",
   readTime: "10 min read",
   author: {

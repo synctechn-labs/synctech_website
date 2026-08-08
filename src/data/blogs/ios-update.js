@@ -3,6 +3,9 @@ const ios2652Update = {
   title: "iOS 26.5.2 Update: What’s New, Security Fixes, and Why You Should Install It Now",
   description:
     "Learn what’s new in the iOS 26.5.2 update, which security vulnerabilities Apple fixed, why the release was moved up early, and whether you should install it on your iPhone right away.",
+  metaTitle: "iOS 26.5.2 Update: What’s New, Security Fixes, and Why You Should Install It Now",
+  metaDescription:
+    "Learn what’s new in the iOS 26.5.2 update, which security vulnerabilities Apple fixed, why the release was moved up early, and whether you should instal...",
   date: "July 4, 2026",
   readTime: "10 min read",
   author: {

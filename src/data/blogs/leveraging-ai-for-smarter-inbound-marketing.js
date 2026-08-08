@@ -1,7 +1,11 @@
 const leveragingAiForSmarterInboundMarketing = {
   id: "leveraging-ai-for-smarter-inbound-marketing",
   title: "Leveraging AI for Smarter Inbound Marketing: How Intelligent Automation Is Reshaping Customer Engagement",
-  description: "Discover how AI is transforming inbound marketing with personalization, automation, AI search optimization, and predictive analytics. Learn practical strategies to attract, engage, and convert more customers in 2026.",
+  description:
+    "Discover how AI is transforming inbound marketing with personalization, automation, AI search optimization, and predictive analytics. Learn practical strategies to attract, engage, and convert more customers in 2026.",
+  metaTitle: "Leveraging AI for Smarter Inbound Marketing: How Intelligent Automation Is Reshaping Customer Engagement",
+  metaDescription:
+    "Discover how AI is transforming inbound marketing with personalization, automation, AI search optimization, and predictive analytics. Learn practical st...",
   date: "July 22, 2026",
   readTime: "20–25 Minutes",
   author: {

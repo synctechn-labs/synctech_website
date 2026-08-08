@@ -3,6 +3,9 @@ const whatAreAIDevelopmentServices = {
   title: "What Are AI Development Services? Comprehensive Guide 2026",
   description:
     "Learn what AI development services are, how businesses use artificial intelligence, the different types of AI solutions, core technologies, and how to choose the right AI development company in 2026.",
+  metaTitle: "What Are AI Development Services? Comprehensive Guide 2026",
+  metaDescription:
+    "Learn what AI development services are, how businesses use artificial intelligence, the different types of AI solutions, core technologies, and how to c...",
   date: "July 16, 2026",
   readTime: "12–15 min read",
   author: {

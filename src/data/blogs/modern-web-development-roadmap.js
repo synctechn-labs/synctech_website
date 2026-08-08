@@ -3,6 +3,9 @@ const webDevelopmentRoadmap2026 = {
   title: "The Modern Custom Web Development Roadmap: From Scratch to Production-Ready in 2026",
   description:
     "Explore the complete custom web development roadmap for 2026—from HTML, CSS, and JavaScript fundamentals to frameworks, APIs, deployment, AI-assisted development, and hiring insights for businesses.",
+  metaTitle: "The Modern Custom Web Development Roadmap: From Scratch to Production-Ready in 2026",
+  metaDescription:
+    "Explore the complete custom web development roadmap for 2026—from HTML, CSS, and JavaScript fundamentals to frameworks, APIs, deployment, AI-assisted de...",
   date: "July 2, 2026",
   readTime: "12 min read",
   author: {

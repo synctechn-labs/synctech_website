@@ -3,6 +3,9 @@ const virtualCardsSaasSubscriptions = {
   title: "How to Manage SaaS Subscriptions Using Virtual Cards (The Stress-Free Guide)",
   description:
     "Learn how virtual cards for SaaS subscriptions help finance teams stop surprise renewals, control vendor spend, and simplify SaaS subscription management with one card per vendor.",
+  metaTitle: "How to Manage SaaS Subscriptions Using Virtual Cards (The Stress-Free Guide)",
+  metaDescription:
+    "Learn how virtual cards for SaaS subscriptions help finance teams stop surprise renewals, control vendor spend, and simplify SaaS subscription managemen...",
   date: "July 3, 2026",
   readTime: "11 min read",
   author: {

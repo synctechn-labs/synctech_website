@@ -1,7 +1,11 @@
 const mobileAppDesignTrends = {
   id: "mobile-app-design-trends",
   title: "Micro-Interactions and Animation: The Future of Mobile App UX",
-  description: "Learn how subtle animations, tactile haptics, and responsive micro-interactions can elevate standard mobile applications into high-conversion digital experiences.",
+  description:
+    "Learn how subtle animations, tactile haptics, and responsive micro-interactions can elevate standard mobile applications into high-conversion digital experiences.",
+  metaTitle: "Micro-Interactions and Animation: The Future of Mobile App UX",
+  metaDescription:
+    "Learn how subtle animations, tactile haptics, and responsive micro-interactions can elevate standard mobile applications into high-conversion digital ex...",
   date: "June 29, 2026",
   readTime: "5 min read",
   author: {

@@ -4,6 +4,9 @@ const fordGlobalTechnologyBusinessCenter = {
     "Inside Ford Global Technology & Business Center Chennai: Careers, Campus, and What Ford’s India Hub Actually Does",
   description:
     "Explore Ford Global Technology & Business Center in Chennai, also known through Ford Business Solutions India. Learn what the Chennai hub works on, where it is located, the kinds of careers it hires for, and what job seekers should know about Ford’s technology, analytics, AI, and automotive engineering roles in India.",
+  metaTitle: "Inside Ford Global Technology & Business Center Chennai: Careers, Campus, and What Ford’s India Hub Actually Does",
+  metaDescription:
+    "Explore Ford Global Technology & Business Center in Chennai, also known through Ford Business Solutions India. Learn what the Chennai hub works on, wher...",
   date: "July 6, 2026",
   readTime: "12 min read",
   author: {

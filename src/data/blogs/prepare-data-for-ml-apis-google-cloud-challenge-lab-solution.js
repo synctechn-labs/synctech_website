@@ -3,6 +3,9 @@ const prepareDataForMlApisGoogleCloudChallengeLab2026 = {
   title: "Prepare Data for ML APIs on Google Cloud: Challenge Lab (GSP323) Solution Guide",
   description:
     "Solve the Prepare Data for ML APIs on Google Cloud Challenge Lab (GSP323) with a step-by-step guide covering Dataflow, Dataproc, Dataprep, Speech-to-Text, Natural Language API tasks, and the common grading errors that block progress.",
+  metaTitle: "Prepare Data for ML APIs on Google Cloud: Challenge Lab (GSP323) Solution Guide",
+  metaDescription:
+    "Solve the Prepare Data for ML APIs on Google Cloud Challenge Lab (GSP323) with a step-by-step guide covering Dataflow, Dataproc, Dataprep, Speech-to-Tex...",
   date: "July 2, 2026",
   readTime: "13 min read",
   author: {

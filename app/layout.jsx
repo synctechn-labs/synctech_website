@@ -2,6 +2,7 @@ import "./globals.css";
 import Script from "next/script";
 
 export const metadata = {
+  metadataBase: new URL("https://synctechn.com"),
   title: "Custom Software Development Company | SyncTechn",
   description: "SyncTechn is a custom software development company delivering web applications, mobile apps, AI solutions, and enterprise software tailored to your business goals.",
   alternates: {

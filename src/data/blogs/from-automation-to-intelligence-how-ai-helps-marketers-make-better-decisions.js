@@ -2,6 +2,8 @@ const fromAutomationToIntelligence = {
   id: "leveraging-ai-for-smarter-inbound-marketing-part-3",
   title: "Leveraging AI for Smarter Inbound Marketing (Part 3): From Automation to Intelligence",
   description: "Learn how AI helps marketers make better decisions, understand the complete customer journey, and prove marketing's business impact.",
+  metaTitle: "Leveraging AI for Smarter Inbound Marketing (Part 3) | Expert Insights",
+  metaDescription: "Learn how AI helps marketers make better decisions, understand the complete customer journey, and prove marketing's business impact.",
   date: "July 22, 2026",
   readTime: "20–25 Minutes",
   author: {

@@ -3,6 +3,9 @@ const top10MobileAppDevelopmentCompaniesInChennai = {
   title: "Top 10 Mobile App Development Companies in Chennai – 2026",
   description:
     "Discover the top mobile app development companies in Chennai for 2026. Compare expertise, technologies, services, and why Synctechn Software Solution stands out for Android, iOS, Flutter, React Native, and cross-platform app development.",
+  metaTitle: "Top 10 Mobile App Development Companies in Chennai – 2026",
+  metaDescription:
+    "Discover the top mobile app development companies in Chennai for 2026. Compare expertise, technologies, services, and why Synctechn Software Solution st...",
   date: "July 16, 2026",
   readTime: "12 min read",
   author: {

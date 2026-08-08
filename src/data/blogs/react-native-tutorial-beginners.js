@@ -4,6 +4,9 @@ const reactNativeTutorialBeginners = {
   title: "React Native Tutorial for Beginners: Build Your First App Step by Step",
   description:
     "Learn React Native step by step with this beginner-friendly tutorial. Understand React Native basics, Expo setup, components, props, state, Flexbox, API calls, and build your first cross-platform mobile app for iOS and Android.",
+  metaTitle: "React Native Tutorial for Beginners: Build Your First App Step by Step",
+  metaDescription:
+    "Learn React Native step by step with this beginner-friendly tutorial. Understand React Native basics, Expo setup, components, props, state, Flexbox, API...",
   date: "July 4, 2026",
   readTime: "14 min read",
   author: {

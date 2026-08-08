@@ -3,6 +3,9 @@ const typesOfCloudComputingServices = {
   title: "Types of Cloud Computing Services: A Complete Guide to IaaS, PaaS, and SaaS (2026)",
   description:
     "Learn the three main types of cloud computing services—Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). Explore their benefits, differences, use cases, and how to choose the right cloud model for your business in 2026.",
+  metaTitle: "Types of Cloud Computing Services: A Complete Guide to IaaS, PaaS, and SaaS (2026)",
+  metaDescription:
+    "Learn the three main types of cloud computing services—Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS...",
   date: "July 17, 2026",
   readTime: "12–15 min read",
   author: {

@@ -9,6 +9,17 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.synctechn.com',
+          },
+        ],
+        destination: 'https://synctechn.com/:path*',
+        permanent: true,
+      },
+      {
         source: '/services/ai-solutions',
         destination: '/services/ai-development-services/',
         permanent: true,

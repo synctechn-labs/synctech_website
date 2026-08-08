@@ -1,7 +1,11 @@
 const maximizingRoiDigitalMarketing = {
   id: "maximizing-roi-digital-marketing",
   title: "Maximizing ROI: High-Impact Digital Marketing Services Trends",
-  description: "Discover the top digital marketing services channels, content strategies, and analytics tactics that will drive qualified leads and maximize budget efficiency.",
+  description:
+    "Discover the top digital marketing services channels, content strategies, and analytics tactics that will drive qualified leads and maximize budget efficiency.",
+  metaTitle: "Maximizing ROI: High-Impact Digital Marketing Services Trends",
+  metaDescription:
+    "Discover the top digital marketing services channels, content strategies, and analytics tactics that will drive qualified leads and maximize budget effi...",
   date: "June 28, 2026",
   readTime: "5 min read",
   author: {

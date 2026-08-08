@@ -3,6 +3,9 @@ const geminiAppIntegrationsAndroid = {
   title: "The Ultimate Guide to Gemini App Integrations on Android (User + Developer Guide)",
   description:
     "Learn how Gemini app integrations on Android work, which apps Gemini can connect to, how to enable Connected Apps, and how developers can integrate Gemini AI into Android apps.",
+  metaTitle: "The Ultimate Guide to Gemini App Integrations on Android (User + Developer Guide)",
+  metaDescription:
+    "Learn how Gemini app integrations on Android work, which apps Gemini can connect to, how to enable Connected Apps, and how developers can integrate Gemi...",
   date: "July 4, 2026",
   readTime: "12 min read",
   author: {

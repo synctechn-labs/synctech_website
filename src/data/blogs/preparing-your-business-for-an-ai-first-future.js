@@ -2,6 +2,8 @@ const preparingYourBusinessForAnAiFirstFuture = {
   id: "leveraging-ai-for-smarter-inbound-marketing-part-4",
   title: "Leveraging AI for Smarter Inbound Marketing (Part 4): Preparing Your Business for an AI-First Future",
   description: "Discover how to prepare your business for an AI-first future, including practical adoption roadmaps and lessons from HubSpot's AI strategy.",
+  metaTitle: "Leveraging AI for Smarter Inbound Marketing (Part 4) | Expert Insights",
+  metaDescription: "Discover how to prepare your business for an AI-first future, including practical adoption roadmaps and lessons from HubSpot's AI strategy.",
   date: "July 22, 2026",
   readTime: "20–25 Minutes",
   author: {

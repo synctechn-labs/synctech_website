@@ -1,7 +1,11 @@
 const customSoftwareDevelopmentCompany = {
   id: "custom-software-development-company",
   title: "Custom Software Development Company: The Complete Guide to Building Scalable Business Solutions",
-  description: "Partner with a custom software development company to build scalable, secure, and business-focused software solutions tailored to your unique requirements.",
+  description:
+    "Partner with a custom software development company to build scalable, secure, and business-focused software solutions tailored to your unique requirements.",
+  metaTitle: "Custom Software Development Company: The Complete Guide to Building Scalable Business Solutions",
+  metaDescription:
+    "Partner with a custom software development company to build scalable, secure, and business-focused software solutions tailored to your unique requirements.",
   date: "July 28, 2026",
   readTime: "12 min read",
    author: {

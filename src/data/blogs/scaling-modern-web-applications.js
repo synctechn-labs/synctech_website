@@ -1,7 +1,11 @@
 const scalingModernWebApplications = {
   id: "scaling-modern-web-applications",
   title: "Scaling Modern Web Applications: Best Practices for 2026",
-  description: "Learn the essential strategies, architectural patterns, and performance optimizations required to scale React and Node.js applications to millions of users.",
+  description:
+    "Learn the essential strategies, architectural patterns, and performance optimizations required to scale React and Node.js applications to millions of users.",
+  metaTitle: "Scaling Modern Web Applications: Best Practices for 2026",
+  metaDescription:
+    "Learn the essential strategies, architectural patterns, and performance optimizations required to scale React and Node.js applications to millions of us...",
   date: "June 25, 2026",
   readTime: "6 min read",
   author: {

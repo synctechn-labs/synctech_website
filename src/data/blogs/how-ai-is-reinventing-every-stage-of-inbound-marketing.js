@@ -1,7 +1,11 @@
 const howAiIsReinventingEveryStageOfInboundMarketing = {
   id: "leveraging-ai-for-smarter-inbound-marketing-part-2",
   title: "Leveraging AI for Smarter Inbound Marketing (Part 2): How AI Is Reinventing Every Stage",
-  description: "Learn how artificial intelligence is transforming search optimization, lead capture, customer service agents, and email marketing for inbound strategies.",
+  description:
+    "Learn how artificial intelligence is transforming search optimization, lead capture, customer service agents, and email marketing for inbound strategies.",
+  metaTitle: "Leveraging AI for Smarter Inbound Marketing (Part 2): How AI Is Reinventing Every Stage",
+  metaDescription:
+    "Learn how artificial intelligence is transforming search optimization, lead capture, customer service agents, and email marketing for inbound strategies.",
   date: "July 22, 2026",
   readTime: "20–25 Minutes",
   author: {
