@@ -29,6 +29,11 @@ export default function BlogDetails() {
   const [openFaq, setOpenFaq] = useState(null);
   const [activeSection, setActiveSection] = useState("");
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const blog = blogs[id];
 
@@ -102,7 +107,7 @@ export default function BlogDetails() {
 
   const siteUrl = "https://synctechn.com";
   const canonicalUrl = `${siteUrl}/blog/${blog.id}/`;
-  const shareUrl = typeof window !== 'undefined' ? window.location.href : canonicalUrl;
+  const shareUrl = mounted && typeof window !== 'undefined' ? window.location.href : canonicalUrl;
   const shareTitle = blog.title;
   const publishedDate = new Date(blog.date).toString() !== "Invalid Date" ? new Date(blog.date).toISOString() : new Date().toISOString();
   const modifiedDate = blog.updatedDate && new Date(blog.updatedDate).toString() !== "Invalid Date" ? new Date(blog.updatedDate).toISOString() : publishedDate;
