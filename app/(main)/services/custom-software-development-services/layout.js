@@ -87,23 +87,7 @@ export default function CustomSoftwareLayout({ children }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://synctechn.com/#organization",
-        "name": "Synctechn Software Solutions",
-        "url": "https://synctechn.com",
-        "logo": "https://synctechn.com/assets/logo.png",
-        "sameAs": [
-          "https://www.instagram.com/synctechn/",
-          "https://www.linkedin.com/company/synctechn/posts/?feedView=all"
-        ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+1-800-555-SYNC",
-          "contactType": "sales",
-          "availableLanguage": ["English"]
-        }
-      },
+
       {
         "@type": "Service",
         "@id": "https://synctechn.com/services/custom-software-development-services/#service",

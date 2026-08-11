@@ -1,5 +1,5 @@
 import React from 'react';
-import SEO from '../../components/SEO';
+
 import ServiceTemplate from './ServiceTemplate';
 import EnterpriseTechStack from '../home/sections/EnterpriseTechStack';
 
@@ -35,88 +35,7 @@ import {
   Target
 } from "lucide-react";
 
-export const metadata = {
-  title:
-    "Custom Software Development Company | Enterprise Custom Software Development Services | SyncTechn",
 
-  description:
-    "SyncTechn provides custom software development services for startups, SMBs, and enterprises. We build secure, scalable, and cloud-native software solutions including enterprise applications, SaaS platforms, business automation software, APIs, CRM, ERP, and AI-powered software tailored to your business goals.",
-
-  keywords: [
-    "custom software development",
-    "custom software development company",
-    "custom software development services",
-    "enterprise custom software development",
-    "custom software solutions",
-    "business custom software development",
-    "software product development",
-    "enterprise application development",
-    "saas development company",
-    "cloud custom software development",
-    "software consulting services",
-    "crm custom software development",
-    "erp custom software development",
-    "api development services",
-    "workflow automation software",
-    "business process automation",
-    "ai custom software development",
-    "cloud native applications",
-    "startup custom software development company",
-    "digital transformation services"
-  ],
-
-  alternates: {
-    canonical:
-      "https://synctechn.com/services/custom-software-development-services/",
-  },
-
-  openGraph: {
-    title:
-      "Custom Software Development Services | SyncTechn",
-
-    description:
-      "Build secure, scalable, and future-ready custom software solutions including enterprise applications, SaaS platforms, business software, APIs, AI-powered solutions, and cloud-native applications.",
-
-    url:
-      "https://synctechn.com/services/custom-software-development-services/",
-
-    siteName: "SyncTechn",
-
-    locale: "en_US",
-
-    type: "website",
-
-    images: [
-      {
-        url: "/images/services/custom-software-development-services-og.webp",
-        width: 1200,
-        height: 630,
-        alt: "Custom Software Development Services",
-      },
-    ],
-  },
-
-  twitter: {
-    card: "summary_large_image",
-
-    title:
-      "Custom Software Development Company | SyncTechn",
-
-    description:
-      "Enterprise custom software development services including SaaS platforms, business applications, workflow automation, APIs, cloud-native software, and AI-powered solutions.",
-
-    images: [
-      "/images/services/custom-software-development-services-og.webp",
-    ],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-  },
-
-  metadataBase: new URL("https://synctechn.com"),
-};
 
 export const softwareDevelopmentData = {
   overviewImage: "https://res.cloudinary.com/wowukaao/image/upload/v1783865632/soft_dev_2_wgcix5.jpg",
@@ -646,17 +565,7 @@ export default function SoftwareDevelopment() {
 
   return (
     <>
-      <SEO
-        title="Custom Software Development Company | Scalable Software Solutions | Synctechn"
-        description="Build secure, scalable custom software development solutions with Synctechn. We design, develop, modernize, and maintain enterprise software tailored to your business goals."
-        keywords="custom software development, custom software development company, enterprise custom software development, custom software solutions, software product development, web application development, mobile app development, cloud application development, API development, software integration services, legacy software modernization, SaaS application development, business custom software development, custom enterprise applications"
-        canonicalUrl="https://synctechn.com/services/custom-software-development-services/"
-        ogTitle="Custom Software Development Services | Synctechn"
-        ogDescription="Build secure, scalable software tailored to your business. From SaaS products to enterprise applications, Synctechn delivers end-to-end custom software development services."
-        twitterTitle="Custom Software Development Services | Synctechn"
-        twitterDescription="Transform your ideas into scalable software with Synctechn's custom software development services."
-        schema={faqSchema}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ServiceTemplate
         data={softwareDevelopmentData}
         techStackComponent={

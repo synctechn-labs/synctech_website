@@ -465,6 +465,40 @@ export default function ServiceTemplate({ data, techStackComponent }) {
 
   return (
     <div className="w-full bg-white font-sans text-slate-900">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://synctechn.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://synctechn.com/services/" },
+              { "@type": "ListItem", "position": 3, "name": serviceTitle, "item": `https://synctechn.com${currentPath}` }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": `https://synctechn.com${currentPath}`
+            },
+            "headline": serviceTitle,
+            "description": data?.hero?.subtitle || data?.hero?.paragraph || serviceTitle,
+            "image": data?.hero?.bgImage || data?.overviewImage || "https://synctechn.com/logo.png",
+            "author": { "@type": "Organization", "name": "SyncTech" },
+            "publisher": { "@type": "Organization", "name": "SyncTech", "logo": { "@type": "ImageObject", "url": "https://synctechn.com/logo.png" } },
+            "datePublished": "2024-01-01T08:00:00+08:00",
+            "dateModified": new Date().toISOString()
+          })
+        }}
+      />
 
       {/* ========================================================= */}
       {/* 1. HERO SECTION */}
@@ -589,26 +623,47 @@ export default function ServiceTemplate({ data, techStackComponent }) {
       </section>
 
       {/* ========================================================= */}
-      {/* 1.5. HERO DESCRIPTION */}
+      {/* 1.5. KEY TAKEAWAY & AUDIENCE (HERO DESCRIPTION) */}
       {/* ========================================================= */}
-      {(data?.hero?.subtitle || data?.hero?.paragraph) && (
-        <section className="relative bg-[#050505] overflow-hidden pt-24 pb-12">
-          <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
-            <div className="max-w-5xl mx-auto text-center">
+      <section className="relative bg-[#050505] overflow-hidden pt-24 pb-12 border-b border-white/5">
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="max-w-4xl mx-auto">
+            {/* SEO: Top Summary / Key Takeaway */}
+            <div className="bg-gradient-to-br from-cyan-500/10 to-blue-600/10 border border-cyan-500/20 rounded-3xl p-8 md:p-10 mb-8 backdrop-blur-sm shadow-[0_8px_30px_rgba(6,182,212,0.1)]">
+              <div className="flex items-center gap-3 mb-6">
+                <ShieldCheck className="w-7 h-7 text-cyan-400" />
+                <h2 className="text-2xl font-bold text-white">Executive Summary & Key Takeaway</h2>
+              </div>
               {data?.hero?.subtitle && (
-                <h2 className={`mb-6 ${data?.hero?.subtitle.length > 200 ? 'text-lg md:text-xl text-slate-300 font-medium leading-relaxed' : 'text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight'}`}>
+                <p className="text-lg md:text-xl text-slate-200 font-medium leading-relaxed mb-6">
                   {data?.hero?.subtitle}
-                </h2>
+                </p>
               )}
               {data?.hero?.paragraph && (
-                <div className="text-lg text-slate-400 leading-relaxed">
+                <p className="text-base text-slate-400 leading-relaxed mb-6">
                   {data?.hero?.paragraph}
-                </div>
+                </p>
               )}
+              
+              <div className="grid md:grid-cols-2 gap-8 pt-8 border-t border-white/10 mt-6">
+                <div>
+                  <h3 className="text-sm font-bold text-cyan-400 uppercase tracking-widest mb-3">Ideal Audience & Use-Case</h3>
+                  <p className="text-sm text-slate-300 leading-relaxed">
+                    Designed for enterprise leaders, CTOs, and operations managers in <strong>{data?.industries?.list?.[0]?.title || serviceCategory}</strong> seeking scalable, custom solutions to optimize workflows and drive digital transformation.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-sm font-bold text-cyan-400 uppercase tracking-widest mb-3">Article Metadata</h3>
+                  <p className="text-sm text-slate-300 leading-relaxed flex flex-col gap-2">
+                    <span><strong>Published by:</strong> SyncTech Solutions</span>
+                    <span><strong>Last Updated:</strong> {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
-      )}
+        </div>
+      </section>
 
       {/* ========================================================= */}
       {/* 2. PROBLEM STATEMENT */}
@@ -1174,18 +1229,19 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                     onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
                     className="w-full flex items-center gap-6 py-6 text-left focus:outline-none"
                   >
-                    <span className="font-semibold text-sm lg:text-base pr-4 text-slate-100 flex-1">
+                    <h3 className="font-semibold text-sm lg:text-base pr-4 text-slate-100 flex-1 m-0">
                       {faq.question}
-                    </span>
+                    </h3>
                     <span className="text-slate-500 font-light text-2xl transition-transform duration-300">
                       {openFaq === idx ? '−' : '+'}
                     </span>
                   </button>
 
                   <div
-                    className={`overflow-hidden transition-all duration-300 ease-in-out ${openFaq === idx ? "max-h-[600px] opacity-100 pb-6" : "max-h-0 opacity-0 pb-0"}`}
+                    className={`overflow-hidden transition-all duration-300 ease-in-out ${openFaq === idx ? "max-h-[1000px] opacity-100 pb-6" : "max-h-0 opacity-0 pb-0"}`}
                   >
                     <div className="text-slate-400 text-sm lg:text-base leading-relaxed whitespace-pre-line">
+                      {faq.answer && <strong className="text-white block mb-3">Short Answer: {faq.answer.split('.')[0]}.</strong>}
                       {faq.answer}
                     </div>
                   </div>

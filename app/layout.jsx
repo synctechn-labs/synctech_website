@@ -47,6 +47,38 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "@id": "https://synctechn.com/#organization",
+                "name": "SyncTechn",
+                "url": "https://synctechn.com",
+                "logo": "https://res.cloudinary.com/dij2x0ixo/image/upload/e_background_removal/f_png/v1782032673/SyncTechWhiteLogo_bt3s0u.webp",
+                "description": "SyncTechn is a custom software development company delivering web applications, mobile apps, AI solutions, and enterprise software tailored to your business goals.",
+                "sameAs": [
+                  "https://www.linkedin.com/company/synctechn/",
+                  "https://www.instagram.com/synctechn/"
+                ]
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "@id": "https://synctechn.com/#website",
+                "url": "https://synctechn.com",
+                "name": "SyncTechn",
+                "description": "Custom Software Development Company | SyncTechn",
+                "publisher": {
+                  "@id": "https://synctechn.com/#organization"
+                }
+              }
+            ])
+          }}
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "FAQPage",

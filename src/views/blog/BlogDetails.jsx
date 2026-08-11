@@ -148,21 +148,10 @@ export default function BlogDetails() {
           "jobTitle": blog.author.role
         },
         "publisher": {
-          "@type": "Organization",
-          "name": "SyncTechn Software Solutions",
-          "logo": {
-            "@type": "ImageObject",
-            "url": `${siteUrl}/assets/logo.png`
-          }
+          "@id": `${siteUrl}/#organization`
         },
         "datePublished": publishedDate,
         "dateModified": modifiedDate
-      },
-      {
-        "@type": "Organization",
-        "name": "SyncTechn Software Solutions",
-        "url": siteUrl,
-        "logo": `${siteUrl}/assets/logo.png`
       }
     ]
   };

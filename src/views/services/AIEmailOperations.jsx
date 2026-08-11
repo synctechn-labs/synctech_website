@@ -1,5 +1,5 @@
 import React from 'react';
-import SEO from '../../components/SEO';
+
 import ServiceTemplate from './ServiceTemplate';
 import {
   Mail,
@@ -20,80 +20,7 @@ import {
   Database
 } from "lucide-react";
 
-export const metadata = {
-  title:
-    "AI Email Automation | Intelligent Inbox Management | SyncTechn",
 
-  description:
-    "SyncTechn develops AI-powered email operations automation to categorize, route, draft, and respond to high volumes of corporate emails autonomously, saving thousands of manual hours.",
-
-  keywords: [
-    "ai email automation",
-    "email operations ai",
-    "intelligent inbox management",
-    "ai email drafting",
-    "automated email routing",
-    "customer service ai",
-    "email triage automation",
-    "llm email parsing",
-    "email categorization ai",
-    "autonomous email agents",
-    "helpdesk automation",
-    "corporate email management"
-  ],
-
-  alternates: {
-    canonical:
-      "https://synctechn.com/services/ai-email-automation-services/",
-  },
-
-  openGraph: {
-    title:
-      "AI Email Automation | SyncTechn",
-
-    description:
-      "Automate your corporate inboxes. We build AI systems that read, route, and reply to thousands of emails daily with human-like accuracy.",
-
-    url:
-      "https://synctechn.com/services/ai-email-automation-services/",
-
-    siteName: "SyncTechn",
-
-    locale: "en_US",
-
-    type: "website",
-
-    images: [
-      {
-        url: "/images/services/ai-email-automation-og.webp",
-        width: 1200,
-        height: 630,
-        alt: "AI Email Automation"
-      }
-    ]
-  },
-
-  twitter: {
-    card: "summary_large_image",
-
-    title:
-      "AI Email Automation Services | SyncTechn",
-
-    description:
-      "Transform your inbox into an automated workflow. AI agents that triage, draft, and respond to high-volume emails.",
-
-    images: [
-      "/images/services/ai-email-automation-og.webp"
-    ]
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-  },
-
-  metadataBase: new URL("https://synctechn.com"),
-};
 
 export const aiEmailOperationsData = {
   overviewImage: "https://res.cloudinary.com/wowukaao/image/upload/v1783865631/AI_Solutions_4_in447t.jpg",
@@ -488,11 +415,7 @@ faqs: {
 export default function AIEmailOperations() {
   return (
     <>
-      <SEO 
-        title={metadata.title}
-        description={metadata.description}
-        keywords={metadata.keywords.join(', ')}
-      />
+      
       <ServiceTemplate 
         data={aiEmailOperationsData} 
       />

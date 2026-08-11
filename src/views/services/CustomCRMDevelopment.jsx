@@ -1,5 +1,5 @@
 import React from 'react';
-import SEO from '../../components/SEO';
+
 import ServiceTemplate from './ServiceTemplate';
 import {
   HeartPulse,
@@ -23,93 +23,7 @@ import {
   Lock
 } from "lucide-react";
 
-export const metadata = {
-  title:
-    "Custom CRM Development Company | CRM Custom Software Development Services | SyncTechn",
 
-  description:
-    "SyncTechn develops custom CRM software tailored to your sales, customer support, marketing, and business operations. Build scalable CRM solutions with lead management, sales automation, customer portals, workflow automation, analytics, and third-party integrations.",
-
-  keywords: [
-    "custom CRM development",
-    "CRM custom software development",
-    "CRM development company",
-    "customer relationship management software",
-    "custom CRM software",
-    "sales CRM development",
-    "enterprise CRM development",
-    "CRM application development",
-    "CRM platform development",
-    "lead management software",
-    "sales automation software",
-    "customer management system",
-    "CRM workflow automation",
-    "CRM dashboard",
-    "customer portal development",
-    "CRM integration services",
-    "cloud CRM development",
-    "CRM solution provider",
-    "business CRM software",
-    "CRM consulting services",
-    "CRM migration",
-    "CRM maintenance",
-    "CRM reporting software",
-    "CRM analytics",
-    "CRM customization"
-  ],
-
-  alternates: {
-    canonical:
-      "https://synctechn.com/services/custom-crm-development-services/",
-  },
-
-  openGraph: {
-    title:
-      "Custom CRM Development Services | SyncTechn",
-
-    description:
-      "Develop secure and scalable CRM software with lead management, sales automation, workflow automation, customer portals, analytics, and enterprise integrations.",
-
-    url:
-      "https://synctechn.com/services/custom-crm-development-services/",
-
-    siteName: "SyncTechn",
-
-    locale: "en_US",
-
-    type: "website",
-
-    images: [
-      {
-        url: "/images/services/custom-crm-development-services-og.webp",
-        width: 1200,
-        height: 630,
-        alt: "Custom CRM Development Services"
-      }
-    ]
-  },
-
-  twitter: {
-    card: "summary_large_image",
-
-    title:
-      "Custom CRM Development Company | SyncTechn",
-
-    description:
-      "Build custom CRM software with sales automation, lead management, workflow automation, customer engagement tools, and enterprise integrations.",
-
-    images: [
-      "/images/services/custom-crm-development-services-og.webp"
-    ]
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-  },
-
-  metadataBase: new URL("https://synctechn.com"),
-};
 
 export const customCRMDevelopmentData = {
   overviewImage: "https://res.cloudinary.com/wowukaao/image/upload/v1783865630/AI_Solutions_3_d3m38m.jpg",
@@ -612,11 +526,7 @@ faqs: {
 export default function CustomCRMDevelopment() {
   return (
     <>
-      <SEO 
-        title={metadata.title}
-        description={metadata.description}
-        keywords={metadata.keywords.join(', ')}
-      />
+      
       <ServiceTemplate 
         data={customCRMDevelopmentData} 
       />
