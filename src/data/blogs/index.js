@@ -24,6 +24,8 @@ import leveragingAiForSmarterInboundMarketing from "./leveraging-ai-for-smarter-
 import howAiIsReinventingEveryStageOfInboundMarketing from "./how-ai-is-reinventing-every-stage-of-inbound-marketing.js";
 import fromAutomationToIntelligence from "./from-automation-to-intelligence-how-ai-helps-marketers-make-better-decisions.js";
 import preparingYourBusinessForAnAiFirstFuture from "./preparing-your-business-for-an-ai-first-future.js";
+import aiAgentVsAgenticAi2026 from "./ai-agent-vs-agentic-ai.js";
+import mobileAppDevelopmentBlog from "./mobile-app-development-services-guide.js";
 // Map of blogs keyed by their unique URL slug (id)
 export const blogs = {
 
@@ -49,6 +51,8 @@ export const blogs = {
   "leveraging-ai-for-smarter-inbound-marketing-part-2": howAiIsReinventingEveryStageOfInboundMarketing,
   "leveraging-ai-for-smarter-inbound-marketing-part-3": fromAutomationToIntelligence,
   "leveraging-ai-for-smarter-inbound-marketing-part-4": preparingYourBusinessForAnAiFirstFuture,
+  "ai-agent-vs-agentic-ai": aiAgentVsAgenticAi2026,
+  "mobile-app-development-services-guide": mobileAppDevelopmentBlog,
 };
 
 // Flat list of all blogs for the listing page
