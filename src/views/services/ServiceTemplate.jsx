@@ -465,6 +465,12 @@ export default function ServiceTemplate({ data, techStackComponent }) {
 
   return (
     <div className="w-full bg-white font-sans text-slate-900">
+      <style>{`
+        @keyframes laser-scan {
+          0% { transform: translateX(-100%); }
+          100% { transform: translateX(200%); }
+        }
+      `}</style>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -627,39 +633,199 @@ export default function ServiceTemplate({ data, techStackComponent }) {
       {/* ========================================================= */}
       <section className="relative bg-[#050505] overflow-hidden pt-24 pb-12 border-b border-white/5">
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="max-w-4xl mx-auto">
-            {/* SEO: Top Summary / Key Takeaway */}
-            <div className="bg-gradient-to-br from-cyan-500/10 to-blue-600/10 border border-cyan-500/20 rounded-3xl p-8 md:p-10 mb-8 backdrop-blur-sm shadow-[0_8px_30px_rgba(6,182,212,0.1)]">
-              <div className="flex items-center gap-3 mb-6">
-                <ShieldCheck className="w-7 h-7 text-cyan-400" />
-                <h2 className="text-2xl font-bold text-white">Executive Summary & Key Takeaway</h2>
-              </div>
-              {data?.hero?.subtitle && (
-                <p className="text-lg md:text-xl text-slate-200 font-medium leading-relaxed mb-6">
-                  {data?.hero?.subtitle}
-                </p>
-              )}
-              {data?.hero?.paragraph && (
-                <p className="text-base text-slate-400 leading-relaxed mb-6">
-                  {data?.hero?.paragraph}
-                </p>
-              )}
+          <div className="max-w-6xl mx-auto flex flex-col gap-6">
+            
+            {/* Top Grid: Executive Summary & Key Takeaways */}
+            <div className="grid lg:grid-cols-[1fr_450px] gap-6">
               
-              <div className="grid md:grid-cols-2 gap-8 pt-8 border-t border-white/10 mt-6">
-                <div>
-                  <h3 className="text-sm font-bold text-cyan-400 uppercase tracking-widest mb-3">Ideal Audience & Use-Case</h3>
-                  <p className="text-sm text-slate-300 leading-relaxed">
-                    Designed for enterprise leaders, CTOs, and operations managers in <strong>{data?.industries?.list?.[0]?.title || serviceCategory}</strong> seeking scalable, custom solutions to optimize workflows and drive digital transformation.
-                  </p>
+              {/* Left Column: Executive Summary */}
+              <div className="bg-[#0b0f19] border border-blue-900/30 rounded-3xl p-8 lg:p-10 shadow-lg h-full">
+                <div className="inline-flex items-center px-3 py-1 rounded-full bg-blue-900/40 border border-blue-800/50 text-[10px] font-bold text-cyan-400 tracking-widest uppercase mb-6">
+                  Executive Summary
                 </div>
-                <div>
-                  <h3 className="text-sm font-bold text-cyan-400 uppercase tracking-widest mb-3">Article Metadata</h3>
-                  <p className="text-sm text-slate-300 leading-relaxed flex flex-col gap-2">
-                    <span><strong>Published by:</strong> SyncTech Solutions</span>
-                    <span><strong>Last Updated:</strong> {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
+                
+                <h2 className="text-3xl lg:text-4xl font-extrabold text-white mb-6 leading-tight">
+                  {data?.hero?.title ? (
+                    <>
+                      {data.hero.title.split(' ').slice(0, -1).join(' ')} <br />
+                      <span className="text-cyan-400">{data.hero.title.split(' ').slice(-1)}</span>
+                    </>
+                  ) : (
+                    <>
+                      Engine of Digital <br />
+                      <span className="text-cyan-400">Transformation</span>
+                    </>
+                  )}
+                </h2>
+                
+                {/* Animated Glowing Line */}
+                <div className="relative w-full h-[2px] bg-blue-900/30 mb-8 rounded-full overflow-hidden">
+                  <div 
+                    className="absolute top-0 left-0 h-full w-[50%] bg-gradient-to-r from-transparent via-cyan-400 to-cyan-300"
+                    style={{ animation: 'laser-scan 3s linear infinite' }}
+                  >
+                    <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-white rounded-full shadow-[0_0_10px_3px_#22d3ee]"></div>
+                  </div>
+                </div>
+                
+                {data?.hero?.subtitle && (
+                  <p className="text-lg text-slate-200 font-semibold leading-relaxed mb-6">
+                    {data.hero.subtitle}
+                  </p>
+                )}
+                
+                {data?.hero?.paragraph && (
+                  <div className="text-sm text-slate-400 leading-relaxed mb-4 space-y-4">
+                    {data.hero.paragraph.split('\n\n').map((para, i) => (
+                      <p key={i}>{para}</p>
+                    ))}
+                  </div>
+                )}
+              </div>
+              
+              {/* Right Column: Key Takeaways */}
+              <div className="bg-[#0b0f19] border border-blue-900/30 rounded-3xl p-8 lg:p-10 shadow-lg h-full flex flex-col">
+                <h3 className="text-sm font-bold text-cyan-400 uppercase tracking-widest mb-6">
+                  Key Takeaways
+                </h3>
+                <div className="flex flex-col gap-4 flex-1 justify-center">
+                  
+                  {/* Takeaway 1 */}
+                  <div className="flex items-start gap-4 p-4 rounded-2xl bg-[#0d1424] border border-blue-900/30 hover:border-cyan-500/30 transition-colors">
+                    <div className="mt-1 w-10 h-10 shrink-0 rounded-full bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center">
+                      <ShieldCheck className="w-5 h-5 text-cyan-400" />
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-bold text-white mb-1">Secure by Design</h4>
+                      <p className="text-xs text-slate-400 leading-relaxed">Enterprise-grade security and compliance built into every solution.</p>
+                    </div>
+                  </div>
+                  
+                  {/* Takeaway 2 */}
+                  <div className="flex items-start gap-4 p-4 rounded-2xl bg-[#0d1424] border border-blue-900/30 hover:border-cyan-500/30 transition-colors">
+                    <div className="mt-1 w-10 h-10 shrink-0 rounded-full bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2l.5-.5M15 4l.5-.5c1.17-1.17 3.07-1.17 4.24 0 1.17 1.17 1.17 3.07 0 4.24l-.5.5M12 12l-3 3M16 10l-1-1M14 8l-1-1"/></svg>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-bold text-white mb-1">Future-Ready Solutions</h4>
+                      <p className="text-xs text-slate-400 leading-relaxed">Scalable, adaptable, and designed to evolve with your business.</p>
+                    </div>
+                  </div>
+                  
+                  {/* Takeaway 3 */}
+                  <div className="flex items-start gap-4 p-4 rounded-2xl bg-[#0d1424] border border-blue-900/30 hover:border-cyan-500/30 transition-colors">
+                    <div className="mt-1 w-10 h-10 shrink-0 rounded-full bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-bold text-white mb-1">Tailored to You</h4>
+                      <p className="text-xs text-slate-400 leading-relaxed">Custom-built software that fits your unique workflows and growth goals.</p>
+                    </div>
+                  </div>
+                  
+                  {/* Takeaway 4 */}
+                  <div className="flex items-start gap-4 p-4 rounded-2xl bg-[#0d1424] border border-blue-900/30 hover:border-cyan-500/30 transition-colors">
+                    <div className="mt-1 w-10 h-10 shrink-0 rounded-full bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><polyline points="1 13 6 8 12 14 23 3"/></svg>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-bold text-white mb-1">Business Impact Driven</h4>
+                      <p className="text-xs text-slate-400 leading-relaxed">Solutions that automate, optimize, and unlock new revenue opportunities.</p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom Row: Ideal Audience & Article Metadata (hidden) */}
+            <div className="grid lg:grid-cols-1 gap-6">
+              
+              {/* Audience Box */}
+              <div className="bg-[#0b0f19] border border-blue-900/30 rounded-3xl p-8 lg:p-10 shadow-lg">
+                <div className="flex items-center gap-3 mb-8">
+                  <svg className="w-6 h-6 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  <h3 className="text-sm font-bold text-cyan-400 uppercase tracking-widest">
+                    Ideal Audience & Use-Case
+                  </h3>
+                </div>
+                
+                <div className="grid md:grid-cols-3 gap-6 mb-8">
+                  <div className="text-center md:text-left">
+                    <div className="w-16 h-16 rounded-full border border-blue-900/50 bg-[#0d1424] mx-auto md:mx-0 flex items-center justify-center mb-5 text-cyan-400">
+                      <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <h4 className="text-sm font-bold text-white mb-2">Enterprise Leaders</h4>
+                    <p className="text-xs text-slate-400 leading-relaxed">Drive digital transformation with secure, scalable software tailored to your strategic goals.</p>
+                  </div>
+                  
+                  <div className="text-center md:text-left border-t md:border-t-0 md:border-l border-slate-800/50 pt-6 md:pt-0 md:pl-8">
+                    <div className="w-16 h-16 rounded-full border border-blue-900/50 bg-[#0d1424] mx-auto md:mx-0 flex items-center justify-center mb-5 text-cyan-400">
+                      <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    </div>
+                    <h4 className="text-sm font-bold text-white mb-2">CTOs & Tech Leaders</h4>
+                    <p className="text-xs text-slate-400 leading-relaxed">Modernize infrastructure, integrate systems, and accelerate innovation with custom solutions.</p>
+                  </div>
+                  
+                  <div className="text-center md:text-left border-t md:border-t-0 md:border-l border-slate-800/50 pt-6 md:pt-0 md:pl-8">
+                    <div className="w-16 h-16 rounded-full border border-blue-900/50 bg-[#0d1424] mx-auto md:mx-0 flex items-center justify-center mb-5 text-cyan-400">
+                      <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+                    </div>
+                    <h4 className="text-sm font-bold text-white mb-2">Operations Managers</h4>
+                    <p className="text-xs text-slate-400 leading-relaxed">Automate workflows, reduce bottlenecks, and improve operational efficiency at scale.</p>
+                  </div>
+                </div>
+                
+                <div className="bg-[#0d1424] border border-blue-900/30 rounded-full py-3 px-6 flex items-center gap-3 w-fit md:mx-0 mx-auto">
+                  <svg className="w-5 h-5 text-cyan-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                  <p className="text-xs text-slate-300 font-medium tracking-wide">
+                    Industries We Serve: <span className="text-cyan-400 font-bold">{data?.industries?.list?.[0]?.title || serviceCategory}</span> | Banking | Healthcare | Logistics | SaaS
                   </p>
                 </div>
               </div>
+
+              {/* Hidden Article Metadata code */}
+              <div className="hidden bg-[#0b0f19] border border-blue-900/30 rounded-3xl p-8 lg:p-10 shadow-lg">
+                <div className="flex items-center gap-3 mb-6">
+                  <svg className="w-6 h-6 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                  <h3 className="text-sm font-bold text-cyan-400 uppercase tracking-widest">
+                    Article Metadata
+                  </h3>
+                </div>
+                
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4 pb-4 border-b border-slate-800">
+                    <div className="mt-0.5 shrink-0">
+                      <svg className="w-5 h-5 text-slate-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    </div>
+                    <div>
+                      <p className="text-[10px] uppercase text-slate-500 font-bold mb-1">Published by</p>
+                      <p className="text-sm font-semibold text-white">SyncTech Solutions</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4 pb-4 border-b border-slate-800">
+                    <div className="mt-0.5 shrink-0">
+                      <svg className="w-5 h-5 text-slate-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <div>
+                      <p className="text-[10px] uppercase text-slate-500 font-bold mb-1">Last Updated</p>
+                      <p className="text-sm font-semibold text-white">{new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4">
+                    <div className="mt-0.5 shrink-0">
+                      <svg className="w-5 h-5 text-slate-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <div>
+                      <p className="text-[10px] uppercase text-slate-500 font-bold mb-1">Category</p>
+                      <p className="text-sm font-semibold text-white">Executive Summary</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>
