@@ -676,9 +676,13 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                 
                 {data?.hero?.paragraph && (
                   <div className="text-sm text-slate-400 leading-relaxed mb-4 space-y-4">
-                    {data.hero.paragraph.split('\n\n').map((para, i) => (
-                      <p key={i}>{para}</p>
-                    ))}
+                    {typeof data.hero.paragraph === 'string' ? (
+                      data.hero.paragraph.split('\n\n').map((para, i) => (
+                        <p key={i}>{para}</p>
+                      ))
+                    ) : (
+                      data.hero.paragraph
+                    )}
                   </div>
                 )}
               </div>
