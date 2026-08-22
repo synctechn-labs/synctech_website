@@ -20,7 +20,7 @@ const bestEnterpriseBackupSolutions = {
   content: [
     {
       type: "paragraph",
-      text: "Enterprise backup is no longer just about copying files to secondary storage. For CIOs, CTOs, IT directors, and infrastructure architects partnering with <a href='/' class='text-blue-600'>SyncTech Software Solutions</a>, backup has become a core part of cyber resilience, compliance, and business continuity strategy. The best enterprise backup solutions today must do much more than schedule backups. They need to protect hybrid infrastructure, secure SaaS workloads, support aggressive recovery SLAs, and withstand ransomware attacks with immutable storage and cleanroom recovery options.",
+      text: "Enterprise backup is no longer just about copying files to secondary storage. For CIOs, CTOs, IT directors, and infrastructure architects partnering with <a href='/' class='text-blue-600'>SyncTechn Software Solutions</a>, backup has become a core part of cyber resilience, compliance, and business continuity strategy. The best enterprise backup solutions today must do much more than schedule backups. They need to protect hybrid infrastructure, secure SaaS workloads, support aggressive recovery SLAs, and withstand ransomware attacks with immutable storage and cleanroom recovery options.",
     },
     {
       type: "paragraph",

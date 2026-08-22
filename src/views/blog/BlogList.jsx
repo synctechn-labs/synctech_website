@@ -10,7 +10,7 @@ export default function BlogList() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
-  const blogsPerPage = 5;
+  const blogsPerPage = 10;
 
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
@@ -149,11 +149,11 @@ export default function BlogList() {
                   className="group relative bg-white rounded-[32px] overflow-hidden border border-slate-100 hover:border-blue-200 shadow-sm hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300 flex flex-col lg:flex-row"
                 >
                   {/* Left: Image */}
-                  <div className="relative w-full lg:w-[55%] aspect-video lg:aspect-auto overflow-hidden bg-white shrink-0 flex items-center justify-center p-4">
+                  <div className="relative w-full lg:w-[55%] aspect-video lg:aspect-auto overflow-hidden bg-slate-100 shrink-0 flex items-center justify-center">
                     <img
                       src={latestBlog.coverImage}
                       alt={latestBlog.title}
-                      className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                       loading="lazy"
                     />
                   </div>
@@ -202,11 +202,11 @@ export default function BlogList() {
                         className="group flex flex-col md:flex-row gap-8 bg-transparent hover:bg-white/60 p-4 -m-4 rounded-3xl transition-all duration-300 items-start md:items-center"
                       >
                         {/* Image Thumbnail */}
-                        <div className="w-full md:w-[280px] shrink-0 aspect-[16/10] rounded-2xl overflow-hidden bg-white relative shadow-sm flex items-center justify-center border border-slate-50 p-2">
+                        <div className="w-full md:w-[280px] shrink-0 aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100 relative shadow-sm flex items-center justify-center border border-slate-100">
                           <img
                             src={blog.coverImage}
                             alt={blog.title}
-                            className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
+                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                             loading="lazy"
                           />
                         </div>

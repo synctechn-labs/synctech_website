@@ -31,7 +31,7 @@ const Services = () => {
             </h2>
 
             <p className="text-slate-600 text-lg md:text-xl max-w-4xl leading-relaxed">
-              SyncTech Software Solutions provides custom software development,
+              SyncTechn Software Solutions provides custom software development,
               web applications, mobile app development, AI-powered solutions,
               cloud services, and digital transformation strategies that help
               businesses accelerate growth and achieve long-term success.

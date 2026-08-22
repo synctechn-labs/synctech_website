@@ -81,7 +81,7 @@ const Hero = () => {
           {/* Description */}
           <Reveal delay={300}>
             <p className="max-w-4xl mx-auto mt-8 text-lg md:text-xl text-slate-600 leading-relaxed">
-              SyncTech Software Solutions helps startups, SMEs, and enterprises
+              SyncTechn Software Solutions helps startups, SMEs, and enterprises
               build scalable web applications, mobile apps, AI-powered products,
               and digital transformation solutions that accelerate growth and
               improve business efficiency.

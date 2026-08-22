@@ -214,7 +214,7 @@ export default function CookiesPolicy() {
           </div>
 
           <p className="mt-8 text-lg text-slate-600 max-w-3xl mx-auto">
-            This Cookies Policy explains how Synctech Software Solutions uses
+            This Cookies Policy explains how SyncTechn Software Solutions uses
             cookies and similar technologies on synctechn.com.
           </p>
         </div>

@@ -51,7 +51,7 @@ const WhyChooseUsPage = () => {
             icon: Layers3,
             title: "Custom Software Built Around Your Needs",
             description:
-                "At SyncTech Software Solutions, every product is designed and developed around your business requirements. Whether you need a custom internal platform, customer-facing web app, SaaS product, or AI-enabled system, we create tailored solutions instead of one-size-fits-all software.",
+                "At SyncTechn Software Solutions, every product is designed and developed around your business requirements. Whether you need a custom internal platform, customer-facing web app, SaaS product, or AI-enabled system, we create tailored solutions instead of one-size-fits-all software.",
         },
         {
             icon: Users,
@@ -144,9 +144,9 @@ const WhyChooseUsPage = () => {
 
     const faqs = [
         {
-            question: "Why should businesses choose SyncTech Software Solutions?",
+            question: "Why should businesses choose SyncTechn Software Solutions?",
             answer:
-                "Businesses choose SyncTech Software Solutions because we combine business-focused strategy, custom software development expertise, agile delivery, modern technology capabilities, and long-term support. Our goal is to build digital solutions that solve real problems and create measurable business value.",
+                "Businesses choose SyncTechn Software Solutions because we combine business-focused strategy, custom software development expertise, agile delivery, modern technology capabilities, and long-term support. Our goal is to build digital solutions that solve real problems and create measurable business value.",
         },
         {
             question: "What industries or business types does SyncTech work with?",
@@ -156,7 +156,7 @@ const WhyChooseUsPage = () => {
         {
             question: "Do you only build websites, or do you offer full custom software development services?",
             answer:
-                "SyncTech Software Solutions offers end-to-end custom software development services including custom software development, web application development, mobile app development, AI solutions, cloud services, UI/UX design, API integrations, testing, deployment, and maintenance.",
+                "SyncTechn Software Solutions offers end-to-end custom software development services including custom software development, web application development, mobile app development, AI solutions, cloud services, UI/UX design, API integrations, testing, deployment, and maintenance.",
         },
         {
             question: "How does SyncTech ensure software quality and project success?",
@@ -213,7 +213,7 @@ const WhyChooseUsPage = () => {
 
                             <Reveal delay={300}>
                                 <p className="mt-8 text-lg leading-relaxed text-slate-300 md:text-xl">
-                                    Businesses choose <span className="font-semibold text-white">SyncTech Software Solutions</span> for
+                                    Businesses choose <span className="font-semibold text-white">SyncTechn Software Solutions</span> for
                                     custom software development, web application development, mobile app
                                     development, AI solutions, and scalable cloud applications built for
                                     performance, security, and long-term business growth. We combine
@@ -289,7 +289,7 @@ const WhyChooseUsPage = () => {
                                 <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-2xl backdrop-blur">
                                     <img
                                         src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
-                                        alt="SyncTech Software Solutions team collaborating on custom software development, web applications, mobile apps, and AI solutions"
+                                        alt="SyncTechn Software Solutions team collaborating on custom software development, web applications, mobile apps, and AI solutions"
                                         className="h-[520px] w-full object-cover"
                                     />
 
@@ -365,7 +365,7 @@ const WhyChooseUsPage = () => {
                                 Choosing the right custom software development company is about more than
                                 technical skills. It’s about finding a team that understands your
                                 business goals, communicates clearly, builds reliable solutions,
-                                and stays committed after launch. SyncTech Software Solutions
+                                and stays committed after launch. SyncTechn Software Solutions
                                 combines strategy, design, development, and support to help
                                 businesses launch faster, operate smarter, and scale with
                                 confidence.
@@ -447,7 +447,7 @@ const WhyChooseUsPage = () => {
 
                             <Reveal delay={300}>
                                 <p className="mt-6 text-lg leading-relaxed text-slate-600">
-                                    SyncTech Software Solutions delivers a broad range of digital
+                                    SyncTechn Software Solutions delivers a broad range of digital
                                     capabilities for businesses looking to modernize systems, launch
                                     new products, automate operations, or improve customer
                                     experiences through technology.
@@ -544,7 +544,7 @@ const WhyChooseUsPage = () => {
                                 <h2 className="text-4xl md:text-5xl font-bold leading-tight text-blue-800">
                                     What Sets
                                     <span className="block bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 bg-clip-text text-transparent">
-                                        SyncTech Software Solutions Apart
+                                        SyncTechn Software Solutions Apart
                                     </span>
                                 </h2>
                             </Reveal>
@@ -626,7 +626,7 @@ const WhyChooseUsPage = () => {
                             </h2>
                             <p className="mt-6 text-lg leading-relaxed text-slate-600">
                                 Here are some common questions businesses ask before choosing
-                                SyncTech Software Solutions as their custom software development partner.
+                                SyncTechn Software Solutions as their custom software development partner.
                             </p>
                         </div>
                     </Reveal>
@@ -668,7 +668,7 @@ const WhyChooseUsPage = () => {
                             </h2>
 
                             <p className="mx-auto mt-6 max-w-3xl text-base md:text-lg leading-relaxed text-blue-50">
-                                SyncTech Software Solutions helps startups, SMEs, and enterprises
+                                SyncTechn Software Solutions helps startups, SMEs, and enterprises
                                 build custom software, web applications, mobile apps, AI solutions,
                                 and scalable digital platforms that support real business growth.
                             </p>

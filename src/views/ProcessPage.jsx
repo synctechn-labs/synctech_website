@@ -192,7 +192,7 @@ const benefits = [
 
 const faqs = [
   {
-    question: "What is your custom software development process at SyncTech Software Solutions?",
+    question: "What is your custom software development process at SyncTechn Software Solutions?",
     answer:
       "Our custom software development process includes discovery and requirement analysis, project planning, UI/UX design, agile development, testing, deployment, and ongoing support. This structured workflow helps us deliver scalable and reliable digital solutions aligned with business goals.",
   },
@@ -270,7 +270,7 @@ const ProcessPage = () => {
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300 sm:text-xl">
-              At <span className="font-semibold text-white">SyncTech Software Solutions</span>,
+              At <span className="font-semibold text-white">SyncTechn Software Solutions</span>,
               we follow a structured and agile custom software development process to
               transform ideas into secure, scalable, and high-performing digital
               products. From discovery and planning to design, development,
@@ -605,7 +605,7 @@ const ProcessPage = () => {
 
             <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-slate-300 sm:text-lg">
               From strategy and design to development, deployment, and long-term
-              support, SyncTech Software Solutions delivers end-to-end software
+              support, SyncTechn Software Solutions delivers end-to-end software
               development services for startups, growing businesses, and
               enterprises. Let’s turn your idea into a scalable digital
               solution.

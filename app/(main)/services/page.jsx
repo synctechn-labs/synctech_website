@@ -1,7 +1,7 @@
 import ServicesLandingPage from "@/views/ServicesLandingPage";
 
 export const metadata = {
-  title: "Custom Software & Digital Services | SyncTech Software Solutions",
+  title: "Custom Software & Digital Services | SyncTechn Software Solutions",
   description: "Transform your business with SyncTech's professional custom software development, web app creation, mobile apps, CRM systems, and technical SEO marketing services.",
   keywords: [
     "custom software development", 
@@ -17,7 +17,7 @@ export const metadata = {
     canonical: "https://synctechn.com/services/",
   },
   openGraph: {
-    title: "Custom Software & Digital Services | SyncTech Software Solutions",
+    title: "Custom Software & Digital Services | SyncTechn Software Solutions",
     description: "Transform your business with SyncTech's professional custom software development, web app creation, mobile apps, CRM systems, and technical SEO marketing services.",
     url: "https://synctechn.com/services/",
     type: "website"

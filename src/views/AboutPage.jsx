@@ -158,7 +158,7 @@ const AboutPage = () => {
 
                             <Reveal delay={300}>
                                 <p className="mt-8 max-w-2xl text-lg leading-relaxed text-slate-600">
-                                    At <span className="font-semibold text-slate-900">SyncTech Software Solutions</span>,
+                                    At <span className="font-semibold text-slate-900">SyncTechn Software Solutions</span>,
                                     we help startups, SMEs, and enterprises transform ideas into
                                     scalable software, modern web platforms, mobile apps, and
                                     AI-powered solutions. We combine strategy, design, and
@@ -279,7 +279,7 @@ const AboutPage = () => {
 
                             <Reveal delay={300}>
                                 <p className="mt-8 text-lg leading-relaxed text-slate-600">
-                                    SyncTech Software Solutions was founded with a simple goal:
+                                    SyncTechn Software Solutions was founded with a simple goal:
                                     help businesses turn ideas into impactful digital products.
                                     We believe software should do more than function — it should
                                     solve real business problems, improve customer experiences,
@@ -397,7 +397,7 @@ const AboutPage = () => {
                                 <h2 className="text-4xl md:text-5xl font-bold leading-tight text-blue-800">
                                     Why Businesses Choose
                                     <span className="block bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 bg-clip-text text-transparent">
-                                        SyncTech Software Solutions
+                                        SyncTechn Software Solutions
                                     </span>
                                 </h2>
                             </Reveal>
@@ -485,7 +485,7 @@ const AboutPage = () => {
                             <p className="mx-auto mt-6 max-w-3xl text-base md:text-lg leading-relaxed text-blue-50">
                                 Whether you&apos;re planning a custom software platform, a modern
                                 web application, a mobile app, or an AI-powered solution,
-                                SyncTech Software Solutions is here to help you turn your ideas
+                                SyncTechn Software Solutions is here to help you turn your ideas
                                 into scalable digital products.
                             </p>
 

@@ -73,7 +73,7 @@ const About = () => {
 
             <Reveal delay={400}>
               <p className="mt-8 text-lg text-slate-600 leading-relaxed max-w-xl">
-                At SyncTech Software Solutions, we help startups, SMEs, and
+                At SyncTechn Software Solutions, we help startups, SMEs, and
                 enterprises build scalable software, web applications, mobile
                 apps, and AI-powered solutions. Our mission is to transform
                 business ideas into high-performance digital products that drive

@@ -20,7 +20,7 @@ const sections = [
     icon: FileText,
     title: "Introduction",
     content:
-      "Synctech Software Solutions respects your privacy and is committed to protecting the personal information you share with us. This Privacy Policy explains how we collect, use, store, and safeguard your information.",
+      "SyncTechn Software Solutions respects your privacy and is committed to protecting the personal information you share with us. This Privacy Policy explains how we collect, use, store, and safeguard your information.",
   },
   {
     id: "information-we-collect",
@@ -127,7 +127,7 @@ export default function PrivacyPolicy() {
             </h1>
 
             <p className="mt-8 text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-              At Synctech Software Solutions, we value your trust. This Privacy
+              At SyncTechn Software Solutions, we value your trust. This Privacy
               Policy explains how we collect, use, disclose, and safeguard your
               information when you visit our website or use our services.
             </p>

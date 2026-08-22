@@ -456,7 +456,7 @@ const ServicesLandingPage = () => {
     <div className="bg-slate-50 min-h-screen text-slate-800 font-sans">
       {/* SEO Tags */}
       <SEO
-        title="Custom Software & Digital Services | SyncTech Software Solutions"
+        title="Custom Software & Digital Services | SyncTechn Software Solutions"
         description="Transform your business with SyncTech's professional custom software development, web app creation, mobile apps, CRM systems, and technical SEO marketing services."
         keywords="custom software development, custom web development company india, mobile app development, CRM solutions, CRM portal development, digital marketing services, SEO friendly website, SyncTech solutions"
       />

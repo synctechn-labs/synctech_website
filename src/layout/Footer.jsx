@@ -191,7 +191,7 @@ const Footer = () => {
         {/* Middle Bar: Copyright */}
         <div className="mt-8 mb-0 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-medium text-slate-400 relative z-10">
           <div>
-            &copy; {new Date().getFullYear()} SyncTech Software Solutions. All
+            &copy; {new Date().getFullYear()} SyncTechn Software Solutions. All
             rights reserved.
           </div>
           <div>Design by SyncTechn</div>

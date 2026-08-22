@@ -39,7 +39,7 @@ const sections = [
     icon: Briefcase,
     title: "About Our Services",
     content:
-      "Synctech Software Solutions provides technology-related services to businesses and organizations.",
+      "SyncTechn Software Solutions provides technology-related services to businesses and organizations.",
     points: [
       "Custom Software Development",
       "Custom Web Development",
@@ -72,7 +72,7 @@ const sections = [
     icon: Copyright,
     title: "Intellectual Property Rights",
     content:
-      "All website content is owned by Synctech Software Solutions and protected by intellectual property laws.",
+      "All website content is owned by SyncTechn Software Solutions and protected by intellectual property laws.",
     points: [
       "Text",
       "Graphics",
@@ -132,7 +132,7 @@ const sections = [
     icon: AlertTriangle,
     title: "Limitation of Liability",
     content:
-      "Synctech Software Solutions shall not be liable for damages resulting from the use of our website or services.",
+      "SyncTechn Software Solutions shall not be liable for damages resulting from the use of our website or services.",
     points: [
       "Direct damages",
       "Indirect damages",
@@ -149,7 +149,7 @@ const sections = [
     icon: Scale,
     title: "Indemnification",
     content:
-      "Users agree to indemnify and hold Synctech Software Solutions harmless.",
+      "Users agree to indemnify and hold SyncTechn Software Solutions harmless.",
     points: [
       "Claims arising from website usage.",
       "Violation of these Terms.",
@@ -276,7 +276,7 @@ export default function TermsOfService() {
             </div>
 
             <p className="mt-8 text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-              Welcome to Synctech Software Solutions. These Terms of Service
+              Welcome to SyncTechn Software Solutions. These Terms of Service
               govern your access to and use of our website, products, and
               services.
             </p>
