@@ -814,7 +814,7 @@ export default function ServiceTemplate({ data, techStackComponent }) {
                     </div>
                     <div>
                       <p className="text-[10px] uppercase text-slate-500 font-bold mb-1">Last Updated</p>
-                      <p className="text-sm font-semibold text-white">{new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</p>
+                      <p className="text-sm font-semibold text-white" suppressHydrationWarning>{new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</p>
                     </div>
                   </div>
                   
