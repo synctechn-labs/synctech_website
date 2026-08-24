@@ -1,11 +1,10 @@
 import SoftwareDevelopment from "@/views/services/SoftwareDevelopment";
 
 export const metadata = {
-  title:
-    "Custom Software Development Company | Enterprise Custom Software Development Services | SyncTechn",
+  title: "Custom Software Development Company | SyncTechn",
 
   description:
-    "SyncTechn provides custom software development services for startups, SMBs, and enterprises. We build secure, scalable, and cloud-native software",
+    "SyncTech is a custom software development company building scalable web, mobile, and AI-powered applications for growing businesses. Get a free project consultation.",
 
   keywords: [
     "custom software development",
@@ -37,10 +36,10 @@ export const metadata = {
 
   openGraph: {
     title:
-      "Custom Software Development Services | SyncTechn",
+      "Custom Software Development Company | SyncTechn",
 
     description:
-    "Build secure, scalable, and future-ready custom software solutions including enterprise applications, SaaS platforms, business software, APIs,",
+    "SyncTech is a custom software development company building scalable web, mobile, and AI-powered applications for growing businesses. Get a free project consultation.",
 
     url:
       "https://synctechn.com/services/custom-software-development-services/",
@@ -68,7 +67,7 @@ export const metadata = {
       "Custom Software Development Company | SyncTechn",
 
     description:
-    "Enterprise custom software development services including SaaS platforms, business applications, workflow automation, APIs, cloud-native software, and",
+    "SyncTech is a custom software development company building scalable web, mobile, and AI-powered applications for growing businesses. Get a free project consultation.",
 
     images: [
       "/images/services/custom-software-development-services-og.webp",

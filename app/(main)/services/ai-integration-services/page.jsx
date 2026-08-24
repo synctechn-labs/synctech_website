@@ -1,12 +1,9 @@
 import AIIntegrationServices from "@/views/services/AIIntegrationServices";
 
 export const metadata = {
-  title:
-    "AI Integration Services | Artificial Intelligence Integration | SyncTechn",
-
+  title: "AI Integration Services for Business Systems | SyncTech",
   description:
-    "SyncTechn provides custom AI Integration Services. We integrate advanced Large Language Models (LLMs), machine learning algorithms, and cognitive",
-
+    "Connect AI into your CRM, ERP, and internal tools. SyncTech's AI integration services help businesses automate workflows and unlock data-driven decisions.",
   keywords: [
     "ai integration services",
     "artificial intelligence integration",
@@ -24,28 +21,17 @@ export const metadata = {
     "predictive analytics",
     "ai powered software"
   ],
-
   alternates: {
-    canonical:
-      "https://synctechn.com/services/ai-integration-services/",
+    canonical: "https://synctechn.com/services/ai-integration-services/",
   },
-
   openGraph: {
-    title:
-      "AI Integration Services | SyncTechn",
-
+    title: "AI Integration Services for Business Systems | SyncTech",
     description:
-      "Transform your software with Artificial Intelligence. We integrate cutting-edge LLMs and machine learning models into your enterprise ecosystem.",
-
-    url:
-      "https://synctechn.com/services/ai-integration-services/",
-
+      "Connect AI into your CRM, ERP, and internal tools. SyncTech's AI integration services help businesses automate workflows and unlock data-driven decisions.",
+    url: "https://synctechn.com/services/ai-integration-services/",
     siteName: "SyncTechn",
-
     locale: "en_US",
-
     type: "website",
-
     images: [
       {
         url: "/images/services/ai-integration-og.webp",
@@ -55,26 +41,19 @@ export const metadata = {
       }
     ]
   },
-
   twitter: {
     card: "summary_large_image",
-
-    title:
-      "AI Integration Services | SyncTechn",
-
+    title: "AI Integration Services for Business Systems | SyncTech",
     description:
-      "Supercharge your enterprise software with custom AI and LLM integrations for intelligent automation and data analysis.",
-
+      "Connect AI into your CRM, ERP, and internal tools. SyncTech's AI integration services help businesses automate workflows and unlock data-driven decisions.",
     images: [
       "/images/services/ai-integration-og.webp"
     ]
   },
-
   robots: {
     index: true,
     follow: true,
   },
-
   metadataBase: new URL("https://synctechn.com"),
 };
 

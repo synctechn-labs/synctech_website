@@ -1,12 +1,9 @@
 import AISolutions from "@/views/services/AISolutions";
 
 export const metadata = {
-  title:
-    "AI Development Company | Custom AI Development Services & Generative AI Services | SyncTechn",
-
+  title: "AI Development Company | Custom AI Integration & Automation — SyncTech",
   description:
-    "SyncTechn provides AI development services including Generative AI, AI chatbot development, Machine Learning, Computer Vision, NLP, AI automation, AI",
-
+    "SyncTech is an AI development company delivering custom AI integration, automation, and machine learning solutions for businesses. Talk to our AI engineers today.",
   keywords: [
     "ai development company",
     "artificial intelligence development",
@@ -34,27 +31,17 @@ export const metadata = {
     "ai consulting services",
     "ai custom software development"
   ],
-
   alternates: {
     canonical: "https://synctechn.com/services/ai-development-services/",
   },
-
   openGraph: {
-    title:
-      "Custom AI Development Services | SyncTechn",
-
+    title: "AI Development Company | Custom AI Integration & Automation — SyncTech",
     description:
-    "Build intelligent AI solutions including Generative AI, AI Chatbots, Machine Learning, Computer Vision, NLP, AI Agents, Predictive Analytics, and",
-
-    url:
-      "https://synctechn.com/services/ai-development/",
-
+      "SyncTech is an AI development company delivering custom AI integration, automation, and machine learning solutions for businesses. Talk to our AI engineers today.",
+    url: "https://synctechn.com/services/ai-development-services/",
     siteName: "SyncTechn",
-
     locale: "en_US",
-
     type: "website",
-
     images: [
       {
         url: "/images/services/ai-development-og.webp",
@@ -64,26 +51,19 @@ export const metadata = {
       }
     ]
   },
-
   twitter: {
     card: "summary_large_image",
-
-    title:
-      "AI Development Company | SyncTechn",
-
+    title: "AI Development Company | SyncTechn",
     description:
-      "Custom AI development services including LLMs, AI chatbots, machine learning, computer vision, AI automation, and enterprise AI solutions.",
-
+      "SyncTech is an AI development company delivering custom AI integration, automation, and machine learning solutions for businesses. Talk to our AI engineers today.",
     images: [
       "/images/services/ai-development-og.webp"
     ]
   },
-
   robots: {
     index: true,
     follow: true,
   },
-
   metadataBase: new URL("https://synctechn.com"),
 };
 

@@ -261,8 +261,8 @@ export default function ServicesSection() {
                 </li>
               ))}
             </ul>
-            <a href="#pricing" className="glass-button-simple inline-flex items-center gap-2 px-5 py-3 text-white text-sm font-semibold">
-              Explore Plans <ArrowRight size={16} />
+            <a href="/services/custom-software-development-services" className="glass-button-simple inline-flex items-center gap-2 px-5 py-3 text-white text-sm font-semibold">
+              Explore Custom Software Services <ArrowRight size={16} />
             </a>
           </div>
           <div className="relative rounded-2xl border border-slate-800/80 bg-[#060910] p-2 shadow-[0_0_40px_rgba(59,130,246,0.1)]">
@@ -316,8 +316,8 @@ export default function ServicesSection() {
                 </li>
               ))}
             </ul>
-            <a href="#pricing" className="glass-button-simple inline-flex items-center gap-2 px-5 py-3 text-white text-sm font-semibold">
-              Explore Plans <ArrowRight size={16} />
+            <a href="/services/ai-integration-services" className="glass-button-simple inline-flex items-center gap-2 px-5 py-3 text-white text-sm font-semibold">
+              Explore AI Integration Services <ArrowRight size={16} />
             </a>
           </div>
         </div>

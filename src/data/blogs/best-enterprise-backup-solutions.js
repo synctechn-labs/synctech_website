@@ -1,5 +1,6 @@
 const bestEnterpriseBackupSolutions = {
   id: "best-enterprise-backup-solutions",
+  noindex: true,
   title: "Best Enterprise Backup Solutions: Architecting Modern Data Resilience in 2026",
   description:
     "Compare the best enterprise backup solutions in 2026, including Veeam, Commvault, Cohesity, Rubrik, HYCU, Bacula, Druva, and Acronis. Learn how to evaluate enterprise backup software for ransomware resilience, hybrid cloud protection, SLA recovery, and compliance.",

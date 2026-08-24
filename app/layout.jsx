@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
                 "name": "SyncTechn",
                 "url": "https://synctechn.com",
                 "logo": "https://res.cloudinary.com/dij2x0ixo/image/upload/e_background_removal/f_png/v1782032673/SyncTechWhiteLogo_bt3s0u.webp",
-                "description": "SyncTechn is a custom software development company delivering web applications, mobile apps, AI solutions, and enterprise software tailored to your business goals.",
+                "description": "SyncTechn is a custom software development and AI development company building web, mobile, and AI-powered business solutions.",
                 "sameAs": [
                   "https://www.linkedin.com/company/synctechn/",
                   "https://www.instagram.com/synctechn/"
@@ -76,81 +76,7 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "What is custom software development?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Custom software development is the process of designing, developing, and maintaining software built specifically for your business needs. Unlike off-the-shelf software, custom solutions are tailored to your workflows, business goals, and future growth."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Why should I choose custom software instead of off-the-shelf software?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Custom software is designed around your business requirements, offering greater flexibility, seamless integrations, enhanced security, and long-term scalability compared to off-the-shelf software."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What custom software development services does SyncTechn offer?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "SyncTechn provides custom software development services including web application development, mobile app development, enterprise custom software development, AI solutions, SaaS product development, ERP and CRM development, workflow automation, API integrations, and cloud-based software solutions."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How much does custom software development cost?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The cost depends on your project scope, required features, integrations, technology stack, and timeline. After understanding your requirements, we provide a transparent proposal with a detailed estimate."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How long does it take to develop custom software?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Development timelines vary depending on project complexity. Small applications can often be delivered within a few weeks, while enterprise software projects may take several months."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Can SyncTechn integrate custom software with our existing systems?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. We integrate custom software with ERP systems, CRM platforms, payment gateways, cloud services, third-party APIs, and internal business systems to create a connected ecosystem."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Do you provide post-launch support and maintenance?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. We provide ongoing maintenance, security updates, performance monitoring, feature enhancements, bug fixes, and technical support to ensure your software continues to perform reliably."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Why choose SyncTechn as your custom software development company?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "SyncTechn combines business strategy, modern engineering, and agile development to deliver secure, scalable, and future-ready software solutions. We partner with businesses from discovery to long-term support, helping them innovate, automate, and grow."
-                  }
-                }
-              ]
-            })
-          }}
-        />
+
       </head>
       <body>
         <Script

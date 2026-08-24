@@ -24,6 +24,7 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: canonicalUrl,
     },
+    robots: blog.noindex ? { index: false, follow: true } : { index: true, follow: true },
     openGraph: {
       title: seoTitle,
       description: seoDescription,
