@@ -37,7 +37,7 @@ export const metadata = {
     url:
       "https://synctechn.com/services/ai-quality-control-solutions-services/",
 
-    siteName: "SyncTechn",
+    siteName: "SyncTechn Software Solutions",
 
     locale: "en_US",
 

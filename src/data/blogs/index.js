@@ -26,6 +26,8 @@ import fromAutomationToIntelligence from "./from-automation-to-intelligence-how-
 import preparingYourBusinessForAnAiFirstFuture from "./preparing-your-business-for-an-ai-first-future.js";
 import aiAgentVsAgenticAi2026 from "./ai-agent-vs-agentic-ai.js";
 import mobileAppDevelopmentBlog from "./mobile-app-development-services-guide.js";
+import roiOfModernWebDevelopment2026 from "./roi-of-modern-web-development-2026.js";
+
 // Map of blogs keyed by their unique URL slug (id)
 export const blogs = {
 
@@ -53,6 +55,7 @@ export const blogs = {
   "leveraging-ai-for-smarter-inbound-marketing-part-4": preparingYourBusinessForAnAiFirstFuture,
   "ai-agent-vs-agentic-ai": aiAgentVsAgenticAi2026,
   "mobile-app-development-services-guide": mobileAppDevelopmentBlog,
+  "roi-of-modern-web-development-2026": roiOfModernWebDevelopment2026,
 };
 
 // Flat list of all blogs for the listing page

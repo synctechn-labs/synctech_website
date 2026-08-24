@@ -1,7 +1,7 @@
 import AISolutions from "@/views/services/AISolutions";
 
 export const metadata = {
-  title: "AI Development Company | Custom AI Integration & Automation — SyncTech",
+  title: "AI Development Company | Custom AI Integration & Automation — SyncTechn Software Solutions",
   description:
     "SyncTech is an AI development company delivering custom AI integration, automation, and machine learning solutions for businesses. Talk to our AI engineers today.",
   keywords: [
@@ -35,11 +35,11 @@ export const metadata = {
     canonical: "https://synctechn.com/services/ai-development-services/",
   },
   openGraph: {
-    title: "AI Development Company | Custom AI Integration & Automation — SyncTech",
+    title: "AI Development Company | Custom AI Integration & Automation — SyncTechn Software Solutions",
     description:
       "SyncTech is an AI development company delivering custom AI integration, automation, and machine learning solutions for businesses. Talk to our AI engineers today.",
     url: "https://synctechn.com/services/ai-development-services/",
-    siteName: "SyncTechn",
+    siteName: "SyncTechn Software Solutions",
     locale: "en_US",
     type: "website",
     images: [
@@ -53,7 +53,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Development Company | SyncTechn",
+    title: "AI Development Company | SyncTechn Software Solutions",
     description:
       "SyncTech is an AI development company delivering custom AI integration, automation, and machine learning solutions for businesses. Talk to our AI engineers today.",
     images: [

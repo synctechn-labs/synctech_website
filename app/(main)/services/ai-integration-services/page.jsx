@@ -1,7 +1,7 @@
 import AIIntegrationServices from "@/views/services/AIIntegrationServices";
 
 export const metadata = {
-  title: "AI Integration Services for Business Systems | SyncTech",
+  title: "AI Integration Services for Business Systems | SyncTechn Software Solutions",
   description:
     "Connect AI into your CRM, ERP, and internal tools. SyncTech's AI integration services help businesses automate workflows and unlock data-driven decisions.",
   keywords: [
@@ -25,11 +25,11 @@ export const metadata = {
     canonical: "https://synctechn.com/services/ai-integration-services/",
   },
   openGraph: {
-    title: "AI Integration Services for Business Systems | SyncTech",
+    title: "AI Integration Services for Business Systems | SyncTechn Software Solutions",
     description:
       "Connect AI into your CRM, ERP, and internal tools. SyncTech's AI integration services help businesses automate workflows and unlock data-driven decisions.",
     url: "https://synctechn.com/services/ai-integration-services/",
-    siteName: "SyncTechn",
+    siteName: "SyncTechn Software Solutions",
     locale: "en_US",
     type: "website",
     images: [
@@ -43,7 +43,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Integration Services for Business Systems | SyncTech",
+    title: "AI Integration Services for Business Systems | SyncTechn Software Solutions",
     description:
       "Connect AI into your CRM, ERP, and internal tools. SyncTech's AI integration services help businesses automate workflows and unlock data-driven decisions.",
     images: [

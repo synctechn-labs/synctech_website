@@ -56,7 +56,7 @@ export const metadata = {
     url:
       "https://synctechn.com/services/custom-web-development-services/",
 
-    siteName: "SyncTechn",
+    siteName: "SyncTechn Software Solutions",
 
     locale: "en_US",
 
@@ -102,9 +102,9 @@ export const metadata = {
 
   creator: "SyncTechn",
 
-  publisher: "SyncTechn",
+  publisher: "SyncTechn Software Solutions",
 
-  applicationName: "SyncTechn",
+  applicationName: "SyncTechn Software Solutions",
 
   metadataBase: new URL("https://synctechn.com"),
 };

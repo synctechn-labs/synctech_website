@@ -50,7 +50,7 @@ export const metadata = {
     url:
       "https://synctechn.com/services/custom-mobile-application-development-services/",
 
-    siteName: "SyncTechn",
+    siteName: "SyncTechn Software Solutions",
 
     locale: "en_US",
 

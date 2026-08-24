@@ -12,7 +12,7 @@ export default function AIIntegrationLayout({ children }) {
         "provider": {
           "@id": "https://synctechn.com/#organization"
         },
-        "description": "Connect AI into your CRM, ERP, and internal tools. SyncTech's AI integration services help businesses automate workflows and unlock data-driven decisions.",
+        "description": "Connect AI into your CRM, ERP, and internal tools. SyncTechn Software Solutions's AI integration services help businesses automate workflows and unlock data-driven decisions.",
         "url": "https://synctechn.com/services/ai-integration-services/",
         "areaServed": "Global",
         "hasOfferCatalog": {

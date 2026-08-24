@@ -3,8 +3,8 @@ import Script from "next/script";
 
 export const metadata = {
   metadataBase: new URL("https://synctechn.com"),
-  title: "Custom Software Development Company | SyncTechn",
-  description: "SyncTechn is a custom software development company delivering web applications, mobile apps, AI solutions, and enterprise software tailored to your business goals.",
+  title: "Custom Software Development Company | SyncTechn Software Solutions",
+  description: "SyncTechn Software Solutions is a custom software development company delivering web applications, mobile apps, AI solutions, and enterprise software tailored to your business goals.",
   alternates: {
     canonical: "https://synctechn.com/",
     types: {
@@ -12,8 +12,8 @@ export const metadata = {
     }
   },
   openGraph: {
-    title: "Custom Software Development Company | SyncTechn",
-    description: "Build scalable web applications, mobile apps, enterprise software, and AI-powered solutions with SyncTechn's custom software development services.",
+    title: "Custom Software Development Company | SyncTechn Software Solutions",
+    description: "Build scalable web applications, mobile apps, enterprise software, and AI-powered solutions with SyncTechn Software Solutions's custom software development services.",
     url: "https://synctechn.com/",
     type: "website"
   },
@@ -52,10 +52,10 @@ export default function RootLayout({ children }) {
                 "@context": "https://schema.org",
                 "@type": "Organization",
                 "@id": "https://synctechn.com/#organization",
-                "name": "SyncTechn",
+                "name": "SyncTechn Software Solutions",
                 "url": "https://synctechn.com",
                 "logo": "https://res.cloudinary.com/dij2x0ixo/image/upload/e_background_removal/f_png/v1782032673/SyncTechWhiteLogo_bt3s0u.webp",
-                "description": "SyncTechn is a custom software development and AI development company building web, mobile, and AI-powered business solutions.",
+                "description": "SyncTechn Software Solutions is a custom software development and AI development company building web, mobile, and AI-powered business solutions.",
                 "sameAs": [
                   "https://www.linkedin.com/company/synctechn/",
                   "https://www.instagram.com/synctechn/"
@@ -66,8 +66,8 @@ export default function RootLayout({ children }) {
                 "@type": "WebSite",
                 "@id": "https://synctechn.com/#website",
                 "url": "https://synctechn.com",
-                "name": "SyncTechn",
-                "description": "Custom Software Development Company | SyncTechn",
+                "name": "SyncTechn Software Solutions",
+                "description": "Custom Software Development Company | SyncTechn Software Solutions",
                 "publisher": {
                   "@id": "https://synctechn.com/#organization"
                 }

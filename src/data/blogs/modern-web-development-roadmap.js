@@ -253,7 +253,7 @@ const webDevelopmentRoadmap2026 = {
       type: "quote",
       text:
         "The best developers in 2026 will not be the ones who avoid AI. They will be the ones who combine AI speed with strong engineering judgment.",
-      author: "Synctech Editorial Team"
+      author: "SyncTechn Software Solutions Editorial Team"
     },
     {
       type: "heading",

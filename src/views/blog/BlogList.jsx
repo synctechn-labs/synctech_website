@@ -67,9 +67,9 @@ export default function BlogList() {
   return (
     <div className="min-h-screen bg-slate-50/50 text-slate-800 relative overflow-hidden pb-24">
       <SEO
-        title="Tech & Marketing Insights | SyncTech Solutions"
-        description="Discover cutting edge strategies, programming guides, software architectures, and marketing secrets from the engineering desk at SyncTech."
-        keywords="software blog, digital marketing services tips, React scaling, coding tutorials, SyncTech"
+        title="Tech & Marketing Insights | SyncTechn Software Solutions Solutions"
+        description="Discover cutting edge strategies, programming guides, software architectures, and marketing secrets from the engineering desk at SyncTechn Software Solutions."
+        keywords="software blog, digital marketing services tips, React scaling, coding tutorials, SyncTechn Software Solutions"
       />
 
       {/* Futuristic Background Accents (Soft Light Opacity) */}

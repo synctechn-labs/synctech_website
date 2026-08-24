@@ -175,6 +175,10 @@ export default function BlogDetails() {
     });
   }
 
+  if (blog.serviceSchema) {
+    blogSchema["@graph"].push(blog.serviceSchema);
+  }
+
   const handleCopyLink = () => {
     navigator.clipboard.writeText(shareUrl);
     setCopied(true);
@@ -203,9 +207,9 @@ export default function BlogDetails() {
         }
       `}</style>
       <SEO
-        title={`${blog.title} | SyncTech Insights`}
+        title={`${blog.title} | SyncTechn Software Solutions Insights`}
         description={blog.description}
-        keywords={`${blog.category}, SyncTech solutions, ${blog.title}`}
+        keywords={`${blog.category}, SyncTechn Software Solutions solutions, ${blog.title}`}
         canonicalUrl={canonicalUrl}
         ogTitle={blog.title}
         ogDescription={blog.description}

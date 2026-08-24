@@ -38,7 +38,7 @@ export const metadata = {
     url:
       "https://synctechn.com/services/ai-document-verification-services/",
 
-    siteName: "SyncTechn",
+    siteName: "SyncTechn Software Solutions",
 
     locale: "en_US",
 

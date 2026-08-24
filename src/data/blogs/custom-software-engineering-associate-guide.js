@@ -410,7 +410,7 @@ const customSoftwareEngineeringAssociateGuide2026 = {
       type: "quote",
       text:
         "The strongest entry-level software engineers in 2026 will not be the ones who avoid AI. They will be the ones who know how to use AI without outsourcing their thinking.",
-      author: "Synctech Editorial Team"
+      author: "SyncTechn Software Solutions Editorial Team"
     },
     {
       type: "heading",

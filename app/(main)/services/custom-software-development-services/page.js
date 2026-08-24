@@ -1,7 +1,7 @@
 import SoftwareDevelopment from "@/views/services/SoftwareDevelopment";
 
 export const metadata = {
-  title: "Custom Software Development Company | SyncTechn",
+  title: "Custom Software Development Company | SyncTechn Software Solutions",
 
   description:
     "SyncTech is a custom software development company building scalable web, mobile, and AI-powered applications for growing businesses. Get a free project consultation.",
@@ -44,7 +44,7 @@ export const metadata = {
     url:
       "https://synctechn.com/services/custom-software-development-services/",
 
-    siteName: "SyncTechn",
+    siteName: "SyncTechn Software Solutions",
 
     locale: "en_US",
 

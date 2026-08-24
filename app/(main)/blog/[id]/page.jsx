@@ -8,14 +8,14 @@ export async function generateMetadata({ params }) {
 
   if (!blog) {
     return {
-      title: "Blog Not Found | SyncTechn",
+      title: "Blog Not Found | SyncTechn Software Solutions",
       description: "The requested blog post could not be found."
     };
   }
 
   const canonicalUrl = `https://synctechn.com/blog/${blog.id}/`;
 
-  const seoTitle = blog.metaTitle || `${blog.title} | SyncTechn`;
+  const seoTitle = blog.metaTitle || `${blog.title} | SyncTechn Software Solutions`;
   const seoDescription = blog.metaDescription || blog.description;
 
   return {
