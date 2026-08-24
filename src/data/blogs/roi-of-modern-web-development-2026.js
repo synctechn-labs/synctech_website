@@ -4,10 +4,10 @@ const roiOfModernWebDevelopment2026 = {
     "The ROI of Modern Web Development: Why Investing in a High-Performance Website Pays Off in 2026",
   description:
     "Discover how modern web development improves conversions, SEO, customer experience, and revenue. Learn why investing in a high-performance website delivers long-term ROI for your business.",
-  date: "August 5, 2026",
+  date: "August 24, 2026",
   readTime: "12 min read",
   author: {
-    name: "Sabiksha",
+    name: " Sai Sabiksha",
     role: "Web Development & Digital Transformation Experts",
     avatar:
       "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=200&auto=format&fit=crop",
